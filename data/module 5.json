@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "什么是架构原则（Architecture Principles）？",
+    "answer_cn": "架构原则是捕捉关于企业如何使用和部署 IT 资源及资产的基础真相的准则。"
+  },
+  {
+    "id": 2,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则通常由哪两组组成？",
+    "answer_cn": "通常分为企业绩效原则（指导决策过程）和架构设计原则（指导架构本身的定义）。"
+  },
+  {
+    "id": 3,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则定义的标准格式包含哪四个部分？",
+    "answer_cn": "名称（Name）、陈述（Statement）、依据（Rationale）和影响（Implications）。"
+  },
+  {
+    "id": 4,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "原则定义中的“影响”（Implications）部分说明了什么？",
+    "answer_cn": "说明了遵循该原则对业务和 IT 产生的具体后果，包括对资源、成本和架构任务的要求。"
+  },
+  {
+    "id": 5,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "优秀的架构原则应具备哪些品质（Qualities）？",
+    "answer_cn": "易于理解（Understandable）、稳健（Robust）、完整（Complete）、一致（Consistent）和稳定（Stable）。"
+  },
+  {
+    "id": 6,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则在 ADM 哪个阶段最先被定义或评审？",
+    "answer_cn": "在初步阶段（Preliminary Phase）定义，并在 Phase A（架构愿景）中进行评审。"
+  },
+  {
+    "id": 7,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "“业务连续性”（Business Continuity）原则通常属于哪一类原则？",
+    "answer_cn": "业务原则（Business Principles）。"
+  },
+  {
+    "id": 8,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "“数据是资产”（Data is an Asset）原则的含义是什么？",
+    "answer_cn": "数据具有价值，应当被适当地管理以支持业务决策。"
+  },
+  {
+    "id": 9,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "“控制技术多样性”原则的主要动机是什么？",
+    "answer_cn": "尽量减少维护多种环境的非琐碎成本，简化维护工作。"
+  },
+  {
+    "id": 10,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则中的“互操作性”（Interoperability）强调什么？",
+    "answer_cn": "软件和硬件应符合定义好的标准，以促进数据、应用和技术之间的连接。"
+  },
+  {
+    "id": 11,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "利益相关者管理（Stakeholder Management）的主要目的是什么？",
+    "answer_cn": "确保架构能够解决关键利益相关者的关注点，并获得他们的支持。"
+  },
+  {
+    "id": 12,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "利益相关者管理过程的四个步骤是什么？",
+    "answer_cn": "1. 识别利益相关者；2. 分类利益相关者立场；3. 确定管理方法；4. 定制参与交付物。"
+  },
+  {
+    "id": 13,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "什么是权力/利益矩阵（Power/Interest Grid）？",
+    "answer_cn": "一种将利益相关者按其对项目的影响力和对项目的关注程度进行分类的工具。"
+  },
+  {
+    "id": 14,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "在矩阵中，权力高但利益低的利益相关者应采取什么策略？",
+    "answer_cn": "令其满意（Keep Satisfied）。"
+  },
+  {
+    "id": 15,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "在矩阵中，“关键人物”（Key Players）指哪些人？",
+    "answer_cn": "权力和利益都高的利益相关者。"
+  },
+  {
+    "id": 16,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "利益相关者管理计划通常在哪个阶段制定？",
+    "answer_cn": "通常在 Phase A（架构愿景）中作为初步沟通和参与的一部分启动。"
+  },
+  {
+    "id": 17,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "定制参与交付物（Tailor Engagement Deliverables）的意义是什么？",
+    "answer_cn": "选择特定的目录、矩阵和图表，以最有效的方式解决特定利益相关者的关注点。"
+  },
+  {
+    "id": 18,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "CXO（首席高管）级别利益相关者的常见关注点是什么？",
+    "answer_cn": "组织的高层驱动力、目标、目的以及架构如何转化为有效的业务流程。"
+  },
+  {
+    "id": 19,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "对于“IT 运营”利益相关者，通常需要提供什么类型的视图？",
+    "answer_cn": "处理图、环境与位置图、平台分解图等技术实现相关的视图。"
+  },
+  {
+    "id": 20,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "利益相关者地图（Stakeholder Map）的作用是什么？",
+    "answer_cn": "列出利益相关者、他们的关注点、类别以及用于与他们互动的交付物。"
+  },
+  {
+    "id": 21,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Scenarios",
+    "question_cn": "业务场景（Business Scenarios）技术的主要目的是什么？",
+    "answer_cn": "帮助识别和细化满足业务目标所需的业务需求。"
+  },
+  {
+    "id": 22,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Scenarios",
+    "question_cn": "一个完整的业务场景应包含哪些内容？",
+    "answer_cn": "商业环境、业务目标、参与者、所需的计算机能力、技术架构需求及其度量标准。"
+  },
+  {
+    "id": 23,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Scenarios",
+    "question_cn": "业务场景在哪个阶段特别重要？",
+    "answer_cn": "在 Phase A（架构愿景）中用于帮助定义需求，并在后续阶段用于细化架构。"
+  },
+  {
+    "id": 24,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Scenarios",
+    "question_cn": "SMART 准则在业务场景中用于什么？",
+    "answer_cn": "用于确保业务场景中的目标是具体的、可衡量的、可实现的、相关的和有时限的。"
+  },
+  {
+    "id": 25,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "差距分析（Gap Analysis）的主要定义是什么？",
+    "answer_cn": "一种比较基线架构和目标架构，以识别需要被删除、新增或保留的内容的技术。"
+  },
+  {
+    "id": 26,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "差距分析矩阵中的“横轴”和“纵轴”通常代表什么？",
+    "answer_cn": "纵轴通常代表基线架构（Baseline），横轴代表目标架构（Target）。"
+  },
+  {
+    "id": 27,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "在差距分析中，“潜在匹配”（Potential Match）意味着什么？",
+    "answer_cn": "基线中的某项功能与目标中的功能匹配，通常无需开发。"
+  },
+  {
+    "id": 28,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "如果在目标架构中有某项功能，但基线架构中没有，这称为什么？",
+    "answer_cn": "新增项（New included item），属于一种差距。"
+  },
+  {
+    "id": 29,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "差距分析在 ADM 的哪些阶段使用？",
+    "answer_cn": "在 Phase B, C, D 阶段均被使用，用于识别业务、信息系统和技术架构的差距。"
+  },
+  {
+    "id": 30,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "差距分析的结果对于后续哪个阶段至关重要？",
+    "answer_cn": "对 Phase E（机会与解决方案）至关重要，它决定了需要启动的工作包。"
+  },
+  {
+    "id": 31,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "实施因子目录（Implementation Factor Catalog）的目的是什么？",
+    "answer_cn": "记录影响架构实施和迁移计划的风险、问题、假设和约束等因素。"
+  },
+  {
+    "id": 32,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "综合差距、解决方案和依赖关系矩阵的主要作用是什么？",
+    "answer_cn": "将不同领域的差距分组，关联潜在解决方案，并识别它们之间的依赖关系以规划工作包。"
+  },
+  {
+    "id": 33,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "架构定义增量表（Architecture Definition Increments Table）记录了什么？",
+    "answer_cn": "记录了不同过渡架构（Transition Architectures）随时间推移的增量交付物。"
+  },
+  {
+    "id": 34,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "过渡架构状态演进表（Transition Architecture State Evolution Table）显示了什么？",
+    "answer_cn": "显示了在每个过渡阶段，系统、服务或能力的演进状态（如：开发中、已部署、已替换）。"
+  },
+  {
+    "id": 35,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "业务价值评估技术（Business Value Assessment）在迁移计划中用于什么？",
+    "answer_cn": "通过评估项目的成本、收益、风险等维度，来确定迁移项目的优先级。"
+  },
+  {
+    "id": 36,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "互操作性（Interoperability）的简单定义是什么？",
+    "answer_cn": "共享信息和服务的能力。"
+  },
+  {
+    "id": 37,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "在 ADM 哪个阶段会首次在业务场景中揭示互操作性和安全考虑？",
+    "answer_cn": "Phase A（架构愿景）。"
+  },
+  {
+    "id": 38,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "“企业运营模型”中的四种模式如何影响互操作性需求？",
+    "answer_cn": "整合（Integration）和标准化（Standardization）的程度决定了对互操作性的具体要求。"
+  },
+  {
+    "id": 39,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "信息系统互操作性矩阵通常在哪个阶段细化？",
+    "answer_cn": "Phase C（信息系统架构）。"
+  },
+  {
+    "id": 40,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "TOGAF 建议在 ADM 哪个阶段开始正式的风险管理？",
+    "answer_cn": "在 Phase A 中识别并记录初始风险。"
+  },
+  {
+    "id": 41,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "什么是剩余风险（Residual Risk）？",
+    "answer_cn": "在采取风险缓解措施（Mitigation）之后仍然存在的风险水平。"
+  },
+  {
+    "id": 42,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险评估通常包含哪两个主要维度？",
+    "answer_cn": "风险发生的频率（Frequency/Probability）和风险造成的影响（Impact）。"
+  },
+  {
+    "id": 43,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险监测和治理主要在 ADM 哪个阶段进行？",
+    "answer_cn": "Phase G（实施治理）。"
+  },
+  {
+    "id": 44,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险分类中的“两类”主要指什么？",
+    "answer_cn": "初始风险（Initial Risk）和剩余风险（Residual Risk）。"
+  },
+  {
+    "id": 45,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "架构合规性（Architecture Compliance）的含义是什么？",
+    "answer_cn": "衡量项目或系统实现与已建立的架构规范和准则的一致性。"
+  },
+  {
+    "id": 46,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "“不合规”（Non-conformant）与“完全合规”（Compliant）的区别是什么？",
+    "answer_cn": "不合规指未遵循标准，完全合规指实现了架构的所有标准和原则。"
+  },
+  {
+    "id": 47,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "架构合规性审查（Compliance Review）通常由谁执行？",
+    "answer_cn": "通常由架构委员会（Architecture Board）或其委派的专家小组执行。"
+  },
+  {
+    "id": 48,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "在 ADM 哪个阶段会定义合规性要求？",
+    "answer_cn": "在各个架构定义阶段（B, C, D）定义，并在 Phase G 中进行监督审查。"
+  },
+  {
+    "id": 49,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "合规性审查的主要输出是什么？",
+    "answer_cn": "合规性评估报告（Compliance Assessment），指出差异和建议的纠正措施。"
+  },
+  {
+    "id": 50,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Transformation Readiness Assessment",
+    "question_cn": "业务转型就绪度评估的目的是什么？",
+    "answer_cn": "评估和量化组织进行重大变更（如企业架构实施）的准备情况。"
+  },
+  {
+    "id": 51,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Transformation Readiness Assessment",
+    "question_cn": "就绪度评估中的“人为因素”为何重要？",
+    "answer_cn": "因为技术变更往往伴随人员技能、文化和习惯的重大改变，如果人员未准备好，转型将失败。"
+  },
+  {
+    "id": 52,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Transformation Readiness Assessment",
+    "question_cn": "评估就绪度的主要维度有哪些（举例 3 个）？",
+    "answer_cn": "愿景、资金、赞助与领导力、IT 能力、业务案例等。"
+  },
+  {
+    "id": 53,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Alternatives and Trade-Offs",
+    "question_cn": "架构备选方案和权衡分析（Trade-Offs）的目的是什么？",
+    "answer_cn": "在多个可能的目标架构设计中通过对比选择出最能平衡需求和约束的方案。"
+  },
+  {
+    "id": 54,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Alternatives and Trade-Offs",
+    "question_cn": "权衡分析的标准（Criteria）通常来自哪里？",
+    "answer_cn": "来自架构愿景、架构原则以及架构需求。"
+  },
+  {
+    "id": 55,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Patterns",
+    "question_cn": "什么是架构模式（Architecture Patterns）？",
+    "answer_cn": "在特定语境下解决通用设计问题的可重用、经过验证的解决方案。"
+  },
+  {
+    "id": 56,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Patterns",
+    "question_cn": "架构模式与架构连续体（Architecture Continuum）的关系是什么？",
+    "answer_cn": "模式是连续体中的资产，架构师应在 ADM 周期中查找可重用的模式。"
+  },
+  {
+    "id": 57,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "原则定义中的“Rationale”（依据）部分解释了什么？",
+    "answer_cn": "解释了为什么该原则对业务是重要的，以及其带来的业务价值。"
+  },
+  {
+    "id": 58,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "利益相关者管理中的“Minimal Effort”组应该如何对待？",
+    "answer_cn": "给予最低限度的努力，仅需监控其动态，不需要投入过多资源沟通。"
+  },
+  {
+    "id": 59,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "如果在基线架构中有，但目标架构中删除了某项功能，这称为什么？",
+    "answer_cn": "已消除项（Eliminated item），是差距分析的一种结论。"
+  },
+  {
+    "id": 60,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "过渡架构（Transition Architecture）的作用是什么？",
+    "answer_cn": "描述从基线向目标迁移过程中具有业务价值的中间稳定状态。"
+  },
+  {
+    "id": 61,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险缓解（Risk Mitigation）的目的是什么？",
+    "answer_cn": "通过采取行动来降低风险发生的可能性或减轻其潜在影响。"
+  },
+  {
+    "id": 62,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "“豁免”（Waiver）在合规性审查中指什么？",
+    "answer_cn": "一种特殊的许可，允许某个项目在特定条件下不遵守某些既定的架构标准。"
+  },
+  {
+    "id": 63,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Transformation Readiness Assessment",
+    "question_cn": "就绪度评估的结果应在哪两个阶段被作为核心输入？",
+    "answer_cn": "Phase E 和 Phase F（机会与解决方案以及迁移计划）。"
+  },
+  {
+    "id": 64,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "除了数据共享，互操作性还涉及什么？",
+    "answer_cn": "还涉及业务流程协作、系统连接和技术组件之间的交互。"
+  },
+  {
+    "id": 65,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "原则定义中，一个好的原则名称应该是怎样的？",
+    "answer_cn": "应简洁且易于记忆，通常是一个代表核心思想的短语。"
+  },
+  {
+    "id": 66,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "对于“Keep Informed”这类利益相关者，最有效的沟通方式通常是？",
+    "answer_cn": "定期更新进展、发送简报或让他们参与信息共享会议。"
+  },
+  {
+    "id": 67,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "在差距分析中，“有意消除”和“无意排除”的区别？",
+    "answer_cn": "有意消除是为了优化架构主动删减；无意排除是原本需要但在目标中遗漏了（属于差距）。"
+  },
+  {
+    "id": 68,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "综合差距矩阵如何帮助定义“工作包”？",
+    "answer_cn": "通过将相互依赖的差距和解决方案聚集在一起，形成逻辑上可独立实施的任务包。"
+  },
+  {
+    "id": 69,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险识别工作表通常在哪个治理活动中被持续更新？",
+    "answer_cn": "在 Phase G 的实施治理过程中。"
+  },
+  {
+    "id": 70,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "架构审查的流程中，如果发现重大偏差，架构师下一步该做什么？",
+    "answer_cn": "要求修改项目方案以符合架构，或向架构委员会申请正式豁免。"
+  },
+  {
+    "id": 71,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则的稳定性意味着什么？",
+    "answer_cn": "原则应该是持久的，不应因短期技术波动而频繁更改，但应有正式的修订程序。"
+  },
+  {
+    "id": 72,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Stakeholder Management",
+    "question_cn": "在利益相关者管理中，利益相关者可能是个人还是组织？",
+    "answer_cn": "两者皆是，但最终架构团队需要通过具体的个人代表来进行有效沟通。"
+  },
+  {
+    "id": 73,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Gap Analysis",
+    "question_cn": "差距分析中，“未定义”的基线会带来什么后果？",
+    "answer_cn": "会导致差距分析变得非正式且不完整，难以量化所需的变更努力。"
+  },
+  {
+    "id": 74,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Business Transformation Readiness Assessment",
+    "question_cn": "就绪度评估中的“治理”维度考察什么？",
+    "answer_cn": "考察组织是否具备有效的决策机制和问责制度来推动和监管变革。"
+  },
+  {
+    "id": 75,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Migration Planning Techniques",
+    "question_cn": "在进行迁移规划时，为什么需要考虑技术外因素？",
+    "answer_cn": "因为迁移受到资源可用性、组织文化、市场时机和业务优先级等多重非技术因素制约。"
+  },
+  {
+    "id": 76,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Alternatives and Trade-Offs",
+    "question_cn": "权衡分析中的“偏好”（Preference）指什么？",
+    "answer_cn": "指在多个符合条件的备选方案中，由于组织文化或战略倾向而对某一方案的额外青睐。"
+  },
+  {
+    "id": 77,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Principles",
+    "question_cn": "数据原则中的“共享数据”意味着什么？",
+    "answer_cn": "用户在履行职责时，应能方便地访问到所需的数据（在受限范围内）。"
+  },
+  {
+    "id": 78,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Interoperability Requirements",
+    "question_cn": "“互操作性级别”通常如何划分？",
+    "answer_cn": "通常从技术连接、语义一致性到业务流程协作逐级提升。"
+  },
+  {
+    "id": 79,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Risk Management",
+    "question_cn": "风险识别时应包含“假设”吗？",
+    "answer_cn": "是的，未经验证的架构假设往往是重大的潜在风险来源。"
+  },
+  {
+    "id": 80,
+    "module": "Module 5 - ADM Techniques",
+    "topic": "Architecture Compliance",
+    "question_cn": "合规性审查的“独立性”原则指的是？",
+    "answer_cn": "审查者不应是项目的直接开发者或参与者，以保证评估的公正客观。"
+  }
+]
