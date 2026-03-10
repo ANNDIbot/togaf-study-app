@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Definition of Governance",
+    "question_cn": "根据 TOGAF 标准，治理（Governance）的本质是什么？",
+    "answer_cn": "治理本质上是关于决策：谁制定决策，如何制定决策，以及谁对决策负责。"
+  },
+  {
+    "id": 2,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Governance Definition",
+    "question_cn": "什么是架构治理（Architecture Governance）？",
+    "answer_cn": "架构治理是对企业架构及其他相关层级的架构进行管理和控制的实践和取向。"
+  },
+  {
+    "id": 3,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Framework",
+    "question_cn": "架构治理框架的主要目的是什么？",
+    "answer_cn": "为确保架构策略、标准和原则在整个企业中得到一致的实施和遵守提供结构化方法。"
+  },
+  {
+    "id": 4,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Corporate Governance",
+    "question_cn": "架构治理与公司治理（Corporate Governance）的关系是什么？",
+    "answer_cn": "架构治理是 IT 治理的一个层面，而 IT 治理又是公司整体治理的一个组成部分。"
+  },
+  {
+    "id": 5,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Board",
+    "question_cn": "什么是架构委员会（Architecture Board）？",
+    "answer_cn": "架构委员会是一个由关键利益相关者组成的跨组织机构，负责指导和监督架构治理框架的实施。"
+  },
+  {
+    "id": 6,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Board Responsibilities",
+    "question_cn": "架构委员会的主要职责之一是什么？",
+    "answer_cn": "批准架构原则、标准、基准和路线图，并确保其与业务战略的一致性。"
+  },
+  {
+    "id": 7,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Compliance",
+    "question_cn": "什么是架构合规性（Architecture Compliance）？",
+    "answer_cn": "确保实施项目符合已定义的架构原则、标准和模型的过程。"
+  },
+  {
+    "id": 8,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance Review",
+    "question_cn": "架构合规性审查的主要目标是什么？",
+    "answer_cn": "识别实施方案中与架构定义的任何偏差，并决定如何处理这些偏差。"
+  },
+  {
+    "id": 9,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance Levels - Full Conformant",
+    "question_cn": "合规级别中，“完全遵循（Full Conformant）”的定义是什么？",
+    "answer_cn": "指实施方案完全符合所有架构准则、标准和规格。"
+  },
+  {
+    "id": 10,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance Levels - Non-compliant",
+    "question_cn": "合规级别中，“不合规（Non-compliant）”意味着什么？",
+    "answer_cn": "实施方案在某些关键方面与架构标准存在冲突或未达到要求。"
+  },
+  {
+    "id": 11,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Contracts",
+    "question_cn": "什么是架构合同（Architecture Contracts）？",
+    "answer_cn": "是架构开发团队与利益相关者或实施组织之间关于架构交付成果和质量的正式协议。"
+  },
+  {
+    "id": 12,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Contract Purpose",
+    "question_cn": "架构合同的主要作用是什么？",
+    "answer_cn": "确保所有参与方对架构的目标、范围、约束和交付物有共同的理解和承诺。"
+  },
+  {
+    "id": 13,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Characteristics - Transparency",
+    "question_cn": "治理特征中的“透明度（Transparency）”指什么？",
+    "answer_cn": "确保所有决策过程及其实施对所有利益相关者都是清晰且公开的。"
+  },
+  {
+    "id": 14,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Characteristics - Accountability",
+    "question_cn": "治理特征中的“责任制（Accountability）”指什么？",
+    "answer_cn": "明确界定谁对特定决策及其结果负有最终法律或组织责任。"
+  },
+  {
+    "id": 15,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Repository",
+    "question_cn": "治理日志（Governance Log）在架构存储库中起什么作用？",
+    "answer_cn": "用于记录所有治理活动，包括合规性审查记录、豁免记录和委员会决策。"
+  },
+  {
+    "id": 16,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Dispensation",
+    "question_cn": "在治理中，什么是“豁免/特许（Dispensation）”？",
+    "answer_cn": "正式允许特定项目在受控时间内或特定条件下不遵守某些架构标准或策略。"
+  },
+  {
+    "id": 17,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Enforcement",
+    "question_cn": "架构治理如何执行（Enforcement）其决策？",
+    "answer_cn": "通过预算审批、项目门禁审查和合规性签署等机制。"
+  },
+  {
+    "id": 18,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance vs Management",
+    "question_cn": "治理（Governance）与管理（Management）的区别是什么？",
+    "answer_cn": "治理关注方向、决策权和合规监督；管理关注实现目标的执行、活动和资源利用。"
+  },
+  {
+    "id": 19,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Board Composition",
+    "question_cn": "架构委员会通常由谁组成？",
+    "answer_cn": "通常由高级行政赞助人、业务主管、首席架构师以及关键 IT 领域的专家组成。"
+  },
+  {
+    "id": 20,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Strategic Alignment",
+    "question_cn": "架构治理如何确保战略对齐（Strategic Alignment）？",
+    "answer_cn": "通过定期审查架构项目，确保其交付物直接支持企业的业务驱动因素和目标。"
+  },
+  {
+    "id": 21,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Review Process Stages",
+    "question_cn": "架构合规性审查通常在项目生命周期的哪些阶段进行？",
+    "answer_cn": "通常在概念阶段、详细设计阶段以及上线前等关键决策点进行。"
+  },
+  {
+    "id": 22,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Operational-Level Agreement",
+    "question_cn": "在架构合同中，OLA 是什么的缩写？",
+    "answer_cn": "运营级别协议（Operational-Level Agreement）。"
+  },
+  {
+    "id": 23,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Value",
+    "question_cn": "架构治理为组织带来的一个关键业务价值是什么？",
+    "answer_cn": "降低运营风险，减少由于缺乏一致性而导致的技术债和系统复杂性。"
+  },
+  {
+    "id": 24,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Capability Maturity",
+    "question_cn": "架构能力成熟度模型（ACMM）在治理中有什么用？",
+    "answer_cn": "用于评估组织架构职能的当前状态，并制定提升治理水平的路线图。"
+  },
+  {
+    "id": 25,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Process - Controls",
+    "question_cn": "什么是治理中的“控制（Controls）”？",
+    "answer_cn": "指用于确保架构流程产生预期结果并符合政策的检查和平衡机制。"
+  },
+  {
+    "id": 26,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance Assessment Report",
+    "question_cn": "架构合规性评估报告包含哪些核心信息？",
+    "answer_cn": "包含审查结果、发现的偏离点、建议的补救措施以及正式的合规结论。"
+  },
+  {
+    "id": 27,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "IT Governance",
+    "question_cn": "IT 治理的核心焦点是什么？",
+    "answer_cn": "通过 IT 与业务目标的对齐、风险管理和资源管理来创造价值。"
+  },
+  {
+    "id": 28,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Structure",
+    "question_cn": "为什么架构治理需要多层级结构？",
+    "answer_cn": "为了能够处理从局部项目技术决策到企业全局战略决策的不同粒度问题。"
+  },
+  {
+    "id": 29,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Role of Chief Architect",
+    "question_cn": "首席架构师在治理中通常扮演什么角色？",
+    "answer_cn": "通常是架构委员会的核心成员，负责推动架构愿景并解决技术争议。"
+  },
+  {
+    "id": 30,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Independent Audit",
+    "question_cn": "独立审计在架构治理中的作用？",
+    "answer_cn": "通过客观第三方评估，确保治理流程本身是有效且公正的。"
+  },
+  {
+    "id": 31,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Statement of Architecture Work",
+    "question_cn": "架构工作说明书（SoAW）与架构合同的关系？",
+    "answer_cn": "SoAW 往往是架构合同的基础，它定义了具体要执行的任务和预期的交付物。"
+  },
+  {
+    "id": 32,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Project Impact",
+    "question_cn": "当一个项目被判定为“不合规”时，治理机构通常有哪两种选择？",
+    "answer_cn": "要求项目进行架构修正以符合标准，或者引导其申请正式的豁免。"
+  },
+  {
+    "id": 33,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Characteristics - Fairness",
+    "question_cn": "治理特征中的“公平性（Fairness）”意味着什么？",
+    "answer_cn": "确保在制定标准或审批项目时，不偏袒特定的个人、团队或供应商。"
+  },
+  {
+    "id": 34,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Characteristics - Responsibility",
+    "question_cn": "“责任（Responsibility）”与“问责（Accountability）”在治理中的微小区别？",
+    "answer_cn": "责任是指执行任务的义务，问责是指对任务结果进行解释和承担最终后果的义务。"
+  },
+  {
+    "id": 35,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance - Consistent",
+    "question_cn": "合规级别中，“一致（Consistent）”的定义是什么？",
+    "answer_cn": "实施方案在整体精神和方向上符合架构定义，但在某些非关键标准上可能有所不同。"
+  },
+  {
+    "id": 36,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance - Irrelevant",
+    "question_cn": "合规级别中，“无关联（Irrelevant）”指什么？",
+    "answer_cn": "该项目不涉及该特定架构标准所定义的领域或技术。"
+  },
+  {
+    "id": 37,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Principles",
+    "question_cn": "架构原则在治理中的重要性体现在哪里？",
+    "answer_cn": "它们是评估合规性的基本准则，并在出现利益冲突时提供决策依据。"
+  },
+  {
+    "id": 38,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Risk Management",
+    "question_cn": "架构治理如何辅助风险管理？",
+    "answer_cn": "通过强制执行标准和互操作性要求，预防系统故障、安全漏洞和供应商锁定风险。"
+  },
+  {
+    "id": 39,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Framework Scope",
+    "question_cn": "在初步阶段（Preliminary Phase），确定治理范围包括什么？",
+    "answer_cn": "确定受治理约束的组织范围、特定的 IT 领域以及治理的成熟度目标。"
+  },
+  {
+    "id": 40,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Repository Access",
+    "question_cn": "谁通常拥有治理日志的只读访问权限？",
+    "answer_cn": "所有需要了解架构合规状态的项目团队和利益相关者。"
+  },
+  {
+    "id": 41,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Lifecycle",
+    "question_cn": "架构治理在 ADM 哪个阶段最为活跃？",
+    "answer_cn": "虽然贯穿始终，但在阶段 G（实施治理）中是执行最为具体和频繁的阶段。"
+  },
+  {
+    "id": 42,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Compliance Sign-off",
+    "question_cn": "什么是合规性签署（Compliance Sign-off）？",
+    "answer_cn": "治理机构在项目上线前，正式确认其符合架构要求的书面批准。"
+  },
+  {
+    "id": 43,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Committee",
+    "question_cn": "架构委员会的会议频率通常如何设定？",
+    "answer_cn": "通常按固定周期（如月度）举行，或由重大架构审查需求触发。"
+  },
+  {
+    "id": 44,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Change Management",
+    "question_cn": "治理在架构变更管理中的作用？",
+    "answer_cn": "评估变更请求对现有架构景观和合规状态的影响，并批准或拒绝变更。"
+  },
+  {
+    "id": 45,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Strategy",
+    "question_cn": "什么是“软治理”与“硬治理”？",
+    "answer_cn": "软治理侧重于指导和教育；硬治理侧重于规则执行、审计和否决权。"
+  },
+  {
+    "id": 46,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Role of Sponsors",
+    "question_cn": "高级赞助人在治理中的关键作用是什么？",
+    "answer_cn": "提供权力和资金支持，确保委员会的决定在企业内部能够得到真正的执行。"
+  },
+  {
+    "id": 47,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Technology Governance",
+    "question_cn": "技术治理主要关注什么？",
+    "answer_cn": "关注特定技术标准、平台选择、版本控制和供应商生命周期管理。"
+  },
+  {
+    "id": 48,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Contract - Phase G",
+    "question_cn": "阶段 G 的架构合同通常由哪两方签署？",
+    "answer_cn": "架构职能部门与负责实施项目的团队（或外部集成商）。"
+  },
+  {
+    "id": 49,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Checklists",
+    "question_cn": "合规性检查表（Checklists）在治理中的用途？",
+    "answer_cn": "为合规性审查提供标准化的评估工具，确保每次审查的覆盖面和标准一致。"
+  },
+  {
+    "id": 50,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Architecture Definition",
+    "question_cn": "为什么必须有清晰的架构定义才能进行有效的治理？",
+    "answer_cn": "如果没有作为基准（Baseline）的架构标准，治理就会失去评判合规性的依据。"
+  },
+  {
+    "id": 51,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Culture of Compliance",
+    "question_cn": "什么是组织的“合规文化”？",
+    "answer_cn": "指组织成员理解、认可并自发遵守架构准则的态度和工作方式。"
+  },
+  {
+    "id": 52,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Communication",
+    "question_cn": "治理过程中沟通计划的作用？",
+    "answer_cn": "确保所有人知晓新的架构标准、治理流程以及违反标准的后果。"
+  },
+  {
+    "id": 53,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "External Suppliers",
+    "question_cn": "如何将外部供应商纳入架构治理？",
+    "answer_cn": "通过在采购合同中包含架构合规要求，并要求供应商参与合规审查。"
+  },
+  {
+    "id": 54,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Interoperability",
+    "question_cn": "治理如何支持系统的互操作性？",
+    "answer_cn": "通过强制执行接口标准、数据模型和通信协议的一致性。"
+  },
+  {
+    "id": 55,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Policies",
+    "question_cn": "治理策略（Policies）通常包含哪些内容？",
+    "answer_cn": "规定组织如何运营、必须遵守的法规限制以及管理层的强制要求。"
+  },
+  {
+    "id": 56,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Design Authority",
+    "question_cn": "什么是“设计权威（Design Authority）”？",
+    "answer_cn": "通常由架构委员会授予特定个人或小组，负责裁定具体设计决策的权力。"
+  },
+  {
+    "id": 57,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Escalation",
+    "question_cn": "什么是治理中的“升级流程（Escalation）”？",
+    "answer_cn": "当项目团队与审查员无法达成一致时，将争议提交至更高层管理或架构委员会裁决的流程。"
+  },
+  {
+    "id": 58,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Documentation Standards",
+    "question_cn": "为什么治理需要统一的文档标准？",
+    "answer_cn": "为了确保不同项目产出的制品可以被一致地理解、比较和存储到存储库中。"
+  },
+  {
+    "id": 59,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Metrics",
+    "question_cn": "衡量架构治理有效性的指标有哪些？",
+    "answer_cn": "如：架构合规的项目百分比、申请豁免的数量、治理流程的循环时长等。"
+  },
+  {
+    "id": 60,
+    "module": "Module 8 - Architecture Governance",
+    "topic": "Governance Tools",
+    "question_cn": "架构治理工具通常包含哪些功能？",
+    "answer_cn": "工作流审批、标准目录管理、合规性审计跟踪和看板展示等。"
+  }
+]
