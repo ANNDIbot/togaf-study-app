@@ -139,7 +139,6 @@
     "question_cn": "TOGAF 建议通过什么方式来提高架构的灵活性？",
     "answer_cn": "采用面向服务的架构 (SOA) 原则。"
   },
-  [
   {
     "id": 61,
     "module": "Module 4 - ADM Phases",
@@ -280,7 +279,6 @@
     "question_cn": "迁移计划通常包括哪些关键步骤？",
     "answer_cn": "环境准备、数据迁移、应用部署、测试验收和切断旧系统。"
   },
-[
   {
     "id": 121,
     "module": "Module 4 - ADM Phases",
@@ -421,7 +419,6 @@
     "question_cn": "什么是特许豁免 (Dispensation)？",
     "answer_cn": "在 Phase G 中，当实施方案由于特殊原因无法完全符合架构标准时，由治理机构授予的短期或长期偏离许可。"
   },
-[
   {
     "id": 181,
     "module": "Module 4 - ADM Phases",
