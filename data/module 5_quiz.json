@@ -1,0 +1,842 @@
+[
+  {
+    "id": 1,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在架构原则（Architecture Principles）的定义中，哪一部分负责解释遵循该原则对业务产生的具体后果和要求？",
+    "options": [
+      "名称 (Name)",
+      "陈述 (Statement)",
+      "依据 (Rationale)",
+      "影响 (Implications)"
+    ],
+    "answer": [3],
+    "explanation": "“影响”部分详细说明了遵循原则对业务和 IT 的后果，包括对资源、成本和架构任务的要求。"
+  },
+  {
+    "id": 2,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "高质量架构原则的“稳健性”（Robust）特征是指：",
+    "options": [
+      "原则必须能够涵盖所有可能的技术故障情况",
+      "原则应能够做出确定性的决策，且不易产生多种解读",
+      "原则应保持多年不变，不接受任何修订",
+      "原则应只关注高层业务目标，不涉及技术细节"
+    ],
+    "answer": [1],
+    "explanation": "稳健性意味着原则应该能够做出确定性的决策，并尽量减少模糊的解释空间。"
+  },
+  {
+    "id": 3,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "利益相关者管理（Stakeholder Management）的第一步通常是什么？",
+    "options": [
+      "对利益相关者进行分类",
+      "识别利益相关者及其关注点",
+      "制定沟通计划",
+      "开发架构视图"
+    ],
+    "answer": [1],
+    "explanation": "利益相关者管理过程始于识别利益相关者及其关注点。"
+  },
+  {
+    "id": 4,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在权力/利益矩阵中，对于“权力大、利益小”的利益相关者，应该采取哪种管理策略？",
+    "options": [
+      "重点管理 (Manage Closely)",
+      "令其满意 (Keep Satisfied)",
+      "保持知情 (Keep Informed)",
+      "最低限度努力 (Minimal Effort)"
+    ],
+    "answer": [1],
+    "explanation": "根据权力/利益矩阵，高权力、低利益的利益相关者应被“令其满意”。"
+  },
+  {
+    "id": 5,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "业务场景（Business Scenarios）技术最主要的作用是：",
+    "options": [
+      "识别并细化业务需求",
+      "进行差距分析",
+      "制定实施计划",
+      "定义架构治理流程"
+    ],
+    "answer": [0],
+    "explanation": "业务场景技术用于识别和细化业务需求，以确保架构能够满足业务目标。"
+  },
+  {
+    "id": 6,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在差距分析（Gap Analysis）中，如果在目标架构中发现了一个在基线架构中不存在的新功能，这被分类为：",
+    "options": [
+      "潜在匹配 (Potential Match)",
+      "已消除项 (Eliminated Item)",
+      "新增项 (New Included Item)",
+      "无意排除项 (Unintentionally Excluded)"
+    ],
+    "answer": [2],
+    "explanation": "目标架构中新增的、基线中没有的元素属于新增项（New Included Item）。"
+  },
+  {
+    "id": 7,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "哪种迁移计划技术用于记录影响架构实施和迁移计划的风险、问题和假设？",
+    "options": [
+      "差距分析矩阵",
+      "实施因子目录 (Implementation Factor Catalog)",
+      "过渡架构状态演进表",
+      "业务价值评估技术"
+    ],
+    "answer": [1],
+    "explanation": "实施因子目录用于记录所有可能影响迁移和实施的非技术因素，如风险、问题、依赖关系等。"
+  },
+  {
+    "id": 8,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "过渡架构（Transition Architecture）的主要目的是什么？",
+    "options": [
+      "提供一个最终的目标状态定义",
+      "描述在实现目标架构过程中的增量业务价值状态",
+      "仅用于记录历史架构数据",
+      "定义架构治理的组织结构"
+    ],
+    "answer": [1],
+    "explanation": "过渡架构描述了从基线到目标迁移过程中的中间状态，每个状态都应具备独立的业务价值。"
+  },
+  {
+    "id": 9,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "互操作性（Interoperability）在 TOGAF 中的简单定义是：",
+    "options": [
+      "软件自动升级的能力",
+      "共享信息和服务的能力",
+      "硬件组件的物理连接",
+      "编写代码的标准规范"
+    ],
+    "answer": [1],
+    "explanation": "互操作性被定义为在系统之间共享信息和操作服务的能力。"
+  },
+  {
+    "id": 10,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "业务转型就绪度评估（Business Transformation Readiness Assessment）主要在哪个阶段开展？",
+    "options": [
+      "初步阶段 (Preliminary)",
+      "阶段 A (Architecture Vision)",
+      "阶段 E (Opportunities & Solutions)",
+      "阶段 G (Implementation Governance)"
+    ],
+    "answer": [1],
+    "explanation": "就绪度评估在阶段 A 中启动，并在后续迁移规划中发挥核心作用。"
+  },
+  {
+    "id": 11,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在风险管理中，“剩余风险”（Residual Risk）是指：",
+    "options": [
+      "由于资金不足未被识别的风险",
+      "实施风险缓解措施后依然存在的风险",
+      "仅存在于技术架构中的风险",
+      "项目完成后的保修风险"
+    ],
+    "answer": [1],
+    "explanation": "剩余风险是经过缓解活动（Mitigation）后仍保留的风险水平。"
+  },
+  {
+    "id": 12,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构合规性审查（Architecture Compliance Review）通常在哪个阶段进行正式监督？",
+    "options": [
+      "阶段 B (Business Architecture)",
+      "阶段 E (Opportunities & Solutions)",
+      "阶段 G (Implementation Governance)",
+      "阶段 H (Architecture Change Management)"
+    ],
+    "answer": [2],
+    "explanation": "合规性审查是阶段 G 实施治理的核心活动。"
+  },
+  {
+    "id": 13,
+    "module": "Module 5 - ADM Techniques",
+    "type": "multi",
+    "question": "架构原则通常分为哪几类？",
+    "options": [
+      "业务原则 (Business Principles)",
+      "数据原则 (Data Principles)",
+      "应用原则 (Application Principles)",
+      "地理原则 (Geographic Principles)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 定义了业务、数据、应用和技术四类常见的架构原则。"
+  },
+  {
+    "id": 14,
+    "module": "Module 5 - ADM Techniques",
+    "type": "multi",
+    "question": "业务场景（Business Scenarios）应遵循 SMART 准则，其中 SMART 代表：",
+    "options": [
+      "具体的 (Specific)",
+      "可衡量的 (Measurable)",
+      "架构相关的 (Architecture-related)",
+      "有时限的 (Time-bound)"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "SMART 代表 Specific, Measurable, Achievable, Relevant, Time-bound。"
+  },
+  {
+    "id": 15,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在架构模式（Architecture Patterns）中，“上下文”（Context）是指：",
+    "options": [
+      "模式的作者信息",
+      "该模式适用的特定情况或约束条件",
+      "模式在代码中的位置",
+      "模式的收费标准"
+    ],
+    "answer": [1],
+    "explanation": "上下文描述了问题发生的特定环境或一组约束条件。"
+  },
+  {
+    "id": 16,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "差距分析矩阵中，基线架构通常放在哪一边？",
+    "options": [
+      "矩阵的顶部（横向）",
+      "矩阵的左侧（纵向）",
+      "作为矩阵的注脚",
+      "随机放置"
+    ],
+    "answer": [1],
+    "explanation": "在标准的 TOGAF 差距分析矩阵中，基线通常列在左侧，目标列在上方。"
+  },
+  {
+    "id": 17,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "综合差距、解决方案和依赖关系矩阵的主要目的是：",
+    "options": [
+      "替换架构原则",
+      "将差距分组并关联潜在解决方案以规划工作包",
+      "测量服务器的性能",
+      "记录利益相关者的姓名"
+    ],
+    "answer": [1],
+    "explanation": "该矩阵帮助架构师将各个领域的差距汇总，并识别出解决这些差距所需的项目或工作包。"
+  },
+  {
+    "id": 18,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "企业运营模型（Enterprise Operating Model）对互操作性有什么影响？",
+    "options": [
+      "它决定了业务流程整合和标准化的程度",
+      "它规定了使用哪种编程语言",
+      "它定义了公司的法定办公地址",
+      "它没有影响"
+    ],
+    "answer": [0],
+    "explanation": "运营模型中的整合（Integration）和标准化（Standardization）水平直接决定了对互操作性要求的强弱。"
+  },
+  {
+    "id": 19,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "业务转型就绪度评分中，如果一个因素被评为“极高风险”（Extremely High Risk），这意味着：",
+    "options": [
+      "不需要任何处理",
+      "该项目应当立即终止",
+      "需要重大的缓解工作和高层关注",
+      "该风险会自动消失"
+    ],
+    "answer": [2],
+    "explanation": "高就绪度风险意味着需要采取积极的缓解行动，否则转型可能失败。"
+  },
+  {
+    "id": 20,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构权衡分析方法（Architecture Trade-Off Method）的主要目的是：",
+    "options": [
+      "自动生成目标架构",
+      "在竞争的多个架构方案中识别出最佳折中方案",
+      "计算软件开发的具体行数",
+      "审查财务报表"
+    ],
+    "answer": [1],
+    "explanation": "权衡分析用于在多个满足愿景的备选方案中，根据准则（Criteria）选出最合适的方案。"
+  },
+  {
+    "id": 21,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则定义中的“依据”（Rationale）部分主要回答什么问题？",
+    "options": [
+      "该原则的名称是什么？",
+      "我们应该如何实施这个原则？",
+      "为什么要建立这个原则？它的价值是什么？",
+      "谁负责这个原则？"
+    ],
+    "answer": [2],
+    "explanation": "依据部分说明了原则的重要性以及它能为组织带来的业务利益。"
+  },
+  {
+    "id": 22,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "以下哪项不是良好的架构原则应具备的品质？",
+    "options": [
+      "易于理解 (Understandable)",
+      "稳定 (Stable)",
+      "复杂且详尽 (Complex and Detailed)",
+      "一致 (Consistent)"
+    ],
+    "answer": [2],
+    "explanation": "原则应该是简洁明确的，而非不必要的复杂。"
+  },
+  {
+    "id": 23,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在利益相关者管理中，“关键人物”（Key Players）通常位于权力/利益矩阵的哪个位置？",
+    "options": [
+      "高权力，高利益",
+      "高权力，低利益",
+      "低权力，高利益",
+      "低权力，低利益"
+    ],
+    "answer": [0],
+    "explanation": "权力大且对项目有高度利益的个人是必须重点参与的“关键人物”。"
+  },
+  {
+    "id": 24,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在差距分析中，如果基线架构有的功能在目标架构中被标记为“有意消除”，这意味着：",
+    "options": [
+      "架构师忘记放进去了",
+      "该功能不再符合业务需求，将被停用",
+      "这是一个严重的错误",
+      "该功能将被增强"
+    ],
+    "answer": [1],
+    "explanation": "“有意消除”是识别那些在未来架构中不再需要的冗余或过时功能的过程。"
+  },
+  {
+    "id": 25,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "实施因子目录（Implementation Factor Catalog）中的“扣除”（Deductions）是指：",
+    "options": [
+      "财务支出的扣除额",
+      "对迁移计划产生的具体行动或约束建议",
+      "减少服务器数量的行为",
+      "删除架构图中的元素"
+    ],
+    "answer": [1],
+    "explanation": "Deductions 是指从识别出的因子中推导出的对计划的具体影响和要求。"
+  },
+  {
+    "id": 26,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "过渡架构状态演进表（Transition Architecture State Evolution Table）的作用是：",
+    "options": [
+      "列出所有的技术细节",
+      "显示在不同过渡点上各服务的演进状态",
+      "计算每分钟的数据传输量",
+      "记录员工的出勤率"
+    ],
+    "answer": [1],
+    "explanation": "该表以分类法（如 TRM）为基础，展示架构服务随时间的迁移路径。"
+  },
+  {
+    "id": 27,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "互操作性要求通常最早在哪个阶段开始定义？",
+    "options": [
+      "阶段 B (Business Architecture)",
+      "阶段 D (Technology Architecture)",
+      "阶段 F (Migration Planning)",
+      "初步阶段 (Preliminary)"
+    ],
+    "answer": [0],
+    "explanation": "互操作性要求通常始于阶段 B 的业务交互定义。"
+  },
+  {
+    "id": 28,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在风险分类方案中，评估“风险频率”是指：",
+    "options": [
+      "风险造成的金钱损失",
+      "风险发生的可能性或概率",
+      "解决风险所需的时间",
+      "受风险影响的人数"
+    ],
+    "answer": [1],
+    "explanation": "频率（Frequency）通常用于描述风险发生的概率。"
+  },
+  {
+    "id": 29,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "哪项技术用于确保利益相关者在架构开发过程中获得他们所需的视图？",
+    "options": [
+      "定制参与交付物 (Tailor Engagement Deliverables)",
+      "差距分析",
+      "风险评估",
+      "原则开发"
+    ],
+    "answer": [0],
+    "explanation": "通过定制交付物，架构师可以确保提供符合利益相关者关注点的特定视图。"
+  },
+  {
+    "id": 30,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则中的“互操作性”原则通常强调：",
+    "options": [
+      "所有软件必须由同一供应商提供",
+      "软件和硬件应遵循促进连接的定义标准",
+      "不应使用任何开源标准",
+      "数据只能在本地存储"
+    ],
+    "answer": [1],
+    "explanation": "互操作性原则旨在通过标准促进跨数据、应用和技术的连通性。"
+  },
+  {
+    "id": 31,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在业务场景技术中，谁被认为是“参与者”（Actors）？",
+    "options": [
+      "仅限 IT 系统的内部程序",
+      "与场景交互的人员或系统",
+      "专业的电影演员",
+      "负责编写文档的文员"
+    ],
+    "answer": [1],
+    "explanation": "参与者包括与业务场景流程发生交互的各种人员和技术实体。"
+  },
+  {
+    "id": 32,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构合规性中的“豁免”（Waiver）机制主要用于：",
+    "options": [
+      "永远免除所有项目的合规要求",
+      "对特定项目在特定条件下不合规的正式认可",
+      "惩罚不合规的项目负责人",
+      "用于支付额外的架构咨询费"
+    ],
+    "answer": [1],
+    "explanation": "豁免是架构委员会授予的，允许项目在特定理由下偏离标准的正式许可。"
+  },
+  {
+    "id": 33,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "哪项不是业务转型就绪度评估中的常见成熟度等级？",
+    "options": [
+      "未定义 (Not Defined)",
+      "可重复的 (Repeatable)",
+      "管理的 (Managed)",
+      "瞬间完成的 (Instantaneous)"
+    ],
+    "answer": [3],
+    "explanation": "成熟度通常沿用类似 CMMI 的阶梯，不存在“瞬间完成”这一级。"
+  },
+  {
+    "id": 34,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则的“依据”部分如果不清晰，最直接的后果是：",
+    "options": [
+      "原则名称会改变",
+      "难以说服管理层支持该原则的实施",
+      "原则的字数会减少",
+      "无法进行架构设计"
+    ],
+    "answer": [1],
+    "explanation": "没有充分的依据，利益相关者就难以理解为什么要遵循这一约束。"
+  },
+  {
+    "id": 35,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在利益相关者管理计划中，对“保持知情”（Keep Informed）组最合适的活动是：",
+    "options": [
+      "邀请他们参加每日开发晨会",
+      "定期发送新闻简报或项目摘要",
+      "不与他们进行任何沟通",
+      "让他们负责项目的核心决策"
+    ],
+    "answer": [1],
+    "explanation": "对于利益高但权力低的群体，重点是保持信息透明和反馈渠道畅通。"
+  },
+  {
+    "id": 36,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "差距分析中“无意排除”（Unintentionally Excluded）项的出现通常意味着：",
+    "options": [
+      "架构设计得太完美了",
+      "在目标架构定义中存在疏漏，属于必须解决的差距",
+      "该项目可以提前结束",
+      "基线架构是错误的"
+    ],
+    "answer": [1],
+    "explanation": "无意中在目标架构中遗漏了必要的元素是一种差距，必须被识别并修正。"
+  },
+  {
+    "id": 37,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构定义增量表（Architecture Definition Increments Table）的主要维度是：",
+    "options": [
+      "项目名称与过渡架构阶段",
+      "员工姓名与薪资",
+      "CPU 型号与内存容量",
+      "办公地点与建筑层数"
+    ],
+    "answer": [0],
+    "explanation": "该表展示了各个项目在不同的过渡架构时间点（增量）所交付的内容。"
+  },
+  {
+    "id": 38,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "风险管理的“缓解”（Mitigation）策略旨在：",
+    "options": [
+      "增加风险发生的概率",
+      "减少风险的影响或发生的可能性",
+      "完全忽略风险的存在",
+      "将风险转嫁给客户"
+    ],
+    "answer": [1],
+    "explanation": "缓解的核心目标是控制并降低风险水平。"
+  },
+  {
+    "id": 39,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在 ADM 技术中，以下哪项不是架构权衡的主要考量因素（Criteria）？",
+    "options": [
+      "成本",
+      "性能",
+      "办公桌的颜色",
+      "互操作性"
+    ],
+    "answer": [2],
+    "explanation": "架构权衡关注的是影响系统质量属性和业务价值的核心因素。"
+  },
+  {
+    "id": 40,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则应具备“一致性”（Consistent），这意味着：",
+    "options": [
+      "所有原则必须完全一样",
+      "原则之间不应相互矛盾",
+      "原则应由同一个人编写",
+      "原则应在同一天发布"
+    ],
+    "answer": [1],
+    "explanation": "一致性要求一个原则的严格遵守不应导致违反另一个原则的根本精神。"
+  },
+  {
+    "id": 41,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "对于项目组合经理（Portfolio Managers），他们最关注架构的哪方面？",
+    "options": [
+      "单个应用的内部逻辑",
+      "项目之间的技术依赖和内容的一致性",
+      "SQL 查询的优化",
+      "CSS 样式的统一"
+    ],
+    "answer": [1],
+    "explanation": "项目组合经理关注的是资源分配、依赖管理和整体战略一致性。"
+  },
+  {
+    "id": 42,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "业务场景中的“目标”（Objectives）应该如何定义？",
+    "options": [
+      "越模糊越好",
+      "必须是定量的且可衡量的",
+      "只能由架构师决定",
+      "不需要包含在文档中"
+    ],
+    "answer": [1],
+    "explanation": "业务场景的目标需要具体、可衡量，以便评估解决方案的成功与否。"
+  },
+  {
+    "id": 43,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在差距分析过程中，比较基线和目标是为了：",
+    "options": [
+      "计算员工的绩效",
+      "确定需要开发、购买或停用的具体内容",
+      "选择最好的编程语言",
+      "制定公司每年的休假制度"
+    ],
+    "answer": [1],
+    "explanation": "差距分析的直接结果是明确了实现目标状态所需的工作范围。"
+  },
+  {
+    "id": 44,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "风险评估中的“影响”（Impact）度量：",
+    "options": [
+      "风险发生的时间",
+      "风险发生后对业务目标的损害程度",
+      "风险管理计划的长度",
+      "参与风险评估的人数"
+    ],
+    "answer": [1],
+    "explanation": "影响衡量的是风险事件对企业带来的后果严重性。"
+  },
+  {
+    "id": 45,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则的“应用”主要发生在 ADM 的哪些阶段？",
+    "options": [
+      "仅在初步阶段",
+      "贯穿 ADM 的各个阶段以指导决策",
+      "仅在阶段 G",
+      "仅在架构规划完成后"
+    ],
+    "answer": [1],
+    "explanation": "架构原则作为基础准则，指导着整个架构生命周期中的每一个决策。"
+  },
+  {
+    "id": 46,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "为什么业务转型就绪度评估被认为是一个“动态”的过程？",
+    "options": [
+      "因为评估软件运行很快",
+      "因为组织状态和人员心态会随着项目进展而变化",
+      "因为它涉及到动画演示",
+      "因为它不需要书面记录"
+    ],
+    "answer": [1],
+    "explanation": "就绪度是会波动的，随着沟通、培训和实际变更的深入，必须定期重新评估。"
+  },
+  {
+    "id": 47,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构委员会在架构合规性审查中的角色是：",
+    "options": [
+      "作为项目的开发团队",
+      "作为独立的审查和决策主体",
+      "作为外部审计机构",
+      "不参与审查过程"
+    ],
+    "answer": [1],
+    "explanation": "架构委员会负责确保各个实施项目遵循企业既定的架构标准。"
+  },
+  {
+    "id": 48,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "“数据是资产”这一原则的“依据”通常是：",
+    "options": [
+      "数据很多，所以很有钱",
+      "精确、及时的数据对准确的业务决策至关重要",
+      "数据可以被导出到 Excel",
+      "这只是一个口号"
+    ],
+    "answer": [1],
+    "explanation": "该原则的核心价值在于将数据视为支持业务能力和决策的关键战略资源。"
+  },
+  {
+    "id": 49,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "互操作性需求分析中，“语义互操作性”关注：",
+    "options": [
+      "电缆的接口标准",
+      "数据内容含义的共同理解",
+      "网络带宽的大小",
+      "服务器的运行电压"
+    ],
+    "answer": [1],
+    "explanation": "语义级别确保交换的信息在不同的系统间具有一致且被理解的业务意义。"
+  },
+  {
+    "id": 50,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "如果风险发生的可能性极高，但影响极低，该风险的总体等级通常被评为：",
+    "options": [
+      "高风险",
+      "中或低风险（取决于具体矩阵）",
+      "极高风险",
+      "可以忽略不计"
+    ],
+    "answer": [1],
+    "explanation": "风险等级由概率和影响共同决定，单方面概率高不一定导致高风险等级。"
+  },
+  {
+    "id": 51,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "差距分析中，“潜在匹配”（Potential Match）通常意味着：",
+    "options": [
+      "需要彻底重写",
+      "可以原样重用基线中的组件",
+      "必须要购买新软件",
+      "这个功能没用"
+    ],
+    "answer": [1],
+    "explanation": "潜在匹配项通常不需要额外的工作包来开发，节省了资源。"
+  },
+  {
+    "id": 52,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构权衡（Trade-off）的核心逻辑是：",
+    "options": [
+      "总是选择最便宜的方案",
+      "总是选择技术最先进的方案",
+      "为了满足一个更重要的需求，可能需要牺牲另一个次要需求",
+      "让所有人投票选择"
+    ],
+    "answer": [2],
+    "explanation": "架构设计往往是处理冲突需求并寻找最优平衡点的艺术。"
+  },
+  {
+    "id": 53,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "实施因子目录中的“假设”（Assumptions）如果后来被证明是错误的：",
+    "options": [
+      "没有关系",
+      "可能导致迁移计划的重大重组和风险增加",
+      "会自动自我修正",
+      "应当秘密隐藏起来"
+    ],
+    "answer": [1],
+    "explanation": "错误的假设是重大的隐形风险，可能导致整个实施路线图失效。"
+  },
+  {
+    "id": 54,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "对于外部“监管机构”（Regulatory Bodies），架构师应主要通过什么视图满足其需求？",
+    "options": [
+      "底层代码逻辑图",
+      "合规性报告、审计流程图和数据血缘视图",
+      "用户界面原型图",
+      "营销活动海报"
+    ],
+    "answer": [1],
+    "explanation": "监管机构关心的是控制点、合规证据和流程的透明度。"
+  },
+  {
+    "id": 55,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "“通用应用原则”（Common Use Applications）的主要驱动力是：",
+    "options": [
+      "让每个部门都开发自己的应用",
+      "通过减少重复开发来降低成本并实现数据一致性",
+      "支持软件供应商的业绩",
+      "减少培训需求"
+    ],
+    "answer": [1],
+    "explanation": "优先考虑全企业通用的应用可以消除烟囱式系统并提高效率。"
+  },
+  {
+    "id": 56,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "业务转型就绪度评估中的“赞助与领导力”维度衡量：",
+    "options": [
+      "有多少人在加班",
+      "高层管理人员对变革的支持力度和资源投入意愿",
+      "公司的股票价格",
+      "IT 部门的员工人数"
+    ],
+    "answer": [1],
+    "explanation": "没有强大的高层赞助，复杂的架构转型很难获得跨部门的配合。"
+  },
+  {
+    "id": 57,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "在风险管理流程中，哪一步负责持续跟踪风险的状态？",
+    "options": [
+      "风险识别",
+      "初始评估",
+      "风险监控与治理 (Risk Monitoring and Governance)",
+      "缓解计划制定"
+    ],
+    "answer": [2],
+    "explanation": "监控是一个持续性的闭环过程，确保风险在受控范围内演进。"
+  },
+  {
+    "id": 58,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构原则的“影响”中提到“可能需要额外资源”，这属于：",
+    "options": [
+      "陈述",
+      "依据",
+      "影响 (Implications)",
+      "豁免"
+    ],
+    "answer": [2],
+    "explanation": "这描述了执行该原则对企业资源分配的具体后果。"
+  },
+  {
+    "id": 59,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "差距分析中，如果基线架构中有某项功能，但它被目标架构“无意排除”了，这属于哪种差距？",
+    "options": [
+      "基线到目标的差距",
+      "目标架构自身的缺失（需补全目标架构）",
+      "这不属于差距",
+      "这说明基线太复杂了"
+    ],
+    "answer": [1],
+    "explanation": "无意排除意味着目标架构不完整，是架构定义过程中的一个潜在漏洞。"
+  },
+  {
+    "id": 60,
+    "module": "Module 5 - ADM Techniques",
+    "type": "single",
+    "question": "架构合规性级别中，“一致”（Consistent）通常指：",
+    "options": [
+      "完全遵循了架构的所有细节",
+      "核心原则被遵循，但某些具体实现可能有合理差异",
+      "完全不遵守架构",
+      "架构本身是自我一致的"
+    ],
+    "answer": [1],
+    "explanation": "一致级通常指在关键准则上保持契合，允许在不违反精神的前提下有局部灵活性。"
+  }
+]
