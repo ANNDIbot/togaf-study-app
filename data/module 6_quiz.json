@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在 TOGAF ADM 中，用于确保业务、信息系统和技术架构之间的一致性的迭代周期通常被称为？",
+    "options": [
+      "架构定义迭代 (Architecture Definition Iteration)",
+      "转换规划迭代 (Transition Planning Iteration)",
+      "架构开发迭代 (Architecture Development Iteration)",
+      "治理迭代 (Governance Iteration)"
+    ],
+    "answer": [2],
+    "explanation": "架构开发迭代（阶段 B 到 F）确保了架构各层级之间的协同和一致性。"
+  },
+  {
+    "id": 2,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "关于 ADM 迭代，哪种迭代侧重于创建实施和迁移计划？",
+    "options": [
+      "架构上下文迭代",
+      "架构开发迭代",
+      "转换规划迭代 (Transition Planning Iteration)",
+      "架构变更管理迭代"
+    ],
+    "answer": [2],
+    "explanation": "转换规划迭代主要发生在阶段 E 和 F，旨在制定路线图和迁移计划。"
+  },
+  {
+    "id": 3,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构分区（Architecture Partitioning）在初步阶段（Preliminary Phase）的主要目的是？",
+    "options": [
+      "选择具体的 IT 供应商",
+      "确定企业架构团队的工作分配和边界",
+      "编写代码实现",
+      "进行差距分析"
+    ],
+    "answer": [1],
+    "explanation": "架构分区用于将复杂企业分解为可管理的各部分，以确定团队职责和工作范围。"
+  },
+  {
+    "id": 4,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在架构分区中，哪种架构提供了企业的高层视图并为下级架构提供方向？",
+    "options": [
+      "段架构 (Segment Architecture)",
+      "能力架构 (Capability Architecture)",
+      "战略架构 (Strategic Architecture)",
+      "基础架构 (Foundation Architecture)"
+    ],
+    "answer": [2],
+    "explanation": "战略架构提供企业层面的宏观视图，引导段架构和能力架构的开发。"
+  },
+  {
+    "id": 5,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在安全架构应用中，以下哪项不是 ADM 阶段 A（架构愿景）的关键活动？",
+    "options": [
+      "识别关键资产",
+      "识别安全相关的利益相关者",
+      "编写详细的防火墙规则",
+      "审查合规性要求"
+    ],
+    "answer": [2],
+    "explanation": "详细的防火墙规则属于技术架构或实施阶段，而非架构愿景阶段。"
+  },
+  {
+    "id": 6,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "面向服务架构（SOA）风格的主要特征是？",
+    "options": [
+      "紧耦合的系统设计",
+      "基于单一供应商的工具",
+      "通过服务合约定义功能的重用和组合",
+      "禁止使用互联网技术"
+    ],
+    "answer": [2],
+    "explanation": "SOA 强调通过定义清晰、松耦合的服务接口来实现业务功能的重用。"
+  },
+  {
+    "id": 7,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构治理集成意味着将架构决策与以下哪项过程结合？",
+    "options": [
+      "仅限 IT 备份流程",
+      "企业投资批准和项目管理流程",
+      "公司的招聘流程",
+      "食堂菜单管理"
+    ],
+    "answer": [1],
+    "explanation": "有效的架构治理必须与企业的资金审批和项目执行流程深度集成。"
+  },
+  {
+    "id": 8,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在 ADM 迭代中，阶段 G 和 H 通常构成了哪种迭代？",
+    "options": [
+      "架构开发迭代",
+      "治理迭代 (Governance Iteration)",
+      "初步迭代",
+      "转换规划迭代"
+    ],
+    "answer": [1],
+    "explanation": "治理迭代关注于阶段 G（实施治理）和阶段 H（变更管理）。"
+  },
+  {
+    "id": 9,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构分区的三个主要维度通常是：",
+    "options": [
+      "深度、广度和高度",
+      "范围、细节层次和时间跨度",
+      "成本、质量和速度",
+      "硬件、软件和网络"
+    ],
+    "answer": [1],
+    "explanation": "TOGAF 建议从范围（领域）、细节（粒度）和时间三个维度对架构进行分区。"
+  },
+  {
+    "id": 10,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全架构被认为是 ADM 的一个“横向”或“跨切面”关注点，这意味着：",
+    "options": [
+      "它只在阶段 D 考虑",
+      "它必须在所有 ADM 阶段中被集成考虑",
+      "它仅由安全管理员负责",
+      "它只涉及密码管理"
+    ],
+    "answer": [1],
+    "explanation": "安全不是一个独立的阶段，而是贯穿 BDAT 所有架构层面的关注点。"
+  },
+  {
+    "id": 11,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在 SOA 架构开发中，阶段 B（业务架构）的核心任务是？",
+    "options": [
+      "定义数据交换格式",
+      "识别和定义业务服务及其能力",
+      "安装 Web 服务器",
+      "编写 Java 接口"
+    ],
+    "answer": [1],
+    "explanation": "在 SOA 背景下，业务架构需识别支持业务流程的独立业务服务。"
+  },
+  {
+    "id": 12,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构契约（Architecture Contract）主要用于哪个阶段的治理？",
+    "options": [
+      "阶段 A",
+      "阶段 C",
+      "阶段 G (Implementation Governance)",
+      "初步阶段"
+    ],
+    "answer": [2],
+    "explanation": "架构契约是治理机构与开发团队之间确保实施符合架构的正式协议。"
+  },
+  {
+    "id": 13,
+    "module": "Module 6 - Applying the ADM",
+    "type": "multi",
+    "question": "以下哪些是 ADM 允许的迭代类型？",
+    "options": [
+      "在一个阶段内进行迭代",
+      "在多个阶段之间进行循环",
+      "在整个 ADM 周期之间迭代",
+      "在架构师职业生涯中迭代"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 定义了阶段内、跨阶段和跨周期的多种迭代方式。"
+  },
+  {
+    "id": 14,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "“能力架构”（Capability Architecture）在分区中的位置是？",
+    "options": [
+      "最高层，用于指导战略",
+      "最底层，用于指导具体项目交付",
+      "中层，用于指导业务线",
+      "不属于分区"
+    ],
+    "answer": [1],
+    "explanation": "能力架构是最详细的分区，直接支持项目的实施和具体能力的交付。"
+  },
+  {
+    "id": 15,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全领域中的“可用性”（Availability）是指？",
+    "options": [
+      "只有授权人员可以查看数据",
+      "数据在需要时可以被授权用户访问和使用",
+      "数据没有被非法修改",
+      "数据的发送者无法抵赖"
+    ],
+    "answer": [1],
+    "explanation": "可用性是安全三要素（CIA）之一，确保系统和数据的可访问性。"
+  },
+  {
+    "id": 16,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在应用 SOA 风格时，架构连续体（Architecture Continuum）的作用是？",
+    "options": [
+      "记录所有服务的源代码",
+      "提供可重用的服务参考模型和模式",
+      "计算每个服务的成本",
+      "自动生成 WSDL 文档"
+    ],
+    "answer": [1],
+    "explanation": "架构连续体提供了从通用 SOA 模式到组织特定服务资产的分类路径。"
+  },
+  {
+    "id": 17,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "治理集成中，谁负责最终批准架构对项目实施的合规性？",
+    "options": [
+      "项目经理",
+      "程序员",
+      "架构委员会 (Architecture Board)",
+      "人力资源主管"
+    ],
+    "answer": [2],
+    "explanation": "架构委员会是负责架构治理和决策批准的最高机构。"
+  },
+  {
+    "id": 18,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "迭代 ADM 时，若发现基线架构无法支持新的愿景，应返回哪个阶段？",
+    "options": [
+      "阶段 G",
+      "阶段 A (Architecture Vision)",
+      "阶段 D",
+      "阶段 F"
+    ],
+    "answer": [1],
+    "explanation": "如果战略或愿景发生变化，通常需要回到阶段 A 重新审视架构方向。"
+  },
+  {
+    "id": 19,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "“段架构”（Segment Architecture）通常由谁管理？",
+    "options": [
+      "CEO",
+      "业务单元负责人或特定领域的架构团队",
+      "外部审计师",
+      "仅由技术人员"
+    ],
+    "answer": [1],
+    "explanation": "段架构关注特定业务领域（如财务、制造），由该领域的管理人员和架构师负责。"
+  },
+  {
+    "id": 20,
+    "module": "Module 6 - Applying the ADM",
+    "type": "multi",
+    "question": "安全架构中的“信任模型”（Trust Model）涉及以下哪些内容？",
+    "options": [
+      "用户身份验证",
+      "访问授权",
+      "外部合作伙伴的接入标准",
+      "服务器的 CPU 频率"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "信任模型定义了系统如何识别用户并授予相应权限，以及与外部实体的交互准则。"
+  },
+  {
+    "id": 21,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "SOA 中，“松耦合”带来的直接好处是？",
+    "options": [
+      "增加系统复杂性",
+      "提高单个服务的运行速度",
+      "降低一个服务的更改对其他服务的影响",
+      "消除对数据库的需求"
+    ],
+    "answer": [2],
+    "explanation": "松耦合使架构更具灵活性，支持独立开发、测试和部署服务。"
+  },
+  {
+    "id": 22,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在阶段 G 实施治理中，如果发现项目不符合架构标准，以下哪项不是合理的处理方式？",
+    "options": [
+      "申请合规性豁免",
+      "要求项目重新设计",
+      "无视偏差直接上线",
+      "修改架构以适应实际变化（若标准已过时）"
+    ],
+    "answer": [2],
+    "explanation": "直接无视偏差违反了治理原则，必须通过正式流程解决合规性问题。"
+  },
+  {
+    "id": 23,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在大型复杂企业中，同时运行多个 ADM 循环的原因是？",
+    "options": [
+      "架构师人数太多没活干",
+      "不同部门的业务紧迫性和成熟度不同",
+      "法律强制要求",
+      "为了增加 JSON 文件的数量"
+    ],
+    "answer": [1],
+    "explanation": "不同领域的迭代周期和关注点不同，需要并行且独立的 ADM 循环来支持。"
+  },
+  {
+    "id": 24,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "分区的“重用”主要体现在？",
+    "options": [
+      "将战略架构复制到能力架构",
+      "从基础架构和参考模型中提取通用资产到特定分区",
+      "多个团队编写完全一样的代码",
+      "不进行分区"
+    ],
+    "answer": [1],
+    "explanation": "分区允许在特定领域重用来自上层或通用层级的成熟架构资产。"
+  },
+  {
+    "id": 25,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全风险评估在哪个阶段最为关键？",
+    "options": [
+      "仅在技术架构阶段",
+      "仅在变更管理阶段",
+      "贯穿架构愿景到实施治理的整个周期",
+      "仅在初步阶段"
+    ],
+    "answer": [2],
+    "explanation": "安全风险必须在架构的全生命周期内持续评估和管理。"
+  },
+  {
+    "id": 26,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "SOA 环境中，“元数据存储库”的作用是？",
+    "options": [
+      "存储员工工资",
+      "注册和发现可用的服务及其描述信息",
+      "备份操作系统内核",
+      "打印报表"
+    ],
+    "answer": [1],
+    "explanation": "元数据存储库（如服务注册表）是 SOA 实现服务发现和重用的核心组件。"
+  },
+  {
+    "id": 27,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "治理集成的“问责”（Accountability）旨在解决？",
+    "options": [
+      "谁来写文档",
+      "谁对架构决策及其后果承担责任",
+      "谁来购买服务器",
+      "谁负责清理办公室"
+    ],
+    "answer": [1],
+    "explanation": "问责制确保了治理流程的严肃性和架构决策的有效性。"
+  },
+  {
+    "id": 28,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在阶段 F（迁移规划）中，主要迭代内容是？",
+    "options": [
+      "重新定义业务目标",
+      "在资源、成本和风险之间进行权衡以确定项目优先级",
+      "编写 SQL 触发器",
+      "设计公司 Logo"
+    ],
+    "answer": [1],
+    "explanation": "迁移规划迭代旨在产生一个现实、可落地的项目实施序列。"
+  },
+  {
+    "id": 29,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构分区的“垂直划分”通常是按什么划分的？",
+    "options": [
+      "按业务功能或组织结构",
+      "按硬件品牌",
+      "按员工的职级",
+      "按架构的详细程度"
+    ],
+    "answer": [0],
+    "explanation": "垂直划分（Vertical）通常对应于业务领域（如销售、生产等段架构）。"
+  },
+  {
+    "id": 30,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全控制措施的“纵深防御”理念是指？",
+    "options": [
+      "只建立一道极强的防火墙",
+      "在多个层级设置互补的安全控制",
+      "将所有服务器埋在地下",
+      "不使用任何网络连接"
+    ],
+    "answer": [1],
+    "explanation": "纵深防御通过多层保护来降低单点失效带来的风险。"
+  },
+  {
+    "id": 31,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "面向服务的技术架构（阶段 D）通常涉及？",
+    "options": [
+      "物理布线",
+      "定义基础设施服务和 ESB 等中间件支持",
+      "购买办公桌",
+      "制定假期政策"
+    ],
+    "answer": [1],
+    "explanation": "在 SOA 背景下，技术架构需提供运行和集成服务所需的技术底座。"
+  },
+  {
+    "id": 32,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构委员会的“独立性”在治理中意味着？",
+    "options": [
+      "委员会成员不应是受审项目的直接利益相关者",
+      "委员会不需要遵守公司规则",
+      "委员会只能在公司外部开会",
+      "委员会不听从 CEO 指挥"
+    ],
+    "answer": [0],
+    "explanation": "独立性确保了合规性审查的客观和公正。"
+  },
+  {
+    "id": 33,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在敏捷开发环境下应用 ADM，迭代周期的特点是？",
+    "options": [
+      "每个迭代周期长达两年",
+      "迭代周期变短且频繁，聚焦于快速交付价值",
+      "不需要进行迭代",
+      "禁止使用 TOGAF"
+    ],
+    "answer": [1],
+    "explanation": "敏捷架构通过缩短 ADM 循环来快速响应业务变化。"
+  },
+  {
+    "id": 34,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "分区的“水平划分”通常对应于？",
+    "options": [
+      "业务线",
+      "架构的详细程度（战略、段、能力）",
+      "不同国家的子公司",
+      "不同的机房"
+    ],
+    "answer": [1],
+    "explanation": "水平划分（Horizontal）通常用于处理不同粒度和层次的架构描述。"
+  },
+  {
+    "id": 35,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全原则在哪个阶段被定义？",
+    "options": [
+      "阶段 D",
+      "初步阶段 (Preliminary Phase)",
+      "阶段 G",
+      "不需要定义原则"
+    ],
+    "answer": [1],
+    "explanation": "架构原则（包括安全原则）应在初步阶段建立，作为所有开发活动的准则。"
+  },
+  {
+    "id": 36,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "SOA 中，“服务编排”（Orchestration）主要发生在哪个架构层面？",
+    "options": [
+      "技术架构",
+      "应用架构 (Application Architecture)",
+      "物理架构",
+      "数据架构"
+    ],
+    "answer": [1],
+    "explanation": "应用架构负责定义如何将原子服务组合（编排）为复杂的业务流程。"
+  },
+  {
+    "id": 37,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构治理审计的主要产出是？",
+    "options": [
+      "一份新的业务计划",
+      "合规性评估报告 (Compliance Assessment)",
+      "软件安装包",
+      "员工考勤记录"
+    ],
+    "answer": [1],
+    "explanation": "评估报告指出了项目与架构标准之间的符合程度及整改要求。"
+  },
+  {
+    "id": 38,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在 ADM 迭代中，什么时候需要启动一个新的全生命周期迭代？",
+    "options": [
+      "每隔一周",
+      "当出现重大的业务驱动力变化或战略转型时",
+      "当架构师换人的时候",
+      "永远不需要"
+    ],
+    "answer": [1],
+    "explanation": "重大变化通常意味着愿景（阶段 A）需要重塑，从而启动新一轮 ADM。"
+  },
+  {
+    "id": 39,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构分区的“边界管理”是为了？",
+    "options": [
+      "增加各部门的隔阂",
+      "确保各分区之间的接口定义明确且一致性得到维护",
+      "限制员工的上网速度",
+      "防止外部攻击"
+    ],
+    "answer": [1],
+    "explanation": "清晰的边界定义确保了分而治之的架构最终能集成为一体。"
+  },
+  {
+    "id": 40,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "“不可否认性”（Non-repudiation）主要保护？",
+    "options": [
+      "数据的隐私性",
+      "交易的真实性和防抵赖性",
+      "服务器的 CPU",
+      "网络带宽"
+    ],
+    "answer": [1],
+    "explanation": "这确保了参与者无法否认其在网络上执行的操作。"
+  },
+  {
+    "id": 41,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "SOA 架构中的“企业服务总线”（ESB）的角色是？",
+    "options": [
+      "唯一的数据库",
+      "提供服务间的连接、路由、转换和中介功能",
+      "取代所有的服务器",
+      "进行视频会议"
+    ],
+    "answer": [1],
+    "explanation": "ESB 是支持 SOA 风格的关键基础设施，负责服务间的通信管理。"
+  },
+  {
+    "id": 42,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "治理集成中，哪个文档定义了项目必须遵守的架构标准？",
+    "options": [
+      "员工手册",
+      "架构定义文档 (ADD) 和架构原则",
+      "租房合同",
+      "软件说明书"
+    ],
+    "answer": [1],
+    "explanation": "ADD 包含了项目实施必须依循的设计蓝图和约束。"
+  },
+  {
+    "id": 43,
+    "module": "Module 6 - Applying the ADM",
+    "type": "multi",
+    "question": "在应用 ADM 过程中，哪些因素会影响分区的选择？",
+    "options": [
+      "组织的规模和地理分布",
+      "业务领域的专业化程度",
+      "现有的 IT 预算",
+      "外部监管要求"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "分区策略应反映企业的现实复杂度和合规边界。"
+  },
+  {
+    "id": 44,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全领域中的“完整性”（Integrity）是指？",
+    "options": [
+      "数据不被未经授权的更改",
+      "数据可以被所有人读取",
+      "系统永不宕机",
+      "所有的代码都写在一个文件里"
+    ],
+    "answer": [0],
+    "explanation": "完整性确保数据在存储或传输过程中保持准确和未经篡改的状态。"
+  },
+  {
+    "id": 45,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "面向服务的业务架构中，“业务服务”与“业务过程”的关系是？",
+    "options": [
+      "它们是一回事",
+      "业务服务是构建业务过程的可重用单元",
+      "业务过程比业务服务简单",
+      "没有关系"
+    ],
+    "answer": [1],
+    "explanation": "业务架构通过组合不同的业务服务来实现具体的业务过程。"
+  },
+  {
+    "id": 46,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构治理中的“例外管理”是指？",
+    "options": [
+      "处理正常工作日之外的加班",
+      "对无法遵守标准的特殊情况进行审查、决策和记录",
+      "修复代码中的 Exception",
+      "处理节假日调休"
+    ],
+    "answer": [1],
+    "explanation": "例外管理（如豁免流程）是治理体系灵活性和严谨性的体现。"
+  },
+  {
+    "id": 47,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "在 ADM 迭代中，什么时候通常进行“初步迭代”（Preliminary Iteration）？",
+    "options": [
+      "在项目快结束时",
+      "在正式启动架构开发之前，用于定制架构框架",
+      "仅在阶段 G",
+      "每个月一次"
+    ],
+    "answer": [1],
+    "explanation": "初步迭代用于准备企业的架构能力和治理环境。"
+  },
+  {
+    "id": 48,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "架构分区的“时间跨度”维度通常用于？",
+    "options": [
+      "记录员工的打卡时间",
+      "区分当前状态架构和未来不同时点的过渡架构",
+      "测量 CPU 的时钟频率",
+      "设置密码的有效期"
+    ],
+    "answer": [1],
+    "explanation": "时间维度允许架构师管理架构在时间轴上的演进。目标架构与基线架构之间可能存在多个过渡架构。"
+  },
+  {
+    "id": 49,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "安全架构中的“身份管理”（IdM）主要解决？",
+    "options": [
+      "服务器的命名规则",
+      "用户身份的识别、生命周期管理和单点登录",
+      "打印机的位置",
+      "软件的版本号"
+    ],
+    "answer": [1],
+    "explanation": "IdM 是确保只有合法用户能进入系统的核心安全组件。"
+  },
+  {
+    "id": 50,
+    "module": "Module 6 - Applying the ADM",
+    "type": "single",
+    "question": "为什么 SOA 风格有助于实现“架构连续体”？",
+    "options": [
+      "因为它要求使用同一种语言",
+      "因为它通过标准接口促进了从通用服务到组织特定服务的平滑过渡和重用",
+      "因为它消除了对架构师的需求",
+      "因为它不需要任何硬件支持"
+    ],
+    "answer": [1],
+    "explanation": "服务的标准化特性使其极易在不同层级的架构连续体中进行分类和重用。"
+  }
+]
