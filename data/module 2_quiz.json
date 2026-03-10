@@ -1,562 +1,338 @@
 [
-{
-"id":1,
-"module":"Module 2 - Core Concepts",
-"type":"single",
-"question":"TOGAF 的主要目标是什么？",
-"options":[
-"开发软件系统",
-"提供企业架构开发框架",
-"管理数据库",
-"设计网络结构"
-],
-"answer":[1],
-"explanation":"TOGAF 提供一种系统化的方法用于开发和管理企业架构。"
-},
-{
-"id":2,
-"module":"Module 2 - Core Concepts",
-"type":"single",
-"question":"Enterprise Architecture 的主要价值是什么？",
-"options":[
-"提高编程效率",
-"确保业务与IT战略一致",
-"降低数据库成本",
-"优化服务器性能"
-],
-"answer":[1],
-"explanation":"EA 的核心价值是 Business-IT Alignment。"
-},
-{
-"id":3,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Architecture 描述什么？",
-"options":[
-"企业整体结构及其运作方式",
-"企业财务流程",
-"企业市场战略",
-"企业销售流程"
-],
-"answer":[0],
-"explanation":"EA 描述组织结构、业务流程、信息系统和技术基础设施之间的关系。"
-},
-{
-"id":4,
-"type":"multiple",
-"module":"Module 2 - Core Concepts",
-"question":"TOGAF 定义的 Architecture Domains 包括哪些？",
-"options":[
-"Business Architecture",
-"Data Architecture",
-"Application Architecture",
-"Technology Architecture"
-],
-"answer":[0,1,2,3],
-"explanation":"TOGAF 定义四个核心架构域。"
-},
-{
-"id":5,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Business Architecture 描述什么？",
-"options":[
-"业务战略和业务流程",
-"服务器结构",
-"数据库模型",
-"网络协议"
-],
-"answer":[0],
-"explanation":"Business Architecture 描述组织如何运作。"
-},
-{
-"id":6,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Data Architecture 主要关注什么？",
-"options":[
-"数据结构与数据管理",
-"系统部署",
-"应用开发",
-"服务器管理"
-],
-"answer":[0],
-"explanation":"Data Architecture 描述企业数据资产的结构。"
-},
-{
-"id":7,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Application Architecture 描述什么？",
-"options":[
-"应用系统及其交互关系",
-"数据库结构",
-"服务器拓扑",
-"网络安全策略"
-],
-"answer":[0],
-"explanation":"Application Architecture 描述企业应用系统及其交互。"
-},
-{
-"id":8,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Technology Architecture 描述什么？",
-"options":[
-"技术基础设施",
-"业务流程",
-"市场结构",
-"销售渠道"
-],
-"answer":[0],
-"explanation":"Technology Architecture 描述平台、网络和硬件。"
-},
-{
-"id":9,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Principles 的作用是什么？",
-"options":[
-"指导架构设计决策",
-"编写软件代码",
-"管理数据库",
-"配置服务器"
-],
-"answer":[0],
-"explanation":"架构原则用于指导架构决策。"
-},
-{
-"id":10,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Principles 通常包含哪些部分？",
-"options":[
-"Statement、Rationale、Implications",
-"Design、Code、Test",
-"Plan、Build、Run",
-"Model、Deploy、Maintain"
-],
-"answer":[0],
-"explanation":"原则包括声明、理由和影响。"
-},
-{
-"id":11,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Continuum 的主要用途是什么？",
-"options":[
-"组织和分类架构资产",
-"管理代码",
-"管理服务器",
-"管理网络"
-],
-"answer":[0],
-"explanation":"Enterprise Continuum 用于组织架构资产。"
-},
-{
-"id":12,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Continuum 包含哪两个主要部分？",
-"options":[
-"Architecture Continuum 与 Solutions Continuum",
-"Business 与 IT",
-"Strategy 与 Technology",
-"Data 与 Application"
-],
-"answer":[0],
-"explanation":"Continuum 包括架构和解决方案两个部分。"
-},
-{
-"id":13,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Repository 用于什么？",
-"options":[
-"存储架构资产",
-"存储代码",
-"存储服务器日志",
-"存储数据库备份"
-],
-"answer":[0],
-"explanation":"Repository 是架构资产库。"
-},
-{
-"id":14,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Stakeholder 是指什么？",
-"options":[
-"对架构有利益或关注的人",
-"程序员",
-"数据库管理员",
-"系统管理员"
-],
-"answer":[0],
-"explanation":"Stakeholder 是任何对架构有利益关系的人。"
-},
-{
-"id":15,
-"type":"multiple",
-"module":"Module 2 - Core Concepts",
-"question":"Stakeholders 可能包括哪些？",
-"options":[
-"业务管理者",
-"IT架构师",
-"系统用户",
-"合作伙伴"
-],
-"answer":[0,1,2,3],
-"explanation":"Stakeholders 包括所有相关角色。"
-},
-{
-"id":16,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Artifact 指什么？",
-"options":[
-"架构模型或文档",
-"服务器配置",
-"代码脚本",
-"数据库表"
-],
-"answer":[0],
-"explanation":"Artifact 是架构表达形式。"
-},
-{
-"id":17,
-"type":"multiple",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Artifacts 可以包括哪些？",
-"options":[
-"架构图",
-"矩阵",
-"文档",
-"模型"
-],
-"answer":[0,1,2,3],
-"explanation":"Artifacts 可以是多种形式。"
-},
-{
-"id":18,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture View 的主要作用是什么？",
-"options":[
-"展示架构的某个方面",
-"管理数据库",
-"部署服务器",
-"管理代码"
-],
-"answer":[0],
-"explanation":"View 用于展示架构信息。"
-},
-{
-"id":19,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Viewpoint 定义什么？",
-"options":[
-"如何构建架构视图",
-"如何开发应用",
-"如何设计数据库",
-"如何部署系统"
-],
-"answer":[0],
-"explanation":"Viewpoint 定义构建视图的规则。"
-},
-{
-"id":20,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture View 与 Viewpoint 的关系是什么？",
-"options":[
-"View 根据 Viewpoint 构建",
-"Viewpoint 根据 View 构建",
-"两者无关系",
-"Viewpoint 是数据库"
-],
-"answer":[0],
-"explanation":"View 是结果，Viewpoint 是方法。"
-},
-{
-"id":21,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture View 主要针对谁？",
-"options":[
-"Stakeholders",
-"程序员",
-"测试人员",
-"运维人员"
-],
-"answer":[0],
-"explanation":"View 用于满足 Stakeholder Concern。"
-},
-{
-"id":22,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"TOGAF Framework 的核心价值是什么？",
-"options":[
-"标准化企业架构开发",
-"开发软件",
-"开发数据库",
-"开发网络"
-],
-"answer":[0],
-"explanation":"TOGAF 提供标准化方法。"
-},
-{
-"id":23,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Architecture 的范围通常包括什么？",
-"options":[
-"业务、数据、应用和技术",
-"市场和销售",
-"财务和法律",
-"采购和供应链"
-],
-"answer":[0],
-"explanation":"EA 包括四个架构域。"
-},
-{
-"id":24,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Domains 的目的是什么？",
-"options":[
-"组织架构信息",
-"分类代码",
-"分类服务器",
-"分类数据库"
-],
-"answer":[0],
-"explanation":"Domains 帮助组织架构结构。"
-},
-{
-"id":25,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Continuum 的关键优势是什么？",
-"options":[
-"促进架构复用",
-"提高编程速度",
-"降低服务器成本",
-"优化数据库"
-],
-"answer":[0],
-"explanation":"Continuum 支持架构复用。"
-},
-{
-"id":26,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Repository 的作用是什么？",
-"options":[
-"集中管理架构资产",
-"管理数据库",
-"管理网络",
-"管理代码"
-],
-"answer":[0],
-"explanation":"Repository 是架构资产中心。"
-},
-{
-"id":27,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Stakeholder Concern 指什么？",
-"options":[
-"利益相关者的关注点",
-"数据库结构",
-"服务器配置",
-"网络拓扑"
-],
-"answer":[0],
-"explanation":"Concern 是 Stakeholder 关注的问题。"
-},
-{
-"id":28,
-"type":"multiple",
-"module":"Module 2 - Core Concepts",
-"question":"Stakeholder Concern 可能包括哪些？",
-"options":[
-"安全",
-"性能",
-"成本",
-"可扩展性"
-],
-"answer":[0,1,2,3],
-"explanation":"这些都是典型关注点。"
-},
-{
-"id":29,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture View 的主要用途是什么？",
-"options":[
-"沟通架构信息",
-"编写代码",
-"部署服务器",
-"测试系统"
-],
-"answer":[0],
-"explanation":"View 用于沟通架构。"
-},
-{
-"id":30,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Artifact 与 View 的关系是什么？",
-"options":[
-"Artifact 构成 View",
-"View 构成 Artifact",
-"两者无关系",
-"Artifact 是数据库"
-],
-"answer":[0],
-"explanation":"View 由 Artifact 组成。"
-},
-{
-"id":31,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"TOGAF Framework 的主要用户是谁？",
-"options":[
-"企业架构师",
-"程序员",
-"数据库管理员",
-"网络工程师"
-],
-"answer":[0],
-"explanation":"TOGAF 主要用于架构师。"
-},
-{
-"id":32,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Viewpoint 的目的是什么？",
-"options":[
-"定义视图构建规则",
-"定义数据库结构",
-"定义服务器配置",
-"定义代码结构"
-],
-"answer":[0],
-"explanation":"Viewpoint 定义视图方法。"
-},
-{
-"id":33,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Artifact 的典型形式是什么？",
-"options":[
-"模型",
-"代码",
-"服务器日志",
-"网络配置"
-],
-"answer":[0],
-"explanation":"Artifact 常见为模型。"
-},
-{
-"id":34,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Architecture 最终目的是？",
-"options":[
-"支持企业战略",
-"开发软件",
-"管理数据库",
-"管理服务器"
-],
-"answer":[0],
-"explanation":"EA 支持战略执行。"
-},
-{
-"id":35,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"TOGAF 的核心思想是什么？",
-"options":[
-"系统化架构开发",
-"软件开发",
-"数据库管理",
-"网络管理"
-],
-"answer":[0],
-"explanation":"TOGAF 是架构开发方法。"
-},
-{
-"id":36,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Repository 存储什么？",
-"options":[
-"架构模型和文档",
-"代码",
-"服务器配置",
-"数据库脚本"
-],
-"answer":[0],
-"explanation":"Repository 存储架构资产。"
-},
-{
-"id":37,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture Domains 的数量是多少？",
-"options":[
-"4",
-"3",
-"5",
-"6"
-],
-"answer":[0],
-"explanation":"TOGAF 定义四个 Domain。"
-},
-{
-"id":38,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Architecture View 的核心目标是什么？",
-"options":[
-"满足 Stakeholder Concern",
-"开发应用",
-"测试软件",
-"部署系统"
-],
-"answer":[0],
-"explanation":"View 用于回应 Concern。"
-},
-{
-"id":39,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"Enterprise Continuum 主要支持什么？",
-"options":[
-"架构复用",
-"代码复用",
-"数据库复用",
-"服务器复用"
-],
-"answer":[0],
-"explanation":"Continuum 促进架构资产复用。"
-},
-{
-"id":40,
-"type":"single",
-"module":"Module 2 - Core Concepts",
-"question":"TOGAF Framework 的最终目标是什么？",
-"options":[
-"帮助企业构建和管理架构",
-"开发软件",
-"管理数据库",
-"优化网络"
-],
-"answer":[0],
-"explanation":"TOGAF 用于企业架构管理。"
-}
+  {
+    "id": 1,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "企业架构（EA）的主要目的是什么？",
+    "options": [
+      "确保业务战略与 IT 能力保持一致",
+      "专门管理数据库性能",
+      "只负责软件开发流程",
+      "替代项目管理职能"
+    ],
+    "answer": [0],
+    "explanation": "EA 的核心目的是让业务目标、流程、信息系统和技术基础设施协同一致。"
+  },
+  {
+    "id": 2,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "在 TOGAF 语境下，企业架构为什么对组织变革很重要？",
+    "options": [
+      "因为它只关注现有系统维护",
+      "因为它为业务转型提供结构化蓝图",
+      "因为它只负责采购硬件",
+      "因为它只适用于小型企业"
+    ],
+    "answer": [1],
+    "explanation": "教材强调 EA 为组织转型、数字化能力扩展和复杂变更提供战略上下文。"
+  },
+  {
+    "id": 3,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "企业架构的目的通常包括哪些？",
+    "options": [
+      "优化跨企业的碎片化流程和系统",
+      "支持业务战略落地",
+      "为数字化能力扩展提供上下文",
+      "只记录服务器型号"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "EA 关注流程、系统、战略与数字化能力，而不是只做底层设备记录。"
+  },
+  {
+    "id": 4,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Business alignment 的核心含义是什么？",
+    "options": [
+      "让 IT 投资和系统能力服务于业务目标",
+      "让所有部门使用同一品牌电脑",
+      "让开发团队直接替代业务团队",
+      "让数据库结构独立于业务变化"
+    ],
+    "answer": [0],
+    "explanation": "Business alignment 本质上是业务目标与 IT 能力之间的一致性。"
+  },
+  {
+    "id": 5,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "如果一个组织拥有大量技术系统，但这些系统无法支撑业务优先级，这最能说明缺乏什么？",
+    "options": [
+      "Architecture Repository",
+      "Business alignment",
+      "Solution Architecture",
+      "Architecture View"
+    ],
+    "answer": [1],
+    "explanation": "业务与 IT 脱节，说明缺乏 business alignment。"
+  },
+  {
+    "id": 6,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "企业架构如何支持 Business alignment？",
+    "options": [
+      "把技术决策放到业务上下文中考虑",
+      "帮助识别业务能力与系统之间的关系",
+      "统一架构原则和方向",
+      "要求所有系统使用完全相同的代码"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "EA 通过能力、原则和目标架构来支撑业务与 IT 一致，而不是强行代码同质化。"
+  },
+  {
+    "id": 7,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "IT governance 的核心目标最接近以下哪一项？",
+    "options": [
+      "确保 IT 决策和资源使用支撑组织目标",
+      "确保程序员全部使用同一开发语言",
+      "把所有系统迁移到同一个云厂商",
+      "只关注网络安全"
+    ],
+    "answer": [0],
+    "explanation": "IT governance 关注的是 IT 决策、责任、资源和控制机制如何服务于企业目标。"
+  },
+  {
+    "id": 8,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "企业架构与 IT governance 的关系是什么？",
+    "options": [
+      "企业架构为 IT governance 提供结构化指导",
+      "二者完全无关",
+      "IT governance 只适用于财务部门",
+      "企业架构会替代所有治理活动"
+    ],
+    "answer": [0],
+    "explanation": "EA 提供原则、目标状态和结构化视角，帮助治理机制落地。"
+  },
+  {
+    "id": 9,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "IT governance 通常能够帮助组织实现哪些结果？",
+    "options": [
+      "降低风险",
+      "提高资源使用效率",
+      "支持战略一致性",
+      "自动生成所有架构图"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "治理的价值包括风险控制、资源优化和战略一致，不是自动化产图。"
+  },
+  {
+    "id": 10,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "以下哪项最符合企业架构带来的收益？",
+    "options": [
+      "更有效的战略决策",
+      "保证所有项目零失败",
+      "完全消除组织变革阻力",
+      "自动减少所有人员编制"
+    ],
+    "answer": [0],
+    "explanation": "教材明确提到 EA 可提升高层战略决策质量和响应变化能力。"
+  },
+  {
+    "id": 11,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "TOGAF 材料中提到的 EA 潜在收益包括哪些？",
+    "options": [
+      "更敏捷的组织",
+      "更低的运营和变更成本",
+      "更好的互操作性",
+      "更快、更简单的采购"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "这些都属于教材中明确列出的 EA 潜在收益。"
+  },
+  {
+    "id": 12,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "以下哪项不是企业架构常见收益？",
+    "options": [
+      "提升系统互操作性",
+      "支持数字化转型",
+      "降低某些开发和维护成本",
+      "保证所有业务部门永远没有冲突"
+    ],
+    "answer": [3],
+    "explanation": "EA 可以帮助协调和治理，但不能保证所有冲突永远消失。"
+  },
+  {
+    "id": 13,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Architecture landscape 最接近哪一项含义？",
+    "options": [
+      "组织当前或某一时点架构状态的整体图景",
+      "企业园区的网络布线图",
+      "某个项目的测试报告",
+      "某个供应商的产品清单"
+    ],
+    "answer": [0],
+    "explanation": "Architecture landscape 是对企业架构现状或特定范围状态的整体描述。"
+  },
+  {
+    "id": 14,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Architecture landscape 的主要作用是什么？",
+    "options": [
+      "帮助理解企业当前架构状态并支撑后续规划",
+      "替代所有项目文档",
+      "只用于采购阶段",
+      "只记录未来目标状态"
+    ],
+    "answer": [0],
+    "explanation": "Architecture landscape 有助于理解当前状态，并作为规划和治理的基础。"
+  },
+  {
+    "id": 15,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "Architecture landscape 通常可以帮助架构团队做什么？",
+    "options": [
+      "识别当前系统与能力分布",
+      "理解不同架构之间的关系",
+      "支持范围界定和治理",
+      "直接替代代码实现"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Landscape 是理解现状和管理复杂性的工具，不会替代系统实现。"
+  },
+  {
+    "id": 16,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Strategic architecture 最贴近以下哪种描述？",
+    "options": [
+      "面向未来目标状态和长期方向的架构",
+      "某个单一系统的实现设计",
+      "数据库表结构",
+      "某个项目的开发排期"
+    ],
+    "answer": [0],
+    "explanation": "Strategic architecture 更偏长期、目标导向，强调未来方向。"
+  },
+  {
+    "id": 17,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Strategic architecture 与业务战略的关系是什么？",
+    "options": [
+      "必须与业务战略保持一致",
+      "完全独立",
+      "只在技术团队内部使用",
+      "只适用于运维团队"
+    ],
+    "answer": [0],
+    "explanation": "战略架构本质上要服务于组织战略。"
+  },
+  {
+    "id": 18,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "Strategic architecture 通常强调哪些内容？",
+    "options": [
+      "长期方向",
+      "目标状态",
+      "跨组织的一致性",
+      "单个接口字段命名细节"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "战略层面关注方向、目标和整体一致性，不聚焦非常细的实现细节。"
+  },
+  {
+    "id": 19,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Segment architecture 最贴近哪种描述？",
+    "options": [
+      "针对某个业务领域或组织部分的架构",
+      "整个企业的终极目标架构",
+      "单个应用的界面原型",
+      "网络设备采购清单"
+    ],
+    "answer": [0],
+    "explanation": "Segment architecture 关注企业中的某个片段、领域或业务区块。"
+  },
+  {
+    "id": 20,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Segment architecture 在企业架构层级中的作用是什么？",
+    "options": [
+      "连接整体战略方向与更具体的落地设计",
+      "只负责数据库优化",
+      "替代所有技术架构",
+      "仅用于外包合同管理"
+    ],
+    "answer": [0],
+    "explanation": "它起到承上启下的作用：比战略更具体，比解决方案更高层。"
+  },
+  {
+    "id": 21,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "Segment architecture 可能具备哪些特点？",
+    "options": [
+      "面向某个业务能力或部门",
+      "涉及多个系统和流程",
+      "需要与企业整体方向保持一致",
+      "只处理单个界面按钮样式"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "Segment architecture 通常跨系统、跨流程，但仍局限在某个业务范围。"
+  },
+  {
+    "id": 22,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "Solution architecture 最贴近哪一项？",
+    "options": [
+      "某个具体系统或项目的架构实现设计",
+      "整个企业的总体战略蓝图",
+      "企业治理原则集合",
+      "组织文化模型"
+    ],
+    "answer": [0],
+    "explanation": "Solution architecture 最接近具体项目或解决方案级别的架构。"
+  },
+  {
+    "id": 23,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "single",
+    "question": "与 Strategic architecture 相比，Solution architecture 更强调什么？",
+    "options": [
+      "具体落地和实现",
+      "宏观业务方向",
+      "跨企业联盟关系",
+      "长期愿景定义"
+    ],
+    "answer": [0],
+    "explanation": "Solution architecture 偏实现层，聚焦具体系统、项目和技术选择。"
+  },
+  {
+    "id": 24,
+    "module": "Module 2 - EA Purpose and Structure",
+    "type": "multiple",
+    "question": "关于 Strategic architecture、Segment architecture 和 Solution architecture，下列哪些说法是正确的？",
+    "options": [
+      "Strategic architecture 更偏长期和目标导向",
+      "Segment architecture 可以聚焦某个业务领域",
+      "Solution architecture 更接近项目实施层",
+      "三者粒度和关注范围完全相同"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "这三者在粒度、范围和抽象层级上都不同，不可能完全相同。"
+  }
 ]
