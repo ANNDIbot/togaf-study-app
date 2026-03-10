@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Content Framework Overview",
+    "question_cn": "TOGAF 内容框架（Content Framework）的主要目的是什么？",
+    "answer_cn": "提供一个结构化的模型（元模型），用于定义和一致地描述架构制品（Artifacts）及其相互关系。"
+  },
+  {
+    "id": 2,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Metamodel",
+    "question_cn": "什么是内容元模型（Content Metamodel）？",
+    "answer_cn": "内容元模型定义了用于描述架构的实体类型（如业务服务、应用组件）以及这些实体之间的关系。"
+  },
+  {
+    "id": 3,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Deliverables",
+    "question_cn": "在 TOGAF 中，“交付物（Deliverable）”的定义是什么？",
+    "answer_cn": "交付物是项目合同约定的、经过审核并由利益相关者正式签署的任务输出结果。"
+  },
+  {
+    "id": 4,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Artifacts",
+    "question_cn": "“制品（Artifact）”与“交付物”的区别是什么？",
+    "answer_cn": "制品是用于描述架构的一个特定视图（如目录、矩阵或图形），通常作为交付物的内容组成部分。"
+  },
+  {
+    "id": 5,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Artifact Categories",
+    "question_cn": "制品的三种主要呈现形式是什么？",
+    "answer_cn": "1. 目录（Catalogs）；2. 矩阵（Matrices）；3. 图形（Diagrams）。"
+  },
+  {
+    "id": 6,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Building Blocks",
+    "question_cn": "什么是构建块（Building Block）？",
+    "answer_cn": "构建块是一个可以重用的组件（业务、IT 或架构能力），可与其他构建块结合以提供架构解决方案。"
+  },
+  {
+    "id": 7,
+    "module": "Module 7 - Architecture Content",
+    "topic": "ABB vs SBB",
+    "question_cn": "架构构建块（ABB）和解决方案构建块（SBB）的核心区别是什么？",
+    "answer_cn": "ABB 描述逻辑能力和需求；SBB 描述物理实现和具体的组件/产品。"
+  },
+  {
+    "id": 8,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Repository",
+    "question_cn": "架构存储库（Architecture Repository）的作用是什么？",
+    "answer_cn": "用于存储架构开发的输出，包括标准、指南、治理记录以及以往开发的架构资产。"
+  },
+  {
+    "id": 9,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Enterprise Continuum",
+    "question_cn": "企业连续体（Enterprise Continuum）与架构存储库的关系？",
+    "answer_cn": "企业连续体为存储库中的资产分类提供了一个逻辑结构，反映了从通用到特定组织资产的演进。"
+  },
+  {
+    "id": 10,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Repository Structure",
+    "question_cn": "架构存储库中的“标准库（Standards Information Base）”存储什么内容？",
+    "answer_cn": "存储企业必须遵守的所有行业标准、选定的第三方标准以及内部标准。"
+  },
+  {
+    "id": 11,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Landscape",
+    "question_cn": "架构景观（Architecture Landscape）代表什么？",
+    "answer_cn": "代表企业在特定时间点正在运行的资产（基线）或计划的资产（目标）的架构视图。"
+  },
+  {
+    "id": 12,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Reference Library",
+    "question_cn": "参考库（Reference Library）的作用是什么？",
+    "answer_cn": "提供可用于加速架构开发的指南、模板、模式和其他参考材料。"
+  },
+  {
+    "id": 13,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Governance Log",
+    "question_cn": "治理日志（Governance Log）包含哪些内容？",
+    "answer_cn": "包含架构审查记录、偏离合规性的决策以及治理会议的决策记录。"
+  },
+  {
+    "id": 14,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel Entities",
+    "question_cn": "在核心元模型中，“业务服务（Business Service）”属于哪个领域？",
+    "answer_cn": "业务架构（Business Architecture）。"
+  },
+  {
+    "id": 15,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel Entities",
+    "question_cn": "“逻辑数据组件（Logical Data Component）”与“物理数据组件”的关系？",
+    "answer_cn": "逻辑组件是独立于实现的封装，而物理组件是具体的数据存储实现（如某个数据库实例）。"
+  },
+  {
+    "id": 16,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Definition Document",
+    "question_cn": "架构定义文档（Architecture Definition Document）的主要内容是什么？",
+    "answer_cn": "它是所有架构制品的核心容器，描述了基线、目标架构以及各阶段的路线图。"
+  },
+  {
+    "id": 17,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Requirements Specification",
+    "question_cn": "架构需求规范（Architecture Requirements Specification）的作用？",
+    "answer_cn": "它专门记录架构必须满足的量化指标和约束条件，通常作为架构定义文档的补充。"
+  },
+  {
+    "id": 18,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Building Block Characteristics",
+    "question_cn": "一个好的构建块应具备哪些特征？",
+    "answer_cn": "可重用、边界清晰、可与其他构建块互操作、通常包含明确定义的接口。"
+  },
+  {
+    "id": 19,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Capability Architecture",
+    "question_cn": "架构存储库中的“架构元模型（Architecture Metamodel）”部分描述了什么？",
+    "answer_cn": "它描述了组织如何定制 TOGAF 元模型以适应自身的需求。"
+  },
+  {
+    "id": 20,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Strategic vs Segment Architecture",
+    "question_cn": "在架构景观中，战略架构（Strategic Architecture）的关注点是什么？",
+    "answer_cn": "关注企业的高层长期目标，为细分架构（Segment）提供框架和方向。"
+  },
+  {
+    "id": 21,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Framework Extensions",
+    "question_cn": "内容框架的“扩展（Extensions）”有什么作用？",
+    "answer_cn": "允许根据项目需求有选择地增加元模型实体（如治理扩展、动机扩展、服务扩展）。"
+  },
+  {
+    "id": 22,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Business Architecture Artifacts",
+    "question_cn": "业务足迹图（Business Footprint Diagram）的作用是什么？",
+    "answer_cn": "描述业务目标、业务能力、组织单元与架构职能之间的映射关系。"
+  },
+  {
+    "id": 23,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Data Architecture Artifacts",
+    "question_cn": "数据实体/业务功能矩阵（Data Entity/Business Function Matrix）展示了什么？",
+    "answer_cn": "展示了数据实体在哪些业务功能中被创建、读取、更新或删除（CRUD）。"
+  },
+  {
+    "id": 24,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Application Architecture Artifacts",
+    "question_cn": "应用协作图（Application Communication Diagram）的主要内容？",
+    "answer_cn": "展示应用组件之间的通信模型和接口关系。"
+  },
+  {
+    "id": 25,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Technology Architecture Artifacts",
+    "question_cn": "网络计算/硬件图（Network Computing/Hardware Diagram）的目的？",
+    "answer_cn": "描述硬件设备和网络基础设施在地理位置上的分布和连接方式。"
+  },
+  {
+    "id": 26,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Requirement Management",
+    "question_cn": "在内容框架中，“需求（Requirement）”与“目标（Goal）”的关系？",
+    "answer_cn": "目标是高层的期望产出，需求则是为了实现目标而必须满足的具体规范。"
+  },
+  {
+    "id": 27,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Transition Architecture",
+    "question_cn": "过渡架构（Transition Architecture）在存储库中扮演什么角色？",
+    "answer_cn": "记录从基线到目标状态之间的中间增量状态。"
+  },
+  {
+    "id": 28,
+    "module": "Module 7 - Architecture Content",
+    "topic": "External Standards",
+    "question_cn": "为什么标准信息库（SIB）中包含外部标准？",
+    "answer_cn": "为了确保企业架构符合行业法规、互操作性要求和最佳实践。"
+  },
+  {
+    "id": 29,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Metamodel Customization",
+    "question_cn": "在 ADM 哪个阶段定制内容元模型？",
+    "answer_cn": "初步阶段（Preliminary Phase）。"
+  },
+  {
+    "id": 30,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Capability Increments",
+    "question_cn": "如何定义架构景观中的“能力增量”？",
+    "answer_cn": "通过一系列过渡架构逐步实现的能力提升阶段。"
+  },
+  {
+    "id": 31,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Role of Repository in ADM",
+    "question_cn": "ADM 的输入和输出与存储库是什么关系？",
+    "answer_cn": "ADM 阶段从存储库获取参考资产，并将新生成的制品存回存储库。"
+  },
+  {
+    "id": 32,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Actor",
+    "question_cn": "在业务元模型中，“角色（Role）”与“参与者（Actor）”的区别？",
+    "answer_cn": "角色是职责的抽象描述，参与者是执行该角色的具体个人、团队或系统。"
+  },
+  {
+    "id": 33,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Function vs Service",
+    "question_cn": "业务功能（Function）与业务服务（Service）的区别？",
+    "answer_cn": "功能是内部的能力展示，服务是对外暴露的、可被调用的明确边界的能力。"
+  },
+  {
+    "id": 34,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Information System Services",
+    "question_cn": "什么是信息系统服务（IS Service）？",
+    "answer_cn": "它是自动化的逻辑能力（如数据录入服务），用于支撑业务服务。"
+  },
+  {
+    "id": 35,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Platform Services",
+    "question_cn": "技术架构中的“平台服务（Platform Service）”是什么？",
+    "answer_cn": "由技术组件提供的技术能力，如操作系统服务、数据库服务。"
+  },
+  {
+    "id": 36,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Gap Analysis Result",
+    "question_cn": "差距分析（Gap Analysis）的结果在内容框架中如何体现？",
+    "answer_cn": "通常体现为架构定义文档中的“差距列表”，指引后续的工作包设计。"
+  },
+  {
+    "id": 37,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Roadmap in Content",
+    "question_cn": "架构路线图（Roadmap）的核心组成部分？",
+    "answer_cn": "时间线、工作包增量、以及实现目标架构所需的过渡状态。"
+  },
+  {
+    "id": 38,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Matrices",
+    "question_cn": "矩阵类制品最适合展示什么？",
+    "answer_cn": "展示实体之间的复杂关系和映射（如应用与业务流程的对应）。"
+  },
+  {
+    "id": 39,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Catalogs",
+    "question_cn": "目录类制品的主要用途？",
+    "answer_cn": "作为实体的清单，用于管理和索引特定类型的架构资源（如原则目录）。"
+  },
+  {
+    "id": 40,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Diagrams",
+    "question_cn": "图形类制品的核心价值？",
+    "answer_cn": "提供直观的视觉交流，帮助利益相关者理解架构的结构和逻辑流。"
+  },
+  {
+    "id": 41,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Enterprise Metamodel",
+    "question_cn": "企业元模型为什么要包含“治理元模型”？",
+    "answer_cn": "为了确保所有的架构决策、豁免和审查都能被标准化地记录。"
+  },
+  {
+    "id": 42,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Strategic Architecture Level",
+    "question_cn": "在架构景观的战略级别，细节程度通常是怎样的？",
+    "answer_cn": "细节程度最低，重点在于跨部门的集成和全局方向。"
+  },
+  {
+    "id": 43,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Capability Maturity",
+    "question_cn": "架构能力（Architecture Capability）如何在存储库中记录？",
+    "answer_cn": "通过流程模型、角色定义、技能要求和成熟度评估结果进行记录。"
+  },
+  {
+    "id": 44,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Reference Models",
+    "question_cn": "参考库（Reference Library）中常见的两个 TOGAF 参考模型是什么？",
+    "answer_cn": "TRM（技术参考模型）和 III-RM（集成信息基础设施参考模型）。"
+  },
+  {
+    "id": 45,
+    "module": "Module 7 - Architecture Content",
+    "topic": "ABB Requirements",
+    "question_cn": "架构构建块（ABB）必须包含哪些信息？",
+    "answer_cn": "基本属性、需求描述、与其他 ABB 的关系以及应遵守的标准。"
+  },
+  {
+    "id": 46,
+    "module": "Module 7 - Architecture Content",
+    "topic": "SBB Realization",
+    "question_cn": "解决方案构建块（SBB）通常如何体现？",
+    "answer_cn": "体现为特定的软件产品、现成的硬件或具体的自定义代码实现。"
+  },
+  {
+    "id": 47,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Vision Document",
+    "question_cn": "架构愿景文档在内容框架中的位置？",
+    "answer_cn": "它是项目启动的高层摘要，在阶段 A 产生，定义了架构演进的范围和价值。"
+  },
+  {
+    "id": 48,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Impact Analysis",
+    "question_cn": "架构变更请求（Change Request）在内容框架中如何处理？",
+    "answer_cn": "作为治理记录的一部分，评估其对现有制品和路线图的影响。"
+  },
+  {
+    "id": 49,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Data Entity",
+    "question_cn": "“数据实体（Data Entity）”的定义？",
+    "answer_cn": "业务感兴趣的、具有持续价值的一组数据信息的封装。"
+  },
+  {
+    "id": 50,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Core Metamodel Entity - Process",
+    "question_cn": "业务流程（Process）与任务（Task）的关系？",
+    "answer_cn": "流程是为了实现特定目标而执行的一系列有序任务。"
+  },
+  {
+    "id": 51,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Repository Access",
+    "question_cn": "谁通常负责维护架构存储库？",
+    "answer_cn": "架构委员会（Architecture Board）或架构能力团队。"
+  },
+  {
+    "id": 52,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Standards Classifications",
+    "question_cn": "标准信息库中的标准通常分为哪几类？",
+    "answer_cn": "强制性（Mandatory）、建议性（Recommended）和已废弃（Obsolete）。"
+  },
+  {
+    "id": 53,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Landscape - Solution Level",
+    "question_cn": "架构景观中的“能力架构（Capability Architecture）”层关注什么？",
+    "answer_cn": "关注特定业务能力（如供应链、人力资源）的集成视图。"
+  },
+  {
+    "id": 54,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Principles in Content",
+    "question_cn": "架构原则（Principles）在存储库中存储的目的是什么？",
+    "answer_cn": "作为评估所有架构决策和制品的约束准则。"
+  },
+  {
+    "id": 55,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Contract",
+    "question_cn": "架构合同（Architecture Contract）定义了什么？",
+    "answer_cn": "定义了架构开发团队与开发项目（或组织）之间的交付标准和责任。"
+  },
+  {
+    "id": 56,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Motivator Extension",
+    "question_cn": "内容元模型的“动机扩展（Motivation Extension）”包含哪些实体？",
+    "answer_cn": "目标（Goal）、驱动因素（Driver）、目标（Objective）和策略（Strategy）。"
+  },
+  {
+    "id": 57,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Infrastructure Extension",
+    "question_cn": "“基础设施扩展”通常在何时使用？",
+    "answer_cn": "当组织需要对 IT 节点、网络设备和物理设施进行非常详细的建模时。"
+  },
+  {
+    "id": 58,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Governance Log - Compliance Assessment",
+    "question_cn": "合规性评估报告的作用？",
+    "answer_cn": "记录具体实施项目对既定企业架构的遵循程度。"
+  },
+  {
+    "id": 59,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Framework - Core vs Extension",
+    "question_cn": "为什么要区分“核心元模型”和“扩展”？",
+    "answer_cn": "为了提供灵活性，核心部分提供最基本的共性支持，扩展则支持特定领域的建模需求。"
+  },
+  {
+    "id": 60,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Logical Application Component",
+    "question_cn": "逻辑应用组件（Logical Application Component）的例子？",
+    "answer_cn": "例如“客户关系管理系统”或“支付引擎”。"
+  },
+  {
+    "id": 61,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Physical Application Component",
+    "question_cn": "物理应用组件（Physical Application Component）的例子？",
+    "answer_cn": "例如“SAP ERP v6.0”或“部署在 AWS 上的某个特定微服务镜像”。"
+  },
+  {
+    "id": 62,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Interface in Metamodel",
+    "question_cn": "在元模型中，接口（Interface）的作用是什么？",
+    "answer_cn": "定义服务、组件或系统相互交互的具体点位。"
+  },
+  {
+    "id": 63,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Repository - External Assets",
+    "question_cn": "存储库是否可以包含外部供应商的架构？",
+    "answer_cn": "可以，这些内容通常作为参考库（Reference Library）的一部分。"
+  },
+  {
+    "id": 64,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Framework - Services",
+    "question_cn": "“服务”在元模型中起到什么核心作用？",
+    "answer_cn": "作为解耦层，连接业务需求和底层技术实现。"
+  },
+  {
+    "id": 65,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Deliverable - Compliance Assessment",
+    "question_cn": "合规性评估是在哪个阶段产生的典型交付物？",
+    "answer_cn": "阶段 G（实施治理）。"
+  },
+  {
+    "id": 66,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Governance Metamodel",
+    "question_cn": "治理元模型中的“豁免（Waiver）”指什么？",
+    "answer_cn": "在特定条件下，正式允许某个项目不遵循特定的架构标准或原则。"
+  },
+  {
+    "id": 67,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Building Block (ABB) Content",
+    "question_cn": "ABB 的规格说明通常包括什么？",
+    "answer_cn": "功能、吞吐量、安全性要求、以及互操作性标准。"
+  },
+  {
+    "id": 68,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Solution Building Block (SBB) Content",
+    "question_cn": "SBB 的规格说明通常包括什么？",
+    "answer_cn": "具体的厂商信息、版本号、具体的硬件配置参数。"
+  },
+  {
+    "id": 69,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel Relationship - Actor/Role",
+    "question_cn": "一个参与者（Actor）可以担任多个角色（Role）吗？",
+    "answer_cn": "是的，元模型支持一个参与者承担多个角色，一个角色也可由多个参与者执行。"
+  },
+  {
+    "id": 70,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Framework Value",
+    "question_cn": "内容框架如何支持互操作性？",
+    "answer_cn": "通过标准化的定义和接口描述，确保不同系统间的集成是有据可查的。"
+  },
+  {
+    "id": 71,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Metamodel - Event",
+    "question_cn": "在内容元模型中，什么是业务事件（Event）？",
+    "answer_cn": "触发业务流程或状态改变的一个特定信号或状态改变。"
+  },
+  {
+    "id": 72,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Architecture Tooling",
+    "question_cn": "架构工具与内容框架的关系？",
+    "answer_cn": "架构工具通常会实现 TOGAF 内容框架定义的元模型，以管理复杂的架构关联。"
+  },
+  {
+    "id": 73,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Enterprise Continuum Categories",
+    "question_cn": "企业连续体中的“基础架构（Foundation Architecture）”包含什么？",
+    "answer_cn": "极其通用的组件和标准，适用于所有组织（如网络协议）。"
+  },
+  {
+    "id": 74,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Common Systems Architecture",
+    "question_cn": "什么是“公共系统架构（Common Systems Architecture）”？",
+    "answer_cn": "适用于许多不同业务领域的架构设计（如安全架构、办公系统）。"
+  },
+  {
+    "id": 75,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Industry Architecture",
+    "question_cn": "行业架构（Industry Architecture）的典型例子？",
+    "answer_cn": "针对特定行业的通用模型，如电信行业的 eTOM 或零售业的模型。"
+  },
+  {
+    "id": 76,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Organization-Specific Architecture",
+    "question_cn": "“组织特定架构”在企业连续体中的位置？",
+    "answer_cn": "位于连续体的最右侧，是最具体、反映单个公司独特业务需求的架构。"
+  },
+  {
+    "id": 77,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Deliverable vs Artifact Example",
+    "question_cn": "给出一个交付物与制品包含关系的例子。",
+    "answer_cn": "交付物是“架构定义文档”，其中包含的制品有“业务功能图”和“应用目录”。"
+  },
+  {
+    "id": 78,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Repository Partitioning",
+    "question_cn": "为什么需要对架构存储库进行分区（Partitioning）？",
+    "answer_cn": "为了方便不同的团队独立管理其受控范围，同时避免大型存储库的混乱。"
+  },
+  {
+    "id": 79,
+    "module": "Module 7 - Architecture Content",
+    "topic": "External Reference Base",
+    "question_cn": "存储库中的外部参考资料通常被称为什么？",
+    "answer_cn": "参考库（Reference Library）。"
+  },
+  {
+    "id": 80,
+    "module": "Module 7 - Architecture Content",
+    "topic": "Content Metamodel - Locations",
+    "question_cn": "“地点（Location）”在元模型中可以关联哪些实体？",
+    "answer_cn": "参与者、业务功能、硬件组件以及数据存储。"
+  }
+]
