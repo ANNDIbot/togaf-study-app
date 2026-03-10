@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "根据 TOGAF 标准，建立企业架构能力的最佳时机是：",
+    "options": [
+      "在阶段 G 的实施过程中",
+      "在初步阶段（Preliminary Phase）",
+      "在阶段 E 的解决方案选择时",
+      "在项目上线后的评估阶段"
+    ],
+    "answer": [1],
+    "explanation": "在初步阶段，组织需要定义、确立和赋能其架构职能，为后续 ADM 循环提供支持。"
+  },
+  {
+    "id": 2,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "架构能力框架（Architecture Capability Framework）通常包含以下哪些组成部分？",
+    "options": [
+      "架构工具和存储库的定义",
+      "架构委员会的结构",
+      "架构专业人员的技能框架",
+      "组织成熟度评估模型"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "TOGAF 描述的架构能力框架是一个综合体系，涵盖了组织、人员、流程和工具。"
+  },
+  {
+    "id": 3,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "在架构技能框架（Architecture Skills Framework）中，用于描述架构师具有“能够指导他人并解决复杂问题”的熟练级别通常是：",
+    "options": [
+      "Background (背景)",
+      "Awareness (意识)",
+      "Knowledge (知识)",
+      "Expert (专家)"
+    ],
+    "answer": [3],
+    "explanation": "Expert 级别代表了最高水平，能够领导和指导复杂任务。"
+  },
+  {
+    "id": 4,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "ACMM 模型主要用于：",
+    "options": [
+      "计算架构项目的成本",
+      "评估和提升组织的架构职能成熟度",
+      "选择特定的技术供应商",
+      "替代 ADM 流程"
+    ],
+    "answer": [1],
+    "explanation": "ACMM 是架构能力成熟度模型，专门用于评估组织管理架构实践的成熟程度。"
+  },
+  {
+    "id": 5,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "建立有效的架构组织时，需要考虑哪些因素？",
+    "options": [
+      "职权范围和决策链",
+      "与 IT 治理和项目治理的集成",
+      "每个员工的社交媒体账号",
+      "跨职能团队的协作机制"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "组织结构需要关注权力分配、集成和协作。个人社交媒体账号不属于架构能力建设内容。"
+  },
+  {
+    "id": 6,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "如果一个组织的架构成熟度处于“级别 2：可重复（Repeatable）”，这意味着：",
+    "options": [
+      "没有标准的架构流程",
+      "架构流程已制度化且被优化",
+      "开始对某些项目应用一致的架构方法",
+      "架构活动完全依赖个人的英雄主义"
+    ],
+    "answer": [2],
+    "explanation": "级别 2 通常意味着一些流程已经可以被重复执行，尽管可能还不完善。"
+  },
+  {
+    "id": 7,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "在建立架构能力时，获得谁的支持是至关重要的成功因素？",
+    "options": [
+      "外部审计师",
+      "初级程序员",
+      "高级管理层/赞助人 (Sponsor)",
+      "竞争对手的架构师"
+    ],
+    "answer": [2],
+    "explanation": "没有高层的赞助，架构职能往往难以获得所需的权力和资源。"
+  },
+  {
+    "id": 8,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "架构专业人员需要具备哪些维度的技能？",
+    "options": [
+      "业务领域知识",
+      "软技能（如谈判、沟通）",
+      "技术深度和广度",
+      "法律与合规意识"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "TOGAF 强调架构师是一个综合性角色，需要平衡业务、技术、管理和人际交往能力。"
+  },
+  {
+    "id": 9,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "关于将架构能力“外包”给第三方，TOGAF 的建议是：",
+    "options": [
+      "应该完全外包以节省成本",
+      "应保留核心的企业架构设计和决策权",
+      "禁止使用任何外部专家",
+      "外包商应负责所有的架构治理工作"
+    ],
+    "answer": [1],
+    "explanation": "组织应保持对核心架构决策的控制，外包通常只用于填补临时的技能缺口。"
+  },
+  {
+    "id": 10,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "在架构能力建设中，“资源获取”不仅指招聘，还包括：",
+    "options": [
+      "购买更多的内存条",
+      "内部人才的再培训和技能提升",
+      "减少休假时间",
+      "强制员工共享账号"
+    ],
+    "answer": [1],
+    "explanation": "人才的培育和转型是资源能力建设的核心组成部分。"
+  },
+  {
+    "id": 11,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "架构治理（Governance）在架构能力中的重要性体现在：",
+    "options": [
+      "确保架构资产得到妥善管理",
+      "保证架构决策符合组织的战略方向",
+      "作为处罚员工的工具",
+      "提高架构交付的一致性和质量"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "治理是能力的保证机制，而非简单的惩罚工具。"
+  },
+  {
+    "id": 12,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "哪个成熟度级别代表架构已完全融入组织的日常运营和持续改进？",
+    "options": [
+      "级别 3：已定义 (Defined)",
+      "级别 4：已管理 (Managed)",
+      "级别 5：持续优化 (Optimized)",
+      "级别 1：初始 (Initial)"
+    ],
+    "answer": [2],
+    "explanation": "级别 5 代表了最高成熟度，强调流程的自发改进和深度融合。"
+  },
+  {
+    "id": 13,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "架构师在解决利益相关者冲突时，最需要哪种软技能？",
+    "options": [
+      "快速打字",
+      "冲突解决与谈判能力",
+      "编写 SQL 语句",
+      "项目进度跟踪"
+    ],
+    "answer": [1],
+    "explanation": "架构往往涉及多方利益博弈，谈判和共识达成是核心能力。"
+  },
+  {
+    "id": 14,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "在 ADM 阶段 A，对当前能力的评估有助于发现：",
+    "options": [
+      "组织是否具备实施目标架构所需的技能",
+      "是否存在必须要采购的新工具",
+      "架构委员会是否需要调整其成员",
+      "去年由于停电导致的损失"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "阶段 A 的评估着重于资源、组织和工具的准备情况。"
+  },
+  {
+    "id": 15,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "什么是“联邦式（Federated）”架构管理模式？",
+    "options": [
+      "没有中央控制的完全自由模式",
+      "中央制定核心标准，业务单元保留局部灵活性",
+      "由单一部门决定所有细节的模式",
+      "外包给政府机构的模式"
+    ],
+    "answer": [1],
+    "explanation": "联邦模式兼顾了整体的一致性和局部的响应能力。"
+  },
+  {
+    "id": 16,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "技能熟练度等级中的“Awareness（意识）”意味着：",
+    "options": [
+      "能够独立完成项目",
+      "理解基本概念并在监督下工作",
+      "能够培训其他专家",
+      "从来没听说过该技术"
+    ],
+    "answer": [1],
+    "explanation": "Awareness 等级代表了对事物的基本认识，能够参与讨论但在执行时需要指导。"
+  },
+  {
+    "id": 17,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "架构能力建设中的“知识管理”关注：",
+    "options": [
+      "架构制品的版本控制",
+      "历史决策的记录（治理日志）",
+      "组织内的架构培训课件",
+      "管理层的工资表"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "知识管理旨在捕获、存储和传播架构相关的知识资产。"
+  },
+  {
+    "id": 18,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "首席架构师应该向谁汇报最为理想？",
+    "options": [
+      "初级技术经理",
+      "CIO 或同层级的高级业务主管",
+      "行政助理",
+      "外部软件供应商"
+    ],
+    "answer": [1],
+    "explanation": "为了确保架构的影响力，架构师应在组织架构中占据高位并直接对接决策层。"
+  },
+  {
+    "id": 19,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "ACMM 模型的核心理念是：",
+    "options": [
+      "一口吃成胖子，直接达到最高级别",
+      "通过不断评估和针对性改进，循序渐进地提升能力",
+      "只要买最好的工具，成熟度就高",
+      "成熟度只和架构师的人数有关"
+    ],
+    "answer": [1],
+    "explanation": "成熟度提升是一个持续、迭代且有计划的过程。"
+  },
+  {
+    "id": 20,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "一个良好的架构能力框架应能帮助组织解决哪些痛点？",
+    "options": [
+      "架构人员职责不清",
+      "架构标准无法落地",
+      "重复建设导致的资源浪费",
+      "缺乏统一的架构语言"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "能力框架通过标准化和制度化解决混乱、低效和沟通不畅的问题。"
+  },
+  {
+    "id": 21,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "在架构能力建设中，“职业路径（Career Path）”的作用是：",
+    "options": [
+      "强制员工留在公司",
+      "为架构专业人员提供明确的晋升和技能成长指南",
+      "展示公司的历史",
+      "管理办公座位分配"
+    ],
+    "answer": [1],
+    "explanation": "清晰的职业路径有助于留住核心人才并激发学习动力。"
+  },
+  {
+    "id": 22,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "哪项活动最能体现架构能力的“持续专业发展”？",
+    "options": [
+      "每天写代码到深夜",
+      "参加行业架构大会、考取专业认证及定期的技能更新",
+      "固定使用 10 年前的技术标准",
+      "拒绝学习新工具"
+    ],
+    "answer": [1],
+    "explanation": "CPD 强调动态地更新和扩展专业知识。"
+  },
+  {
+    "id": 23,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "关于架构存储库（Repository）的能力建设，以下描述正确的是：",
+    "options": [
+      "它是一个静态的文件夹",
+      "它需要专人（资料管理员）进行维护和分类",
+      "它应支持架构资产的重用和查询",
+      "它是存储治理记录的重要场所"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "存储库是能力的硬支撑，必须是动态可用的，而非死档案。"
+  },
+  {
+    "id": 24,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "如果架构治理流程太慢，影响了业务响应能力，说明该组织的哪项能力需要改进？",
+    "options": [
+      "增加带宽",
+      "治理能力的灵活性与敏捷性",
+      "购买更贵的电脑",
+      "招聘更多的初级程序员"
+    ],
+    "answer": [1],
+    "explanation": "治理必须在控制和敏捷之间寻找平衡点。"
+  },
+  {
+    "id": 25,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "建立架构能力框架的首要依据是：",
+    "options": [
+      "最新的技术趋势",
+      "组织的业务目标、战略及当前的架构成熟度",
+      "友商的口头传言",
+      "随便找一份模板"
+    ],
+    "answer": [1],
+    "explanation": "能力建设必须定制化，以适应特定的业务背景。"
+  },
+  {
+    "id": 26,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "架构专业人员的“沟通技巧”包括：",
+    "options": [
+      "向业务人员解释复杂技术的能力",
+      "在会议中大声喊叫",
+      "撰写清晰易懂的架构文档",
+      "通过演示文稿（PPT）传达愿景"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "沟通不仅仅是说话，还包括信息的转译和媒介的应用。"
+  },
+  {
+    "id": 27,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "谁对架构成熟度评估的最终结果负责？",
+    "options": [
+      "所有的外部咨询顾问",
+      "首席架构师及架构委员会",
+      "数据库管理员",
+      "新入职的实习生"
+    ],
+    "answer": [1],
+    "explanation": "评估和改进计划是架构领导层的重要管理任务。"
+  },
+  {
+    "id": 28,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "关于架构技能框架中的“管理技能”，下列哪项描述最准确？",
+    "options": [
+      "仅指管理财务预算",
+      "包括利益相关者管理、项目规划和团队领导力",
+      "指管理服务器的硬件插槽",
+      "指给同事安排午饭"
+    ],
+    "answer": [1],
+    "explanation": "架构师往往需要承担部分项目和人员的管理职能。"
+  },
+  {
+    "id": 29,
+    "module": "Module 9 - Architecture Capability",
+    "type": "multiple",
+    "question": "成熟度级别 4（Managed）的特征通常包括：",
+    "options": [
+      "对架构过程进行定量的度量",
+      "所有项目都自发合规",
+      "建立了明确的关键绩效指标 (KPI)",
+      "可以根据数据预测未来的表现"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "“Managed”阶段强调量化管理和通过数据监控流程质量。"
+  },
+  {
+    "id": 30,
+    "module": "Module 9 - Architecture Capability",
+    "type": "single",
+    "question": "在建立架构能力的过程中，最重要的驱动力应来自：",
+    "options": [
+      "组织对业务价值实现和变革管理的需求",
+      "架构师对新工具的热情",
+      "多余的 IT 预算",
+      "法律部门的随机要求"
+    ],
+    "answer": [0],
+    "explanation": "架构能力的终极意义在于支撑业务变革和创造价值。"
+  }
+]
