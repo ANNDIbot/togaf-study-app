@@ -3,420 +3,420 @@
 "id":1,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 的全称是什么？",
-"answer":"TOGAF 是 The Open Group Architecture Framework 的缩写。"
+"question_cn":"TOGAF 的全称是什么？",
+"answer_cn":"TOGAF 是 The Open Group Architecture Framework 的缩写。"
 },
 {
 "id":2,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 是什么类型的框架？",
-"answer":"TOGAF 是一个 Enterprise Architecture Framework。"
+"question_cn":"TOGAF 是什么类型的框架？",
+"answer_cn":"TOGAF 是一个 Enterprise Architecture Framework。"
 },
 {
 "id":3,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 由哪个组织维护？",
-"answer":"TOGAF 由 The Open Group 维护。"
+"question_cn":"TOGAF 由哪个组织维护？",
+"answer_cn":"TOGAF 由 The Open Group 维护。"
 },
 {
 "id":4,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 的核心目的是什么？",
-"answer":"提供一种方法、工具和最佳实践来设计、规划、实施和治理企业架构。"
+"question_cn":"TOGAF 的核心目的是什么？",
+"answer_cn":"提供一种方法、工具和最佳实践来设计、规划、实施和治理企业架构。"
 },
 {
 "id":5,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 是否规定具体技术实现？",
-"answer":"不规定具体技术，而是提供方法论和框架。"
+"question_cn":"TOGAF 是否规定具体技术实现？",
+"answer_cn":"不规定具体技术，而是提供方法论和框架。"
 },
 {
 "id":6,
 "module":"Module 1 - Core Concepts",
 "topic":"TOGAF Definition",
-"question":"TOGAF 最核心的方法是什么？",
-"answer":"Architecture Development Method（ADM）。"
+"question_cn":"TOGAF 最核心的方法是什么？",
+"answer_cn":"Architecture Development Method（ADM）。"
 },
 {
 "id":7,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"什么是 Enterprise Architecture？",
-"answer":"Enterprise Architecture 是对组织结构、业务流程、信息系统和技术基础设施的整体描述。"
+"question_cn":"什么是 Enterprise Architecture？",
+"answer_cn":"Enterprise Architecture 是对组织结构、业务流程、信息系统和技术基础设施的整体描述。"
 },
 {
 "id":8,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"Enterprise Architecture 的主要目标是什么？",
-"answer":"确保业务战略与 IT 系统之间的协调。"
+"question_cn":"Enterprise Architecture 的主要目标是什么？",
+"answer_cn":"确保业务战略与 IT 系统之间的协调。"
 },
 {
 "id":9,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"Enterprise Architecture 解决什么问题？",
-"answer":"解决复杂 IT 系统与业务目标之间的不一致问题。"
+"question_cn":"Enterprise Architecture 解决什么问题？",
+"answer_cn":"解决复杂 IT 系统与业务目标之间的不一致问题。"
 },
 {
 "id":10,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"Enterprise Architecture 为什么重要？",
-"answer":"它帮助组织在变化环境中保持战略一致性和技术可持续性。"
+"question_cn":"Enterprise Architecture 为什么重要？",
+"answer_cn":"它帮助组织在变化环境中保持战略一致性和技术可持续性。"
 },
 {
 "id":11,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"Enterprise Architecture 的核心组成包括什么？",
-"answer":"业务流程、信息系统、数据和技术基础设施。"
+"question_cn":"Enterprise Architecture 的核心组成包括什么？",
+"answer_cn":"业务流程、信息系统、数据和技术基础设施。"
 },
 {
 "id":12,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Architecture",
-"question":"Enterprise Architecture 如何支持组织转型？",
-"answer":"通过规划 IT 能力来支持业务变革。"
+"question_cn":"Enterprise Architecture 如何支持组织转型？",
+"answer_cn":"通过规划 IT 能力来支持业务变革。"
 },
 {
 "id":13,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"TOGAF 中的四个架构域是什么？",
-"answer":"Business Architecture、Data Architecture、Application Architecture、Technology Architecture。"
+"question_cn":"TOGAF 中的四个架构域是什么？",
+"answer_cn":"Business Architecture、Data Architecture、Application Architecture、Technology Architecture。"
 },
 {
 "id":14,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"Business Architecture 描述什么？",
-"answer":"组织的业务战略、组织结构和业务流程。"
+"question_cn":"Business Architecture 描述什么？",
+"answer_cn":"组织的业务战略、组织结构和业务流程。"
 },
 {
 "id":15,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"Data Architecture 描述什么？",
-"answer":"组织的数据结构和数据管理方式。"
+"question_cn":"Data Architecture 描述什么？",
+"answer_cn":"组织的数据结构和数据管理方式。"
 },
 {
 "id":16,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"Application Architecture 描述什么？",
-"answer":"应用系统以及它们之间的关系。"
+"question_cn":"Application Architecture 描述什么？",
+"answer_cn":"应用系统以及它们之间的关系。"
 },
 {
 "id":17,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"Technology Architecture 描述什么？",
-"answer":"IT 基础设施、技术平台和网络环境。"
+"question_cn":"Technology Architecture 描述什么？",
+"answer_cn":"IT 基础设施、技术平台和网络环境。"
 },
 {
 "id":18,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"为什么需要划分 Architecture Domains？",
-"answer":"为了便于架构设计、管理和专业分工。"
+"question_cn":"为什么需要划分 Architecture Domains？",
+"answer_cn":"为了便于架构设计、管理和专业分工。"
 },
 {
 "id":19,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"哪个架构域描述业务能力？",
-"answer":"Business Architecture。"
+"question_cn":"哪个架构域描述业务能力？",
+"answer_cn":"Business Architecture。"
 },
 {
 "id":20,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Domains",
-"question":"哪个架构域描述 IT 技术平台？",
-"answer":"Technology Architecture。"
+"question_cn":"哪个架构域描述 IT 技术平台？",
+"answer_cn":"Technology Architecture。"
 },
 {
 "id":21,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"什么是 Architecture Principle？",
-"answer":"Architecture Principle 是指导架构设计和决策的基本规则。"
+"question_cn":"什么是 Architecture Principle？",
+"answer_cn":"Architecture Principle 是指导架构设计和决策的基本规则。"
 },
 {
 "id":22,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"Architecture Principles 的作用是什么？",
-"answer":"确保架构设计的一致性和可持续性。"
+"question_cn":"Architecture Principles 的作用是什么？",
+"answer_cn":"确保架构设计的一致性和可持续性。"
 },
 {
 "id":23,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"Architecture Principle 的四个组成部分是什么？",
-"answer":"Name、Statement、Rationale、Implications。"
+"question_cn":"Architecture Principle 的四个组成部分是什么？",
+"answer_cn":"Name、Statement、Rationale、Implications。"
 },
 {
 "id":24,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"Architecture Principles 如何支持决策？",
-"answer":"通过为架构设计提供指导原则。"
+"question_cn":"Architecture Principles 如何支持决策？",
+"answer_cn":"通过为架构设计提供指导原则。"
 },
 {
 "id":25,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"Architecture Principles 为什么重要？",
-"answer":"它们确保架构与组织战略一致。"
+"question_cn":"Architecture Principles 为什么重要？",
+"answer_cn":"它们确保架构与组织战略一致。"
 },
 {
 "id":26,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Principles",
-"question":"Architecture Principles 是否与业务战略相关？",
-"answer":"是的，它们必须反映组织的业务战略。"
+"question_cn":"Architecture Principles 是否与业务战略相关？",
+"answer_cn":"是的，它们必须反映组织的业务战略。"
 },
 {
 "id":27,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"什么是 Enterprise Continuum？",
-"answer":"Enterprise Continuum 是组织和分类架构资产的结构模型。"
+"question_cn":"什么是 Enterprise Continuum？",
+"answer_cn":"Enterprise Continuum 是组织和分类架构资产的结构模型。"
 },
 {
 "id":28,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Enterprise Continuum 的目的是什么？",
-"answer":"促进架构资产的分类和复用。"
+"question_cn":"Enterprise Continuum 的目的是什么？",
+"answer_cn":"促进架构资产的分类和复用。"
 },
 {
 "id":29,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Enterprise Continuum 包含哪两个部分？",
-"answer":"Architecture Continuum 和 Solutions Continuum。"
+"question_cn":"Enterprise Continuum 包含哪两个部分？",
+"answer_cn":"Architecture Continuum 和 Solutions Continuum。"
 },
 {
 "id":30,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Architecture Continuum 描述什么？",
-"answer":"从通用架构到特定组织架构的模型。"
+"question_cn":"Architecture Continuum 描述什么？",
+"answer_cn":"从通用架构到特定组织架构的模型。"
 },
 {
 "id":31,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Solutions Continuum 描述什么？",
-"answer":"架构实现的具体解决方案。"
+"question_cn":"Solutions Continuum 描述什么？",
+"answer_cn":"架构实现的具体解决方案。"
 },
 {
 "id":32,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Enterprise Continuum 如何支持复用？",
-"answer":"通过共享架构模型和解决方案。"
+"question_cn":"Enterprise Continuum 如何支持复用？",
+"answer_cn":"通过共享架构模型和解决方案。"
 },
 {
 "id":33,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Enterprise Continuum 在 TOGAF 中的作用是什么？",
-"answer":"帮助组织管理和复用架构资产。"
+"question_cn":"Enterprise Continuum 在 TOGAF 中的作用是什么？",
+"answer_cn":"帮助组织管理和复用架构资产。"
 },
 {
 "id":34,
 "module":"Module 1 - Core Concepts",
 "topic":"Enterprise Continuum",
-"question":"Enterprise Continuum 是否支持行业架构复用？",
-"answer":"是的。"
+"question_cn":"Enterprise Continuum 是否支持行业架构复用？",
+"answer_cn":"是的。"
 },
 {
 "id":35,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"什么是 Architecture Repository？",
-"answer":"Architecture Repository 是存储企业架构资产的仓库。"
+"question_cn":"什么是 Architecture Repository？",
+"answer_cn":"Architecture Repository 是存储企业架构资产的仓库。"
 },
 {
 "id":36,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"Architecture Repository 的作用是什么？",
-"answer":"管理架构文档、模型和标准。"
+"question_cn":"Architecture Repository 的作用是什么？",
+"answer_cn":"管理架构文档、模型和标准。"
 },
 {
 "id":37,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"Repository 中通常包含哪些内容？",
-"answer":"架构文档、参考模型、标准和指南。"
+"question_cn":"Repository 中通常包含哪些内容？",
+"answer_cn":"架构文档、参考模型、标准和指南。"
 },
 {
 "id":38,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"Architecture Repository 为什么重要？",
-"answer":"支持架构资产复用和架构治理。"
+"question_cn":"Architecture Repository 为什么重要？",
+"answer_cn":"支持架构资产复用和架构治理。"
 },
 {
 "id":39,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"Architecture Repository 是否支持知识共享？",
-"answer":"是的。"
+"question_cn":"Architecture Repository 是否支持知识共享？",
+"answer_cn":"是的。"
 },
 {
 "id":40,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Repository",
-"question":"Architecture Repository 在 ADM 中的作用是什么？",
-"answer":"提供架构开发所需的信息资源。"
+"question_cn":"Architecture Repository 在 ADM 中的作用是什么？",
+"answer_cn":"提供架构开发所需的信息资源。"
 },
 {
 "id":41,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"什么是 Stakeholder？",
-"answer":"Stakeholder 是对架构有利益或关注的人或组织。"
+"question_cn":"什么是 Stakeholder？",
+"answer_cn":"Stakeholder 是对架构有利益或关注的人或组织。"
 },
 {
 "id":42,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"Stakeholder 的主要关注点是什么？",
-"answer":"他们关心架构如何影响业务目标。"
+"question_cn":"Stakeholder 的主要关注点是什么？",
+"answer_cn":"他们关心架构如何影响业务目标。"
 },
 {
 "id":43,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"为什么 Stakeholders 在架构开发中重要？",
-"answer":"因为架构必须满足他们的需求和关注点。"
+"question_cn":"为什么 Stakeholders 在架构开发中重要？",
+"answer_cn":"因为架构必须满足他们的需求和关注点。"
 },
 {
 "id":44,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"Stakeholder 与 Viewpoint 的关系是什么？",
-"answer":"Viewpoints 用于回应 Stakeholder 的关注点。"
+"question_cn":"Stakeholder 与 Viewpoint 的关系是什么？",
+"answer_cn":"Viewpoints 用于回应 Stakeholder 的关注点。"
 },
 {
 "id":45,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"Stakeholder concerns 指什么？",
-"answer":"Stakeholders 对架构的关注和需求。"
+"question_cn":"Stakeholder concerns 指什么？",
+"answer_cn":"Stakeholders 对架构的关注和需求。"
 },
 {
 "id":46,
 "module":"Module 1 - Core Concepts",
 "topic":"Stakeholders",
-"question":"Stakeholder analysis 在架构开发中的作用是什么？",
-"answer":"识别关键利益相关者及其需求。"
+"question_cn":"Stakeholder analysis 在架构开发中的作用是什么？",
+"answer_cn":"识别关键利益相关者及其需求。"
 },
 {
 "id":47,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"什么是 Architecture Artifact？",
-"answer":"Artifact 是架构描述的一部分，例如模型或图表。"
+"question_cn":"什么是 Architecture Artifact？",
+"answer_cn":"Artifact 是架构描述的一部分，例如模型或图表。"
 },
 {
 "id":48,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"什么是 Deliverable？",
-"answer":"Deliverable 是正式交付的架构成果。"
+"question_cn":"什么是 Deliverable？",
+"answer_cn":"Deliverable 是正式交付的架构成果。"
 },
 {
 "id":49,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"什么是 Building Block？",
-"answer":"Building Block 是可复用的架构组件。"
+"question_cn":"什么是 Building Block？",
+"answer_cn":"Building Block 是可复用的架构组件。"
 },
 {
 "id":50,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"什么是 Architecture Building Block（ABB）？",
-"answer":"ABB 描述架构的逻辑组件。"
+"question_cn":"什么是 Architecture Building Block（ABB）？",
+"answer_cn":"ABB 描述架构的逻辑组件。"
 },
 {
 "id":51,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"什么是 Solution Building Block（SBB）？",
-"answer":"SBB 描述架构的具体实现组件。"
+"question_cn":"什么是 Solution Building Block（SBB）？",
+"answer_cn":"SBB 描述架构的具体实现组件。"
 },
 {
 "id":52,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Artifacts",
-"question":"Deliverable、Artifact、Building Block 的关系是什么？",
-"answer":"Deliverable 包含 Artifacts，Artifacts 使用 Building Blocks 描述架构。"
+"question_cn":"Deliverable、Artifact、Building Block 的关系是什么？",
+"answer_cn":"Deliverable 包含 Artifacts，Artifacts 使用 Building Blocks 描述架构。"
 },
 {
 "id":53,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Viewpoints",
-"question":"什么是 Architecture Viewpoint？",
-"answer":"Viewpoint 定义如何描述架构。"
+"question_cn":"什么是 Architecture Viewpoint？",
+"answer_cn":"Viewpoint 定义如何描述架构。"
 },
 {
 "id":54,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Viewpoints",
-"question":"Viewpoint 的作用是什么？",
-"answer":"确保架构能够回应 Stakeholder concerns。"
+"question_cn":"Viewpoint 的作用是什么？",
+"answer_cn":"确保架构能够回应 Stakeholder concerns。"
 },
 {
 "id":55,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Viewpoints",
-"question":"Viewpoint 通常包含什么？",
-"answer":"建模技术、表示方法和分析工具。"
+"question_cn":"Viewpoint 通常包含什么？",
+"answer_cn":"建模技术、表示方法和分析工具。"
 },
 {
 "id":56,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Viewpoints",
-"question":"为什么需要 Viewpoints？",
-"answer":"因为不同 Stakeholder 需要不同视角的架构描述。"
+"question_cn":"为什么需要 Viewpoints？",
+"answer_cn":"因为不同 Stakeholder 需要不同视角的架构描述。"
 },
 {
 "id":57,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Views",
-"question":"什么是 Architecture View？",
-"answer":"View 是 Viewpoint 应用于架构后的具体表现。"
+"question_cn":"什么是 Architecture View？",
+"answer_cn":"View 是 Viewpoint 应用于架构后的具体表现。"
 },
 {
 "id":58,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Views",
-"question":"View 的目的是什么？",
-"answer":"以 Stakeholder 可以理解的方式展示架构。"
+"question_cn":"View 的目的是什么？",
+"answer_cn":"以 Stakeholder 可以理解的方式展示架构。"
 },
 {
 "id":59,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Views",
-"question":"View 与 Viewpoint 的关系是什么？",
-"answer":"Viewpoint 定义方法，View 是结果。"
+"question_cn":"View 与 Viewpoint 的关系是什么？",
+"answer_cn":"Viewpoint 定义方法，View 是结果。"
 },
 {
 "id":60,
 "module":"Module 1 - Core Concepts",
 "topic":"Architecture Views",
-"question":"为什么 Architecture Views 很重要？",
-"answer":"因为它们帮助不同 Stakeholder 理解架构。"
+"question_cn":"为什么 Architecture Views 很重要？",
+"answer_cn":"因为它们帮助不同 Stakeholder 理解架构。"
 }
 ]
