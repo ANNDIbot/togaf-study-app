@@ -3,630 +3,2100 @@
     "id": 1,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase A 中，执行“利益相关者管理”的主要目的是：",
+    "question": "在准备阶段（Preliminary Phase），确定“架构足迹”（Architecture Footprint）的主要目的是什么？",
     "options": [
-      "为每个利益相关者编写详细的代码需求",
-      "识别关键利益相关者及其对项目的关注点",
-      "确定每个人的工资待遇",
-      "直接开始物理数据库设计"
+      "确定实施架构所需的预算",
+      "界定受架构工作影响的企业组织范围",
+      "选择用于架构开发的软件工具",
+      "制定详细的项目计划"
     ],
     "answer": [1],
-    "explanation": "利益相关者管理分析是为了确保架构师理解不同人群的需求和影响力，从而在架构设计中平衡各方利益。"
+    "explanation": "准备阶段的一个核心步骤是界定受影响的组织范围，即确定架构工作的“足迹”。"
   },
   {
     "id": 2,
     "module": "Module 4 - ADM Phases",
-    "type": "single",
-    "question": "哪个交付物被视为架构师与发起人之间关于架构项目范围和目标的契约？",
+    "type": "multi",
+    "question": "准备阶段需要确认或定义的治理和支持框架包括哪些？",
     "options": [
-      "架构定义文档 (ADD)",
-      "架构工作请求 (Request for Architecture Work)",
-      "架构工作说明书 (Statement of Architecture Work)",
-      "架构路线图"
+      "项目管理框架",
+      "业务流程管理框架",
+      "运营管理框架",
+      "组合管理框架"
     ],
-    "answer": [2],
-    "explanation": "Statement of Architecture Work 是已批准的计划，定义了范围并作为合同执行。"
+    "answer": [0, 1, 2, 3],
+    "explanation": "架构框架必须与其他治理框架（项目、流程、运营、组合管理等）协同工作。"
   },
   {
     "id": 3,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "关于 Phase B（业务架构）的步骤，下列哪些是正确的？",
+    "type": "single",
+    "question": "阶段 A（架构愿景）的主要目标之一是：",
     "options": [
-      "选择参考模型、观点和工具",
-      "开发基线业务架构说明",
-      "开发目标业务架构说明",
-      "执行差距分析"
+      "完成详细的技术架构设计",
+      "获得对架构工作说明书的正式批准",
+      "实施迁移计划",
+      "建立架构委员会"
     ],
-    "answer": [0, 1, 2, 3],
-    "explanation": "这四个步骤都是 Phase B 开发业务架构的核心步骤，且该模式同样适用于 Phase C 和 D。"
+    "answer": [1],
+    "explanation": "阶段 A 的核心是获得发起人的承诺，签署架构工作说明书（Statement of Architecture Work）。"
   },
   {
     "id": 4,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase C 开发期间，架构师发现现有的遗留系统无法支持新的数据实体。这种情况通常记录在哪个步骤中？",
+    "question": "在阶段 A 中，评估“业务转型准备情况”（Business Transformation Readiness）主要关注什么？",
     "options": [
-      "选择参考模型",
-      "创建物理模型",
-      "差距分析 (Gap Analysis)",
-      "定义架构原则"
+      "服务器的 CPU 利用率",
+      "代码的复杂程度",
+      "组织接受和实施变革的能力与风险",
+      "数据库的备份策略"
     ],
     "answer": [2],
-    "explanation": "差距分析专门用于识别基线与目标之间的缺失、冗余或不兼容项。"
+    "explanation": "业务转型准备情况评估旨在确定组织是否准备好进行变革，并识别潜在的转型风险。"
   },
   {
     "id": 5,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase D（技术架构）中，架构师最可能使用以下哪种工具来描述服务与基础设施的关系？",
+    "question": "阶段 B、C、D 遵循的通用步骤序列中，第一步通常是：",
     "options": [
-      "技术参考模型 (TRM)",
-      "业务能力地图",
-      "数据实体图",
-      "应用组合目录"
+      "开发目标架构描述",
+      "进行差距分析",
+      "选择参考模型、视角和工具",
+      "定义基线架构描述"
     ],
-    "answer": [0],
-    "explanation": "TRM 是 TOGAF 提供的用于分类技术服务和基础设施的标准工具。"
+    "answer": [2],
+    "explanation": "在开发具体架构之前，必须先确定方法论工具，即选择参考模型、视角（Viewpoints）和工具。"
   },
   {
     "id": 6,
     "module": "Module 4 - ADM Phases",
     "type": "multi",
-    "question": "下列哪些是架构愿景（Phase A）的关键输出？",
+    "question": "在阶段 B（业务架构）中，常见的建模对象包括：",
     "options": [
-      "架构工作说明书",
-      "沟通计划",
-      "架构愿景文档",
-      "详细的技术规格说明书"
+      "组织结构",
+      "业务功能",
+      "业务服务",
+      "业务角色与参与者"
     ],
-    "answer": [0, 1, 2],
-    "explanation": "Phase A 输出愿景、说明书和沟通计划。详细的技术规格属于后续 Phase D 或实施治理阶段的内容。"
+    "answer": [0, 1, 2, 3],
+    "explanation": "这些都是业务架构描述的核心组成部分。"
   },
   {
     "id": 7,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在业务架构中，定义“企业为了实现其目标而具备的能力”的工件是：",
+    "question": "阶段 C（信息系统架构）涵盖了哪两个子领域的开发？",
     "options": [
-      "业务流程模型",
-      "业务能力图 (Business Capability Map)",
-      "组织分解图",
-      "价值链图"
+      "业务和数据",
+      "数据和应用",
+      "应用和技术",
+      "数据和技术"
     ],
     "answer": [1],
-    "explanation": "业务能力图定义了“企业能做什么”，而流程定义了“企业怎么做”。"
+    "explanation": "阶段 C 包含数据架构（Data Architecture）和应用架构（Application Architecture）。"
   },
   {
     "id": 8,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "如果架构师在开发数据架构时，首要关注的是数据的逻辑结构而非存储位置，他正在开发：",
+    "question": "在应用架构中，“逻辑应用组件”与“物理应用组件”的区别在于：",
     "options": [
-      "物理数据架构",
-      "逻辑数据架构",
-      "应用组合",
-      "技术架构"
+      "逻辑组件是代码，物理组件是服务器",
+      "逻辑组件描述功能，物理组件是具体的产品或实现",
+      "逻辑组件在阶段 B 定义，物理组件在阶段 C 定义",
+      "没有区别"
     ],
     "answer": [1],
-    "explanation": "逻辑架构独立于特定的技术平台，关注数据项及其业务关系。"
+    "explanation": "逻辑组件是功能性的、独立于实现的；物理组件是具体的软件包、服务或实现。"
   },
   {
     "id": 9,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 ADM 循环中，解决各架构域（业务、数据、应用、技术）之间冲突的步骤主要在哪个阶段进行？",
+    "question": "阶段 D（技术架构）的主要目的是：",
     "options": [
-      "预备阶段",
-      "Phase A 到 Phase D 的各阶段最后步骤（解决影响）",
-      "仅在 Phase E",
-      "仅在 Phase H"
+      "定义企业的业务战略",
+      "定义支持业务、数据和应用架构所需的基础设施技术",
+      "管理项目的预算和进度",
+      "开发软件源代码"
     ],
     "answer": [1],
-    "explanation": "在 B、C、D 各阶段的最后一步，都有“解决整个架构景观的影响”这一步骤，以确保域间一致性。"
+    "explanation": "技术架构为上层的业务和信息系统架构提供底层支撑环境。"
   },
   {
     "id": 10,
     "module": "Module 4 - ADM Phases",
-    "type": "single",
-    "question": "架构定义文档（ADD）的主要目的是：",
+    "type": "multi",
+    "question": "在阶段 B、C、D 中进行的“差距分析”（Gap Analysis）会识别哪些类型的项目？",
     "options": [
-      "仅记录基线状态",
-      "作为项目的时间表",
-      "提供架构及其开发决策的综合说明",
-      "作为最终用户的操作手册"
+      "遗漏的项目（基线中没有，目标中有）",
+      "不再需要的项目（基线中有，目标中没有）",
+      "保持不变的项目",
+      "由新标准引入的项目"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "差距分析旨在识别目标与基线之间的增量、减量以及不变项。"
+  },
+  {
+    "id": 11,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 E（机会与解决方案）的主要输出不包括以下哪项？",
+    "options": [
+      "架构路线图（初步）",
+      "实施和迁移策略",
+      "过渡架构（如果有）",
+      "详细的代码开发文档"
+    ],
+    "answer": [3],
+    "explanation": "阶段 E 侧重于高层级的实施规划和项目定义，不涉及底层开发文档。"
+  },
+  {
+    "id": 12,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 E 中，什么是“过渡架构”（Transition Architecture）？",
+    "options": [
+      "一个临时的 IT 机房",
+      "描述企业在迁移过程中的中间状态，提供增量业务价值",
+      "用于培训员工的演示系统",
+      "弃用的旧系统的描述"
+    ],
+    "answer": [1],
+    "explanation": "过渡架构用于大型变革，通过一系列中间步骤逐步达成最终目标状态。"
+  },
+  {
+    "id": 13,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F（迁移规划）的主要任务是：",
+    "options": [
+      "选择硬件供应商",
+      "完成最终版本的“实施和迁移计划”",
+      "定义业务愿景",
+      "执行代码审查"
+    ],
+    "answer": [1],
+    "explanation": "阶段 F 将阶段 E 的初步路线图转化为详细的、获批准的项目计划。"
+  },
+  {
+    "id": 14,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 F 中，需要与哪个管理流程紧密协作以确保资源分配？",
+    "options": [
+      "人力资源管理",
+      "项目组合管理（Project Portfolio Management）",
+      "客户关系管理",
+      "市场营销管理"
+    ],
+    "answer": [1],
+    "explanation": "迁移计划必须整合进企业的整体项目组合管理框架中。"
+  },
+  {
+    "id": 15,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 G（实施治理）的核心目标是：",
+    "options": [
+      "亲自编写应用代码",
+      "确保实施项目符合已定义的架构",
+      "关闭现有的所有旧系统",
+      "重新定义业务目标"
+    ],
+    "answer": [1],
+    "explanation": "阶段 G 的重点是监督实施项目，确保其架构合规性。"
+  },
+  {
+    "id": 16,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "什么是“架构契约”（Architecture Contract）？",
+    "answer": [1],
+    "options": [
+      "与外部供应商签署的采购合同",
+      "开发团队与架构团队之间达成的关于实施要求的正式协议",
+      "企业与员工的雇佣合同",
+      "硬件的维保协议"
+    ],
+    "explanation": "架构契约用于在阶段 G 确保实施过程遵循架构标准。"
+  },
+  {
+    "id": 17,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H（架构变更管理）的主要目的是：",
+    "options": [
+      "修复代码中的 Bug",
+      "建立监控架构性能和价值的流程，并驱动新的 ADM 循环",
+      "处理员工的离职申请",
+      "更换老旧的投影设备"
+    ],
+    "answer": [1],
+    "explanation": "阶段 H 确保架构能够响应业务和技术的变化，维持其生命力。"
+  },
+  {
+    "id": 18,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 H 中的变更可以分为哪三类？",
+    "options": [
+      "简略变更（Simplification change）",
+      "增量变更（Incremental change）",
+      "再造变更（Re-architecting change）",
+      "紧急故障处理"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 将架构变更分为简略、增量和再造（需启动新 ADM）三类。"
+  },
+  {
+    "id": 19,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在 ADM 的中心位置，“需求管理”阶段与其他阶段的关系是：",
+    "options": [
+      "只在阶段 A 进行",
+      "只在阶段 G 进行",
+      "是一个持续的过程，驱动所有阶段并与所有阶段交互",
+      "独立于其他阶段运行"
     ],
     "answer": [2],
-    "explanation": "ADD 是核心交付物，详细描述了架构模型、决策和理由。"
+    "explanation": "需求管理是 ADM 的核心，它在整个周期内管理需求的识别、记录和状态。"
+  },
+  {
+    "id": 20,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 A 中，用于高层级展示架构如何支持业务的制品是：",
+    "options": [
+      "架构愿景（Architecture Vision）",
+      "技术标准分类法",
+      "差距分析矩阵",
+      "架构契约"
+    ],
+    "answer": [0],
+    "explanation": "架构愿景制品提供了架构提议的摘要描述和初步视图。"
+  },
+  {
+    "id": 21,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "准备阶段中定义的“架构原则”必须具备哪些特征？",
+    "options": [
+      "包含名称、陈述、依据和影响",
+      "只有名称和陈述",
+      "由 CTO 一个人决定",
+      "必须每年更换一次"
+    ],
+    "answer": [0],
+    "explanation": "根据 TOGAF 推荐的格式，原则应包含 Name, Statement, Rationale, Implications。"
+  },
+  {
+    "id": 22,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 应用架构的一个重要输出是：",
+    "options": [
+      "应用组合目录（Application Portfolio Catalog）",
+      "数据实体/业务功能矩阵",
+      "网络计算图",
+      "业务场景"
+    ],
+    "answer": [0],
+    "explanation": "应用组合目录记录了企业内所有的应用系统及其属性。"
+  },
+  {
+    "id": 23,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构中，用于对技术服务进行分类的参考模型是：",
+    "options": [
+      "TRM（技术参考模型）",
+      "III-RM（集成信息基础设施参考模型）",
+      "SCOR 模型",
+      "COBIT 框架"
+    ],
+    "answer": [0],
+    "explanation": "TRM 提供了一个技术组件和服务的分类法。"
+  },
+  {
+    "id": 24,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 E 如何识别“工作包”？",
+    "options": [
+      "通过整合各领域架构的差距分析结果",
+      "通过按业务价值和逻辑依赖性对变更进行分组",
+      "通过参考现有的 IT 项目清单",
+      "通过掷骰子决定"
+    ],
+    "answer": [0, 1],
+    "explanation": "工作包是通过对差距进行逻辑分组形成的。"
+  },
+  {
+    "id": 25,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F 最终确定的核心制品是：",
+    "options": [
+      "实施和迁移计划（Implementation and Migration Plan）",
+      "架构愿景",
+      "数据模型",
+      "网络拓扑图"
+    ],
+    "answer": [0],
+    "explanation": "阶段 F 的主要产出是详细的项目计划和资源分配。"
+  },
+  {
+    "id": 26,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 G 之后，谁负责系统的日常运营？",
+    "options": [
+      "架构师",
+      "实施团队",
+      "运营管理部门/运维团队",
+      "业务发起人"
+    ],
+    "answer": [2],
+    "explanation": "阶段 G 之后是移交给运营管理，不再属于架构开发的直接范畴。"
+  },
+  {
+    "id": 27,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "“架构合规性评审”发生在哪个阶段？",
+    "options": [
+      "阶段 A",
+      "阶段 G",
+      "准备阶段",
+      "需求管理"
+    ],
+    "answer": [1],
+    "explanation": "合规性评审是阶段 G 治理工作的核心部分。"
+  },
+  {
+    "id": 28,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "如果由于环境变化导致架构无法满足业务需求，阶段 H 可能会触发什么？",
+    "options": [
+      "解雇架构师",
+      "开启一个新的 ADM 循环",
+      "忽略这个变化",
+      "直接修改生产环境代码"
+    ],
+    "answer": [1],
+    "explanation": "重大变更会触发再造（Re-architecting），从而进入新的架构生命周期。"
+  },
+  {
+    "id": 29,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "需求管理阶段的步骤包括：",
+    "options": [
+      "基线需求识别",
+      "需求存储与管理",
+      "需求优先级划分",
+      "需求变更处理"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "需求管理的核心是维护需求库、优先级排序和变更监控。"
+  },
+  {
+    "id": 30,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 A 中，界定“深度、广度、时间段”是为了定义架构工作的：",
+    "options": [
+      "范围（Scope）",
+      "预算",
+      "风险",
+      "成果"
+    ],
+    "answer": [0],
+    "explanation": "范围界定是确保项目可控的关键步骤。"
+  },
+  {
+    "id": 31,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "“架构工作说明书”与“架构工作请求”的区别在于：",
+    "options": [
+      "没有区别",
+      "请求是发起人提的，说明书是架构师对请求的回应和执行计划",
+      "说明书是发给外部供应商的",
+      "请求是口头的，说明书是书面的"
+    ],
+    "answer": [1],
+    "explanation": "Request for Architecture Work 触发项目，Statement of Architecture Work 定义项目如何执行。"
+  },
+  {
+    "id": 32,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "在准备阶段，定制架构框架需要考虑：",
+    "options": [
+      "组织的成熟度",
+      "已有的工具和方法",
+      "外部合作伙伴的要求",
+      "行业的参考模型"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "定制化需结合内外部多种因素。"
+  },
+  {
+    "id": 33,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "业务架构中，描述“端到端交付业务价值的活动序列”的图是：",
+    "options": [
+      "价值流图（Value Stream Map）",
+      "组织图",
+      "功能分解图",
+      "数据流图"
+    ],
+    "answer": [0],
+    "explanation": "价值流从利益相关者视角定义价值创造过程。"
+  },
+  {
+    "id": 34,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 数据架构主要关注：",
+    "options": [
+      "SQL 语句的优化",
+      "数据实体的逻辑结构和数据管理标准",
+      "硬盘的转速",
+      "数据中心的空调系统"
+    ],
+    "answer": [1],
+    "explanation": "架构师关注数据实体的定义、分类及管理策略。"
+  },
+  {
+    "id": 35,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 E 中的“资源整合”包括识别：",
+    "options": [
+      "共享的服务",
+      "公共的组件",
+      "重复的 IT 投资",
+      "可以简化的流程"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "阶段 E 旨在寻找通过架构整合带来的优化机会。"
+  },
+  {
+    "id": 36,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 F 中，风险评估不仅关注技术风险，还必须关注：",
+    "options": [
+      "业务转型风险和实施风险",
+      "架构师的休假安排",
+      "办公室的绿植生长",
+      "食堂的菜单"
+    ],
+    "answer": [0],
+    "explanation": "迁移规划必须识别业务中断和转型失败的风险。"
+  },
+  {
+    "id": 37,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 G 的治理任务由谁主导执行？",
+    "options": [
+      "软件测试员",
+      "架构委员会（Architecture Board）或负责的架构师",
+      "采购部经理",
+      "外部审计师"
+    ],
+    "answer": [1],
+    "explanation": "架构治理是架构团队在实施阶段的核心职责。"
+  },
+  {
+    "id": 38,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 识别到一个“简略变更”，这通常意味着：",
+    "options": [
+      "架构变得更复杂了",
+      "通过去除冗余或整合服务来降低成本和复杂性",
+      "需要重新购买所有的服务器",
+      "业务已经倒闭了"
+    ],
+    "answer": [1],
+    "explanation": "简略变更旨在通过优化现有结构提高效率。"
+  },
+  {
+    "id": 39,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "需求管理流程中，当一个需求无法在当前循环满足时：",
+    "options": [
+      "将其删除",
+      "将其记录在需求库中，留待后续版本或循环处理",
+      "假装没看见",
+      "强制要求开发人员实现"
+    ],
+    "answer": [1],
+    "explanation": "需求库应持续跟踪所有需求的状态和优先级。"
+  },
+  {
+    "id": 40,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 A 的制品“架构工作说明书”包含：",
+    "options": [
+      "工作计划与成本估算",
+      "业务目标与范围",
+      "项目约束条件",
+      "详细的逻辑模型"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "说明书定义管理和范围，详细模型在后续阶段开发。"
+  },
+  {
+    "id": 41,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在准备阶段，谁定义“架构原则”？",
+    "options": [
+      "IT 经理",
+      "架构委员会及关键业务利益相关者",
+      "咨询公司",
+      "程序员"
+    ],
+    "answer": [1],
+    "explanation": "架构原则需要跨领域的共识，通常由委员会引导。"
+  },
+  {
+    "id": 42,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "业务架构阶段中，“能力（Capability）”的定义是：",
+    "options": [
+      "企业能够做什么以达成目标",
+      "企业具体的业务流程步骤",
+      "员工的学历水平",
+      "服务器的运算速度"
+    ],
+    "answer": [0],
+    "explanation": "能力是企业高层级的、为了交付价值所需的特质或力量。"
+  },
+  {
+    "id": 43,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 应用架构中，“服务定义”有助于实现：",
+    "options": [
+      "代码混淆",
+      "应用之间的解耦和重用",
+      "增加系统复杂性",
+      "限制用户访问"
+    ],
+    "answer": [1],
+    "explanation": "通过定义清晰的应用服务接口，提高灵活性。"
+  },
+  {
+    "id": 44,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构中，“位置（Location）”视图描述：",
+    "options": [
+      "架构师的家庭住址",
+      "技术资产的地理分布和连接情况",
+      "数据中心的室内装修",
+      "公司的 GPS 坐标"
+    ],
+    "answer": [1],
+    "explanation": "位置视图显示 IT 基础设施在物理空间上的部署。"
+  },
+  {
+    "id": 45,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 E 产生的“实施和迁移策略”定义了：",
+    "options": [
+      "是采用演进式迁移还是大爆炸式迁移",
+      "程序员的午餐补助",
+      "代码的版本控制工具",
+      "服务器的采购流程"
+    ],
+    "answer": [0],
+    "explanation": "策略定义了从当前状态向目标状态转变的总体路线。"
+  },
+  {
+    "id": 46,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 F 的“实施和迁移计划”包括：",
+    "options": [
+      "项目依赖关系分析",
+      "详细的资源需求",
+      "各个工作包的优先级",
+      "年度财报"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "该计划整合了时间、资源和逻辑关系。"
+  },
+  {
+    "id": 47,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 G，如果实施项目由于合理原因偏离了架构，应该：",
+    "options": [
+      "无视这种偏离",
+      "寻求“合规性豁免”（Dispensation）或修改架构",
+      "立即停工",
+      "起诉开发人员"
+    ],
+    "answer": [1],
+    "explanation": "治理流程允许在特殊情况下通过正式程序批准豁免或调整设计。"
+  },
+  {
+    "id": 48,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 监控的指标主要应该是：",
+    "options": [
+      "代码的行数",
+      "架构带来的业务价值和合规性",
+      "电脑屏幕的亮度",
+      "邮件的发送量"
+    ],
+    "answer": [1],
+    "explanation": "架构管理必须确保架构持续产生预期的业务效益。"
+  },
+  {
+    "id": 49,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "需求管理阶段的输出通常包括：",
+    "options": [
+      "更新的需求库",
+      "需求影响报告",
+      "新的业务愿景图",
+      "架构变更请求"
+    ],
+    "answer": [0, 1],
+    "explanation": "主要产出围绕需求的记录、分析和管理。"
+  },
+  {
+    "id": 50,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 A 的核心产出物“架构愿景”主要服务于：",
+    "options": [
+      "沟通工具，以获得共识和批准",
+      "作为程序员的手册",
+      "作为数据库说明书",
+      "作为网络配置方案"
+    ],
+    "answer": [0],
+    "explanation": "愿景旨在以直观的方式向利益相关者展示未来的蓝图。"
   },
   {
     "id": 51,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase E 中，将差距转化为工作包时，架构师应该首先关注：",
+    "question": "准备阶段中，架构团队的配置属于哪一类活动？",
     "options": [
-      "编写代码细节",
-      "评估工作包的依赖关系和业务价值",
-      "直接购买市场上最贵的软件",
-      "解雇所有不符合架构的员工"
+      "定制架构框架",
+      "建立架构能力（Architecture Capability）",
+      "定义治理机制",
+      "选择建模工具"
     ],
     "answer": [1],
-    "explanation": "Phase E 的核心是通过评估价值和依赖关系，将抽象的架构差距转化为可执行的项目包。"
+    "explanation": "建立架构能力涉及人员、流程和资源的组织。"
   },
   {
     "id": 52,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "如果目标架构非常复杂，需要数年才能完成，TOGAF 建议使用什么来管理这个过程？",
+    "question": "阶段 B 业务架构开发中，使用的主要输入是：",
     "options": [
-      "架构愿景",
-      "过渡架构 (Transition Architectures)",
-      "仅在 Phase H 进行管理",
-      "删除所有不必要的需求"
+      "阶段 A 确定的业务目标和架构愿景",
+      "阶段 D 的技术标准",
+      "阶段 F 的迁移计划",
+      "需求管理阶段的原始记录"
     ],
-    "answer": [1],
-    "explanation": "过渡架构允许组织分阶段实现目标，并在每个中间阶段都能看到业务价值。"
+    "answer": [0],
+    "explanation": "阶段 A 的愿景和说明书是后续阶段工作的指令来源。"
   },
   {
     "id": 53,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "下列哪些属于 Phase E（机会与解决方案）的输出？",
+    "type": "single",
+    "question": "阶段 C 数据架构中，“数据原则”的作用是：",
     "options": [
-      "架构路线图 (Architecture Roadmap)",
-      "过渡架构定义",
-      "实施与迁移计划 (最终版)",
-      "合并的差距分析矩阵"
+      "指导数据实体的定义、共享和管理方式",
+      "限制数据库的安装容量",
+      "定义员工的上网时长",
+      "确定数据库管理员的薪资"
     ],
-    "answer": [0, 1, 3],
-    "explanation": "实施与迁移计划的“最终版”是 Phase F 的输出，Phase E 提供的是初步输入。"
+    "answer": [0],
+    "explanation": "原则为特定的架构决策提供持久的准则。"
   },
   {
     "id": 54,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase F 中，确定项目优先级的最关键因素通常是：",
+    "question": "阶段 D 技术架构中，“互操作性”是指：",
     "options": [
-      "技术经理的个人喜好",
-      "业务价值与实施成本/风险的平衡",
-      "谁最先提出需求",
-      "编程语言的流行程度"
+      "两个或多个系统交换信息并互相使用信息的能力",
+      "电脑开机速度快",
+      "员工之间相处融洽",
+      "办公室有免费 Wi-Fi"
     ],
-    "answer": [1],
-    "explanation": "迁移规划必须基于业务价值、风险评估和成本效益分析来排定优先级。"
+    "answer": [0],
+    "explanation": "互操作性是技术架构解决异构环境协同工作的核心目标。"
   },
   {
     "id": 55,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在迁移规划阶段（Phase F），架构师需要与以下哪个角色进行深度协调？",
+    "question": "阶段 E 如何量化“价值”？",
     "options": [
-      "初级开发人员",
-      "投资组合和项目管理器 (Portfolio and Project Managers)",
-      "外部清洁公司",
-      "竞争对手的 CEO"
+      "通过与业务目标对齐并评估预期的收益和成本",
+      "通过统计代码注释的数量",
+      "通过测量服务器的重量",
+      "通过记录架构师的工作时长"
     ],
-    "answer": [1],
-    "explanation": "Phase F 涉及将架构路线图整合进企业的投资组合和项目管理体系中。"
+    "answer": [0],
+    "explanation": "价值基于对业务贡献的评估。"
   },
   {
     "id": 56,
     "module": "Module 4 - ADM Phases",
     "type": "multi",
-    "question": "过渡架构 (Transition Architecture) 应该包含哪些域的内容？",
+    "question": "阶段 F 迁移规划中，如何对工作包进行优先级排序？",
     "options": [
-      "业务架构",
-      "数据架构",
-      "应用架构",
-      "技术架构"
+      "业务价值",
+      "实施风险",
+      "与其他项目的依赖性",
+      "团队的个人喜好"
     ],
-    "answer": [0, 1, 2, 3],
-    "explanation": "过渡架构是一个完整的架构描述，只是它代表的是中间状态，同样包含 BDAT 四个领域。"
+    "answer": [0, 1, 2],
+    "explanation": "排序需综合考虑价值、风险和逻辑顺序。"
   },
   {
     "id": 57,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "“购买 vs 构建”的决策主要受以下哪项影响？",
+    "question": "阶段 G 的治理对象主要是：",
     "options": [
-      "架构原则中关于标准化的规定",
-      "项目经理的工位位置",
-      "昨天的天气",
-      "公司的装修风格"
+      "正在进行的实施项目（Implementation Projects）",
+      "已完成的历史存档",
+      "架构师的个人简历",
+      "竞争对手的战略"
     ],
     "answer": [0],
-    "explanation": "决策必须遵循在预备阶段和 Phase A 中建立的架构原则。"
+    "explanation": "阶段 G 关注当前正在落地的项目是否偏离架构轨道。"
   },
   {
     "id": 58,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 ADM 循环中，哪一个阶段开始将逻辑架构组件（ABB）与物理现实（SBB）联系起来？",
+    "question": "阶段 H 如何监控新技术的影响？",
     "options": [
-      "Phase B",
-      "Phase E",
-      "Phase G",
-      "预备阶段"
+      "持续进行“扫描”和“发现”活动，评估其对业务的潜在价值",
+      "禁止引入任何新技术",
+      "只在每年 1 月 1 日看一眼",
+      "要求程序员每天汇报新趋势"
     ],
-    "answer": [1],
-    "explanation": "Phase E 是从“设计”转向“解决方案”的转折点，开始考虑具体的构建块（SBB）。"
+    "answer": [0],
+    "explanation": "变更管理包含对技术演进的主动监控。"
   },
   {
     "id": 59,
     "module": "Module 4 - ADM Phases",
-    "type": "single",
-    "question": "在 Phase F 结束后，架构师输出的最终架构定义文档（ADD）的主要接收者是：",
+    "type": "multi",
+    "question": "ADM 循环中的迭代（Iteration）可以发生在：",
     "options": [
-      "董事会",
-      "实施团队和治理委员会",
-      "普通用户",
-      "人力资源部"
+      "在阶段内循环执行步骤",
+      "在多个阶段之间（如 B, C, D 之间）循环",
+      "在整个 ADM 循环之间（全生命周期）",
+      "只能在阶段 A 进行"
     ],
-    "answer": [1],
-    "explanation": "ADD 将作为 Phase G 实施治理的依据。"
+    "answer": [0, 1, 2],
+    "explanation": "ADM 设计本身就是支持多层次迭代的。"
   },
   {
     "id": 60,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "Phase E 进行互操作性评估时，需要考虑：",
+    "type": "single",
+    "question": "在阶段 A 之后，“需求管理”阶段必须处理的是：",
     "options": [
-      "业务流程的集成",
-      "应用间的数据交换标准",
-      "基础设施的连接性",
-      "办公室的绿植摆放"
+      "所有识别出的新需求、变更或过时需求",
+      "只有老板提的需求",
+      "只有能省钱的需求",
+      "只处理技术需求"
+    ],
+    "answer": [0],
+    "explanation": "需求管理涵盖了架构开发全过程中的所有需求动态。"
+  },
+  {
+    "id": 61,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在准备阶段，定制后的“架构方法”定义了：",
+    "options": [
+      "如何执行 ADM 循环的具体准则",
+      "公司的考勤制度",
+      "财务报表的格式",
+      "程序员的编程语言偏好"
+    ],
+    "answer": [0],
+    "explanation": "准备阶段需要将通用的 ADM 调整为符合本企业实践的方法。"
+  },
+  {
+    "id": 62,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "在阶段 A（架构愿景）中，识别利益相关者的方法包括：",
+    "options": [
+      "分析组织结构图",
+      "访谈关键业务领导",
+      "查看现有的项目文档",
+      "在内部网站发投票帖"
     ],
     "answer": [0, 1, 2],
-    "explanation": "互操作性贯穿 BDAT 所有领域。"
+    "explanation": "架构师需系统地识别受项目影响的人员和部门。"
+  },
+  {
+    "id": 63,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 B 业务架构中，“业务参与者（Business Actor）”通常代表：",
+    "options": [
+      "组织内部或外部的人、部门或系统",
+      "电影明星",
+      "电脑 CPU",
+      "网络交换机"
+    ],
+    "answer": [0],
+    "explanation": "参与者是与业务交互的主体。"
+  },
+  {
+    "id": 64,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 数据架构的目标架构描述应包含：",
+    "options": [
+      "数据组件、逻辑数据实体及其关系",
+      "光纤线路的长度",
+      "服务器主板型号",
+      "办公室桌椅布局"
+    ],
+    "answer": [0],
+    "explanation": "数据架构关注数据实体的逻辑和结构化描述。"
+  },
+  {
+    "id": 65,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构如何支持“可扩展性（Scalability）”？",
+    "options": [
+      "通过定义可弹性调整的技术平台和资源管理策略",
+      "通过增加办公室的面积",
+      "通过减少员工人数",
+      "通过关闭所有防火墙"
+    ],
+    "answer": [0],
+    "explanation": "技术架构必须预见未来负载的增长并提供设计支撑。"
+  },
+  {
+    "id": 66,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 E 中的“机会（Opportunities）”主要是指：",
+    "options": [
+      "利用架构整合、重用或新技术引入来提升价值的可能性",
+      "去彩票店中奖的机会",
+      "去其他公司面试的机会",
+      "缩短午休时间的机会"
+    ],
+    "answer": [0],
+    "explanation": "此阶段旨在挖掘架构改进对业务带来的潜在利益点。"
+  },
+  {
+    "id": 67,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F 如何确保“实施和迁移计划”具备可行性？",
+    "options": [
+      "通过与实施团队和项目经理协同进行详细的资源与时间核算",
+      "通过架构师主观猜测",
+      "通过延长项目工期到 10 年",
+      "通过减少所有项目的预算"
+    ],
+    "answer": [0],
+    "explanation": "可行性取决于资源、进度和风险的现实评估。"
+  },
+  {
+    "id": 68,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 G 的“架构合规性建议”可能包括：",
+    "options": [
+      "实施项目必须遵循某项具体标准",
+      "建议调整某项非关键的技术实现",
+      "建议停止某项由于违反架构原则而产生高风险的活动",
+      "建议给开发团队涨工资"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "治理建议旨在引导项目回归架构正轨。"
+  },
+  {
+    "id": 69,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 如何驱动“新的架构周期”？",
+    "options": [
+      "当检测到重大业务环境或技术趋势变化，超出当前架构承载范围时发出请求",
+      "强制性每 3 个月开启一次",
+      "在架构师离职时开启",
+      "只有在公司破产时才开启"
+    ],
+    "answer": [0],
+    "explanation": "变更管理是连接旧周期和新周期的枢纽。"
+  },
+  {
+    "id": 70,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "“需求库（Requirements Repository）”的作用是：",
+    "options": [
+      "在各阶段之间提供一个中心化的需求存储和追溯机制",
+      "存放架构师的午餐盒",
+      "存放不再使用的废弃图表",
+      "仅供 CEO 查看的秘密文档"
+    ],
+    "answer": [0],
+    "explanation": "需求库确保需求在整个 ADM 过程中不丢失且可追溯。"
+  },
+  {
+    "id": 71,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 A 的制品“架构工作说明书”签署后意味着：",
+    "options": [
+      "架构项目的正式启动",
+      "各方对项目范围和目标的承诺",
+      "获得了后续阶段所需的资源许可",
+      "架构已经实施完成了"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "它是项目的“宪章”，确认了工作契约。"
+  },
+  {
+    "id": 72,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在业务架构中，描述“谁向谁汇报”的视图通常是：",
+    "options": [
+      "组织结构视图（Organization Chart）",
+      "业务功能视图",
+      "价值流视图",
+      "数据迁移视图"
+    ],
+    "answer": [0],
+    "explanation": "组织结构视图定义了治理和管理的层级。"
+  },
+  {
+    "id": 73,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 中，应用架构和数据架构的先后顺序如何确定？",
+    "options": [
+      "必须先应用后数据",
+      "必须先数据后应用",
+      "由架构师根据项目具体情况和紧迫需求决定，或并行进行",
+      "由抽签决定"
+    ],
+    "answer": [2],
+    "explanation": "TOGAF 强调 ADM 的灵活性，阶段 C 的两个子领域没有固定先后。"
+  },
+  {
+    "id": 74,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构的“基线描述”应该：",
+    "options": [
+      "反映当前的实际 IT 基础设施状态",
+      "反映架构师理想中的状态",
+      "反映 10 年前的状态",
+      "完全留白"
+    ],
+    "answer": [0],
+    "explanation": "基线必须基于现状，作为改进的出发点。"
+  },
+  {
+    "id": 75,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "在阶段 E 中，“架构构建块 (ABB)”如何转化为“解决方案构建块 (SBB)”？",
+    "options": [
+      "通过选择具体的供应商和产品",
+      "通过定义详细的技术规格和配置",
+      "通过代码编写",
+      "通过架构师的口头承诺"
+    ],
+    "answer": [0, 1],
+    "explanation": "ABB 是逻辑定义，SBB 是具体的物理实现选择。"
+  },
+  {
+    "id": 76,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F 如何处理“依赖关系”？",
+    "options": [
+      "通过“项目依赖关系矩阵”分析工作包之间的先后逻辑",
+      "通过延长所有项目的时间",
+      "通过增加所有人每天的加班时长",
+      "忽略依赖，直接并行开发"
+    ],
+    "answer": [0],
+    "explanation": "逻辑依赖分析是制定迁移计划的关键。"
+  },
+  {
+    "id": 77,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 G 的交付物通常包括：",
+    "options": [
+      "合规性评估报告",
+      "已签署的架构契约（更新版）",
+      "对实施团队的指导文档",
+      "最终目标架构的完整修订版"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "重点在于治理过程记录和对偏差的响应。"
+  },
+  {
+    "id": 78,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 监控到的“再造变更（Re-architecting change）”通常涉及：",
+    "options": [
+      "重大战略转型或颠覆性技术引入，需要重新设计整个架构",
+      "增加一个新的报表字段",
+      "修复一个排版错误",
+      "升级办公软件版本"
+    ],
+    "answer": [0],
+    "explanation": "再造变更是最高等级的变更，意味着现有架构基石已不再适用。"
+  },
+  {
+    "id": 79,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "需求管理阶段中，对需求的“冲突”处理应该基于：",
+    "options": [
+      "架构原则和业务优先级",
+      "谁的职位高听谁的",
+      "投票决定",
+      "谁先提的需求听谁的"
+    ],
+    "answer": [0],
+    "explanation": "决策必须符合预定义的准则和企业的战略价值。"
+  },
+  {
+    "id": 80,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在准备阶段，识别“业务驱动力（Business Drivers）”是为了：",
+    "options": [
+      "确保架构工作对准企业最迫切的业务需求",
+      "测试 CEO 的智商",
+      "增加文档的页数",
+      "为了让架构师看起来更专业"
+    ],
+    "answer": [0],
+    "explanation": "架构必须由业务需求驱动才能产生实际价值。"
+  },
+  {
+    "id": 81,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 A 的“解决方案构想图（Solution Concept Diagram）”主要用于：",
+    "options": [
+      "作为与非技术利益相关者沟通愿景的工具",
+      "作为服务器上架图",
+      "作为代码逻辑流程图",
+      "作为数据库表关系图"
+    ],
+    "answer": [0],
+    "explanation": "构想图以高层级的视角阐述提议的解决方案。"
+  },
+  {
+    "id": 82,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "业务架构（阶段 B）中的“业务流程（Business Process）”应描述：",
+    "options": [
+      "为了达成业务目标所需的有序活动序列",
+      "活动涉及的角色",
+      "活动产生的输出制品",
+      "底层的操作系统指令"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "业务流程关注业务层面的操作逻辑和参与方。"
+  },
+  {
+    "id": 83,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 数据架构中，“元数据（Metadata）”是指：",
+    "options": [
+      "关于数据的数据",
+      "加密后的数据",
+      "已经删除的数据",
+      "从外部购买的数据"
+    ],
+    "answer": [0],
+    "explanation": "元数据对于数据管理、检索和治理至关重要。"
+  },
+  {
+    "id": 84,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构的步骤中，如果发现目标与基线差距过大，应该：",
+    "options": [
+      "考虑引入“过渡架构”",
+      "放弃目标架构",
+      "掩盖差距",
+      "辞职"
+    ],
+    "answer": [0],
+    "explanation": "过渡架构用于平滑处理巨大的技术鸿沟。"
+  },
+  {
+    "id": 85,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 E 识别出的“工作包”会被整合到：",
+    "options": [
+      "架构路线图（Architecture Roadmap）",
+      "实施和迁移策略",
+      "个人年度绩效计划",
+      "市场推广软文"
+    ],
+    "answer": [0, 1],
+    "explanation": "工作包是路线图和策略的基本构建单元。"
+  },
+  {
+    "id": 86,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F 如何平衡“业务收益”与“实施成本”？",
+    "options": [
+      "通过成本/效益分析进行项目优先级划分",
+      "只选最便宜的方案",
+      "只选收益最高的方案",
+      "由项目经理随意决定"
+    ],
+    "answer": [0],
+    "explanation": "理性的计划基于价值和投入的权衡。"
+  },
+  {
+    "id": 87,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 G，如果发现底层技术实现无法满足性能需求，架构师应该：",
+    "options": [
+      "通过架构变更请求（Change Request）更新技术规范",
+      "要求程序员继续加班尝试",
+      "直接把需求删掉",
+      "告诉业务人员技术不支持"
+    ],
+    "answer": [0],
+    "explanation": "治理流程应及时反馈实施挑战并调整架构细节。"
+  },
+  {
+    "id": 88,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 监控发现“系统性能持续下降”，这可能引发：",
+    "options": [
+      "增量变更（Incremental change）以进行优化",
+      "关闭系统",
+      "解雇运维人员",
+      "不做任何处理"
+    ],
+    "answer": [0],
+    "explanation": "为了保持架构的有效性，需要定期的维护和优化（增量变更）。"
+  },
+  {
+    "id": 89,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "需求管理阶段的输入可以来自：",
+    "options": [
+      "任何 ADM 阶段产生的新需求",
+      "外部监管机构的政策变化",
+      "企业的年度战略调整",
+      "程序员的吐槽"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "需求源头多样，关键是需要通过流程进行过滤和管理。"
+  },
+  {
+    "id": 90,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "准备阶段中，确定的“架构资源”是指：",
+    "options": [
+      "人员、资金、时间及工具",
+      "只有电脑设备",
+      "只有外部咨询顾问",
+      "只有服务器机房"
+    ],
+    "answer": [0],
+    "explanation": "资源是建立架构能力的物质基础。"
+  },
+  {
+    "id": 91,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 A 的“架构工作请求”在哪个时间点产生？",
+    "options": [
+      "准备阶段结束或阶段 A 开始前",
+      "阶段 G 结束时",
+      "整个项目完成后",
+      "程序员写完代码后"
+    ],
+    "answer": [0],
+    "explanation": "请求通常是外部业务部门发起的，旨在启动一个新的架构循环。"
+  },
+  {
+    "id": 92,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 B 业务架构中的“业务服务”与“业务功能”的区别在于：",
+    "options": [
+      "服务是暴露给外部或另一方的接口，功能是内部的能力",
+      "功能是硬件，服务是软件",
+      "服务在阶段 C 定义，功能在阶段 B 定义",
+      "两者没有区别"
+    ],
+    "answer": [0],
+    "explanation": "服务侧重于契约和交互，功能侧重于内部的能力聚合。"
+  },
+  {
+    "id": 93,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 应用架构中，定义的“候选应用组件”属于：",
+    "options": [
+      "架构构建块（ABB）",
+      "解决方案构建块（SBB）",
+      "需求规范",
+      "变更请求"
+    ],
+    "answer": [0],
+    "explanation": "在架构开发阶段（B/C/D），定义的都是逻辑性的 ABB。"
+  },
+  {
+    "id": 94,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构如何处理“传统遗留系统”？",
+    "options": [
+      "识别其位置、功能及其在迁移过程中的保留、整合或淘汰方案",
+      "直接从图表中删除，假装不存在",
+      "强制要求一周内关闭",
+      "要求程序员将其代码全部重写"
+    ],
+    "answer": [0],
+    "explanation": "基线架构必须包含遗留系统，以便规划迁移。"
+  },
+  {
+    "id": 95,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 E 如何评估“现成软件 (COTS)”？",
+    "options": [
+      "与目标架构需求的符合度",
+      "供应商的长期生存能力",
+      "集成的成本和复杂性",
+      "软件的图标是否好看"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "COTS 选择是解决方案识别的重要部分。"
+  },
+  {
+    "id": 96,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 F 的迁移计划是否包含“培训计划”？",
+    "options": [
+      "是的，因为人员能力的提升是转型成功的关键",
+      "不是，培训属于 HR 的工作，与架构无关",
+      "只有在有多余预算时才包含",
+      "只有在架构师想当讲师时才包含"
+    ],
+    "answer": [0],
+    "explanation": "业务转型准备的一部分是确保人员具备操作新架构的能力。"
+  },
+  {
+    "id": 71,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 G，谁负责处理由于实施原因提出的“架构变更”？",
+    "options": [
+      "架构委员会",
+      "项目经理",
+      "普通开发人员",
+      "外包公司"
+    ],
+    "answer": [0],
+    "explanation": "架构层面的决策和变更批准由架构治理机构（委员会）负责。"
+  },
+  {
+    "id": 98,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 H 持续运行的“资产库维护”包括：",
+    "options": [
+      "将实施后的制品存入架构存储库",
+      "更新组织标准分类法",
+      "记录经验教训（Lessons Learned）",
+      "清理办公室多余的杂物"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "资产库是企业长期架构能力的积累地。"
+  },
+  {
+    "id": 99,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "需求管理阶段中，如果一个需求属于“不再有效”，应该：",
+    "options": [
+      "在需求库中标记为过时，并评估其对已有阶段的影响",
+      "立即物理删除该记录",
+      "继续实现它以浪费时间",
+      "假装它从未出现过"
+    ],
+    "answer": [0],
+    "explanation": "失效需求的管理对于防止“需求蔓延”至关重要。"
+  },
+  {
+    "id": 100,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "ADM 循环中的“需求管理”图标在示意图中位于：",
+    "options": [
+      "中心位置",
+      "最顶端",
+      "最底端",
+      "在一个独立的页面"
+    ],
+    "answer": [0],
+    "explanation": "这象征着需求是驱动所有 ADM 阶段的核心。"
   },
   {
     "id": 101,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase G（实施治理）中，架构师的主要交付物是：",
+    "question": "准备阶段中，“业务原则”是由谁制定的？",
     "options": [
-      "最终确定的业务流程图",
-      "架构合同 (Architecture Contracts)",
-      "数据库架构源代码",
-      "员工培训手册"
+      "通常在 ADM 之外，由企业高层管理制定",
+      "架构师独自在办公室制定",
+      "程序员在写代码时制定",
+      "外部监管机构制定"
     ],
-    "answer": [1],
-    "explanation": "架构合同是 Phase G 的核心，它确立了架构团队与实施团队之间的权利义务关系。"
+    "answer": [0],
+    "explanation": "业务原则是架构工作的外部约束，属于企业战略层级。"
   },
   {
     "id": 102,
     "module": "Module 4 - ADM Phases",
-    "type": "single",
-    "question": "根据 TOGAF，当架构变更涉及“通过整合减少配置项以削减开销”时，这属于：",
+    "type": "multi",
+    "question": "在阶段 A 中，定义架构工作“范围”时需要考虑：",
     "options": [
-      "简化变更 (Simplification Change)",
-      "增量变更 (Incremental Change)",
-      "重构变更 (Re-architecting Change)",
-      "紧急变更"
+      "组织覆盖范围",
+      "架构领域的深度（业务、数据、应用、技术）",
+      "时间跨度",
+      "架构师的午休时间"
     ],
-    "answer": [0],
-    "explanation": "简化变更的核心在于整合与减少复杂性，通常不改变架构的主体逻辑。"
+    "answer": [0, 1, 2],
+    "explanation": "范围界定确保资源集中在正确的优先级上。"
   },
   {
     "id": 103,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "需求管理阶段在 ADM 中负责哪些活动？",
+    "type": "single",
+    "question": "在业务架构中，描述“企业内部各个部门及其关系”的图是：",
     "options": [
-      "识别架构需求",
-      "存储需求于需求库中",
-      "评估需求变更的影响",
-      "在各阶段之间同步需求优先级"
+      "组织图（Organization Chart）",
+      "数据流程图",
+      "技术拓扑图",
+      "软件部署图"
     ],
-    "answer": [0, 1, 2, 3],
-    "explanation": "需求管理是一个持续的过程，涵盖了需求的识别、存储、评估和同步。"
+    "answer": [0],
+    "explanation": "组织图定义了业务实体的管理和汇报结构。"
   },
   {
     "id": 104,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "如果在 Phase G 的合规性审查中发现实施项目严重偏离了架构，且没有合理的商业理由，通常会：",
+    "question": "阶段 C 数据架构的一个重要输出矩阵是：",
     "options": [
-      "直接解散实施团队",
-      "要求实施团队进行补救或申请特许豁免 (Dispensation)",
-      "忽略该偏离，因为开发已经完成",
-      "要求重新进行 Phase A"
+      "数据实体/业务功能矩阵（CRUD 矩阵）",
+      "技术组件/位置矩阵",
+      "角色/工资矩阵",
+      "代码/Bug 矩阵"
     ],
-    "answer": [1],
-    "explanation": "不合规的补救措施包括整改以符合架构，或者在理由充分的情况下申请特许豁免。"
+    "answer": [0],
+    "explanation": "该矩阵定义了哪个业务功能对哪些数据进行增删改查。"
   },
   {
     "id": 105,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "Phase H（架构变更管理）中的“技术观察 (Technology Watch)”是为了：",
+    "question": "阶段 D 技术架构中，定义的“服务目录”描述：",
     "options": [
-      "监控员工是否在上班时间看视频",
-      "评估新技术是否可能触发架构的更新或改进",
-      "防止电脑被病毒感染",
-      "统计服务器的采购成本"
+      "技术架构为上层提供的各类技术服务（如计算、存储、网络等）",
+      "公司周边的餐厅列表",
+      "架构师的个人技能列表",
+      "外包公司的价目表"
     ],
-    "answer": [1],
-    "explanation": "技术观察是 Phase H 的前瞻性活动，旨在利用新技术驱动架构优化。"
+    "answer": [0],
+    "explanation": "服务目录明确了技术层能够交付的能力项。"
   },
   {
     "id": 106,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "重构变更 (Re-architecting Change) 通常由以下哪些因素触发？",
+    "type": "single",
+    "question": "阶段 E 如何处理“合并（Consolidation）”？",
     "options": [
-      "基础架构需要与新的业务策略重新对齐",
-      "发生重大法律或监管环境变化",
-      "现有的架构已经无法支撑业务增长需求",
-      "仅因为更换了显示器型号"
+      "识别可以整合的项目、系统或服务以提高效率",
+      "将所有员工合并到一个大办公室",
+      "将所有项目预算合并到一个人的账户",
+      "将所有服务器硬盘合并成一个大的"
     ],
-    "answer": [0, 1, 2],
-    "explanation": "重构变更是最高级别的变更，涉及对架构根基的重新审视。"
+    "answer": [0],
+    "explanation": "整合是实现架构优化价值的重要手段。"
   },
   {
     "id": 107,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 ADM 循环图中，箭头从需求管理中心指向各个 Phase，这代表：",
+    "question": "阶段 F 如何确定“资源可用性”？",
     "options": [
-      "需求管理只提供输入",
-      "需求管理是一个被动的过程",
-      "需求管理与各阶段是双向互动的，并驱动阶段间的转换",
-      "需求管理只在 Phase A 发生作用"
+      "通过与职能经理沟通，确认人员、资金和设备在计划时间内是否到位",
+      "通过查看银行余额",
+      "通过查阅员工的简历",
+      "通过掷硬币决定"
     ],
-    "answer": [2],
-    "explanation": "需求管理是循环的核心，它响应各阶段的需求，同时也驱动架构师进入下一个合适的阶段。"
+    "answer": [0],
+    "explanation": "计划的执行必须依赖真实的资源支持。"
   },
   {
     "id": 108,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase G 期间，谁最终负责系统的成功交付和运行？",
+    "question": "阶段 G 的治理不仅要确保合规性，还要：",
     "options": [
-      "企业架构师",
-      "实施组织/项目团队",
-      "董事会秘书",
-      "人力资源主管"
+      "在实施遇到不可预见挑战时，提供架构指导和权衡建议",
+      "亲自下场帮忙调试数据库",
+      "代替项目经理进行日常管理",
+      "向业务发起人申请更多的奖金"
     ],
-    "answer": [1],
-    "explanation": "虽然架构师负责治理，但实施组织负责具体的交付和日常运行。"
+    "answer": [0],
+    "explanation": "治理也是一种支持活动，确保实施过程中的决策符合架构意图。"
   },
   {
     "id": 109,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase H 中，如果一个变更被确定为“增量变更”，则：",
+    "question": "阶段 H 中，“监控变化（Monitoring change）”的对象不包括：",
     "options": [
-      "必须启动全新的 ADM 循环",
-      "通常作为架构的一次刷新（Refresh）来处理",
-      "可以完全忽略治理流程",
-      "意味着需要裁撤整个 IT 部门"
+      "业务战略的变化",
+      "底层技术的更新迭代",
+      "项目组每天开会的次数",
+      "竞争对手的动态"
     ],
-    "answer": [1],
-    "explanation": "增量变更通常不涉及核心结构的变动，可以通过简化的流程或作为当前架构的刷新来管理。"
+    "answer": [2],
+    "explanation": "监控应聚焦于可能驱动架构演进的重要外部和内部因素。"
   },
   {
     "id": 110,
     "module": "Module 4 - ADM Phases",
     "type": "multi",
-    "question": "架构合规性审查 (Architecture Compliance Review) 的好处包括：",
+    "question": "需求管理过程中，对于“高优先级”需求的处理应该是：",
     "options": [
-      "及早发现不一致性以降低成本",
-      "确保架构资产得到重用",
-      "向业务部门展示 IT 遵循了约定的策略",
-      "证明架构师比开发人员更聪明"
+      "尽快评估其对当前正在进行的阶段的影响",
+      "优先安排进下一个架构路线图或迭代循环",
+      "必须在 1 小时内完成开发",
+      "由架构师一个人决定是否实现"
     ],
-    "answer": [0, 1, 2],
-    "explanation": "合规审查旨在确保战略对齐、资产重用和风险规避。"
+    "answer": [0, 1],
+    "explanation": "高优先级需求需要及时的分析和排期。"
   },
   {
     "id": 111,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在开发架构构建块 (ABB) 时，以下哪项描述是正确的？",
+    "question": "在准备阶段，选择“架构工具”的依据应主要是：",
     "options": [
-      "ABB 必须包含特定的供应商产品型号",
-      "ABB 描述逻辑功能并捕获业务需求",
-      "ABB 仅在 Phase D（技术架构）中定义",
-      "ABB 是不可重用的"
+      "工具对所选架构框架、元模型和团队协作的支持能力",
+      "工具的界面是否炫酷",
+      "工具是否最贵",
+      "CEO 以前用过哪个工具"
     ],
-    "answer": [1],
-    "explanation": "ABB 是逻辑实体，定义了功能和交互需求，且独立于具体的实现（SBB）。"
+    "answer": [0],
+    "explanation": "工具必须为方法论服务，而非本末倒置。"
   },
   {
     "id": 112,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "如果在差距分析 (Gap Analysis) 中，基线架构中存在某个功能，但目标架构中删除了该功能，这应标记为：",
+    "question": "阶段 A 的核心产出物之一是“架构工作说明书”，它是一份：",
     "options": [
-      "新增项",
-      "被排除或故意删除的项目 (Intentionally eliminated items)",
-      "遗漏项",
-      "保持不变项"
+      "法律上的外包合同",
+      "架构师与发起人之间关于项目目标和执行方式的契约",
+      "程序员的编程规范",
+      "给客户的产品手册"
     ],
     "answer": [1],
-    "explanation": "差距分析必须记录所有变化，包括删除的组件，以确保相关人员理解受影响的范围。"
+    "explanation": "它是指导后续 ADM 工作的正式管理文档。"
   },
   {
     "id": 113,
     "module": "Module 4 - ADM Phases",
     "type": "multi",
-    "question": "Phase E（机会与解决方案）的主要输出包括：",
+    "question": "业务架构（阶段 B）中，“业务能力建模”的作用是：",
     "options": [
-      "架构路线图 (初步版)",
-      "工作包目录",
-      "过渡架构定义",
-      "最终确定的实施与迁移计划"
+      "建立企业所需能力的视图，以便与技术实现脱钩",
+      "识别能力的短缺或冗余",
+      "评估员工的个人技能",
+      "确定服务器的运算能力"
     ],
-    "answer": [0, 1, 2],
-    "explanation": "最终确定的实施与迁移计划是 Phase F 的输出，Phase E 提供的是其初步框架。"
+    "answer": [0, 1],
+    "explanation": "能力建模是连接战略与实施的高层级抽象。"
   },
   {
     "id": 114,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase G 期间，架构师发现现有的网络基础设施超出了当初设计的负载能力，需要微调。这种属于：",
+    "question": "阶段 C 应用架构中，“应用组件”在物理层面上可能是：",
     "options": [
-      "重构变更",
-      "增量变更",
-      "简化变更",
-      "这不属于架构变更"
+      "一个具体的商业软件包（COTS）或定制开发的微服务",
+      "一台打印机",
+      "一个网络防火墙硬件",
+      "一套办公桌椅"
     ],
-    "answer": [1],
-    "explanation": "针对现有能力的微调或标准刷新通常被视为增量变更。"
+    "answer": [0],
+    "explanation": "物理组件是逻辑功能的具体承载实体。"
   },
   {
     "id": 115,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "架构工作说明书 (Statement of Architecture Work) 与架构工作请求 (Request for Architecture Work) 的根本区别是：",
+    "question": "阶段 D 技术架构的“差距分析”结果可能会驱动：",
     "options": [
-      "前者是请求，后者是回复",
-      "前者是已批准的执行合同，后者是启动项目的初始请求",
-      "两者没有任何区别",
-      "前者由开发人员编写，后者由架构师编写"
+      "对某些技术标准的更新或退役建议",
+      "将架构师的工资降低",
+      "增加员工的带薪年假",
+      "购买更多的零食"
     ],
-    "answer": [1],
-    "explanation": "Request 启动 Phase A，Statement 是 Phase A 的产出，标志着项目的正式立项和范围确定。"
+    "answer": [0],
+    "explanation": "技术差距直接指向了基础设施的升级需求。"
   },
   {
     "id": 116,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "在进行业务转型就绪评估 (BTRA) 时，通常评估以下哪些方面？",
+    "type": "single",
+    "question": "阶段 E 产生的“路线图”初稿中，应包含对哪个关键要素的识别？",
     "options": [
-      "治理成熟度",
-      "人员/文化就绪度",
-      "IT 技能可用性",
-      "管理层的资助决心"
+      "过渡架构（Transition Architectures）",
+      "详细的服务器 IP 分配表",
+      "每个程序员的代码产出量",
+      "公司的品牌 Logo 演变"
     ],
-    "answer": [0, 1, 2, 3],
-    "explanation": "BTRA 是一个多维度的评估，确保组织具备实施架构变革的软硬件条件。"
+    "answer": [0],
+    "explanation": "过渡架构是分阶段交付价值的核心路径描述。"
   },
   {
     "id": 117,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "TOGAF ADM 中，'解决跨架构域的影响 (Resolve impacts across landscape)' 这一子步骤旨在：",
+    "question": "阶段 F 如何降低“大规模变革”带来的业务风险？",
     "options": [
-      "增加项目的复杂性",
-      "确保在一个域（如技术）中的决策不会负面影响另一个域（如业务）",
-      "延迟项目进度",
-      "仅为了满足审计要求"
+      "通过将大的变革分解为一系列低风险、可管理的增量步骤",
+      "通过在半夜偷偷上线",
+      "通过祈祷不出现 Bug",
+      "通过强制要求所有用户在上线期间休假"
     ],
-    "answer": [1],
-    "explanation": "由于四个架构域紧密关联，必须在各阶段末尾协调冲突。"
+    "answer": [0],
+    "explanation": "逐步演进是降低复杂项目风险的标准做法。"
   },
   {
     "id": 118,
     "module": "Module 4 - ADM Phases",
-    "type": "single",
-    "question": "在 Phase F 中，实施和迁移计划的风险评估应侧重于：",
+    "type": "multi",
+    "question": "在阶段 G，架构合规性评审（Compliance Review）通常关注：",
     "options": [
-      "项目是否能在周五下午完成",
-      "架构实施对业务运营的干扰风险以及财务风险",
-      "程序员是否喜欢加班",
-      "竞争对手的股票价格"
+      "项目是否遵循了架构定义的规范",
+      "项目是否使用了不合规的非标产品",
+      "项目是否偏离了最初定义的业务目标",
+      "项目组成员的打卡记录"
     ],
-    "answer": [1],
-    "explanation": "迁移风险主要关乎业务连续性、合规性和资金效率。"
+    "answer": [0, 1, 2],
+    "explanation": "评审是全方位的架构合规检查。"
   },
   {
     "id": 119,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "以下哪些是需求管理 (Requirements Management) 过程中涉及的工件？",
+    "type": "single",
+    "question": "阶段 H 结束后，架构治理的重心转移到：",
     "options": [
-      "需求库 (Requirements Repository)",
-      "架构需求规范 (Architecture Requirements Specification)",
-      "需求评估影响报告",
-      "年度财务审计报告"
+      "持续的变更管理和价值评估循环中",
+      "项目审计中",
+      "员工培训中",
+      "市场营销中"
     ],
-    "answer": [0, 1, 2],
-    "explanation": "需求管理的核心是追踪、记录和评估需求及其影响。"
+    "answer": [0],
+    "explanation": "阶段 H 保证了架构的生命周期闭环。"
   },
   {
     "id": 120,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 ADM 循环中，架构愿景 (Phase A) 的一个关键交付物是利益相关者映射，其目的是：",
+    "question": "需求管理阶段通过什么来确保需求不被丢失？",
     "options": [
-      "记录所有人的家庭住址",
-      "确保所有关键利益相关者的关注点在架构设计中得到体现",
-      "作为解雇员工的依据",
-      "向竞争对手展示团队规模"
+      "需求库（Requirements Repository）",
+      "架构师的记事本",
+      "公司的公告栏",
+      "员工的口耳相传"
     ],
-    "answer": [1],
-    "explanation": "架构设计的成功在于满足关键利益相关者的需求（Concerns）。"
+    "answer": [0],
+    "explanation": "正式的需求存储库是管理的基石。"
   },
   {
     "id": 121,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "什么时候需要创建过渡架构 (Transition Architecture)？",
+    "question": "准备阶段中，“定义企业架构原则”的时间点通常在：",
     "options": [
-      "当目标架构非常简单时",
-      "当无法通过单一项目从基线演进到目标，需要分步实施时",
-      "当首席执行官要求看更多的图表时",
-      "当项目预算过多时"
+      "建立架构框架和工具之前或同时",
+      "系统上线之后",
+      "程序员开始写代码之前",
+      "年度财报发布之后"
     ],
-    "answer": [1],
-    "explanation": "过渡架构是管理大型复杂转型的标准工具。"
+    "answer": [0],
+    "explanation": "原则是框架的一部分，必须在架构开发前明确。"
   },
   {
     "id": 122,
     "module": "Module 4 - ADM Phases",
-    "type": "multi",
-    "question": "在 Phase G 实施治理期间，架构师的主要职责包括：",
+    "type": "single",
+    "question": "阶段 A 的制品“架构愿景”文档中，最能吸引业务高层的部分通常是：",
     "options": [
-      "为开发人员编写单元测试",
-      "提供架构解释和指导",
-      "执行架构合规性审查",
-      "批准设计方案的偏离（特许豁免）"
+      "价值主张和业务效益分析",
+      "详细的技术协议说明",
+      "数据库表结构图",
+      "复杂的网络拓扑逻辑"
     ],
-    "answer": [1, 2, 3],
-    "explanation": "架构师的角色是监督和指导，而非直接参与实现细节。"
+    "answer": [0],
+    "explanation": "业务层关注的是投资回报和战略支撑。"
   },
   {
     "id": 123,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "在 Phase H 中，如果一个变更被评估为需要‘重新架构 (Re-architecting)’，则正确的做法是：",
+    "question": "在业务架构中，什么是“业务功能（Business Function）”？",
     "options": [
-      "在当前阶段直接修改架构文档",
-      "忽略该需求直到下一个财政年度",
-      "发布一个新的‘架构工作请求’，启动全新的 ADM 循环",
-      "直接通知运维部门修改服务器配置"
+      "企业执行的一系列具有特定业务目的的活动集合",
+      "电脑的一个软件功能",
+      "一个 Excel 公式",
+      "办公室里的打印机功能"
     ],
-    "answer": [2],
-    "explanation": "重大的战略变更需要正规的程序来重新审视愿景和范围。"
+    "answer": [0],
+    "explanation": "功能是业务能力的逻辑聚合。"
   },
   {
     "id": 124,
     "module": "Module 4 - ADM Phases",
     "type": "single",
-    "question": "根据 TOGAF，下列哪一项最准确地描述了架构定义文档 (ADD)？",
+    "question": "阶段 C 中，应用架构如何支持“解耦”？",
     "options": [
-      "它仅包含技术细节",
-      "它在 Phase A 开始，并在整个循环中不断丰富，最终在 Phase F 完成",
-      "它由项目经理编写",
-      "它仅包含财务预算信息"
+      "通过定义标准化的应用接口和服务契约",
+      "通过切断所有服务器之间的网线",
+      "通过减少应用系统的数量",
+      "通过将所有应用部署在同一台机器上"
     ],
-    "answer": [1],
-    "explanation": "ADD 是 ADM 的核心“活文档”，随着阶段推进逐渐详尽。"
+    "answer": [0],
+    "explanation": "解耦提高了系统的灵活性和可维护性。"
   },
   {
     "id": 125,
     "module": "Module 4 - ADM Phases",
     "type": "multi",
-    "question": "在进行差距分析时，识别出的‘遗漏 (Omissions)’可能源于：",
+    "question": "阶段 D 技术架构中，“硬件分布视图”有助于：",
     "options": [
-      "基线架构描述不全",
-      "目标架构设计失误",
-      "业务需求发生变化",
-      "选择了错误的参考模型"
+      "了解设备的物理位置及互联需求",
+      "评估灾备能力",
+      "规划技术支持人力",
+      "统计公司有多少台笔记本电脑"
     ],
     "answer": [0, 1, 2],
-    "explanation": "遗漏通常意味着某些关键组件未被考虑到或丢失了。"
+    "explanation": "硬件视图支持物理层面的设计与部署规划。"
+  },
+  {
+    "id": 126,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 E 产生的“架构路线图”反映了：",
+    "options": [
+      "从当前到目标的多个候选实施路径及其逻辑顺序",
+      "架构师每天上下班的路线",
+      "公司未来 50 年的宏伟蓝图",
+      "项目组的团建路线"
+    ],
+    "answer": [0],
+    "explanation": "路线图是实施的战略指引。"
+  },
+  {
+    "id": 127,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 F，谁负责最终批准“实施和迁移计划”？",
+    "options": [
+      "相关的业务发起人和决策机构",
+      "初级架构师",
+      "外部清洁工",
+      "代码测试员"
+    ],
+    "answer": [0],
+    "explanation": "计划的批准涉及资源投入，必须由具备权限的领导层确认。"
+  },
+  {
+    "id": 128,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 G 的治理过程中，如果发现一个“合规性风险”，架构师应该：",
+    "options": [
+      "记录该风险并向治理委员会汇报，提出缓解建议",
+      "隐瞒该风险",
+      "直接把项目叫停",
+      "辞去架构师职务"
+    ],
+    "answer": [0],
+    "explanation": "发现、记录、报告是治理的标准动作。"
+  },
+  {
+    "id": 129,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 H 如何驱动架构的“自愈和进化”？",
+    "options": [
+      "通过定期的合规性和性能审计",
+      "通过持续监控技术和业务变化",
+      "通过发布架构变更请求驱动新 ADM",
+      "通过强制要求系统每晚自动重启"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "进化源于持续的监控和主动的反馈。"
+  },
+  {
+    "id": 130,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "需求管理阶段通过什么来保持需求的“追溯性（Traceability）”？",
+    "options": [
+      "记录需求与产生需求的阶段、利益相关者及相关制品的关系",
+      "要求架构师过目不忘",
+      "在白板上用马克笔画线",
+      "将所有需求打印出来堆在桌上"
+    ],
+    "answer": [0],
+    "explanation": "追溯性确保了变更决策的科学依据。"
+  },
+  {
+    "id": 131,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "准备阶段中，确定的“架构范围（Architecture Scope）”不包括：",
+    "options": [
+      "企业组织范围",
+      "架构涉及的业务领域",
+      "具体的程序员姓名及其薪资",
+      "时间段跨度"
+    ],
+    "answer": [2],
+    "explanation": "架构范围关注的是组织、领域和时间等战略边界。"
+  },
+  {
+    "id": 132,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 A 的步骤“识别利益相关者及其关注点”有助于：",
+    "options": [
+      "确保架构设计能够解决各方的真实痛点",
+      "统计公司有多少个经理",
+      "为了给利益相关者发过节福利",
+      "评估谁的办公室最大"
+    ],
+    "answer": [0],
+    "explanation": "利益相关者驱动是 TOGAF 的核心原则之一。"
+  },
+  {
+    "id": 133,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "在阶段 B 业务架构中，常用的分析技术包括：",
+    "options": [
+      "业务场景分析（Business Scenarios）",
+      "价值流映射（Value Stream Mapping）",
+      "功能分解（Functional Decomposition）",
+      "代码静态检查"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "业务架构侧重于流程、功能和价值分析。"
+  },
+  {
+    "id": 134,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 应用架构的目标是：",
+    "options": [
+      "定义支持业务所需的应用软件逻辑结构",
+      "购买最贵的商业软件",
+      "编写详细的 Java 代码",
+      "优化数据库查询语句"
+    ],
+    "answer": [0],
+    "explanation": "应用架构侧重于系统间的逻辑关系和能力分布。"
+  },
+  {
+    "id": 135,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构中，定义的“技术组件（Technology Component）”是：",
+    "options": [
+      "提供技术服务的具体软硬件设施（如服务器、中间件等）",
+      "业务经理的个人电脑",
+      "办公室的路由器指示灯",
+      "一根网线"
+    ],
+    "answer": [0],
+    "explanation": "技术组件是实现架构所需的基础设施实体。"
+  },
+  {
+    "id": 136,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 E 产生的“工作包（Work Package）”描述了：",
+    "options": [
+      "一组具体的实施活动及其产出",
+      "快递公司送来的包裹",
+      "架构师的出差行李清单",
+      "程序员的午餐盒"
+    ],
+    "answer": [0],
+    "explanation": "工作包是计划执行的最小管理单元。"
+  },
+  {
+    "id": 137,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 F 如何整合“实施计划”？",
+    "options": [
+      "通过平衡项目风险、业务优先级和资源约束",
+      "通过与现有的项目管理办公室（PMO）对接",
+      "通过制定详细的时间进度表",
+      "通过延长所有项目的交付日期"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "计划整合是一个跨部门、多维度的协同过程。"
+  },
+  {
+    "id": 138,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 G 治理期间，如果项目需要做出一项偏离架构的设计，架构师应该：",
+    "options": [
+      "进行“架构合规性评审”并出具正式结论",
+      "私下允许开发人员修改",
+      "直接向 CEO 举报该开发人员",
+      "不闻不问"
+    ],
+    "answer": [0],
+    "explanation": "任何对架构的偏离都必须通过正式的治理流程处理。"
+  },
+  {
+    "id": 139,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 H 识别到一个“增量变更（Incremental Change）”，通常指：",
+    "options": [
+      "架构的部分优化或次要组件升级，不改变核心框架",
+      "必须要推翻重做的变化",
+      "程序员写错了一个单词",
+      "购买了一台新的打印机"
+    ],
+    "answer": [0],
+    "explanation": "增量变更是架构的维护和微调。"
+  },
+  {
+    "id": 140,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在 ADM 过程中，当发生需求变更时，最先进入哪个阶段？",
+    "options": [
+      "需求管理（Requirements Management）",
+      "阶段 A",
+      "准备阶段",
+      "阶段 H"
+    ],
+    "answer": [0],
+    "explanation": "所有需求的生命周期管理都在中心的需求管理阶段处理。"
+  },
+  {
+    "id": 141,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "准备阶段中，“定制架构框架”的主要原因不包括：",
+    "options": [
+      "因为现有的 TOGAF 标准太完美，不需要任何改动",
+      "为了适应企业的业务流程和行业特性",
+      "为了适配企业的管理风格和成熟度",
+      "为了与企业已有的其他工具链集成"
+    ],
+    "answer": [0],
+    "explanation": "TOGAF 设计初衷就是必须被定制以适应具体的企业环境。"
+  },
+  {
+    "id": 142,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 A 的制品“利益相关者映射（Stakeholder Map）”通常包括：",
+    "options": [
+      "利益相关者的姓名、角色、对项目的影响力和关注点",
+      "利益相关者的家庭住址",
+      "利益相关者的银行存款",
+      "利益相关者的个人兴趣爱好"
+    ],
+    "answer": [0],
+    "explanation": "映射矩阵是制定沟通和管理策略的基础。"
+  },
+  {
+    "id": 143,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "业务架构（阶段 B）开发过程中，基线和目标描述应涵盖：",
+    "options": [
+      "业务流程",
+      "业务功能",
+      "业务信息需求",
+      "具体的 C++ 代码实现"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "业务架构不涉及底层的程序代码实现。"
+  },
+  {
+    "id": 144,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 C 应用架构的一个重要制品“应用/数据矩阵”定义了：",
+    "options": [
+      "哪个应用系统使用或管理哪些数据实体",
+      "哪个程序员写了哪行代码",
+      "哪台服务器存储了哪个数据库文件",
+      "哪台打印机打印了哪份报表"
+    ],
+    "answer": [0],
+    "explanation": "该矩阵描述了应用与数据之间的逻辑关联。"
+  },
+  {
+    "id": 145,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 D 技术架构的目标是：",
+    "options": [
+      "描述支持业务所需的技术基础设施蓝图",
+      "安装所有的操作系统补丁",
+      "购买最先进的显卡",
+      "编写所有的路由器配置脚本"
+    ],
+    "answer": [0],
+    "explanation": "技术架构关注蓝图设计，而非日常的技术操作。"
+  },
+  {
+    "id": 146,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 E 如何对“解决方案”进行识别？",
+    "options": [
+      "评估各领域差距分析的结果",
+      "考察市场上现有的产品和服务",
+      "考虑企业内部已有的、可重用的资产",
+      "通过架构师的个人偏好强行指定"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "解决方案的识别是一个基于差距和资源的综合评估过程。"
+  },
+  {
+    "id": 147,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "在阶段 F，迁移计划中定义“关键路径”的目的是：",
+    "options": [
+      "识别决定整个项目总工期的核心任务序列",
+      "识别架构师每天去机房的路线",
+      "识别项目经理的办公位位置",
+      "识别最容易出 Bug 的代码文件"
+    ],
+    "answer": [0],
+    "explanation": "关键路径分析是进度管理的核心。"
+  },
+  {
+    "id": 148,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "阶段 G 的治理角色通常由谁来担任以进行中立的评审？",
+    "options": [
+      "不参与该项目开发的架构师或架构委员会专家",
+      "项目经理本人",
+      "外包商的销售经理",
+      "实习生"
+    ],
+    "answer": [0],
+    "explanation": "治理需要一定的独立性以确保评审的客观。"
+  },
+  {
+    "id": 149,
+    "module": "Module 4 - ADM Phases",
+    "type": "multi",
+    "question": "阶段 H 持续监控的业务价值可能包括：",
+    "options": [
+      "成本降低的幅度",
+      "业务敏捷性的提升",
+      "对合规性要求的满足程度",
+      "办公室装修的档次"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "价值监控必须围绕架构承诺的业务收益进行。"
+  },
+  {
+    "id": 150,
+    "module": "Module 4 - ADM Phases",
+    "type": "single",
+    "question": "ADM 的核心“需求管理”阶段通过什么制品记录需求的变更历史？",
+    "options": [
+      "需求影响评估报告（Requirements Impact Report）",
+      "架构师的个人日记",
+      "项目的会议纪要",
+      "程序员的 Slack 聊天记录"
+    ],
+    "answer": [0],
+    "explanation": "正式的需求影响分析报告记录了变更的依据和结论。"
   }
 ]
