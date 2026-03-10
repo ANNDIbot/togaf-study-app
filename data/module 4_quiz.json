@@ -139,7 +139,6 @@
     "answer": [2],
     "explanation": "ADD 是核心交付物，详细描述了架构模型、决策和理由。"
   },
-  [
   {
     "id": 51,
     "module": "Module 4 - ADM Phases",
@@ -280,7 +279,6 @@
     "answer": [0, 1, 2],
     "explanation": "互操作性贯穿 BDAT 所有领域。"
   },
-    [
   {
     "id": 101,
     "module": "Module 4 - ADM Phases",
@@ -421,7 +419,6 @@
     "answer": [0, 1, 2],
     "explanation": "合规审查旨在确保战略对齐、资产重用和风险规避。"
   },
-  [
   {
     "id": 111,
     "module": "Module 4 - ADM Phases",
