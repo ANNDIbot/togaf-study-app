@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "ADM Iteration",
+    "question_cn": "为什么 ADM 被描述为一个迭代（Iterative）循环？",
+    "answer_cn": "因为 ADM 允许在各个阶段之间、在完整的周期之间以及在架构交付物的生命周期内进行循环，以确保架构能够不断细化并适应变化。"
+  },
+  {
+    "id": 2,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "ADM Iteration",
+    "question_cn": "ADM 迭代中，“架构开发迭代”（Architecture Development Iteration）通常涵盖哪些阶段？",
+    "answer_cn": "通常涵盖阶段 B 到阶段 F，用于确保业务、信息系统和技术架构之间的一致性。"
+  },
+  {
+    "id": 3,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "ADM Iteration",
+    "question_cn": "什么是“转换规划迭代”（Transition Planning Iteration）？",
+    "answer_cn": "这是在阶段 E 和 F 之间进行的迭代，旨在制定可行且高效的实施和迁移路线图。"
+  },
+  {
+    "id": 4,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "ADM Iteration",
+    "question_cn": "“治理迭代”（Governance Iteration）在 ADM 中主要关注什么？",
+    "answer_cn": "主要关注阶段 G 和 H，以确保实施项目符合架构，并处理架构变更请求。"
+  },
+  {
+    "id": 5,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "架构分区（Architecture Partitioning）的核心目的是什么？",
+    "answer_cn": "通过将复杂的企业架构分解为更小、更易管理的各部分，以允许不同的团队并行工作并提高开发效率。"
+  },
+  {
+    "id": 6,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "在进行架构分区时，通常使用哪三个维度进行划分？",
+    "answer_cn": "范围（Subject Matter）、细节层次（Level of Detail）和时间跨度（Time Period）。"
+  },
+  {
+    "id": 7,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "什么是“战略架构”（Strategic Architecture）分区？",
+    "answer_cn": "它提供了企业的高层视图，为后续的细化架构提供方向和框架，通常由高层管理人员关注。"
+  },
+  {
+    "id": 8,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "什么是“段架构”（Segment Architecture）分区？",
+    "answer_cn": "它针对特定的业务领域或功能（如人力资源或供应链）提供更详细的架构描述。"
+  },
+  {
+    "id": 9,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "什么是“能力架构”（Capability Architecture）分区？",
+    "answer_cn": "它是最详细的分区，关注于交付特定的业务能力或项目包的实现细节。"
+  },
+  {
+    "id": 10,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "在分区管理中，如何处理不同分区之间的冲突？",
+    "answer_cn": "通过架构治理（Architecture Governance）和统一的架构存储库（Repository）来确保各分区之间的一致性和集成。"
+  },
+  {
+    "id": 11,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "TOGAF 中安全架构（Security Architecture）的定义是什么？",
+    "answer_cn": "它是一个跨切面的（Cross-cutting）关注点，旨在保护企业资产并确保业务运营的完整性、可用性和机密性。"
+  },
+  {
+    "id": 12,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "安全架构在 ADM 初步阶段（Preliminary Phase）的任务是什么？",
+    "answer_cn": "定义安全原则，并将安全要求纳入架构治理和开发流程中。"
+  },
+  {
+    "id": 13,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "在阶段 A（架构愿景）中，安全架构关注什么？",
+    "answer_cn": "识别受保护资产、安全相关的利益相关者及其合规性要求。"
+  },
+  {
+    "id": 14,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "在业务架构（阶段 B）中，安全如何体现？",
+    "answer_cn": "通过定义业务信任模型、角色和职责，以及与安全相关的业务流程风险。"
+  },
+  {
+    "id": 15,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "在技术架构（阶段 D）中，安全架构的主要交付物是什么？",
+    "answer_cn": "包括防火墙、加密标准、身份认证系统和访问控制技术在内的技术安全基线。"
+  },
+  {
+    "id": 16,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "什么是安全审计（Security Audit）在 ADM 中的作用？",
+    "answer_cn": "在阶段 G 中，确保实施的系统符合既定的安全架构标准和合规性要求。"
+  },
+  {
+    "id": 17,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "面向服务架构（SOA）在 TOGAF 中的角色是什么？",
+    "answer_cn": "它是一种架构风格，通过将业务功能打包为可重用的服务，来提高业务的灵活性和 IT 的响应能力。"
+  },
+  {
+    "id": 18,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "在 SOA 语境下，什么是“服务合约”（Service Contract）？",
+    "answer_cn": "它定义了服务提供者和使用者之间的交互协议、消息格式、性能指标和安全要求。"
+  },
+  {
+    "id": 19,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "为什么 SOA 特别强调“松耦合”（Loose Coupling）？",
+    "answer_cn": "为了降低服务之间的依赖性，使得一个服务的更改或更新不会对其他服务产生重大负面影响。"
+  },
+  {
+    "id": 20,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "在 ADM 阶段 B（业务架构）中，如何应用 SOA？",
+    "answer_cn": "通过识别业务服务（Business Services），并确保它们支持业务流程和能力。"
+  },
+  {
+    "id": 21,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "在应用架构中，SOA 的主要优势是什么？",
+    "answer_cn": "促进应用功能的封装和重用，减少冗余开发，并支持跨平台的集成。"
+  },
+  {
+    "id": 22,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "架构治理如何与企业整体治理集成？",
+    "answer_cn": "通过建立架构委员会，并将架构决策流程嵌入到企业的投资批准、风险管理和项目审计流程中。"
+  },
+  {
+    "id": 23,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "在阶段 G 中，治理的核心活动是什么？",
+    "answer_cn": "实施治理，即通过架构审查确保具体项目的实施与既定架构目标保持一致。"
+  },
+  {
+    "id": 24,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "什么是“自下而上”的迭代？",
+    "answer_cn": "从具体技术实现或实施问题中发现需求，从而反馈到更高层的业务或战略架构中。"
+  },
+  {
+    "id": 25,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "什么是“自上而下”的迭代？",
+    "answer_cn": "由高层业务目标驱动，逐步向下细化到数据、应用和技术架构的设计中。"
+  },
+  {
+    "id": 26,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "架构连续体（Architecture Continuum）在分区中有什么作用？",
+    "answer_cn": "它提供了一个从通用到专用的路径，帮助组织在不同层级的分区中重用已有的资产。"
+  },
+  {
+    "id": 27,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "安全领域中的“不可否认性”（Non-repudiation）指的是什么？",
+    "answer_cn": "确保通信的参与者不能否认其发送或接收过某条信息的能力，通常通过数字签名实现。"
+  },
+  {
+    "id": 28,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Applying ADM across the Landscape",
+    "question_cn": "为什么在一个大企业中需要同时运行多个 ADM 循环？",
+    "answer_cn": "因为企业内的不同部门或项目处于不同的发展阶段，需要不同的迭代周期来应对其特定的业务需求。"
+  },
+  {
+    "id": 29,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "什么是 SOA 环境中的“服务编排”（Service Orchestration）？",
+    "answer_cn": "将多个独立的服务组合在一起以执行复杂的业务流程或任务。"
+  },
+  {
+    "id": 30,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "架构合规性评估（Compliance Assessment）在阶段 G 的意义是什么？",
+    "answer_cn": "识别项目实现中的任何偏差，并决定是否接受偏差、修改项目或申请豁免。"
+  },
+  {
+    "id": 31,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "在 ADM 循环中，哪个阶段负责确定是否需要进行新的全周期迭代？",
+    "answer_cn": "阶段 H（架构变更管理），它评估变更请求并决定是进行增量更新还是重新启动周期。"
+  },
+  {
+    "id": 32,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "在分区中，如何定义分区的“粒度”？",
+    "answer_cn": "粒度指的是描述的详细程度。战略架构粒度粗，能力架构粒度细。"
+  },
+  {
+    "id": 33,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "什么是“纵深防御”（Defense in Depth）策略？",
+    "answer_cn": "在企业架构中部署多层安全控制措施，即使一层失效，其他层也能提供保护。"
+  },
+  {
+    "id": 34,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "SOA 中的“元数据”（Metadata）有什么作用？",
+    "answer_cn": "它描述了服务的属性、位置和用法，使得服务在服务库中易于被发现和集成。"
+  },
+  {
+    "id": 35,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "架构治理中的“问责制”（Accountability）是指什么？",
+    "answer_cn": "明确谁负责架构决策，并确保这些决策的结果能够被跟踪和评估。"
+  },
+  {
+    "id": 36,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "在架构愿景阶段（阶段 A），迭代的主要目的是什么？",
+    "answer_cn": "在利益相关者之间就架构的范围、目标和期望达成一致。"
+  },
+  {
+    "id": 37,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "分区的“耦合度”过高会有什么影响？",
+    "answer_cn": "会导致一个分区的变化引发其他分区的连锁反应，增加了维护和管理的复杂性。"
+  },
+  {
+    "id": 38,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "安全架构中如何处理“身份管理”（Identity Management）？",
+    "answer_cn": "通过建立统一的身份认证机制（如 SSO），管理用户身份的生命周期及访问权限。"
+  },
+  {
+    "id": 39,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "面向服务的原则之一“自治性”（Autonomy）指什么？",
+    "answer_cn": "服务应能控制其运行所需的所有资源，并在履行其功能时具有独立性。"
+  },
+  {
+    "id": 40,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "治理中的“透明度”（Transparency）意味着什么？",
+    "answer_cn": "所有的决策过程、标准和原则都应对相关的利益相关者公开，以建立信任。"
+  },
+  {
+    "id": 41,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Applying ADM",
+    "question_cn": "在小型组织中应用 ADM，通常采取什么策略？",
+    "answer_cn": "简化 ADM 流程，合并一些阶段，并使用现成的参考模型以节省成本和时间。"
+  },
+  {
+    "id": 42,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "“威胁建模”（Threat Modeling）在架构设计中的意义？",
+    "answer_cn": "主动识别潜在的安全威胁和攻击向量，以便在架构阶段就设计好应对措施。"
+  },
+  {
+    "id": 43,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "在技术架构（阶段 D）中，SOA 的物理实现通常涉及什么？",
+    "answer_cn": "涉及企业服务总线（ESB）、Web 服务标准（SOAP/REST）和消息队列等中间件。"
+  },
+  {
+    "id": 44,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "谁负责确定架构分区的整体策略？",
+    "answer_cn": "通常在初步阶段由首席架构师和架构委员会根据企业的规模和复杂度来决定。"
+  },
+  {
+    "id": 45,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "“多阶段并行”（Parallel ADM）是什么意思？",
+    "answer_cn": "指在不同部门同时运行不同的 ADM 阶段，但通过同步点保持整体架构的一致性。"
+  },
+  {
+    "id": 46,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "合规性审查中，安全专家的职责是什么？",
+    "answer_cn": "验证项目是否遵守了加密、日志记录和身份保护等特定的安全架构标准。"
+  },
+  {
+    "id": 47,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "SOA 中的“服务重用”（Service Reuse）如何量化？",
+    "answer_cn": "通过计算一个服务被不同业务流程或应用调用的次数来衡量其重用价值。"
+  },
+  {
+    "id": 48,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "架构治理委员会（Architecture Board）的主要决策依据是什么？",
+    "answer_cn": "架构原则、战略业务目标以及企业的合规性政策。"
+  },
+  {
+    "id": 49,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Applying ADM",
+    "question_cn": "如何根据业务紧迫性调整 ADM？",
+    "answer_cn": "采用敏捷或轻量级的架构方法，聚焦于最小可行架构（MVA）以快速支持业务上线。"
+  },
+  {
+    "id": 50,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "阶段 E（机会与解决方案）的主要迭代内容是什么？",
+    "answer_cn": "在不同的实施方案之间进行权衡，以找到最能平衡风险和收益的迁移路径。"
+  },
+  {
+    "id": 51,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "为什么安全架构需要动态更新？",
+    "answer_cn": "因为新的漏洞和威胁不断出现，法律法规（如 GDPR）也在不断演进。"
+  },
+  {
+    "id": 52,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "SOA 的演进版——微服务架构（Microservices）与 SOA 的区别？",
+    "answer_cn": "微服务更强调去中心化、独立部署和轻量级通信，而传统的 SOA 往往依赖于中心化的 ESB。"
+  },
+  {
+    "id": 53,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "在架构分区的接口处，最重要的是什么？",
+    "answer_cn": "定义清晰的接口规范（Interface Specifications），以确保各分区之间能正确交互。"
+  },
+  {
+    "id": 54,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "什么是“架构契约”（Architecture Contract）？",
+    "answer_cn": "开发团队与治理机构之间达成的正式协议，承诺按照批准的架构进行实施。"
+  },
+  {
+    "id": 55,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Applying ADM",
+    "question_cn": "在数字转型背景下，ADM 如何支持 DevOps？",
+    "answer_cn": "通过将架构决策嵌入到自动化流水线中，并采用“架构即代码”的理念来缩短反馈周期。"
+  },
+  {
+    "id": 56,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Security Architecture",
+    "question_cn": "在迁移规划（阶段 F）中，安全的考虑点是什么？",
+    "answer_cn": "确保数据在迁移过程中的安全性，以及新旧系统并行期间的安全隔离。"
+  },
+  {
+    "id": 57,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "SOA Architecture",
+    "question_cn": "什么是“无状态”服务？",
+    "answer_cn": "服务不保留请求之间的任何信息，这有助于服务的横向扩展和提高可靠性。"
+  },
+  {
+    "id": 58,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Architecture Partitioning",
+    "question_cn": "分区的垂直划分（Vertical Partitioning）指什么？",
+    "answer_cn": "按业务线或职能划分，如财务架构、销售架构，每个分区包含完整的 BDAT 层次。"
+  },
+  {
+    "id": 59,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Iteration cycles",
+    "question_cn": "ADM 的“短路”（Short-cycling）是指什么？",
+    "answer_cn": "在某些简单情况下，跳过某些不必要的步骤或阶段以加速交付。"
+  },
+  {
+    "id": 60,
+    "module": "Module 6 - Applying the ADM",
+    "topic": "Governance Integration",
+    "question_cn": "如果不执行架构治理，会导致什么后果？",
+    "answer_cn": "导致“架构漂移”，即实际系统与设计蓝图严重脱节，产生大量的技术债和集成难题。"
+  }
+]
