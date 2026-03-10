@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Capability Definition",
+    "question_cn": "什么是架构能力（Architecture Capability）？",
+    "answer_cn": "架构能力是指组织为了有效地进行企业架构开发、维护和治理所需的技能、流程、角色和工具的集合。"
+  },
+  {
+    "id": 2,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Establishing Capability",
+    "question_cn": "在 ADM 的哪个阶段开始建立架构能力？",
+    "answer_cn": "在初步阶段（Preliminary Phase）开始建立，它定义了架构职能的运作方式。"
+  },
+  {
+    "id": 3,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Maturity Models",
+    "question_cn": "架构成熟度模型（Architecture Maturity Models）的主要用途是什么？",
+    "answer_cn": "用于评估组织架构能力的当前水平，识别差距，并为提升能力提供基准和路线图。"
+  },
+  {
+    "id": 4,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "ACMM",
+    "question_cn": "TOGAF 提到的 ACMM 指的是什么？",
+    "answer_cn": "架构能力成熟度模型（Architecture Capability Maturity Model）。"
+  },
+  {
+    "id": 5,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Skills Framework",
+    "question_cn": "架构技能框架（Architecture Skills Framework）的作用是什么？",
+    "answer_cn": "提供了一种结构化的方法来定义架构专业人员所需的角色、技能水平和能力要求。"
+  },
+  {
+    "id": 6,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Organization",
+    "question_cn": "在建立架构组织时，需要考虑的核心要素有哪些？",
+    "answer_cn": "角色分配、汇报关系、决策权（治理）以及与业务部门的协作模式。"
+  },
+  {
+    "id": 7,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Role of Chief Architect",
+    "question_cn": "首席架构师在架构能力建设中的角色是什么？",
+    "answer_cn": "负责领导架构团队，确保架构愿景的实现，并协调不同层级间的架构能力发展。"
+  },
+  {
+    "id": 8,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Skills - Levels of Proficiency",
+    "question_cn": "TOGAF 技能框架中通常定义了哪四个熟练程度等级？",
+    "answer_cn": "背景了解（Background）、初步了解（Awareness）、熟练应用（Knowledge）和精通专家（Expert）。"
+  },
+  {
+    "id": 9,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Practice",
+    "question_cn": "架构实践（Architecture Practice）的运作依赖于什么？",
+    "answer_cn": "依赖于明确定义的流程（如 ADM）、合格的专业人员、有效的治理和合适的工具支持。"
+  },
+  {
+    "id": 10,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Capability Assessment",
+    "question_cn": "为什么在阶段 A 需要进行能力评估？",
+    "answer_cn": "为了识别组织在实现目标架构愿景时可能面临的技能或资源短缺，并制定相应的风险缓解计划。"
+  },
+  {
+    "id": 11,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Resource Management",
+    "question_cn": "在架构能力中，资源管理关注什么？",
+    "answer_cn": "关注人力资源的招聘、培训、保留以及外部专家/承包商的利用。"
+  },
+  {
+    "id": 12,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Training",
+    "question_cn": "架构能力提升中，培训的主要目标是什么？",
+    "answer_cn": "确保架构师不仅掌握技术技能，还具备业务敏锐度、沟通能力和治理意识。"
+  },
+  {
+    "id": 13,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Professional Development",
+    "question_cn": "持续专业发展（CPD）对架构师有何意义？",
+    "answer_cn": "确保架构专业人员的技能能够紧跟技术演进和行业最佳实践，维持能力的有效性。"
+  },
+  {
+    "id": 14,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Business Architecture Capability",
+    "question_cn": "为什么业务背景对架构师的技能至关重要？",
+    "answer_cn": "因为架构必须服务于业务需求，架构师必须理解业务运营和战略才能设计有效的解决方案。"
+  },
+  {
+    "id": 15,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Skill Categories",
+    "question_cn": "技能框架中“核心技能”通常指什么？",
+    "answer_cn": "包括逻辑思考、分析、冲突解决以及架构工具的使用等通用能力。"
+  },
+  {
+    "id": 16,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Centralized vs Decentralized",
+    "question_cn": "架构组织结构中的“中心化”模式有何优势？",
+    "answer_cn": "可以更一致地执行标准，资源利用率高，更容易形成企业级的全局视角。"
+  },
+  {
+    "id": 17,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Federated Architecture Organization",
+    "question_cn": "什么是联邦式架构组织？",
+    "answer_cn": "一种混合模式，其中核心标准由中央团队设定，而具体的详细架构由各业务部门的本地团队负责。"
+  },
+  {
+    "id": 18,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Maturity Level 0 - None",
+    "question_cn": "ACMM 中的成熟度级别 0（None）代表什么？",
+    "answer_cn": "组织内没有任何架构活动，也没有意识到架构的必要性。"
+  },
+  {
+    "id": 19,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Maturity Level 5 - Optimized",
+    "question_cn": "ACMM 中的成熟度级别 5（Optimized）代表什么？",
+    "answer_cn": "架构流程是可持续且不断改进的，架构活动已经完全融入业务变更管理流程。"
+  },
+  {
+    "id": 20,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Tooling Capability",
+    "question_cn": "工具能力在架构实践中如何体现？",
+    "answer_cn": "通过部署架构建模工具、存储库（Repository）以及协作平台来提高架构交付的效率和质量。"
+  },
+  {
+    "id": 21,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Staffing and Retention",
+    "question_cn": "为什么人员留存是架构能力建设的挑战？",
+    "answer_cn": "因为高素质的企业架构师具有深厚的跨领域知识，是市场上的稀缺资源，流失会导致组织知识流失。"
+  },
+  {
+    "id": 22,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Community",
+    "question_cn": "建立内部架构社群的目的是什么？",
+    "answer_cn": "促进知识共享、经验交流，并在不同部门的架构师之间建立非正式的协作纽带。"
+  },
+  {
+    "id": 23,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "External Consultants",
+    "question_cn": "在何种情况下应利用外部架构咨询能力？",
+    "answer_cn": "在需要短期特定领域的深度专业知识，或组织内部正处于初期建立架构职能阶段时。"
+  },
+  {
+    "id": 24,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Governance Role",
+    "question_cn": "架构治理在能力框架中扮演什么角色？",
+    "answer_cn": "作为一种控制机制，确保架构能力产生的产出物符合既定的质量和合规要求。"
+  },
+  {
+    "id": 25,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Success Factors",
+    "question_cn": "建立架构能力的一个关键成功因素是什么？",
+    "answer_cn": "获得高级管理层的明确赞助（Sponsorship）和资金支持。"
+  },
+  {
+    "id": 26,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Soft Skills",
+    "question_cn": "为什么软技能对架构师很重要？",
+    "answer_cn": "因为架构师需要通过说服、谈判和冲突解决来在不同利益相关者之间达成共识。"
+  },
+  {
+    "id": 27,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Capability Framework",
+    "question_cn": "架构能力框架（Architecture Capability Framework）包含哪些模块？",
+    "answer_cn": "组织结构、技能框架、成熟度模型、治理结构以及流程和工具。"
+  },
+  {
+    "id": 28,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Legal and Regulatory Compliance",
+    "question_cn": "架构能力如何处理法规合规性？",
+    "answer_cn": "通过在能力中嵌入法律意识，确保设计的架构符合数据保护、行业监管等法律要求。"
+  },
+  {
+    "id": 29,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Enterprise Architecture Management (EAM)",
+    "question_cn": "EAM 职能的核心目标是什么？",
+    "answer_cn": "通过管理架构资产和流程，使 IT 与业务保持同步并优化资源配置。"
+  },
+  {
+    "id": 30,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Gap Analysis in Capability",
+    "question_cn": "架构能力的差距分析（Gap Analysis）关注什么？",
+    "answer_cn": "关注当前具备的技能/流程与实现目标愿景所需的理想状态之间的差异。"
+  },
+  {
+    "id": 31,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Librarian",
+    "question_cn": "架构资料管理员（Librarian）的角色是什么？",
+    "answer_cn": "负责维护架构存储库中的文档一致性、分类标准以及对资产的访问控制。"
+  },
+  {
+    "id": 32,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Role Levels",
+    "question_cn": "架构职位通常分为哪三个主要级别？",
+    "answer_cn": "初级/准架构师、架构师、首席/高级架构师。"
+  },
+  {
+    "id": 33,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Outsourcing Strategy",
+    "question_cn": "为什么组织不应将核心企业架构能力完全外包？",
+    "answer_cn": "因为企业架构涉及组织的核心战略和内部知识，完全外包会导致对外部供应商的过度依赖和知识丧失。"
+  },
+  {
+    "id": 34,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Inter-disciplinary Coordination",
+    "question_cn": "架构能力如何实现跨学科协调？",
+    "answer_cn": "通过建立跨职能团队，将业务专家、安全专家和技术专家整合到架构决策流程中。"
+  },
+  {
+    "id": 35,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Baseline Capability",
+    "question_cn": "什么是基线能力（Baseline Capability）？",
+    "answer_cn": "组织当前实际拥有的架构人力、技术和流程水平。"
+  },
+  {
+    "id": 36,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Architecture Stewardship",
+    "question_cn": "架构管护（Stewardship）的概念是什么？",
+    "answer_cn": "负责长期维护和保护企业架构资产，确保其在项目周期外依然保持更新和相关性。"
+  },
+  {
+    "id": 37,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Maturity Improvement Plan",
+    "question_cn": "如何制定成熟度改进计划？",
+    "answer_cn": "基于评估结果，确定优先级，制定阶段性目标（Transition States）并分配责任人。"
+  },
+  {
+    "id": 38,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Standardization of Skills",
+    "question_cn": "技能标准化的好处是什么？",
+    "answer_cn": "能够提供公平的职业晋升路径，简化人员招聘和培训流程。"
+  },
+  {
+    "id": 39,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Agile Capability",
+    "question_cn": "敏捷架构能力的核心特征是什么？",
+    "answer_cn": "强调快速迭代、持续反馈以及能够灵活应对业务环境变化的治理模式。"
+  },
+  {
+    "id": 40,
+    "module": "Module 9 - Architecture Capability",
+    "topic": "Final Goal of Capability",
+    "question_cn": "建立强大架构能力的最终目标是什么？",
+    "answer_cn": "使企业能够敏捷地实现战略目标，并在受控且高效的框架内进行业务转型。"
+  }
+]
