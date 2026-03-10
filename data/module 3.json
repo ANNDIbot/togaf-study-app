@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "module": "Module 3 - ADM Overview",
+    "topic": "ADM Definition",
+    "question_cn": "TOGAF ADM 的全称是什么？",
+    "answer_cn": "Architecture Development Method（架构开发方法）。"
+  },
+  {
+    "id": 2,
+    "module": "Module 3 - ADM Overview",
+    "topic": "ADM Role",
+    "question_cn": "ADM 在 TOGAF 标准中的地位是什么？",
+    "answer_cn": "它是 TOGAF 标准的核心，描述了开发和管理企业架构生命周期的方法。"
+  },
+  {
+    "id": 3,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Enterprise Continuum",
+    "question_cn": "企业连续体（Enterprise Continuum）与 ADM 的关系是什么？",
+    "answer_cn": "企业连续体为执行 ADM 提供框架和上下文，支持相关架构资产的杠杆化（利用）。"
+  },
+  {
+    "id": 4,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Repository",
+    "question_cn": "架构库（Architecture Repository）在 ADM 中的作用是什么？",
+    "answer_cn": "它包含参考架构、模型和模式，架构师在执行 ADM 时应尽可能从中重用相关资产。"
+  },
+  {
+    "id": 5,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Iterative Nature",
+    "question_cn": "ADM 的执行过程具有什么特点？",
+    "answer_cn": "它是一个持续的、循环的（Cyclical）过程，通过多次迭代不断丰富架构库的内容。"
+  },
+  {
+    "id": 6,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Foundation Architecture",
+    "question_cn": "ADM 是否可以用于填充基础架构（Foundation Architecture）？",
+    "answer_cn": "可以。业务需求可用于识别基础架构中必要的定义和选择。"
+  },
+  {
+    "id": 7,
+    "module": "Module 3 - ADM Overview",
+    "topic": "First Execution",
+    "question_cn": "为什么 ADM 的第一次执行通常最困难？",
+    "answer_cn": "因为此时可供重用的架构资产相对稀缺。"
+  },
+  {
+    "id": 8,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Governance",
+    "question_cn": "谁负责确定将哪些素材纳入组织的架构库？",
+    "answer_cn": "这通常是企业架构治理（EA Governance）过程的一部分。"
+  },
+  {
+    "id": 9,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Scoping Dimensions",
+    "question_cn": "定义架构范围的四个维度是什么？",
+    "answer_cn": "广度（Breadth）、深度（Depth）、时间跨度（Time Period）和架构域（Architecture Domains）。"
+  },
+  {
+    "id": 10,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Breadth",
+    "question_cn": "架构范围中的“广度”是指什么？",
+    "answer_cn": "指企业的完整范围以及架构工作将涉及其中的哪一部分。"
+  },
+  {
+    "id": 11,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Depth",
+    "question_cn": "架构的深度和细节应该达到什么程度？",
+    "answer_cn": "应足以满足其目的即可，无需过度详细。"
+  },
+  {
+    "id": 12,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Partitions",
+    "question_cn": "使用“架构分区”（Architecture Partitions）的目的是什么？",
+    "answer_cn": "确保架构师不会从事重复或冲突的活动。"
+  },
+  {
+    "id": 13,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Preliminary Phase Goal",
+    "question_cn": "预备阶段（Preliminary Phase）的主要目标之一是什么？",
+    "answer_cn": "定义将约束企业内任何架构工作的架构原则。"
+  },
+  {
+    "id": 14,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase A Objective",
+    "question_cn": "架构愿景阶段（Phase A）的主要输出是什么？",
+    "answer_cn": "架构愿景（Architecture Vision）和架构工作说明书（Statement of Architecture Work）。"
+  },
+  {
+    "id": 15,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Business Principles",
+    "question_cn": "架构原则通常基于什么？",
+    "answer_cn": "通常部分基于业务原则（Business Principles）。"
+  },
+  {
+    "id": 16,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase B",
+    "question_cn": "ADM Phase B 的名称是什么？",
+    "answer_cn": "业务架构（Business Architecture）。"
+  },
+  {
+    "id": 17,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase C",
+    "question_cn": "ADM Phase C 包含哪两个子领域？",
+    "answer_cn": "数据架构（Data Architecture）和应用架构（Application Architecture）。"
+  },
+  {
+    "id": 18,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase D",
+    "question_cn": "ADM Phase D 的名称是什么？",
+    "answer_cn": "技术架构（Technology Architecture）。"
+  },
+  {
+    "id": 19,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase E",
+    "question_cn": "ADM Phase E 的名称是什么？",
+    "answer_cn": "机会与解决方案（Opportunities & Solutions）。"
+  },
+  {
+    "id": 20,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase F",
+    "question_cn": "ADM Phase F 的名称是什么？",
+    "answer_cn": "迁移规划（Migration Planning）。"
+  },
+  {
+    "id": 21,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase G",
+    "question_cn": "ADM Phase G 的名称是什么？",
+    "answer_cn": "实施治理（Implementation Governance）。"
+  },
+  {
+    "id": 22,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase H",
+    "question_cn": "ADM Phase H 的名称是什么？",
+    "answer_cn": "架构变更管理（Architecture Change Management）。"
+  },
+  {
+    "id": 23,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Requirements Management",
+    "question_cn": "需求管理（Requirements Management）在 ADM 循环中的位置？",
+    "answer_cn": "它位于 ADM 循环的中心，支持所有其他阶段。"
+  },
+  {
+    "id": 24,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Gap Analysis",
+    "question_cn": "在 Phase B、C、D 中都会执行的关键步骤是什么？",
+    "answer_cn": "差距分析（Gap Analysis）。"
+  },
+  {
+    "id": 25,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Baseline vs Target",
+    "question_cn": "在描述架构时，基线（Baseline）和目标（Target）细节程度必须一致吗？",
+    "answer_cn": "不一定。基线通常可以描述得更抽象，以便留出更多时间详细说明目标。"
+  },
+  {
+    "id": 26,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Roadmap",
+    "question_cn": "架构路线图（Architecture Roadmap）是在哪个阶段开始显著详细化的？",
+    "answer_cn": "Phase E（机会与解决方案）。"
+  },
+  {
+    "id": 27,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Implementation and Migration Plan",
+    "question_cn": "实施和迁移计划的基础是什么？",
+    "answer_cn": "在 Phase E 开发的架构路线图。"
+  },
+  {
+    "id": 28,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Value Realization",
+    "question_cn": "哪个阶段负责建立价值实现过程并监控架构变更？",
+    "answer_cn": "Phase H（架构变更管理）。"
+  },
+  {
+    "id": 29,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Capability Assessment",
+    "question_cn": "能力评估（Capability Assessment）通常在哪个阶段输出？",
+    "answer_cn": "Phase A（架构愿景）。"
+  },
+  {
+    "id": 30,
+    "module": "Module 3 - ADM Overview",
+    "topic": "External References",
+    "question_cn": "ADM 阶段的输入是否可以包含企业外部的材料？",
+    "answer_cn": "可以。各阶段输入都列出了“企业外部参考材料”。"
+  },
+  {
+    "id": 31,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Governance Strategy",
+    "question_cn": "治理和支持策略在哪个阶段确定？",
+    "answer_cn": "预备阶段（Preliminary Phase）。"
+  },
+  {
+    "id": 32,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Stakeholder Review",
+    "question_cn": "在 Phase B/C/D 结束前必须进行的关键步骤？",
+    "answer_cn": "进行正式的相关利益相关者审查（Conduct Formal Stakeholder Review）。"
+  },
+  {
+    "id": 33,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Vision Purpose",
+    "question_cn": "架构愿景的主要目的是什么？",
+    "answer_cn": "为拟议的架构工作提供摘要视图，以获得管理层的支持和批准。"
+  },
+  {
+    "id": 34,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Foundation Architecture Examples",
+    "question_cn": "基础架构的一个典型例子是什么？",
+    "answer_cn": "TOGAF 基础架构（TOGAF Foundation Architecture）。"
+  },
+  {
+    "id": 35,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Incremental Change",
+    "question_cn": "如果仅因新标准出现而刷新技术架构，这属于哪种变更？",
+    "answer_cn": "增量变更（Incremental Change）。"
+  },
+  {
+    "id": 36,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Re-architecting",
+    "question_cn": "什么情况下需要启动全新的 ADM 循环（Re-architecting）？",
+    "answer_cn": "当基础架构需要与业务策略重新对齐，或发生重大监管变更时。"
+  },
+  {
+    "id": 37,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Requirements Management Step 1",
+    "question_cn": "需求管理的第一步是什么？",
+    "answer_cn": "识别需求（Identify requirements）。"
+  },
+  {
+    "id": 38,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Requirements Baseline",
+    "question_cn": "需求管理中如何确定优先事项？",
+    "answer_cn": "通过建立基线需求，确定优先级并确认利益相关者的同意。"
+  },
+  {
+    "id": 39,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Business Scenarios",
+    "question_cn": "在需求管理中，通常如何识别需求？",
+    "answer_cn": "分析业务目标、价值流、业务场景或用户体验。"
+  },
+  {
+    "id": 40,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Definition Document",
+    "question_cn": "架构定义文件（ADD）的草案从哪个阶段开始创建？",
+    "answer_cn": "Phase A（架构愿景）。"
+  },
+  {
+    "id": 41,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Adapting ADM",
+    "question_cn": "组织是否必须原封不动地使用 ADM？",
+    "answer_cn": "不是，ADM 可以且应当根据组织的特定需求进行裁剪和适配。"
+  },
+  {
+    "id": 42,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Architecture Domains",
+    "question_cn": "TOGAF 常用的四个架构域是什么？",
+    "answer_cn": "业务、数据、应用、技术（BDAT）。"
+  },
+  {
+    "id": 43,
+    "module": "Module 3 - ADM Overview",
+    "topic": "ADM Summary",
+    "question_cn": "ADM 是否推荐了特定的架构范围？",
+    "answer_cn": "不，ADM 定义了建议的顺序，但范围必须由组织根据自身情况确定。"
+  },
+  {
+    "id": 44,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Enterprise EA Model",
+    "question_cn": "企业架构组织模型（Organizational Model for EA）包含哪些内容？",
+    "answer_cn": "受影响的组织范围、成熟度评估、角色与职责、预算等。"
+  },
+  {
+    "id": 45,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Tailored Framework",
+    "question_cn": "“裁剪的架构框架”通常包括什么？",
+    "answer_cn": "裁剪的方法、内容（交付物和工件）以及配置好的工具。"
+  },
+  {
+    "id": 46,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Business Capabilities",
+    "question_cn": "什么是业务能力（Business Capabilities）？",
+    "answer_cn": "代表业务为实现特定目的而拥有的特定能力或容量。"
+  },
+  {
+    "id": 47,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Value Streams",
+    "question_cn": "什么是价值流（Value Streams）？",
+    "answer_cn": "代表为利益相关者创造价值的一系列端到端活动。"
+  },
+  {
+    "id": 48,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Project Management",
+    "question_cn": "TOGAF ADM 可以与哪些项目管理方法论结合？",
+    "answer_cn": "例如 PMI 或 PRINCE2。"
+  },
+  {
+    "id": 49,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Service Management",
+    "question_cn": "TOGAF 通常建议与哪些服务管理标准结合？",
+    "answer_cn": "例如 ITIL 或 ISO/IEC 20000。"
+  },
+  {
+    "id": 50,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Interoperability",
+    "question_cn": "在哪个阶段需要整合和协调互操作性需求？",
+    "answer_cn": "Phase E（机会与解决方案）。"
+  },
+  {
+    "id": 51,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Transition Architecture",
+    "question_cn": "在 Phase E 和 F 中定义的用于分阶段实施的架构称为什么？",
+    "answer_cn": "过渡架构（Transition Architecture）。"
+  },
+  {
+    "id": 52,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Governance Characteristics",
+    "question_cn": "架构治理的一个关键特征是什么？",
+    "answer_cn": "建立合规性审查（Compliance Reviews）过程。"
+  },
+  {
+    "id": 53,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase G Purpose",
+    "question_cn": "Phase G 实施治理的主要任务是什么？",
+    "answer_cn": "执行架构合规性审查并确保项目按照架构实施。"
+  },
+  {
+    "id": 54,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase H Monitoring",
+    "question_cn": "Phase H 如何检测变更需求？",
+    "answer_cn": "通过部署监控工具和建立价值实现过程。"
+  },
+  {
+    "id": 55,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Change Request",
+    "question_cn": "如果 Phase H 认为需要新的刷新周期，必须发出什么？",
+    "answer_cn": "架构工作请求（Request for Architecture Work）。"
+  },
+  {
+    "id": 56,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Simplification Change",
+    "question_cn": "将 10 个系统简化为 1 个系统且不改变物理层以上的架构，属于哪种变更？",
+    "answer_cn": "简化变更（Simplification Change）。"
+  },
+  {
+    "id": 57,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Requirements Repository",
+    "question_cn": "需求管理过程中，需求记录在何处？",
+    "answer_cn": "架构需求规范（Architecture Requirements Specification）和需求库中。"
+  },
+  {
+    "id": 58,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Phase B Outputs",
+    "question_cn": "业务架构阶段（Phase B）的主要输出文件？",
+    "answer_cn": "业务架构说明文档（Business Architecture Description）和候选路线图组件。"
+  },
+  {
+    "id": 59,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Landscape Integration",
+    "question_cn": "解决整个架构景观的影响（Resolve impacts across landscape）在哪些阶段执行？",
+    "answer_cn": "Phase B, C, D 均包含此步骤。"
+  },
+  {
+    "id": 60,
+    "module": "Module 3 - ADM Overview",
+    "topic": "Enterprise Architecture Team",
+    "question_cn": "建立 EA 团队是在哪个阶段？",
+    "answer_cn": "预备阶段（Preliminary Phase）。"
+  }
+]
