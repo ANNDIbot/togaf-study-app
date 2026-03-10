@@ -1,0 +1,422 @@
+[
+{
+"id":1,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"企业架构（EA）的主要目的是什么？",
+"answer":"确保业务战略、业务流程和信息技术之间的一致性。"
+},
+{
+"id":2,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"企业架构如何支持组织战略？",
+"answer":"通过规划 IT 能力以支持业务目标。"
+},
+{
+"id":3,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"企业架构为什么在大型组织中尤其重要？",
+"answer":"因为复杂系统需要统一的架构规划和治理。"
+},
+{
+"id":4,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"EA 如何帮助组织管理复杂性？",
+"answer":"通过建立统一的架构模型和标准。"
+},
+{
+"id":5,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"EA 是否仅关注 IT？",
+"answer":"不是，它同时关注业务、数据、应用和技术。"
+},
+{
+"id":6,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"EA 如何支持数字化转型？",
+"answer":"通过规划和协调业务能力与技术能力。"
+},
+{
+"id":7,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Purpose",
+"question":"EA 在组织变革中的作用是什么？",
+"answer":"为组织转型提供结构化蓝图。"
+},
+{
+"id":8,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"什么是 Business Alignment？",
+"answer":"确保 IT 系统和技术投资支持业务战略。"
+},
+{
+"id":9,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"为什么 Business Alignment 很重要？",
+"answer":"因为 IT 投资必须为业务价值服务。"
+},
+{
+"id":10,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"EA 如何支持 Business Alignment？",
+"answer":"通过建立业务能力模型和 IT 架构。"
+},
+{
+"id":11,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"Business Alignment 的核心目标是什么？",
+"answer":"确保技术决策支持业务目标。"
+},
+{
+"id":12,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"Business Alignment 如何减少 IT 浪费？",
+"answer":"通过避免不必要的技术投资。"
+},
+{
+"id":13,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"Business Alignment 是否需要 Stakeholder 参与？",
+"answer":"是的，因为业务和 IT 必须共同参与决策。"
+},
+{
+"id":14,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Business Alignment",
+"question":"Business Alignment 如何提高组织效率？",
+"answer":"通过确保技术支持业务流程。"
+},
+{
+"id":15,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"什么是 IT Governance？",
+"answer":"IT Governance 是管理 IT 决策和 IT 投资的机制。"
+},
+{
+"id":16,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"IT Governance 的目标是什么？",
+"answer":"确保 IT 支持业务战略并有效使用资源。"
+},
+{
+"id":17,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"EA 与 IT Governance 的关系是什么？",
+"answer":"EA 为 IT Governance 提供架构指导。"
+},
+{
+"id":18,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"IT Governance 如何降低风险？",
+"answer":"通过标准化技术决策。"
+},
+{
+"id":19,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"IT Governance 是否涉及政策和流程？",
+"answer":"是的，它包括规则、流程和责任结构。"
+},
+{
+"id":20,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"IT Governance 如何支持 EA？",
+"answer":"通过确保架构标准得到遵守。"
+},
+{
+"id":21,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"IT Governance",
+"question":"IT Governance 在架构实施中的作用是什么？",
+"answer":"监督架构实施是否符合架构原则。"
+},
+{
+"id":22,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"企业架构的主要好处是什么？",
+"answer":"提高业务与 IT 的一致性。"
+},
+{
+"id":23,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 如何降低 IT 成本？",
+"answer":"通过减少重复系统和技术标准化。"
+},
+{
+"id":24,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 如何提高业务敏捷性？",
+"answer":"通过模块化系统和可扩展架构。"
+},
+{
+"id":25,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 如何支持风险管理？",
+"answer":"通过架构治理和技术标准。"
+},
+{
+"id":26,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 如何支持创新？",
+"answer":"通过提供可扩展技术平台。"
+},
+{
+"id":27,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 是否有助于提高决策质量？",
+"answer":"是的，因为架构提供系统级视角。"
+},
+{
+"id":28,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Benefits",
+"question":"EA 是否有助于系统整合？",
+"answer":"是的，通过统一架构标准。"
+},
+{
+"id":29,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"什么是 Architecture Landscape？",
+"answer":"Architecture Landscape 是组织当前架构状态的整体描述。"
+},
+{
+"id":30,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"Architecture Landscape 包含什么？",
+"answer":"当前系统、技术平台和业务流程。"
+},
+{
+"id":31,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"Architecture Landscape 在 EA 中的作用是什么？",
+"answer":"提供当前架构状态的视图。"
+},
+{
+"id":32,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"Architecture Landscape 如何支持架构规划？",
+"answer":"通过识别现有系统和能力。"
+},
+{
+"id":33,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"Architecture Landscape 是否支持架构治理？",
+"answer":"是的。"
+},
+{
+"id":34,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Architecture Landscape",
+"question":"Architecture Landscape 是否会随时间变化？",
+"answer":"是的，因为系统和技术会不断变化。"
+},
+{
+"id":35,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"什么是 Strategic Architecture？",
+"answer":"Strategic Architecture 描述未来的目标架构。"
+},
+{
+"id":36,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"Strategic Architecture 的目标是什么？",
+"answer":"定义组织未来的架构方向。"
+},
+{
+"id":37,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"Strategic Architecture 是否与业务战略相关？",
+"answer":"是的，它必须支持业务战略。"
+},
+{
+"id":38,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"Strategic Architecture 在架构规划中的作用是什么？",
+"answer":"提供长期架构目标。"
+},
+{
+"id":39,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"Strategic Architecture 是否支持数字化转型？",
+"answer":"是的。"
+},
+{
+"id":40,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Strategic Architecture",
+"question":"Strategic Architecture 是否需要与当前架构比较？",
+"answer":"是的，需要识别差距。"
+},
+{
+"id":41,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"什么是 Segment Architecture？",
+"answer":"Segment Architecture 描述组织某个业务领域的架构。"
+},
+{
+"id":42,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"Segment Architecture 的范围是什么？",
+"answer":"一个业务部门或业务能力。"
+},
+{
+"id":43,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"Segment Architecture 与 Strategic Architecture 的关系是什么？",
+"answer":"Segment Architecture 必须符合 Strategic Architecture。"
+},
+{
+"id":44,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"Segment Architecture 是否支持业务优化？",
+"answer":"是的。"
+},
+{
+"id":45,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"Segment Architecture 是否可能涉及多个系统？",
+"answer":"是的。"
+},
+{
+"id":46,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Segment Architecture",
+"question":"Segment Architecture 在 EA 中的作用是什么？",
+"answer":"连接战略架构与具体解决方案。"
+},
+{
+"id":47,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"什么是 Solution Architecture？",
+"answer":"Solution Architecture 描述具体 IT 解决方案的架构。"
+},
+{
+"id":48,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"Solution Architecture 的范围是什么？",
+"answer":"单个系统或项目。"
+},
+{
+"id":49,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"Solution Architecture 与 Segment Architecture 的关系是什么？",
+"answer":"Solution Architecture 实现 Segment Architecture。"
+},
+{
+"id":50,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"Solution Architecture 是否关注具体技术实现？",
+"answer":"是的。"
+},
+{
+"id":51,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"Solution Architecture 在项目中的作用是什么？",
+"answer":"指导系统设计和开发。"
+},
+{
+"id":52,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"Solution Architecture",
+"question":"Solution Architecture 是否必须符合 EA 原则？",
+"answer":"是的。"
+},
+{
+"id":53,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"EA 的三个主要架构层级是什么？",
+"answer":"Strategic Architecture、Segment Architecture、Solution Architecture。"
+},
+{
+"id":54,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"Strategic Architecture 描述什么？",
+"answer":"组织未来的整体架构。"
+},
+{
+"id":55,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"Segment Architecture 描述什么？",
+"answer":"特定业务领域的架构。"
+},
+{
+"id":56,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"Solution Architecture 描述什么？",
+"answer":"具体系统或项目的架构。"
+},
+{
+"id":57,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"EA 层级结构的目的是什么？",
+"answer":"将战略架构与具体系统设计连接起来。"
+},
+{
+"id":58,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"为什么需要 EA 层级结构？",
+"answer":"因为企业架构涉及不同规模和粒度的系统。"
+},
+{
+"id":59,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"EA 层级结构是否支持架构治理？",
+"answer":"是的。"
+},
+{
+"id":60,
+"module":"Module 2 - EA Purpose and Structure",
+"topic":"EA Layers",
+"question":"EA 层级结构如何支持架构实施？",
+"answer":"通过逐层细化架构设计。"
+}
+]
