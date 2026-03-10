@@ -1,0 +1,842 @@
+[
+  {
+    "id": 1,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "根据 TOGAF 标准，以下哪项最好地描述了“交付物（Deliverable）”？",
+    "options": [
+      "架构项目过程中产生的任何工作产品",
+      "由项目利益相关者正式评审、同意并签署的输出",
+      "描述架构特定方面的模型或图表",
+      "存储在架构存储库中的标准参考模型"
+    ],
+    "answer": [1],
+    "explanation": "交付物是项目合同中定义的、经过审核并由利益相关者正式签署的任务输出。"
+  },
+  {
+    "id": 2,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在内容框架中，用于描述架构特定视图（如目录、矩阵或图形）的术语是：",
+    "options": [
+      "构建块 (Building Block)",
+      "交付物 (Deliverable)",
+      "制品 (Artifact)",
+      "解决方案 (Solution)"
+    ],
+    "answer": [2],
+    "explanation": "制品是用于描述架构的一个特定视图。它们通常被分为目录、矩阵和图形三类。"
+  },
+  {
+    "id": 3,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "TOGAF 将制品（Artifacts）分为哪三大类？",
+    "options": [
+      "目录 (Catalogs)",
+      "矩阵 (Matrices)",
+      "图形 (Diagrams)",
+      "文档 (Documents)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 内容框架明确将制品分为目录（列表）、矩阵（关系映射）和图形（视觉表示）。"
+  },
+  {
+    "id": 4,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "关于架构构建块（ABB），以下哪项描述是正确的？",
+    "options": [
+      "ABB 包含具体的供应商产品信息",
+      "ABB 在 ADM 阶段 E 之后才定义",
+      "ABB 捕捉架构需求并定义逻辑能力",
+      "ABB 是物理实现的组件"
+    ],
+    "answer": [2],
+    "explanation": "ABB（Architecture Building Blocks）描述的是逻辑能力和需求，而不涉及具体的物理实现或厂商信息。"
+  },
+  {
+    "id": 5,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "解决方案构建块（SBB）通常在 ADM 的哪个阶段被识别和定义？",
+    "options": [
+      "阶段 A (架构愿景)",
+      "阶段 B、C、D (领域架构)",
+      "阶段 E (机会与解决方案)",
+      "阶段 G (实施治理)"
+    ],
+    "answer": [2],
+    "explanation": "在阶段 E，架构从逻辑定义（ABB）转向物理实现（SBB），开始识别具体的解决方案。"
+  },
+  {
+    "id": 6,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "内容元模型（Content Metamodel）的作用包括：",
+    "options": [
+      "为架构制品提供一致的结构",
+      "定义架构实体之间的关系",
+      "强制要求所有公司使用相同的技术标准",
+      "作为构建架构工具的基础"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "元模型提供结构一致性、定义实体关系，并指导工具开发。它不强制特定技术标准。"
+  },
+  {
+    "id": 7,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在架构存储库中，存储组织内正式定义的内部标准的部分是：",
+    "options": [
+      "参考库 (Reference Library)",
+      "标准信息库 (Standards Information Base)",
+      "治理日志 (Governance Log)",
+      "架构景观 (Architecture Landscape)"
+    ],
+    "answer": [1],
+    "explanation": "标准信息库 (SIB) 存储企业必须遵守的所有准则、行业标准和内部标准。"
+  },
+  {
+    "id": 8,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "架构存储库中用于记录架构审查决策和豁免（Waivers）的部分是：",
+    "options": [
+      "参考库",
+      "治理日志",
+      "架构元模型",
+      "能力库"
+    ],
+    "answer": [1],
+    "explanation": "治理日志 (Governance Log) 专门记录合规性评估、审查结论及相关的治理决策。"
+  },
+  {
+    "id": 9,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "“企业元模型”是架构存储库的一个重要组成部分，其目的是：",
+    "options": [
+      "存储第三方参考模型",
+      "描述组织对 TOGAF 核心元模型的裁剪和定制",
+      "记录所有服务器的 IP 地址",
+      "作为项目进度表"
+    ],
+    "answer": [1],
+    "explanation": "架构元模型（或企业元模型）部分定义了组织内所选定的架构框架和元模型定义。"
+  },
+  {
+    "id": 10,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "架构景观（Architecture Landscape）通常分为哪三个粒度级别？",
+    "options": [
+      "战略架构 (Strategic Architecture)",
+      "细分架构 (Segment Architecture)",
+      "能力架构 (Capability Architecture)",
+      "技术架构 (Technology Architecture)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 定义景观的三层级为：战略（全局）、细分（部门/项目群）和能力（具体业务能力）。"
+  },
+  {
+    "id": 11,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在业务架构元模型中，描述“谁参与其中”的实体是：",
+    "options": [
+      "业务服务 (Business Service)",
+      "参与者 (Actor)",
+      "业务流程 (Process)",
+      "数据实体 (Data Entity)"
+    ],
+    "answer": [1],
+    "explanation": "参与者 (Actor) 定义了执行角色的个人、组织或系统。"
+  },
+  {
+    "id": 12,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "关于“逻辑应用组件”和“物理应用组件”的描述，错误的是：",
+    "options": [
+      "逻辑组件是独立于实现的封装",
+      "物理组件是逻辑组件的具体实现",
+      "物理组件定义了功能边界，而逻辑组件负责具体代码",
+      "一个逻辑组件可以对应多个物理组件"
+    ],
+    "answer": [2],
+    "explanation": "错误的描述是 C。实际上，逻辑组件定义功能边界，物理组件才是具体的代码或产品实现。"
+  },
+  {
+    "id": 13,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 TOGAF 内容框架中，用于表示“实现特定业务结果所需的自动化逻辑”的实体是：",
+    "options": [
+      "业务服务 (Business Service)",
+      "信息系统服务 (Information System Service)",
+      "技术服务 (Technology Service)",
+      "基础设施服务"
+    ],
+    "answer": [1],
+    "explanation": "IS Service（信息系统服务）描述了自动化的逻辑能力。"
+  },
+  {
+    "id": 14,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "以下哪些是核心元模型中的“业务领域”实体？",
+    "options": [
+      "组织单元 (Organization Unit)",
+      "业务功能 (Business Function)",
+      "角色 (Role)",
+      "逻辑数据组件 (Logical Data Component)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "逻辑数据组件属于数据架构领域，而非业务领域。"
+  },
+  {
+    "id": 15,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在数据架构中，代表业务中感兴趣的实体集合（如“客户”）的是：",
+    "options": [
+      "数据实体 (Data Entity)",
+      "逻辑数据组件",
+      "物理数据组件",
+      "信息系统服务"
+    ],
+    "answer": [0],
+    "explanation": "数据实体是对业务数据信息的逻辑封装。"
+  },
+  {
+    "id": 16,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "架构定义文档（Architecture Definition Document）的用途是：",
+    "options": [
+      "仅作为项目结束时的总结报告",
+      "作为所有架构制品的主要容器，伴随 ADM 演进",
+      "存储软件源代码",
+      "定义企业的薪酬体系"
+    ],
+    "answer": [1],
+    "explanation": "架构定义文档是贯穿 ADM 各阶段的核心交付物，记录了基线和目标架构的所有关键视图。"
+  },
+  {
+    "id": 17,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "以下哪项是架构存储库中“参考库”的作用？",
+    "options": [
+      "存储过期的架构版本",
+      "提供可重用的最佳实践、模式和行业参考模型",
+      "存储所有员工的联系方式",
+      "管理项目的预算分配"
+    ],
+    "answer": [1],
+    "explanation": "参考库包含指南、模板、模式和其他可加速架构开发的参考资料。"
+  },
+  {
+    "id": 18,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "元模型的“动机扩展（Motivation Extension）”主要增加哪些概念？",
+    "options": [
+      "驱动因素 (Drivers)",
+      "目标 (Goals)",
+      "任务 (Tasks)",
+      "愿景 (Vision)"
+    ],
+    "answer": [0, 1],
+    "explanation": "动机扩展引入了驱动因素、目标、目的等实体，用于描述架构变更的原因。"
+  },
+  {
+    "id": 19,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在企业连续体中，从“基础架构”向“组织特定架构”演进的过程体现了：",
+    "options": [
+      "通用性增加，特异性减少",
+      "通用性减少，特异性增加",
+      "架构成本的降低",
+      "架构复杂度的消失"
+    ],
+    "answer": [1],
+    "explanation": "企业连续体描述了从通用、基础架构向更具体、针对特定行业和特定组织架构的演进。"
+  },
+  {
+    "id": 20,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪种类型的制品最适合展示“应用”与“数据”之间的 CRUD（创建、读取、更新、删除）关系？",
+    "options": [
+      "目录",
+      "矩阵",
+      "图形",
+      "路线图"
+    ],
+    "answer": [1],
+    "explanation": "矩阵（Matrix）最适合展示两类实体之间的复杂映射关系。"
+  },
+  {
+    "id": 21,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 TOGAF 元模型中，定义为“封装了某种业务功能并具有明确定义的接口”的实体是：",
+    "options": [
+      "业务流程",
+      "业务服务",
+      "参与者",
+      "应用组件"
+    ],
+    "answer": [1],
+    "explanation": "业务服务提供明确的边界和接口，用于被外部调用。"
+  },
+  {
+    "id": 22,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "架构合同（Architecture Contract）通常包含：",
+    "options": [
+      "项目的目标和范围",
+      "交付物的质量指标",
+      "架构团队的薪资细节",
+      "合规性审计的频率"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "架构合同主要关注交付质量、范围、合规性和责任。不包含薪资等个人隐私信息。"
+  },
+  {
+    "id": 23,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪部分内容存储库专门用于保存以往架构项目的产出，以便未来重用？",
+    "options": [
+      "架构景观",
+      "参考库",
+      "标准信息库",
+      "治理日志"
+    ],
+    "answer": [0],
+    "explanation": "架构景观（Architecture Landscape）存储了当前的资产描述，而存储库整体旨在实现重用。"
+  },
+  {
+    "id": 24,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 ADM 的阶段 G 中，内容框架中的哪种制品对于治理至关重要？",
+    "options": [
+      "架构愿景",
+      "合规性评估 (Compliance Assessment)",
+      "业务足迹图",
+      "技术标准目录"
+    ],
+    "answer": [1],
+    "explanation": "合规性评估是阶段 G 的核心输出，用于确认实施项目是否遵循架构要求。"
+  },
+  {
+    "id": 25,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "内容框架中的“位置（Location）”实体属于哪个部分？",
+    "options": [
+      "核心元模型",
+      "技术元模型",
+      "物理元模型",
+      "基础设施元模型"
+    ],
+    "answer": [0],
+    "explanation": "地点（Location）是核心元模型的一部分，用于地理关联。"
+  },
+  {
+    "id": 26,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "关于内容框架的“治理扩展（Governance Extension）”，它支持哪些实体的记录？",
+    "options": [
+      "架构准则的豁免",
+      "架构审查结论",
+      "业务功能的所有者",
+      "技术组件的版本"
+    ],
+    "answer": [0, 1],
+    "explanation": "治理扩展侧重于记录治理过程中的决策、偏差和审查结果。"
+  },
+  {
+    "id": 27,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 TOGAF 中，“工作包（Work Package）”的概念主要是在哪个元模型部分定义的？",
+    "options": [
+      "初步阶段元模型",
+      "转换元模型 (Transition Metamodel)",
+      "业务架构元模型",
+      "动机元模型"
+    ],
+    "answer": [1],
+    "explanation": "工作包、路线图等实体属于转换（或实施与迁移）相关的元模型实体。"
+  },
+  {
+    "id": 28,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在技术架构元模型中，描述“为上层应用提供支撑的技术组件”的是：",
+    "options": [
+      "逻辑技术组件",
+      "物理技术组件",
+      "逻辑应用组件",
+      "平台服务"
+    ],
+    "answer": [1],
+    "explanation": "物理技术组件代表了具体的硬件或软件基础设施。"
+  },
+  {
+    "id": 29,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪个术语定义为“企业在某一特定时间点的架构资产的展示”？",
+    "options": [
+      "架构景观 (Landscape)",
+      "企业连续体 (Continuum)",
+      "参考模型",
+      "架构存储库"
+    ],
+    "answer": [0],
+    "explanation": "架构景观是存储库在特定时间点的一个“快照”或当前视图。"
+  },
+  {
+    "id": 30,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "企业连续体（Enterprise Continuum）包括哪两个主要分支？",
+    "options": [
+      "架构连续体 (Architecture Continuum)",
+      "解决方案连续体 (Solutions Continuum)",
+      "治理连续体",
+      "技术连续体"
+    ],
+    "answer": [0, 1],
+    "explanation": "企业连续体由架构连续体（设计规范）和解决方案连续体（具体实现）组成。"
+  },
+  {
+    "id": 31,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "架构需求规范（Architecture Requirements Specification）与架构定义文档的主要区别在于：",
+    "options": [
+      "前者是阶段 A 的产出，后者是阶段 B 的产出",
+      "前者侧重于定量的需求指标，后者侧重于定性的描述和图表",
+      "前者是外部供应商写的，后者是内部架构师写的",
+      "没有任何区别"
+    ],
+    "answer": [1],
+    "explanation": "架构需求规范专注于可度量的需求和约束。"
+  },
+  {
+    "id": 32,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 TOGAF 内容元模型中，“驱动因素（Driver）”的定义是：",
+    "options": [
+      "执行业务流程的人员",
+      "影响组织目标实现的环境因素（内部或外部）",
+      "架构项目的财务预算",
+      "网络设备的驱动程序"
+    ],
+    "answer": [1],
+    "explanation": "驱动因素是推动组织变更的内外因（如法规变化、竞争压力）。"
+  },
+  {
+    "id": 33,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在业务架构中，“业务功能”和“业务流程”的主要区别是：",
+    "options": [
+      "功能描述“做什么”，流程描述“怎么按顺序做”",
+      "功能描述“怎么做”，流程描述“做什么”",
+      "功能属于技术领域，流程属于业务领域",
+      "两者完全相同"
+    ],
+    "answer": [0],
+    "explanation": "功能是能力的逻辑分组（做什么），流程是跨职能的任务序列（怎么做）。"
+  },
+  {
+    "id": 34,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "内容框架的“服务扩展（Services Extension）”主要增加了哪些概念？",
+    "options": [
+      "信息系统服务 (IS Service)",
+      "合同约定服务",
+      "服务组件",
+      "ITIL 服务台"
+    ],
+    "answer": [0, 2],
+    "explanation": "服务扩展引入了 IS Service 和相关的组件概念，以支持 SOA 架构建模。"
+  },
+  {
+    "id": 35,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "架构存储库中的“治理日志”是否包含利益相关者的意见反馈？",
+    "options": [
+      "是的，全部包含",
+      "不包含，它只记录正式的决策结果",
+      "只包含架构师的笔记",
+      "取决于工具软件"
+    ],
+    "answer": [1],
+    "explanation": "治理日志主要记录正式的合规性评估、审查决策、偏差和变更授权。"
+  },
+  {
+    "id": 36,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪项不属于 TOGAF 内容框架的核心部分（Core Content）？",
+    "options": [
+      "业务架构实体",
+      "应用架构实体",
+      "数据架构实体",
+      "详细的基础设施节点定义"
+    ],
+    "answer": [3],
+    "explanation": "详细的基础设施节点（如具体的路由器型号）通常属于基础设施扩展，而非核心元模型。"
+  },
+  {
+    "id": 37,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "架构路线图（Architecture Roadmap）描述了：",
+    "options": [
+      "从当前架构到目标架构的演进路径",
+      "单一系统的数据流图",
+      "架构团队的入职指南",
+      "服务器在机房的位置"
+    ],
+    "answer": [0],
+    "explanation": "路线图通过一系列过渡架构和工作包展示了实现目标愿景的路径。"
+  },
+  {
+    "id": 38,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在核心元模型中，“组织单元（Organization Unit）”的定义是：",
+    "options": [
+      "一种技术组件",
+      "一种业务实体的所有权或管理单位",
+      "一种数据存储方式",
+      "一个外部客户"
+    ],
+    "answer": [1],
+    "explanation": "组织单元代表企业内的部门或团队。它拥有业务功能和业务服务。"
+  },
+  {
+    "id": 39,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "构建块（Building Block）的主要属性包括：",
+    "options": [
+      "封装了功能",
+      "可以与其他构建块组合",
+      "具有定义的接口",
+      "总是由开源代码编写"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "构建块是可重用的封装体，具有定义的接口，可组合使用。代码来源（开源与否）不是定义属性。"
+  },
+  {
+    "id": 40,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "如果一个组织需要对复杂的业务规则进行建模，应使用内容框架的哪个扩展？",
+    "options": [
+      "治理扩展",
+      "动机扩展",
+      "业务规则并不在内容框架中",
+      "数据扩展"
+    ],
+    "answer": [1],
+    "explanation": "动机扩展不仅包含目标，还常涉及策略和影响因素，是管理复杂业务逻辑动机的基础。"
+  },
+  {
+    "id": 41,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在企业连续体中，TRM（技术参考模型）被归类为：",
+    "options": [
+      "基础架构 (Foundation Architecture)",
+      "公共系统架构",
+      "行业架构",
+      "组织特定架构"
+    ],
+    "answer": [0],
+    "explanation": "TRM 提供通用的技术平台描述，属于最通用的基础架构级别。"
+  },
+  {
+    "id": 42,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "“能力架构（Capability Architecture）”级别的景观主要关注：",
+    "options": [
+      "跨整个企业的 IT 标准",
+      "特定业务领域（如物流、支付）的集成视图",
+      "单个微服务的内部代码",
+      "CEO 的年度计划"
+    ],
+    "answer": [1],
+    "explanation": "能力架构关注业务能力的实现和集成。"
+  },
+  {
+    "id": 43,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在元模型实体关系中，一个“参与者（Actor）”：",
+    "options": [
+      "只能执行一个角色",
+      "可以执行多个角色",
+      "不能是计算机系统",
+      "不需要与任何业务功能关联"
+    ],
+    "answer": [1],
+    "explanation": "元模型灵活支持一个参与者承担多个角色，且参与者可以是人也可以是系统。"
+  },
+  {
+    "id": 44,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "TOGAF 建议通过以下哪些方式来维护架构存储库？",
+    "options": [
+      "设立架构委员会进行审查",
+      "建立明确的发布管理流程",
+      "允许任何员工随意修改",
+      "使用自动化工具同步基线"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "存储库是企业的核心资产，必须受控，不能随意修改。"
+  },
+  {
+    "id": 45,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "“标准信息库 (SIB)”中包含的“行业标准”通常来自：",
+    "options": [
+      "组织内部的口头约定",
+      "外部标准化组织（如 ISO、The Open Group）",
+      "某个架构师的个人喜好",
+      "竞争对手的内部文档"
+    ],
+    "answer": [1],
+    "explanation": "行业标准来源于公认的外部标准化机构。"
+  },
+  {
+    "id": 46,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在架构景观中，粒度最细、范围最窄的层级是：",
+    "options": [
+      "战略架构",
+      "细分架构",
+      "能力架构",
+      "基础架构"
+    ],
+    "answer": [2],
+    "explanation": "能力架构关注特定的业务细节，是景观中粒度最细的部分。"
+  },
+  {
+    "id": 47,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪种图形用于展示业务目标、业务职能和组织单元之间的对应关系？",
+    "options": [
+      "业务足迹图 (Business Footprint Diagram)",
+      "应用沟通图",
+      "网络计算图",
+      "需求地图"
+    ],
+    "answer": [0],
+    "explanation": "业务足迹图用于确认架构如何支撑企业的业务目标。"
+  },
+  {
+    "id": 48,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "在内容框架中，以下哪些项属于“非功能性需求”的范畴？",
+    "options": [
+      "系统每秒处理交易量",
+      "系统必须在 3 秒内响应",
+      "系统提供的“用户注册”功能",
+      "系统的数据加密标准"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "“用户注册”是功能性需求。性能、响应时间和安全标准属于非功能性（质量）需求。"
+  },
+  {
+    "id": 49,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "当企业决定采用 SOA（面向服务架构）时，内容框架的哪个扩展最相关？",
+    "options": [
+      "动机扩展",
+      "服务扩展",
+      "基础设施扩展",
+      "治理扩展"
+    ],
+    "answer": [1],
+    "explanation": "服务扩展提供了 IS Service 等实体，专为 SOA 建模设计。"
+  },
+  {
+    "id": 50,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 TOGAF 元模型中，什么代表了“业务流程运行所需的关键数据资产”？",
+    "options": [
+      "物理技术组件",
+      "数据实体",
+      "应用服务",
+      "治理记录"
+    ],
+    "answer": [1],
+    "explanation": "数据实体是业务流程操作的对象。"
+  },
+  {
+    "id": 51,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在 ADM 哪个阶段产生的“转换路线图”会被反映在内容框架的实施模型中？",
+    "options": [
+      "阶段 A",
+      "阶段 B",
+      "阶段 E 和 F",
+      "初步阶段"
+    ],
+    "answer": [2],
+    "explanation": "阶段 E（机会与解决方案）和阶段 F（迁移规划）主要负责路线图和工作包的定义。"
+  },
+  {
+    "id": 52,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "架构存储库的“标准信息库”可以包含以下哪些状态的标准？",
+    "options": [
+      "已撤销 (Retire)",
+      "现行 (Active)",
+      "试验 (Trial)",
+      "待定义"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "标准生命周期通常包括试验、现行和撤销等状态。"
+  },
+  {
+    "id": 53,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "什么是“架构能力库 (Architecture Capability Library)”？",
+    "options": [
+      "存储所有服务器硬件的说明书",
+      "定义了用于支持架构部门运作的流程、技能和角色",
+      "存储业务流程图",
+      "存储项目的财务报表"
+    ],
+    "answer": [1],
+    "explanation": "能力库关注“架构职能”本身的运作能力。"
+  },
+  {
+    "id": 54,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在元模型中，业务功能（Business Function）通常如何关联到组织单元？",
+    "options": [
+      "功能包含组织单元",
+      "组织单元拥有并运行功能",
+      "两者没有关系",
+      "功能和组织单元是同义词"
+    ],
+    "answer": [1],
+    "explanation": "元模型中定义组织单元（部门）拥有或承载特定的业务功能。"
+  },
+  {
+    "id": 55,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "在内容元模型中，用于在图表中链接不同位置实体的通用概念是：",
+    "options": [
+      "地点 (Location)",
+      "网关",
+      "连接器",
+      "逻辑组件"
+    ],
+    "answer": [0],
+    "explanation": "Location 实体允许架构师描述资产在地理上的分布。"
+  },
+  {
+    "id": 56,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "架构参考库中的参考模型（Reference Models）可以包括：",
+    "options": [
+      "通用参考模型 (如 TRM)",
+      "行业特定参考模型 (如 TMF)",
+      "组织特定的模板",
+      "项目周报"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "参考库包含任何级别的可重用模板、架构模型，不包含临时的项目管理文档。"
+  },
+  {
+    "id": 57,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "根据 TOGAF 描述，“构建块”的粒度应该是怎样的？",
+    "options": [
+      "必须是最小的代码单元",
+      "根据组织需求而定，具有灵活性",
+      "必须是整个系统",
+      "固定为 1000 行代码"
+    ],
+    "answer": [1],
+    "explanation": "构建块的粒度应由架构师根据重用需求和复杂性管理目标灵活定义。"
+  },
+  {
+    "id": 58,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "哪项最好地解释了“元模型”的概念？",
+    "options": [
+      "一个关于模型的模型，定义了模型的元素及其关系",
+      "一个描述元数据存储容量的图表",
+      "一个用于购买软件的财务模型",
+      "一个关于元宇宙的社交模型"
+    ],
+    "answer": [0],
+    "explanation": "元模型（Metamodel）是用于描述建模语言本身的规则和结构。"
+  },
+  {
+    "id": 59,
+    "module": "Module 7 - Architecture Content",
+    "type": "single",
+    "question": "当组织定制 TOGAF 的内容框架时，首选的参考点是：",
+    "options": [
+      "竞争对手的架构图",
+      "TOGAF 核心元模型及其预定义的扩展",
+      "最新的编程语言规范",
+      "项目的最后期限"
+    ],
+    "answer": [1],
+    "explanation": "TOGAF 建议基于核心元模型进行裁剪，并根据需要添加扩展。"
+  },
+  {
+    "id": 60,
+    "module": "Module 7 - Architecture Content",
+    "type": "multiple",
+    "question": "在架构存储库中，如何确保外部资产的安全和保密性？",
+    "options": [
+      "通过存储库分区和访问控制权限管理",
+      "将所有内容设为公开",
+      "对敏感制品进行加密",
+      "定期审计访问日志"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "通过权限管理（分区）、加密和日志审计来确保资产安全。公开所有内容显然是错误的。"
+  }
+]
