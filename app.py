@@ -29,29 +29,34 @@ def load_json(file_name):
 def normalize_cards(raw):
     if not isinstance(raw, list):
         return []
+
     result = []
     for idx, item in enumerate(raw):
         if not isinstance(item, dict):
             continue
+
         question = item.get("question_cn") or item.get("question") or ""
         answer = item.get("answer_cn") or item.get("answer") or ""
         module = item.get("module") or "Module 1"
         topic = item.get("topic") or "General"
         card_id = item.get("id") or idx + 1
+
         if question and answer:
             result.append({
                 "id": card_id,
                 "module": module,
                 "topic": topic,
-                "question_cn": question,
-                "answer_cn": answer,
+                "question": question,
+                "answer": answer,
             })
+
     return result
 
 
 def normalize_quiz(raw):
     if not isinstance(raw, list):
         return []
+
     result = []
     for idx, item in enumerate(raw):
         if not isinstance(item, dict):
@@ -75,6 +80,7 @@ def normalize_quiz(raw):
                 "answer": answer,
                 "explanation": explanation,
             })
+
     return result
 
 
@@ -122,6 +128,7 @@ st.sidebar.markdown("---")
 if mode == "Study":
     st.sidebar.subheader("学习模式")
     st.sidebar.write(f"卡片数量：{len(cards)}")
+
     if len(cards) > 0 and st.sidebar.button("随机抽一张", use_container_width=True):
         st.session_state.study_index = random.randint(0, len(cards) - 1)
         st.session_state.show_answer = False
@@ -163,11 +170,11 @@ if mode == "Study":
         card = cards[st.session_state.study_index]
 
         st.caption(f"Card {st.session_state.study_index + 1} / {len(cards)}")
-        st.markdown(f"**Topic:** {card['topic']}")
+        st.markdown(f"**Topic:** {card.get('topic', 'General')}")
         st.markdown("---")
 
         st.subheader("问题")
-        st.write(card["question_cn"])
+        st.write(card.get("question", "未找到问题内容"))
 
         if not st.session_state.show_answer:
             if st.button("显示答案", type="primary"):
@@ -175,7 +182,7 @@ if mode == "Study":
                 st.rerun()
         else:
             st.subheader("答案")
-            st.success(card["answer_cn"])
+            st.success(card.get("answer", "未找到答案内容"))
 
         st.markdown("---")
         col1, col2, col3 = st.columns(3)
@@ -250,7 +257,7 @@ if mode == "Quiz":
                 if q["type"] == "single":
                     correct = (user_answer is not None and [user_answer] == q["answer"])
                 else:
-                    correct = (sorted(user_answer) == sorted(q["answer"]))
+                    correct = (sorted(user_answer or []) == sorted(q["answer"]))
 
                 st.session_state.quiz_answered_count += 1
                 if correct:
