@@ -1,0 +1,565 @@
+[
+  {
+    "id": 1,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A Objective",
+    "question_cn": "Phase A（架构愿景）的主要目标是什么？",
+    "answer_cn": "建立架构项目的范围、识别利益相关者、获得愿景批准，并签署架构工作说明书。"
+  },
+  {
+    "id": 2,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A Output",
+    "question_cn": "哪份文件定义了评估架构进展的绩效指标和衡量标准？",
+    "answer_cn": "架构工作说明书 (Statement of Architecture Work)。"
+  },
+  {
+    "id": 3,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A Stakeholder",
+    "question_cn": "在 Phase A 中，如何确保复杂的利益相关者群体得到管理？",
+    "answer_cn": "通过进行利益相关者管理分析，识别他们的关注点、影响力和需求。"
+  },
+  {
+    "id": 4,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Business Scenario",
+    "question_cn": "哪种技术通常在 Phase A 中用于揭示隐含的需求和理解业务重点？",
+    "answer_cn": "业务场景 (Business Scenarios) 技术。"
+  },
+  {
+    "id": 5,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase B Scope",
+    "question_cn": "Phase B（业务架构）的核心任务是什么？",
+    "answer_cn": "开发目标业务架构，描述如何实现商业目标，并进行差距分析。"
+  },
+  {
+    "id": 6,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase B Artifacts",
+    "question_cn": "业务架构阶段通常创建哪些类型的图表？",
+    "answer_cn": "组织结构图、业务能力图、价值流图和业务流程模型。"
+  },
+  {
+    "id": 7,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase C Domain",
+    "question_cn": "Phase C 包含哪两个领域的架构开发？",
+    "answer_cn": "数据架构 (Data Architecture) 和应用架构 (Application Architecture)。"
+  },
+  {
+    "id": 8,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Data Architecture Goal",
+    "question_cn": "数据架构的主要目标是什么？",
+    "answer_cn": "定义支持业务所需的数据资产类型和源，并确保其可被有效管理和利用。"
+  },
+  {
+    "id": 9,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Application Architecture Goal",
+    "question_cn": "应用架构的主要目标是什么？",
+    "answer_cn": "定义处理数据和支持业务流程所需的应用系统蓝图。"
+  },
+  {
+    "id": 10,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase D Technology",
+    "question_cn": "Phase D（技术架构）关注什么内容？",
+    "answer_cn": "基础设施软件和硬件，包括 IT 基础设施、中间件、网络、服务器等。"
+  },
+  {
+    "id": 11,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Gap Analysis Step",
+    "question_cn": "在 B、C、D 各阶段，对比基线和目标架构后必须生成的输出是？",
+    "answer_cn": "差距分析 (Gap Analysis) 结果。"
+  },
+  {
+    "id": 12,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A Capability",
+    "question_cn": "在进入 Phase A 时，需要评估组织的什么能力？",
+    "answer_cn": "业务转型就绪评估 (Business Transformation Readiness Assessment)。"
+  },
+  {
+    "id": 13,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase B Reference Model",
+    "question_cn": "业务架构中常用的行业模型有哪些？",
+    "answer_cn": "如银行界的 BIAN 或电信界的 eTOM。"
+  },
+  {
+    "id": 14,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase C Integration",
+    "question_cn": "为什么 Phase C 的两个子域通常并行开发？",
+    "answer_cn": "因为数据和应用之间存在高度的互操作性需求和依赖关系。"
+  },
+  {
+    "id": 15,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase D TRM",
+    "question_cn": "Phase D 可以重用的 TOGAF 参考模型是什么？",
+    "answer_cn": "技术参考模型 (TRM)。"
+  },
+  {
+    "id": 16,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Logical vs Physical",
+    "question_cn": "在数据架构中，逻辑数据模型和物理数据模型的区别？",
+    "answer_cn": "逻辑模型定义业务数据实体，物理模型定义数据库的具体实现。"
+  },
+  {
+    "id": 17,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A Approval",
+    "question_cn": "谁负责批准架构愿景和架构工作说明书？",
+    "answer_cn": "发起组织（Sponsoring Organization）。"
+  },
+  {
+    "id": 18,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Roadmap Components",
+    "question_cn": "在 Phase B/C/D 产生的关于路线图的输出称为什么？",
+    "answer_cn": "候选架构路线图组件 (Candidate Architecture Roadmap components)。"
+  },
+  {
+    "id": 19,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Value Stream",
+    "question_cn": "在 Phase B 中，描述为利益相关者提供端到端价值的活动序列叫什么？",
+    "answer_cn": "价值流 (Value Stream)。"
+  },
+  {
+    "id": 20,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Service Orientation",
+    "question_cn": "TOGAF 建议通过什么方式来提高架构的灵活性？",
+    "answer_cn": "采用面向服务的架构 (SOA) 原则。"
+  },
+  [
+  {
+    "id": 61,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E Objective",
+    "question_cn": "Phase E（机会与解决方案）的主要目标是什么？",
+    "answer_cn": "识别主要的工作包、确定过渡架构，并从整体上定义如何实现目标架构。"
+  },
+  {
+    "id": 62,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E Logic",
+    "question_cn": "Phase E 的核心逻辑是什么？",
+    "answer_cn": "将 Phase B/C/D 中识别出的差距（Gaps）转化为具体的工作包和项目建议。"
+  },
+  {
+    "id": 63,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Transition Architecture",
+    "question_cn": "什么是过渡架构 (Transition Architecture)？",
+    "answer_cn": "是在实施过程中，为了从基线状态逐步演进到目标状态而定义的中间状态。"
+  },
+  {
+    "id": 64,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E - SBB",
+    "question_cn": "在 Phase E 中，架构师开始将 ABB 转化为？",
+    "answer_cn": "解决方案架构构建块 (SBB - Solution Building Blocks)。"
+  },
+  {
+    "id": 65,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Consolidated Gaps",
+    "question_cn": "在 Phase E 中，如何处理来自不同架构域的差距？",
+    "answer_cn": "进行合并与协调，形成“合并差距、解决方案和依赖关系矩阵”。"
+  },
+  {
+    "id": 66,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase F Objective",
+    "question_cn": "Phase F（迁移规划）的核心目标是什么？",
+    "answer_cn": "通过与项目和投资组合管理人员合作，确定实施的详细优先级，并最终确定实施与迁移计划。"
+  },
+  {
+    "id": 67,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E vs Phase F",
+    "question_cn": "Phase E 和 Phase F 在路线图上的分工有什么区别？",
+    "answer_cn": "Phase E 关注“做什么”和“怎么实现”；Phase F 关注“何时做”和“优先级与资源分配”。"
+  },
+  {
+    "id": 68,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Implementation and Migration Plan",
+    "question_cn": "实施与迁移计划在哪个阶段正式签署通过？",
+    "answer_cn": "Phase F。"
+  },
+  {
+    "id": 69,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Business Value Assessment",
+    "question_cn": "在 Phase F 中，如何确定项目的优先级？",
+    "answer_cn": "通过对每个工作包进行业务价值评估、风险评估和成本效益分析。"
+  },
+  {
+    "id": 70,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase F - Governance",
+    "question_cn": "Phase F 结束后，架构师需要确保什么？",
+    "answer_cn": "确保实施团队理解架构意图，并建立后续的合规性审查机制。"
+  },
+  {
+    "id": 71,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Incremental Delivery",
+    "question_cn": "过渡架构最常见的应用场景是什么？",
+    "answer_cn": "当目标架构过于庞大无法一次性实现时，用于增量交付和降低风险。"
+  },
+  {
+    "id": 72,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Work Package Definition",
+    "question_cn": "什么是工作包 (Work Package)？",
+    "answer_cn": "一组协同开展以实现特定目标的行动，是项目的基础。"
+  },
+  {
+    "id": 73,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E - Buy vs Build",
+    "question_cn": "在哪个阶段进行“购买 vs 构建” (Buy vs Build) 的决策分析？",
+    "answer_cn": "Phase E。"
+  },
+  {
+    "id": 74,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase F - Architecture Definition Document",
+    "question_cn": "Phase F 对 ADD（架构定义文档）有什么操作？",
+    "answer_cn": "将其最终确定并归档，作为后续实施的基准。"
+  },
+  {
+    "id": 75,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Interoperability Requirements",
+    "question_cn": "互操作性需求通常在哪个阶段进行深度评估？",
+    "answer_cn": "Phase E。"
+  },
+  {
+    "id": 76,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E Output",
+    "question_cn": "Phase E 的关键输出是什么？",
+    "answer_cn": "架构路线图 (Architecture Roadmap) 和过渡架构定义。"
+  },
+  {
+    "id": 77,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Legacy Retirement",
+    "question_cn": "识别需要退役或报废的旧系统是哪个阶段的任务？",
+    "answer_cn": "Phase E。"
+  },
+  {
+    "id": 78,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Project Context",
+    "question_cn": "在 Phase E 中，架构师如何对项目进行分类？",
+    "answer_cn": "根据业务价值、成本、风险和对其他项目的依赖性。"
+  },
+  {
+    "id": 79,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase F Stakeholders",
+    "question_cn": "Phase F 必须与哪些职能部门紧密配合？",
+    "answer_cn": "项目管理办公室 (PMO)、投资组合管理部门和运营团队。"
+  },
+  {
+    "id": 80,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Migration Steps",
+    "question_cn": "迁移计划通常包括哪些关键步骤？",
+    "answer_cn": "环境准备、数据迁移、应用部署、测试验收和切断旧系统。"
+  },
+[
+  {
+    "id": 121,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G Objective",
+    "question_cn": "Phase G（实施治理）的主要目标是什么？",
+    "answer_cn": "确保实施项目与定义的架构保持一致，并建立架构合同以治理实施过程。"
+  },
+  {
+    "id": 122,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Architecture Contract",
+    "question_cn": "什么是架构合同 (Architecture Contract)？",
+    "answer_cn": "它是架构开发团队与实施团队之间签署的联合协议，规定了实施的约束和合规指标。"
+  },
+  {
+    "id": 123,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G Compliance",
+    "question_cn": "在 Phase G 中，架构师如何验证系统是否按设计构建？",
+    "answer_cn": "通过执行架构合规性审查 (Architecture Compliance Reviews)。"
+  },
+  {
+    "id": 124,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G Scope",
+    "question_cn": "Phase G 负责具体的软件编码吗？",
+    "answer_cn": "不负责。它负责治理（Governance），确保开发工作符合架构要求。"
+  },
+  {
+    "id": 125,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase H Objective",
+    "question_cn": "Phase H（架构变更管理）的主要目标是什么？",
+    "answer_cn": "确保架构生命周期得以维持，提供架构变更的监控，并确保架构能够响应业务需求的变化。"
+  },
+  {
+    "id": 126,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase H - Value Realization",
+    "question_cn": "Phase H 中的“价值实现”是指什么？",
+    "answer_cn": "监控架构实施后的业务收益，验证是否达到了最初在架构愿景中设定的目标。"
+  },
+  {
+    "id": 127,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Types of Change",
+    "question_cn": "TOGAF 将架构变更分为哪三类？",
+    "answer_cn": "简化变更（Simplification）、增量变更（Incremental）和重构变更（Re-architecting）。"
+  },
+  {
+    "id": 128,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Simplification Change",
+    "question_cn": "什么是简化变更？",
+    "answer_cn": "通常通过整合来减少配置项或削减开销，不改变架构的基本结构。"
+  },
+  {
+    "id": 129,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Incremental Change",
+    "question_cn": "什么是增量变更？",
+    "answer_cn": "通过现有的架构框架引入新的能力或标准，通常不需要重新设计整个架构。"
+  },
+  {
+    "id": 130,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Re-architecting Change",
+    "question_cn": "什么是重构变更？",
+    "answer_cn": "由于业务战略发生重大变化，需要重新评估并启动全新的 ADM 循环。"
+  },
+  {
+    "id": 131,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirements Management Position",
+    "question_cn": "需求管理在 ADM 循环中的位置有什么特殊之处？",
+    "answer_cn": "它位于 ADM 循环图的中心，与所有 Phase（A 到 H）都有交互。"
+  },
+  {
+    "id": 132,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirements Management Objective",
+    "question_cn": "需求管理阶段的主要目标是什么？",
+    "answer_cn": "在整个 ADM 循环中管理架构需求，确保需求在各阶段之间的一致性和可追溯性。"
+  },
+  {
+    "id": 133,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirements Repository",
+    "question_cn": "需求应该存储在哪里？",
+    "answer_cn": "架构库（Architecture Repository）中的需求库。 "
+  },
+  {
+    "id": 134,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase H - Monitoring Tools",
+    "question_cn": "Phase H 通常使用什么工具来监测技术变化？",
+    "answer_cn": "技术观察（Technology Watch）和业务监控。"
+  },
+  {
+    "id": 135,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G - SBB Implementation",
+    "question_cn": "在 Phase G 中，由谁来选择具体的解决方案构建块（SBB）？",
+    "answer_cn": "通常由实施团队选择，但需接受架构团队的治理和批准。"
+  },
+  {
+    "id": 136,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirements Impact",
+    "question_cn": "当一个新需求出现时，需求管理阶段首先要做什么？",
+    "answer_cn": "评估该需求对当前 ADM 阶段及后续阶段的影响。"
+  },
+  {
+    "id": 137,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G - Post-Implementation",
+    "question_cn": "Phase G 结束时的标志是什么？",
+    "answer_cn": "解决方案已部署，且架构师签署合规确认书。"
+  },
+  {
+    "id": 138,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase H - Strategic Change",
+    "question_cn": "哪种驱动因素最可能导致重构变更？",
+    "answer_cn": "业务目标的重大转移、兼并收购或破坏性的新技术出现。"
+  },
+  {
+    "id": 139,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirement Conflict",
+    "question_cn": "如果在不同利益相关者之间出现需求冲突，由谁裁决？",
+    "answer_cn": "在架构治理框架下，由架构审查委员会（Architecture Review Board）或 Phase A 定义的决策机制裁决。"
+  },
+  {
+    "id": 140,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Dispensation",
+    "question_cn": "什么是特许豁免 (Dispensation)？",
+    "answer_cn": "在 Phase G 中，当实施方案由于特殊原因无法完全符合架构标准时，由治理机构授予的短期或长期偏离许可。"
+  },
+[
+  {
+    "id": 181,
+    "module": "Module 4 - ADM Phases",
+    "topic": "ABB vs SBB",
+    "question_cn": "什么是架构构建块 (ABB)？",
+    "answer_cn": "ABB 是逻辑组件，定义了功能需求、与其他构建块的关系，且与具体实现无关。"
+  },
+  {
+    "id": 182,
+    "module": "Module 4 - ADM Phases",
+    "topic": "ABB vs SBB",
+    "question_cn": "什么是解决方案构建块 (SBB)？",
+    "answer_cn": "SBB 是物理组件，是 ABB 的具体实现（如特定的软件包或硬件设备）。"
+  },
+  {
+    "id": 183,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase B, C, D Common Steps",
+    "question_cn": "Phase B、C、D 共同的第一步通常是什么？",
+    "answer_cn": "选择参考模型、视角（Viewpoints）和工具。"
+  },
+  {
+    "id": 184,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Gap Analysis Result",
+    "question_cn": "差距分析中，目标架构有但基线架构没有的项目被归类为？",
+    "answer_cn": "新增项 (New/Gap items)。"
+  },
+  {
+    "id": 185,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Architecture Roadmap Evolution",
+    "question_cn": "架构路线图在 Phase B/C/D 与 Phase E 之间有何变化？",
+    "answer_cn": "在 B/C/D 是初步的候选组件，在 E 是合并且初步排期的路线图。"
+  },
+  {
+    "id": 186,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Business Transformation Readiness",
+    "question_cn": "业务转型就绪评估的目的是什么？",
+    "answer_cn": "识别组织在文化、能力和资源方面对变革的接受程度和潜在风险。"
+  },
+  {
+    "id": 187,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase G - Architecture Compliance",
+    "question_cn": "架构合规性审查的四个级别通常包括？",
+    "answer_cn": "完全合规 (Compliant)、部分合规、不合规、不适用。"
+  },
+  {
+    "id": 188,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Requirements Lifecycle",
+    "question_cn": "需求什么时候可以被“关闭”？",
+    "answer_cn": "当需求已在目标架构中得到满足，或因业务策略变更被正式废弃时。"
+  },
+  {
+    "id": 189,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Architecture Definition Document (ADD)",
+    "question_cn": "ADD 与 Architecture Specification 有什么区别？",
+    "answer_cn": "ADD 描述架构设计（模型、理由），Specification 描述对实施的具体约束和标准。"
+  },
+  {
+    "id": 190,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase A - Scope Clarification",
+    "question_cn": "在 Phase A 中，如果发现范围过大无法执行，架构师应如何处理？",
+    "answer_cn": "应缩小当前 ADM 循环的范围，并建议将剩余部分作为后续循环或其他项目处理。"
+  },
+  {
+    "id": 191,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Governance Repository",
+    "question_cn": "治理记录（如审计日志、审查会议记录）应存储在何处？",
+    "answer_cn": "架构库 (Architecture Repository) 中的治理日志 (Governance Log) 部分。"
+  },
+  {
+    "id": 192,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Business Capability Mapping",
+    "question_cn": "业务能力建模在哪个阶段最常用？",
+    "answer_cn": "Phase B (业务架构)。"
+  },
+  {
+    "id": 193,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase E - Incremental Strategy",
+    "question_cn": "Phase E 确定的“增量式交付”对业务有什么好处？",
+    "answer_cn": "可以早期实现部分投资回报 (ROI) 并降低整体项目失败风险。"
+  },
+  {
+    "id": 194,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase F - Resource Constraints",
+    "question_cn": "如果在 Phase F 发现资源不足以执行所有项目，该怎么办？",
+    "answer_cn": "重新评估项目优先级，并可能需要回到 Phase E 修改路线图或过渡架构。"
+  },
+  {
+    "id": 195,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Architecture Principles - Compliance",
+    "question_cn": "所有的架构变更（Phase H）都必须符合？",
+    "answer_cn": "在预备阶段和 Phase A 确立的架构原则。"
+  },
+  {
+    "id": 196,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase C - Application Integration",
+    "question_cn": "应用架构中描述系统间交互的关键工件是？",
+    "answer_cn": "应用通信矩阵 (Application Communication Matrix)。"
+  },
+  {
+    "id": 197,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Risk Management Phase",
+    "question_cn": "风险识别和评估应该从哪个阶段开始？",
+    "answer_cn": "Phase A (甚至预备阶段)，并贯穿整个 ADM。"
+  },
+  {
+    "id": 198,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Interoperability - Technical",
+    "question_cn": "技术互操作性在哪个阶段详细定义？",
+    "answer_cn": "Phase D (技术架构)。"
+  },
+  {
+    "id": 199,
+    "module": "Module 4 - ADM Phases",
+    "topic": "Phase H - Post-Implementation Review",
+    "question_cn": "Phase H 结束后通常会产生什么结果？",
+    "answer_cn": "进入下一个 ADM 循环，或维持当前架构的稳定运行状态。"
+  },
+  {
+    "id": 200,
+    "module": "Module 4 - ADM Phases",
+    "topic": "ADM Versatility",
+    "question_cn": "ADM 是否可以用于除了企业架构以外的领域？",
+    "answer_cn": "可以，由于其通用性，它常被调整用于特定问题的解决或战略规划。"
+  }
+]
