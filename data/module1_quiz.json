@@ -1,0 +1,422 @@
+[
+{
+"id":1,
+"module":"Module 1 - Core Concepts",
+"type":"single",
+"question":"TOGAF 是什么？",
+"options":[
+"一个企业管理软件",
+"一个企业架构框架",
+"一种编程语言",
+"一种数据库系统"
+],
+"answer":[1],
+"explanation":"TOGAF 是 The Open Group Architecture Framework，是企业架构的标准框架。"
+},
+{
+"id":2,
+"module":"Module 1 - Core Concepts",
+"type":"single",
+"question":"TOGAF 由哪个组织维护？",
+"options":[
+"ISO",
+"The Open Group",
+"IEEE",
+"Gartner"
+],
+"answer":[1],
+"explanation":"TOGAF 由 The Open Group 维护和发布。"
+},
+{
+"id":3,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Enterprise Architecture 的核心目标是什么？",
+"options":[
+"开发软件",
+"确保业务和IT保持一致",
+"提高编程效率",
+"优化数据库"
+],
+"answer":[1],
+"explanation":"企业架构的主要目标是确保业务战略与IT能力保持一致。"
+},
+{
+"id":4,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Enterprise Architecture 主要描述什么？",
+"options":[
+"企业IT系统代码",
+"企业业务、信息系统和技术结构",
+"企业财务结构",
+"企业市场战略"
+],
+"answer":[1],
+"explanation":"EA描述业务架构、数据架构、应用架构和技术架构之间的关系。"
+},
+{
+"id":5,
+"type":"multiple",
+"module":"Module 1 - Core Concepts",
+"question":"TOGAF 定义的 Architecture Domains 包括哪些？",
+"options":[
+"Business Architecture",
+"Data Architecture",
+"Application Architecture",
+"Technology Architecture"
+],
+"answer":[0,1,2,3],
+"explanation":"TOGAF定义四个架构域：Business、Data、Application、Technology。"
+},
+{
+"id":6,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Business Architecture 主要描述什么？",
+"options":[
+"业务流程和组织结构",
+"数据库结构",
+"服务器架构",
+"网络协议"
+],
+"answer":[0],
+"explanation":"Business Architecture 描述业务战略、组织结构和业务流程。"
+},
+{
+"id":7,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Data Architecture 主要关注什么？",
+"options":[
+"数据结构和数据管理",
+"网络连接",
+"软件开发流程",
+"系统运维"
+],
+"answer":[0],
+"explanation":"Data Architecture 描述数据资产结构和管理方式。"
+},
+{
+"id":8,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Application Architecture 主要描述什么？",
+"options":[
+"企业应用系统结构及其关系",
+"服务器配置",
+"数据库性能",
+"代码规范"
+],
+"answer":[0],
+"explanation":"Application Architecture 描述应用系统及其交互关系。"
+},
+{
+"id":9,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Technology Architecture 主要描述什么？",
+"options":[
+"技术基础设施",
+"业务流程",
+"客户关系",
+"营销系统"
+],
+"answer":[0],
+"explanation":"Technology Architecture 描述硬件、网络和平台技术。"
+},
+{
+"id":10,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Principles 的作用是什么？",
+"options":[
+"指导架构设计决策",
+"编写代码",
+"数据库管理",
+"系统测试"
+],
+"answer":[0],
+"explanation":"架构原则用于指导架构设计和决策。"
+},
+{
+"id":11,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Principles 通常包含什么？",
+"options":[
+"原则声明、理由和影响",
+"代码和测试",
+"预算和财务",
+"服务器配置"
+],
+"answer":[0],
+"explanation":"原则通常包含：Statement、Rationale、Implication。"
+},
+{
+"id":12,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Enterprise Continuum 的作用是什么？",
+"options":[
+"管理架构资产",
+"管理服务器",
+"管理数据库",
+"管理用户权限"
+],
+"answer":[0],
+"explanation":"Enterprise Continuum 用于组织和分类架构资产。"
+},
+{
+"id":13,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Enterprise Continuum 包含哪两个主要部分？",
+"options":[
+"Architecture Continuum 和 Solutions Continuum",
+"Business 和 IT",
+"Strategy 和 Technology",
+"Data 和 Network"
+],
+"answer":[0],
+"explanation":"Enterprise Continuum 包括 Architecture Continuum 和 Solutions Continuum。"
+},
+{
+"id":14,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Repository 用于什么？",
+"options":[
+"存储架构相关资产",
+"存储程序代码",
+"存储数据库",
+"存储服务器日志"
+],
+"answer":[0],
+"explanation":"Architecture Repository 是架构资产存储库。"
+},
+{
+"id":15,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Stakeholder 在企业架构中指什么？",
+"options":[
+"对架构有利益或关注的人或组织",
+"程序员",
+"IT工程师",
+"数据库管理员"
+],
+"answer":[0],
+"explanation":"Stakeholder 是对架构有利益或关注的个人或组织。"
+},
+{
+"id":16,
+"type":"multiple",
+"module":"Module 1 - Core Concepts",
+"question":"Stakeholder 可能包括哪些角色？",
+"options":[
+"业务管理层",
+"IT架构师",
+"系统用户",
+"外部合作伙伴"
+],
+"answer":[0,1,2,3],
+"explanation":"所有与系统或架构相关的角色都可能是Stakeholder。"
+},
+{
+"id":17,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Artifact 指什么？",
+"options":[
+"架构文档或模型",
+"服务器配置",
+"软件代码",
+"数据库脚本"
+],
+"answer":[0],
+"explanation":"Architecture Artifact 是架构的具体表达，如模型或文档。"
+},
+{
+"id":18,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture View 的目的是什么？",
+"options":[
+"向Stakeholder展示架构",
+"优化代码",
+"测试系统",
+"部署服务器"
+],
+"answer":[0],
+"explanation":"View 用于展示架构的某个方面。"
+},
+{
+"id":19,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Viewpoint 定义什么？",
+"options":[
+"如何构建架构视图",
+"如何写代码",
+"如何部署系统",
+"如何设计数据库"
+],
+"answer":[0],
+"explanation":"Viewpoint 定义如何创建 View。"
+},
+{
+"id":20,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture View 和 Viewpoint 的关系是什么？",
+"options":[
+"View 按照 Viewpoint 构建",
+"Viewpoint 按照 View 构建",
+"两者无关系",
+"Viewpoint 是数据库"
+],
+"answer":[0],
+"explanation":"View 是具体视图，Viewpoint 是视图规则。"
+},
+{
+"id":21,
+"type":"multiple",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Artifacts 可以包括哪些？",
+"options":[
+"架构模型",
+"架构文档",
+"架构图",
+"架构矩阵"
+],
+"answer":[0,1,2,3],
+"explanation":"Artifact 可以是任何架构表达形式。"
+},
+{
+"id":22,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"TOGAF 的主要用途是什么？",
+"options":[
+"开发企业架构",
+"开发数据库",
+"开发操作系统",
+"开发网络协议"
+],
+"answer":[0],
+"explanation":"TOGAF 提供企业架构开发方法。"
+},
+{
+"id":23,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"TOGAF 中 Enterprise Architecture 描述什么？",
+"options":[
+"企业的整体结构和运作方式",
+"企业员工管理",
+"企业财务结构",
+"企业市场营销"
+],
+"answer":[0],
+"explanation":"EA 描述组织如何运作。"
+},
+{
+"id":24,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Domains 的目的是什么？",
+"options":[
+"将架构分为不同关注领域",
+"分类代码",
+"分类服务器",
+"分类数据库"
+],
+"answer":[0],
+"explanation":"Domain 用于组织架构结构。"
+},
+{
+"id":25,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Repository 主要存储什么？",
+"options":[
+"架构模型和文档",
+"代码仓库",
+"服务器配置",
+"用户数据"
+],
+"answer":[0],
+"explanation":"Repository 存储架构资产。"
+},
+{
+"id":26,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Enterprise Continuum 的核心目标是什么？",
+"options":[
+"复用架构资产",
+"开发软件",
+"优化数据库",
+"管理服务器"
+],
+"answer":[0],
+"explanation":"Continuum 用于组织和复用架构资产。"
+},
+{
+"id":27,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture View 主要服务于谁？",
+"options":[
+"Stakeholders",
+"程序员",
+"测试人员",
+"系统管理员"
+],
+"answer":[0],
+"explanation":"View 用于满足 Stakeholder 关注点。"
+},
+{
+"id":28,
+"type":"multiple",
+"module":"Module 1 - Core Concepts",
+"question":"TOGAF 中 Stakeholder Concern 可能包括什么？",
+"options":[
+"安全性",
+"性能",
+"可扩展性",
+"成本"
+],
+"answer":[0,1,2,3],
+"explanation":"Stakeholder 关注点可能包括多方面。"
+},
+{
+"id":29,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"Architecture Viewpoint 通常由谁定义？",
+"options":[
+"架构师",
+"程序员",
+"数据库管理员",
+"测试工程师"
+],
+"answer":[0],
+"explanation":"架构师通常定义 Viewpoint。"
+},
+{
+"id":30,
+"type":"single",
+"module":"Module 1 - Core Concepts",
+"question":"TOGAF Framework 的主要价值是什么？",
+"options":[
+"提供标准化的企业架构方法",
+"提供编程工具",
+"提供数据库",
+"提供操作系统"
+],
+"answer":[0],
+"explanation":"TOGAF 提供标准化企业架构方法。"
+}
+]
