@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "根据 TOGAF 标准，治理（Governance）的核心关注点是什么？",
+    "options": [
+      "日常的运营管理",
+      "如何制定决策、谁制定决策以及谁对决策负责",
+      "软件开发生命周期的管理",
+      "企业财务预算的分配"
+    ],
+    "answer": [1],
+    "explanation": "治理本质上是关于决策：谁制定决策，如何制定决策，以及谁被追究责任。"
+  },
+  {
+    "id": 2,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构治理（Architecture Governance）在企业治理体系中的位置是？",
+    "options": [
+      "它是 IT 治理的一个层面",
+      "它是独立于公司治理的体系",
+      "它是业务治理的同义词",
+      "它是项目管理的子集"
+    ],
+    "answer": [0],
+    "explanation": "架构治理是 IT 治理的一个层面，而 IT 治理又是整体公司治理（Corporate Governance）的一个组成部分。"
+  },
+  {
+    "id": 3,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "TOGAF 定义的架构治理的特征包括哪些？",
+    "options": [
+      "纪律性 (Discipline)",
+      "透明度 (Transparency)",
+      "问责制 (Accountability)",
+      "公平性 (Fairness)"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "TOGAF 定义了治理的六个主要特征：纪律性、透明度、独立性、问责制、责任感和公平性。"
+  },
+  {
+    "id": 4,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "负责指导架构治理框架实施的关键跨组织机构是：",
+    "options": [
+      "项目管理办公室 (PMO)",
+      "架构委员会 (Architecture Board)",
+      "人力资源委员会",
+      "首席执行官办公室"
+    ],
+    "answer": [1],
+    "explanation": "架构委员会是一个由关键利益相关者组成的机构，负责实施和维护架构治理。"
+  },
+  {
+    "id": 5,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "以下哪些属于架构委员会（Architecture Board）的职责？",
+    "options": [
+      "批准架构原则和标准",
+      "审查架构合规性报告",
+      "批准架构变更请求",
+      "直接编写所有的底层系统代码"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "委员会负责决策和监督，如批准标准、原则、变更及合规审查。编写代码属于实施团队的职责。"
+  },
+  {
+    "id": 6,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构委员会的成员通常由谁领导？",
+    "options": [
+      "一名外部顾问",
+      "首席架构师或高级行政赞助人",
+      "初级开发人员",
+      "人力资源经理"
+    ],
+    "answer": [1],
+    "explanation": "委员会应由高级管理层（如 CTO、CIO）或首席架构师担任主席。"
+  },
+  {
+    "id": 7,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "确保实施项目符合已定义架构的过程被称为：",
+    "options": [
+      "架构合规性 (Architecture Compliance)",
+      "架构设计",
+      "架构测试",
+      "架构外包"
+    ],
+    "answer": [0],
+    "explanation": "架构合规性是确保一个具体的实施方案遵循定义的架构标准和模型的过程。"
+  },
+  {
+    "id": 8,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "合规级别中，“完全遵循（Full Conformant）”指：",
+    "options": [
+      "完全不符合标准",
+      "在某些次要方面有偏离",
+      "实施的所有方面都完全符合架构标准",
+      "标准与项目不相关"
+    ],
+    "answer": [2],
+    "explanation": "完全遵循意味着实施的每一个细节都严格对齐架构规范。"
+  },
+  {
+    "id": 9,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "合规级别中，“不合规（Non-compliant）”意味着：",
+    "options": [
+      "项目完全由于运气而运行",
+      "某些关键方面偏离或违反了架构标准",
+      "项目使用了最新的技术",
+      "标准尚未被编写"
+    ],
+    "answer": [1],
+    "explanation": "不合规指项目在评估时被发现违反了已定义的架构原则或强制性标准。"
+  },
+  {
+    "id": 10,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "进行架构合规性审查（Compliance Review）的目的包括：",
+    "options": [
+      "尽早发现架构偏离以降低成本",
+      "确保项目符合法律法规要求",
+      "作为项目经理的年度考核唯一依据",
+      "识别架构标准本身是否需要改进"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "合规性审查不仅是为了监督项目，也通过反馈循环来优化架构标准。"
+  },
+  {
+    "id": 11,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构开发团队与利益相关者/实施组织之间的正式协议被称为：",
+    "options": [
+      "劳务合同",
+      "架构合同 (Architecture Contracts)",
+      "保密协议",
+      "软件许可证"
+    ],
+    "answer": [1],
+    "explanation": "架构合同是用于管理架构开发及其后续实施交付的正式协议。"
+  },
+  {
+    "id": 12,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "架构合同（Architecture Contracts）通常包含哪些内容？",
+    "options": [
+      "工作目标和范围",
+      "架构原则和标准要求",
+      "合规性审查的要求和时间点",
+      "架构师个人的家庭住址"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "架构合同定义了双方的责任、交付标准、范围和合规性要求。"
+  },
+  {
+    "id": 13,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "在架构合同中，SLA 通常是指：",
+    "options": [
+      "单层架构协议",
+      "服务级别协议 (Service Level Agreement)",
+      "系统逻辑排列",
+      "安全日志审计"
+    ],
+    "answer": [1],
+    "explanation": "SLA 是服务级别协议，在架构合同中常用于定义运营或服务质量指标。"
+  },
+  {
+    "id": 14,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "正式允许一个项目临时或永久不遵守特定架构标准的机制是：",
+    "options": [
+      "罚款",
+      "豁免/特许 (Dispensation/Waiver)",
+      "辞退架构师",
+      "忽略该标准"
+    ],
+    "answer": [1],
+    "explanation": "豁免是治理流程的一部分，通过正式审批允许项目在受控条件下偏离标准。"
+  },
+  {
+    "id": 15,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理日志（Governance Log）通常存储在哪个位置？",
+    "options": [
+      "架构师的私人电脑",
+      "架构存储库 (Architecture Repository)",
+      "GitHub 公开仓库",
+      "财务处"
+    ],
+    "answer": [1],
+    "explanation": "治理日志是架构存储库的一部分，记录所有治理相关的决策和审计路径。"
+  },
+  {
+    "id": 16,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "有效的架构治理如何为企业创造价值？",
+    "options": [
+      "提高 IT 投资的透明度和责任制",
+      "加速项目在混乱中的交付速度",
+      "减少由于系统不兼容导致的额外成本",
+      "确保技术决策符合业务战略"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "治理通过一致性、透明度和战略对齐来创造价值，而不是鼓励混乱的加速。"
+  },
+  {
+    "id": 17,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "在 ADM 阶段 G 中，架构治理的主要任务是：",
+    "options": [
+      "开始编写业务原则",
+      "对实施项目进行架构监督",
+      "确定企业的业务愿景",
+      "招聘新的开发团队"
+    ],
+    "answer": [1],
+    "explanation": "阶段 G 是实施治理阶段，重点是监督实施项目以确保其符合架构。"
+  },
+  {
+    "id": 18,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "什么是“设计权威（Design Authority）”？",
+    "options": [
+      "一种画图软件",
+      "负责裁定具体设计决策是否符合架构的权力机构",
+      "首席执行官的代称",
+      "项目的图形设计师"
+    ],
+    "answer": [1],
+    "explanation": "设计权威在治理中拥有最终裁决设计合规性的权力。"
+  },
+  {
+    "id": 19,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "在合规性级别中，“无关联（Irrelevant）”意味着：",
+    "options": [
+      "该项目完全没有意义",
+      "该标准与正在审查的项目无关",
+      "项目经理拒绝审查",
+      "标准已经过时"
+    ],
+    "answer": [1],
+    "explanation": "无关联意味着所审查的特定标准不适用于该项目的工作范围。"
+  },
+  {
+    "id": 20,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构治理的“独立性（Independence）”特征是指：",
+    "options": [
+      "治理流程不需要任何资金",
+      "治理流程由不受利益冲突影响的、无偏见的个人进行",
+      "架构师不与任何人说话",
+      "每个部门各自为政"
+    ],
+    "answer": [1],
+    "explanation": "独立性确保审查和决策是客观公正的，不受项目执行层面的利益干扰。"
+  },
+  {
+    "id": 21,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "合规审查评估报告（Compliance Assessment）通常会得出哪些结论？",
+    "options": [
+      "项目完全合规",
+      "项目合规，但有某些豁免项",
+      "项目不合规，需要整改",
+      "项目被撤销资金"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "报告记录合规状态及整改或豁免建议。撤销资金通常是治理决策的后果，而非结论本身。"
+  },
+  {
+    "id": 22,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构委员会的周期性审查主要针对：",
+    "options": [
+      "员工的出勤记录",
+      "架构景观和标准库的现状与更新",
+      "办公室的装修风格",
+      "客户的满意度调查"
+    ],
+    "answer": [1],
+    "explanation": "委员会定期审查架构资产、标准和合规状态的持续有效性。"
+  },
+  {
+    "id": 23,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理特征中的“纪律性（Discipline）”是指：",
+    "options": [
+      "对员工进行体罚",
+      "在组织中采用标准化、专业的方法和规范",
+      "强制加班",
+      "禁止在办公室吃零食"
+    ],
+    "answer": [1],
+    "explanation": "纪律性是指在治理活动中坚持遵循既定的原则、流程和标准。"
+  },
+  {
+    "id": 15,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "架构合同的成功实施依赖于：",
+    "options": [
+      "明确的角色与职责定义",
+      "可衡量的合规性指标",
+      "由于沟通不足带来的惩罚",
+      "双方的正式签署和承诺"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "合同需要清晰的定义、指标和正式的行政支持，而不是依赖沟通障碍。"
+  },
+  {
+    "id": 25,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "在治理过程中，审查架构变更请求的主要目的是：",
+    "options": [
+      "拖延项目进度",
+      "评估变更对架构一致性、风险和成本的影响",
+      "向供应商索取回扣",
+      "展示架构师的权威"
+    ],
+    "answer": [1],
+    "explanation": "变更管理通过治理确保任何对既定架构的修改都是深思熟虑且受控的。"
+  },
+  {
+    "id": 26,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "谁负责在项目实施过程中准备“架构合规性自评”？",
+    "options": [
+      "架构委员会主席",
+      "实施项目的团队或负责人",
+      "外部审计师",
+      "行政助理"
+    ],
+    "answer": [1],
+    "explanation": "项目方通常需要先根据标准进行自评，再提交给治理机构进行正式审查。"
+  },
+  {
+    "id": 27,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "治理体系中的“升级路径（Escalation Path）”在何时使用？",
+    "options": [
+      "当合规审查结论产生争议时",
+      "当需要申请重大架构豁免时",
+      "当项目团队想表扬架构师时",
+      "当治理流程遇到阻碍需要高层干预时"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "升级路径用于解决无法在基层解决的冲突、决策或资源问题。"
+  },
+  {
+    "id": 28,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构委员会的建立属于 ADM 的哪个阶段？",
+    "options": [
+      "阶段 A (架构愿景)",
+      "初步阶段 (Preliminary Phase)",
+      "阶段 G (实施治理)",
+      "阶段 H (架构变更管理)"
+    ],
+    "answer": [1],
+    "explanation": "在初步阶段，组织需要建立架构能力，包括成立架构委员会和定义治理框架。"
+  },
+  {
+    "id": 29,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理决策的“审计跟踪（Audit Trail）”是指：",
+    "options": [
+      "由于安全原因禁止访问日志",
+      "能够追溯决策的依据、时间、参与者和过程的记录",
+      "一种追踪员工地理位置的技术",
+      "记录所有服务器的 IP 地址"
+    ],
+    "answer": [1],
+    "explanation": "审计跟踪是透明度和问责制的基础，确保每个决定都有据可查。"
+  },
+  {
+    "id": 30,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理中的“公平性”对供应商管理意味着：",
+    "options": [
+      "总是选择报价最低的供应商",
+      "确保所有供应商在基于架构标准的评估中受到同等待遇",
+      "不再需要进行供应商评估",
+      "平分合同给所有的投标者"
+    ],
+    "answer": [1],
+    "explanation": "公平性意味着评估是客观的，基于预定义的架构和技术标准，不偏袒特定厂商。"
+  },
+  {
+    "id": 31,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "有效的架构治理框架需要支持：",
+    "options": [
+      "策略的定义和发布",
+      "合规性审查的执行",
+      "决策权的分配",
+      "绩效评估和改进建议"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "完整的框架覆盖了从策略设定到执行监督、权力界定和持续改进的全过程。"
+  },
+  {
+    "id": 32,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构合同在哪个阶段被正式签署以启动实施？",
+    "options": [
+      "阶段 A 结束时",
+      "阶段 F 到阶段 G 的过渡期间",
+      "项目运行三年后",
+      "初步阶段"
+    ],
+    "answer": [1],
+    "explanation": "实施合同通常在迁移规划完成后、实施开始前（阶段 G 的入口）签署。"
+  },
+  {
+    "id": 33,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理委员会中“赞助人（Sponsor）”的主要作用是：",
+    "options": [
+      "复印文件",
+      "提供资金支持、行政授权并消除组织障碍",
+      "修复服务器故障",
+      "进行市场营销"
+    ],
+    "answer": [1],
+    "explanation": "赞助人通常是高管，通过提供资源和权力确保治理委员会的决定具有效力。"
+  },
+  {
+    "id": 34,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "合规审查评估可以分为哪几类？",
+    "options": [
+      "概念性审查 (Conceptual)",
+      "详细设计审查 (Detailed Design)",
+      "实施审查 (Implementation)",
+      "外部审计审查 (Audit)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "TOGAF 描述了不同阶段的审查：概念、设计和实施审查，以确保全生命周期合规。"
+  },
+  {
+    "id": 35,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "“问责制（Accountability）”在治理中的含义是：",
+    "options": [
+      "每个人都对任何事负责",
+      "特定的个人或团体对决策及其后果负有最终解释权和责任",
+      "没有人需要负责",
+      "只有 CEO 负责"
+    ],
+    "answer": [1],
+    "explanation": "问责制要求明确责任边界，确保在出现偏差时有明确的追溯点。"
+  },
+  {
+    "id": 36,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "如果架构标准被发现阻碍了业务创新，治理委员会应该：",
+    "options": [
+      "强制执行，不予理睬",
+      "惩罚该业务部门",
+      "启动标准评审流程，必要时更新标准",
+      "辞职"
+    ],
+    "answer": [2],
+    "explanation": "治理应该是动态的，通过反馈循环（Feedback Loops）持续优化标准以适应业务需求。"
+  },
+  {
+    "id": 37,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "在治理过程中，OLA 代表：",
+    "options": [
+      "单线架构",
+      "运营级别协议 (Operational Level Agreement)",
+      "在线访问权限",
+      "组织逻辑分析"
+    ],
+    "answer": [1],
+    "explanation": "OLA 定义了组织内部团队之间如何协作以支持整体服务目标。"
+  },
+  {
+    "id": 38,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "架构治理的“公平性（Fairness）”确保：",
+    "options": [
+      "所有项目不论大小，投入同样的治理资源",
+      "在治理决策过程中考虑所有受影响方的权利和利益",
+      "所有的项目都必须被拒绝一次",
+      "不进行任何差异化管理"
+    ],
+    "answer": [1],
+    "explanation": "公平性意味着决策过程透明且平衡了不同利益相关者的合理诉求。"
+  },
+  {
+    "id": 39,
+    "module": "Module 8 - Architecture Governance",
+    "type": "multiple",
+    "question": "架构治理日志中可能记录哪些内容？",
+    "options": [
+      "合规性审查的时间和参与者",
+      "针对特定标准的正式豁免理由",
+      "架构委员会对重大变更的投票结果",
+      "架构师个人的年度休假计划"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "日志关注治理决策和活动。个人休假计划属于行政/HR 管理。"
+  },
+  {
+    "id": 40,
+    "module": "Module 8 - Architecture Governance",
+    "type": "single",
+    "question": "治理过程中的“透明度”主要通过什么来实现？",
+    "options": [
+      "秘密会议",
+      "发布明确的流程、记录决策过程并公开审查结果",
+      "只通知受影响的项目经理",
+      "不使用任何文档"
+    ],
+    "answer": [1],
+    "explanation": "透明度意味着利益相关者可以清晰地了解治理是如何运作的，以及决策是如何做出的。"
+  }
+]
