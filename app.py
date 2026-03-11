@@ -9,7 +9,6 @@ st.set_page_config(page_title="TOGAF 学习助手", layout="wide")
 # 针对移动端和 UI 样式的深度优化
 st.markdown("""
     <style>
-    /* 1. 确保按钮在同一行不换行 */
     div[data-testid="stHorizontalBlock"] > div {
         min-width: 0px !important;
     }
@@ -18,14 +17,10 @@ st.markdown("""
         height: 3.5rem !important;
         font-size: 16px !important;
     }
-    
-    /* 2. 修复多选题行距过宽问题，使其与单选题一致 */
     [data-testid="stCheckbox"] {
-        margin-bottom: -15px !important; /* 抵消默认外边距 */
+        margin-bottom: -15px !important;
         padding: 5px 0 !important;
     }
-    
-    /* 3. 卡片容器样式 */
     .card-box {
         padding: 1.5rem;
         border-radius: 12px;
@@ -51,16 +46,29 @@ def load_json(path: Path):
 def get_hierarchy():
     hierarchy = {}
     if not DATA_DIR.exists(): return hierarchy
+    
+    # 扫描分类目录
     categories = sorted([d for d in DATA_DIR.iterdir() if d.is_dir()])
     for cat_path in categories:
+        # 格式化分类名：去除前缀数字
         cat_display = cat_path.name.split('_', 1)[-1] if '_' in cat_path.name else cat_path.name
         hierarchy[cat_display] = {}
+        
+        # 修复点：更灵活地扫描内容文件
+        # 获取所有不带 _quiz 字样的 json 作为主教材
         content_files = sorted([f for f in cat_path.glob("*.json") if "_quiz" not in f.name])
+        
         for cf in content_files:
-            mod_display = cf.stem.replace('_', ' ').title()
+            # 模块名处理：保持原始文件名特征但优化显示
+            mod_display = cf.stem.replace('_', ' ').strip().title()
+            
+            # 自动匹配对应的 quiz 文件
+            # 逻辑：查找同目录下 "文件名_quiz.json"
+            quiz_file = cat_path / f"{cf.stem}_quiz.json"
+            
             hierarchy[cat_display][mod_display] = {
                 "content": cf,
-                "quiz": cat_path / f"{cf.stem}_quiz.json"
+                "quiz": quiz_file if quiz_file.exists() else None
             }
     return hierarchy
 
@@ -79,10 +87,14 @@ if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 hierarchy = get_hierarchy()
 with st.sidebar:
     st.title("TOGAF Study")
-    if not hierarchy: st.stop()
+    if not hierarchy: 
+        st.error("未发现 data 文件夹或 JSON 数据")
+        st.stop()
     
     sel_cat = st.selectbox("分类", list(hierarchy.keys()))
-    sel_mod = st.radio("模块内容", list(hierarchy[sel_cat].keys()))
+    # 修复点：确保模块内容列表按文件名顺序排列
+    mod_list = list(hierarchy[sel_cat].keys())
+    sel_mod = st.radio("模块内容", mod_list)
     
     current_key = f"{sel_cat}_{sel_mod}"
     if current_key != st.session_state.last_mod:
@@ -160,14 +172,11 @@ elif mode == "模拟测试":
             q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
             
             if is_multi:
-                # --- 多选题 (紧凑布局) ---
                 st.write("(多选)")
                 selected_indices = []
-                # 使用 container 包裹以进一步控制间距
                 for i, option in enumerate(q['options']):
                     checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
-                    if checked:
-                        selected_indices.append(i)
+                    if checked: selected_indices.append(i)
                 
                 if not st.session_state.show_answer:
                     st.write("")
@@ -176,7 +185,6 @@ elif mode == "模拟测试":
                         st.session_state.show_answer = True
                         st.rerun()
             else:
-                # --- 单选题 ---
                 st.write("(单选)")
                 choice = st.radio("选项", q['options'], index=None, key=f"{q_key_prefix}_rad", label_visibility="collapsed", disabled=st.session_state.show_answer)
                 if choice is not None and not st.session_state.show_answer:
@@ -184,13 +192,10 @@ elif mode == "模拟测试":
                     st.session_state.show_answer = True
                     st.rerun()
 
-            # --- 结果反馈 ---
             if st.session_state.show_answer:
                 is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
-                if is_correct:
-                    st.success("回答正确")
-                else:
-                    st.error("回答错误")
+                if is_correct: st.success("回答正确")
+                else: st.error("回答错误")
                 
                 correct_text = [q['options'][i] for i in q['answer']]
                 st.warning(f"**正确答案：** {', '.join(correct_text)}")
@@ -218,4 +223,4 @@ elif mode == "模拟测试":
                 st.session_state.user_ans = None
                 st.rerun()
     else:
-        st.warning("该模块暂无测试题数据")
+        st.warning("该模块暂无测试题数据，请检查文件名是否包含 _quiz 后缀")
