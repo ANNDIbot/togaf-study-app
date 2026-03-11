@@ -1,1 +1,492 @@
-
+[
+  {
+    "id": 1,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Enterprise Definition",
+    "question_cn": "根据 G217e，数字化企业（Digital Enterprise）的主要特征是什么？",
+    "answer_cn": "数字化企业通过数字化手段创建并交付产品或服务，或通过数字手段让客户获取物理产品和服务。其核心在于利用数字技术改变商业模式并提供新的价值创造机会。"
+  },
+  {
+    "id": 2,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Transformation vs Digitization",
+    "question_cn": "数字化（Digitization）与数字化转型（Digitalization）的区别是什么？",
+    "answer_cn": "Digitization 是将模拟信息转为数字形式；而 Digitalization（数字化转型）是利用数字技术改变业务模式，创造新的收入和价值。"
+  },
+  {
+    "id": 3,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Agile Architecture",
+    "question_cn": "在敏捷开发中，架构的主要作用是什么？",
+    "answer_cn": "架构提供“意向性架构”（Intentional Architecture），为敏捷团队提供指导和护栏，确保各个 Sprint 的成果能够集成并符合企业的长期战略。"
+  },
+  {
+    "id": 4,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Sprint in TOGAF",
+    "question_cn": "如何在 TOGAF ADM 中应用 Sprint？",
+    "answer_cn": "Sprint 可以用于执行 ADM 的各个阶段，通过时间盒（Time-boxing）快速交付架构构件或解决方案增量，支持持续集成和持续交付（CI/CD）。"
+  },
+  {
+    "id": 5,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Microservices Architecture (MSA)",
+    "question_cn": "微服务架构（MSA）的核心定义是什么？",
+    "answer_cn": "MSA 是一种将应用程序开发为一套小型服务的方法，每个服务运行在自己的进程中，并通过轻量级机制（通常是 HTTP API）进行通信。"
+  },
+  {
+    "id": 6,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA vs SOA",
+    "question_cn": "微服务（MSA）与传统 SOA 的主要区别是什么？",
+    "answer_cn": "MSA 是 SOA 的一个子集，强调服务的独立性、去中心化治理、技术多样性以及通过自动化部署实现的更小粒度服务。"
+  },
+  {
+    "id": 7,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Service-Orientation Principle",
+    "question_cn": "SOA 的核心原则是什么？",
+    "answer_cn": "服务导向（Service-Orientation）原则强调业务能力的封装、位置透明性、互操作性、以及通过服务合同定义的清晰接口。"
+  },
+  {
+    "id": 8,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Business Reference Model (DBRM)",
+    "question_cn": "DBRM 的主要目的是什么？",
+    "answer_cn": "DBRM 提供了一个参考框架，帮助企业理解数字化环境下的商业模式、生态系统、价值流和运营模式，以支持数字化转型。 "
+  },
+  {
+    "id": 9,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Government Reference Model (GRM)",
+    "question_cn": "GRM 如何帮助政府架构设计？",
+    "answer_cn": "GRM 提供了一套标准化的政府职能、服务和流程模板，促进不同政府部门之间的协作、信息共享和跨机构服务交付。"
+  },
+  {
+    "id": 10,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Technical Debt in Digital",
+    "question_cn": "在数字化企业中，如何管理技术债？",
+    "answer_cn": "通过响应式（Reactive）和主动式（Proactive）管理。主动管理包括在架构设计中预留演进空间，通过 Sprint 持续重构来减少坏账。"
+  },
+  {
+    "id": 11,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Agile ADM Phase A",
+    "question_cn": "在敏捷环境下，Phase A（架构愿景）有何变化？",
+    "answer_cn": "Phase A 变得更加迭代化。它不追求一次性完整的愿景，而是定义一个“架构路线图”的初始版本，并通过后续 Sprint 不断演进。"
+  },
+  {
+    "id": 12,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Continuous Governance",
+    "question_cn": "什么是持续治理（Continuous Governance）？",
+    "answer_cn": "在数字化和敏捷环境中，治理不再是阶段性的审计，而是集成在开发流水线中的自动化检查和规则，确保架构合规性实时可见。"
+  },
+  {
+    "id": 13,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Independent Services",
+    "question_cn": "MSA 中的“独立性”原则意味着什么？",
+    "answer_cn": "意味着微服务可以独立于其他服务进行开发、部署、扩展和故障隔离，通常拥有自己的私有数据存储。"
+  },
+  {
+    "id": 14,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Litmus Test",
+    "question_cn": "什么是 SOA 的“试金石测试”（Litmus Test）？",
+    "answer_cn": "这是一组用于确定候选服务是否真正符合 SOA 特征（如可重用性、封装性、松耦合）的评估准则。"
+  },
+  {
+    "id": 15,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DBRM Strategy Domain",
+    "question_cn": "DBRM 中的战略域（Strategy Domain）包含哪些关键要素？",
+    "answer_cn": "包括愿景、战略目标、商业模式、价值主张以及数字化驱动力。"
+  },
+  {
+    "id": 16,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Interoperability",
+    "question_cn": "GRM 中强调的互操作性（Interoperability）层级有哪些？",
+    "answer_cn": "包括法律、组织、语义和技术四个层面的互操作性。"
+  },
+  {
+    "id": 17,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Minimum Viable Architecture (MVA)",
+    "question_cn": "什么是最小可行架构（MVA）？",
+    "answer_cn": "MVA 是支持最小可行产品（MVP）所需的架构子集，旨在以最低成本验证业务假设，同时保持架构的演进能力。"
+  },
+  {
+    "id": 18,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DevOps & TOGAF",
+    "question_cn": "TOGAF 如何支持 DevOps？",
+    "answer_cn": "通过在 Phase E（机会与解决方案）和 Phase F（迁移规划）中定义自动化部署架构，并在 Phase G 中实施持续架构治理。"
+  },
+  {
+    "id": 19,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Product Lifecycle",
+    "question_cn": "数字化产品生命周期的四个阶段是什么？",
+    "answer_cn": "根据 DPBoK（与 G217e 相关）：个人/创始人阶段、团队阶段、团队之团队阶段、持久化企业阶段。"
+  },
+  {
+    "id": 20,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Service Discovery",
+    "question_cn": "微服务架构中为什么需要服务发现（Service Discovery）？",
+    "answer_cn": "因为微服务实例是动态增减且地址不固定的，服务发现机制允许服务之间自动找到彼此的通信地址。"
+  },
+  {
+    "id": 21,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Governance Vitality Method (SGVM)",
+    "question_cn": "SGVM 的目的是什么？",
+    "answer_cn": "SGVM 是用于维护和持续改进 SOA 治理有效性的方法，确保治理过程随业务和技术环境变化而演进。"
+  },
+  {
+    "id": 22,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DBRM Operational Domain",
+    "question_cn": "DBRM 的运营域（Operational Domain）关注什么？",
+    "answer_cn": "关注数字化能力的交付，包括流程自动化、数据分析、用户体验设计和持续集成。"
+  },
+  {
+    "id": 23,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Shared Services",
+    "question_cn": "GRM 推荐的共享服务模式有何好处？",
+    "answer_cn": "减少政府部门间的重复建设，降低运营成本，并提高公民服务的统一性和效率。"
+  },
+  {
+    "id": 24,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Evolutionary Architecture",
+    "question_cn": "演进式架构（Evolutionary Architecture）的核心思想是什么？",
+    "answer_cn": "支持跨多个维度进行持续、渐进式变化的架构，通过“适应度函数”（Fitness Functions）来评估架构随时间的变化是否合规。"
+  },
+  {
+    "id": 25,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Sprint Zero",
+    "question_cn": "在架构 Sprint 中，Sprint 0 的目标是什么？",
+    "answer_cn": "通常用于建立初始的架构愿景、定义关键原则、设置环境和工具，并为后续的功能 Sprint 奠定基础。"
+  },
+  {
+    "id": 26,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA API Gateway",
+    "question_cn": "微服务架构中 API 网关的作用是什么？",
+    "answer_cn": "作为所有客户端访问服务的单一入口点，负责请求路由、身份验证、负载均衡和协议转换。"
+  },
+  {
+    "id": 27,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Infrastructure",
+    "question_cn": "SOA 对基础设施有什么特殊要求？",
+    "answer_cn": "需要支持开放标准，以实现不同异构系统间的互操作性和位置透明性。"
+  },
+  {
+    "id": 28,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Capability",
+    "question_cn": "什么是数字化能力（Digital Capability）？",
+    "answer_cn": "企业利用数字技术、人员技能和流程资源来产生特定输出或业务结果的能力。"
+  },
+  {
+    "id": 29,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Citizen-Centricity",
+    "question_cn": "GRM 中的“以公民为中心”意味着什么？",
+    "answer_cn": "政府架构设计应围绕公民的需求和生活事件（Life Events）展开，而非仅基于政府职能部门的内部划分。"
+  },
+  {
+    "id": 30,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Technical Debt - Reactive",
+    "question_cn": "什么是响应式技术债管理？",
+    "answer_cn": "在问题发生后（如性能下降或系统崩溃）才进行的修复和重构工作。"
+  },
+  {
+    "id": 31,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Agile Backlog vs Architecture Roadmap",
+    "question_cn": "敏捷积压工作（Backlog）与架构路线图的关系是什么？",
+    "answer_cn": "架构路线图定义了高层的演进方向，而 Backlog 是在 Sprint 层面实现的具体任务增量，架构决策应作为“非功能性需求”或“史诗”指导 Backlog 优先级。"
+  },
+  {
+    "id": 32,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Circuit Breaker Pattern",
+    "question_cn": "微服务中的熔断器（Circuit Breaker）模式目的是什么？",
+    "answer_cn": "防止一个服务的故障级联影响到整个系统，当目标服务不可用时，熔断器会迅速返回错误而非持续等待。"
+  },
+  {
+    "id": 33,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Enterprise Service Bus (ESB)",
+    "question_cn": "ESB 在传统 SOA 中的角色是什么？",
+    "answer_cn": "负责服务间的消息转换、路由和协议适配，是实现松耦合的中心化组件（注：在 MSA 中通常被去中心化替代）。"
+  },
+  {
+    "id": 34,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DBRM Structural Domain",
+    "question_cn": "DBRM 的结构域（Structural Domain）包括什么？",
+    "answer_cn": "包括组织结构、生态系统合作伙伴、以及业务流程和数据流的架构框架。"
+  },
+  {
+    "id": 35,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Taxonomy",
+    "question_cn": "GRM 中的分类法（Taxonomy）有何作用？",
+    "answer_cn": "提供一套统一的术语表，用于描述政府服务、职能和数据，确保跨部门间的语义一致性。"
+  },
+  {
+    "id": 36,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Strategy Alignment",
+    "question_cn": "如何确保数字化战略与企业架构一致？",
+    "answer_cn": "通过在 ADM 预备阶段定义明确的数字化原则，并在各阶段利用 DBRM 等参考模型进行对标。"
+  },
+  {
+    "id": 37,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Architecture Epic",
+    "question_cn": "敏捷架构中的“架构史诗”（Architecture Epic）是什么？",
+    "answer_cn": "规模巨大、需要跨越多个 Sprint 才能完成的架构变更，通常在架构路线图中定义。"
+  },
+  {
+    "id": 38,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Decentralized Data",
+    "question_cn": "为什么 MSA 倡导去中心化数据管理？",
+    "answer_cn": "为了减少服务间的强耦合。每个微服务管理自己的数据库，实现数据的完全封装和独立演进。"
+  },
+  {
+    "id": 39,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Service Contract",
+    "question_cn": "服务合同（Service Contract）的重要性是什么？",
+    "answer_cn": "它定义了服务的交互规则、输入输出格式和质量保证（SLA），使服务提供者和消费者能够独立工作。"
+  },
+  {
+    "id": 40,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DBRM Value Creation",
+    "question_cn": "DBRM 中如何定义价值创造？",
+    "answer_cn": "通过数字化价值流（Digital Value Streams）将资源和能力转化为对客户有意义的产出。"
+  },
+  {
+    "id": 41,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Performance Framework",
+    "question_cn": "GRM 的绩效框架关注哪些指标？",
+    "answer_cn": "服务交付成本、公民满意度、政策响应时间以及政府运行的透明度。"
+  },
+  {
+    "id": 42,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Architecture Runway",
+    "question_cn": "什么是“架构跑道”（Architecture Runway）？",
+    "answer_cn": "指现有的代码、组件和基础设施，足以支撑近期的业务功能需求而无需大规模的重构。"
+  },
+  {
+    "id": 43,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Modernizing Legacy",
+    "question_cn": "根据 G174e，如何将遗留系统转向 SOA？",
+    "answer_cn": "采用包装（Wrapping）、重构（Refactoring）或重新开发的方法，将遗留功能封装为标准的服务接口。"
+  },
+  {
+    "id": 44,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Polyglot Programming",
+    "question_cn": "什么是多语言编程（Polyglot Programming）？",
+    "answer_cn": "在 MSA 中，不同的微服务可以根据其业务场景选择最适合的编程语言和技术栈。"
+  },
+  {
+    "id": 45,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Governance Service",
+    "question_cn": "数字化治理服务的核心职能是什么？",
+    "answer_cn": "管理数字风险、确保合规性、优化数字化资源配置并监控数字化转型的投资回报（ROI）。"
+  },
+  {
+    "id": 46,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Security & Privacy",
+    "question_cn": "GRM 如何处理数据安全与隐私？",
+    "answer_cn": "通过在架构参考模型中内置安全标准和隐私保护机制（如数据脱敏、最小权限原则），确保公共数据的安全。"
+  },
+  {
+    "id": 47,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "ADM Phase B & Sprints",
+    "question_cn": "在业务架构阶段（Phase B）如何进行 Sprint？",
+    "answer_cn": "通过 Sprint 识别并验证业务能力、价值流和组织映射，产出即时可用的业务组件模型。"
+  },
+  {
+    "id": 48,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Observability",
+    "question_cn": "为什么 MSA 强调可观测性（Observability）？",
+    "answer_cn": "分布式系统中故障定位困难，因此需要通过日志、指标和分布式链路追踪（Tracing）来了解系统状态。"
+  },
+  {
+    "id": 49,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA vs Component-Based",
+    "question_cn": "SOA 与组件化开发的主要区别是什么？",
+    "answer_cn": "SOA 更加强调网络化的、基于开放标准的外部化接口，而组件化开发更多关注代码层面的模块化和重用。"
+  },
+  {
+    "id": 50,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Maturity Assessment",
+    "question_cn": "进行数字化成熟度评估的目的是什么？",
+    "answer_cn": "确定企业当前的数字化能力状态，识别差距，并为制定数字化转型路线图提供基础。"
+  },
+  {
+    "id": 51,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Shared Data Space",
+    "question_cn": "GRM 提到的“共享数据空间”概念是什么？",
+    "answer_cn": "一种跨机构的数据共享机制，允许不同政府部门在安全、合规的前提下访问和利用统一的数据资源。"
+  },
+  {
+    "id": 52,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Architecture Spikes",
+    "question_cn": "敏捷中的“架构探针”（Architecture Spike）是什么？",
+    "answer_cn": "一种短期的实验性工作，旨在降低架构风险或探索新技术方案，其成果通常是知识而非生产代码。"
+  },
+  {
+    "id": 53,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Containerization",
+    "question_cn": "容器化（如 Docker）对 MSA 有何贡献？",
+    "answer_cn": "提供了一种轻量级、一致的运行环境封装，简化了微服务的部署、扩展和在不同环境间的迁移。"
+  },
+  {
+    "id": 54,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Location Transparency",
+    "question_cn": "SOA 中的“位置透明性”指什么？",
+    "answer_cn": "服务消费者无需知道服务提供者的具体物理地址或实现细节，只需通过服务注册表找到并调用接口。"
+  },
+  {
+    "id": 55,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DBRM Ecosystem",
+    "question_cn": "DBRM 如何定义商业生态系统（Ecosystem）？",
+    "answer_cn": "由供应商、合作伙伴、客户和竞争对手组成的网络，通过数字化平台共同协作创造价值。"
+  },
+  {
+    "id": 56,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Cloud Strategy",
+    "question_cn": "政府参考模型中云战略的重点是什么？",
+    "answer_cn": "利用公有云、私有云或混合云来提高 IT 基础设施的弹性和成本效率，同时确保主权数据安全。"
+  },
+  {
+    "id": 57,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "DORP Planning",
+    "question_cn": "G210e 中的 DORP 代表什么？",
+    "answer_cn": "Demo (演示), Outcome (结果), Retrospective (回顾), Planning (计划)。这是架构 Sprint 循环的核心环节。"
+  },
+  {
+    "id": 58,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Infrastructure as Code (IaC)",
+    "question_cn": "IaC 在 MSA 环境下的价值是什么？",
+    "answer_cn": "允许架构师通过代码定义基础设施，实现微服务运行环境的可重复、自动化配置和管理。"
+  },
+  {
+    "id": 59,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Registry/Repository",
+    "question_cn": "SOA 注册表/存储库的作用是什么？",
+    "answer_cn": "存储服务的元数据、定义和政策，并支持服务消费者在运行时动态查找可用服务。"
+  },
+  {
+    "id": 60,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Customer Journey",
+    "question_cn": "数字化客户旅程（Digital Customer Journey）在架构中的作用？",
+    "answer_cn": "通过分析客户在数字渠道上的互动路径，指导前端交互架构和后端服务集成设计。"
+  },
+  {
+    "id": 61,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Digital Identity",
+    "question_cn": "GRM 为何强调数字身份（Digital Identity）？",
+    "answer_cn": "数字身份是公民在线获取政府服务的基础，需要确保其唯一性、安全性和跨部门的认可。"
+  },
+  {
+    "id": 62,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Just-in-Time Architecture",
+    "question_cn": "什么是“准时制架构”（Just-in-Time Architecture）？",
+    "answer_cn": "架构决策尽可能晚地做出（在“最后责任时刻”），以减少因业务变化而导致的架构返工。"
+  },
+  {
+    "id": 63,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Bounded Context",
+    "question_cn": "什么是 MSA 中的“受限上下文”（Bounded Context）？",
+    "answer_cn": "这是领域驱动设计（DDD）的概念，指在一个特定的业务边界内，模型和术语具有明确、统一的含义，是划分微服务的常用标准。"
+  },
+  {
+    "id": 64,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Orchestration vs Choreography",
+    "question_cn": "SOA 中编排（Orchestration）与编舞（Choreography）的区别？",
+    "answer_cn": "编排由一个中心化协调者控制服务流；编舞则是由各服务基于事件相互配合，没有中心控制器。"
+  },
+  {
+    "id": 65,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital ROI",
+    "question_cn": "在数字化企业中如何衡量架构的价值？",
+    "answer_cn": "通过业务成果衡量，如上市时间（Time-to-market）的缩短、客户体验指标的提升、以及技术债务的降低。"
+  },
+  {
+    "id": 66,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "GRM Open Data",
+    "question_cn": "开放数据（Open Data）在 GRM 中的意义？",
+    "answer_cn": "鼓励政府将非敏感数据对外开放，促进社会创新、商业发展和政府透明度。"
+  },
+  {
+    "id": 67,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Shared Understanding",
+    "question_cn": "敏捷架构如何达成“共同理解”？",
+    "answer_cn": "通过定期的 Sprint 演示、协作建模和轻量级文档，确保开发团队和利益相关者对架构方向达成共识。"
+  },
+  {
+    "id": 68,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "MSA Database per Service",
+    "question_cn": "为什么 MSA 推荐“每服务一个数据库”？",
+    "answer_cn": "确保服务之间的松耦合，防止服务因共享数据库模式而产生隐性依赖，并允许选择最适合的存储技术。"
+  },
+  {
+    "id": 69,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "SOA Loose Coupling",
+    "question_cn": "松耦合（Loose Coupling）对架构的好处是什么？",
+    "answer_cn": "提高系统的灵活性，当一个服务发生变更或故障时，对其他服务的影响降到最低。"
+  },
+  {
+    "id": 70,
+    "module": "Guide 4 - Modern Style & Digital",
+    "topic": "Digital Continuity",
+    "question_cn": "什么是数字化连续性（Digital Continuity）？",
+    "answer_cn": "确保数字资产在整个生命周期内及其后续技术更迭中，能够根据需要被访问、理解和利用的能力。"
+  }
+]
