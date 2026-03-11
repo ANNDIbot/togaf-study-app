@@ -1,1 +1,844 @@
-
+[
+  {
+    "id": 1,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "根据 TOGAF 序列指南，业务能力（Business Capability）的核心定义是什么？",
+    "options": [
+      "企业执行特定业务流程的详细步骤",
+      "企业为实现特定目的或结果而可能拥有的特定本领或能力",
+      "组织单元在特定时间内完成的任务清单",
+      "一种用于描述企业 IT 基础设施的建模技术"
+    ],
+    "answer": [1],
+    "explanation": "业务能力代表企业“做什么”，而非“如何做”。它代表了企业为实现目标而具备的内在潜能或本领。"
+  },
+  {
+    "id": 2,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务能力的四个核心组件（Components）包括哪些？",
+    "options": [
+      "角色 (Roles)",
+      "流程 (Processes)",
+      "信息 (Information)",
+      "资源 (Resources)",
+      "资金 (Funding)"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "TOGAF 指南明确指出业务能力的组件包括角色、流程、信息和资源（如 IT、设备等）。"
+  },
+  {
+    "id": 3,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在价值流（Value Stream）中，谁是最终价值的接收者？",
+    "options": [
+      "企业架构师",
+      "项目经理",
+      "利益相关者（如客户、合作伙伴）",
+      "IT 部门"
+    ],
+    "answer": [2],
+    "explanation": "价值流描述的是为利益相关者（Stakeholder）创造端到端价值的过程。"
+  },
+  {
+    "id": 4,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "将业务能力映射到价值流阶段的主要目的是什么？",
+    "options": [
+      "计算每个阶段的预算",
+      "识别哪些能力对于交付特定价值环节至关重要",
+      "替换现有的业务流程图",
+      "定义企业的组织汇报关系"
+    ],
+    "answer": [1],
+    "explanation": "通过交叉映射，架构师可以理解哪些能力支撑了价值流的特定阶段，从而识别瓶颈。"
+  },
+  {
+    "id": 5,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息映射（Information Mapping）中的“信息概念”主要关注什么？",
+    "options": [
+      "数据库表结构",
+      "业务中使用的关键名词及其含义",
+      "数据传输的物理协议",
+      "软件接口的定义"
+    ],
+    "answer": [1],
+    "explanation": "信息映射关注业务视角的概念（Noun），如“客户”、“订单”，独立于技术实现。"
+  },
+  {
+    "id": 6,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "组织映射（Organization Map）通常包含哪些元素？",
+    "options": [
+      "内部业务单元",
+      "外部合作伙伴",
+      "核心利益相关者群体",
+      "网络拓扑图"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "组织映射描述企业的生态系统，包括内外部单元及其关系，但不涉及 IT 网络拓扑。"
+  },
+  {
+    "id": 7,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式画布（Business Model Canvas）中的“价值主张”描述了：",
+    "options": [
+      "公司的财务报表",
+      "公司为特定客户细分群体提供的产品和服务组合",
+      "公司的 IT 采购策略",
+      "公司的年度招聘计划"
+    ],
+    "answer": [1],
+    "explanation": "价值主张描述了企业为何能吸引客户，以及它如何解决客户的问题或满足其需求。"
+  },
+  {
+    "id": 8,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务场景（Business Scenario）方法主要用于：",
+    "options": [
+      "编写软件代码",
+      "推导架构要求（Requirements）",
+      "设计数据中心电力布局",
+      "评估员工绩效"
+    ],
+    "answer": [1],
+    "explanation": "业务场景是一种结构化方法，通过描述业务背景和目标来识别和归纳架构需求。"
+  },
+  {
+    "id": 9,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务场景中的“SMART”原则，其中 S、M、A 分别代表？",
+    "options": [
+      "Specific (具体的)",
+      "Measurable (可衡量的)",
+      "Attainable (可达成的)",
+      "Strategic (战略的)",
+      "Automatic (自动的)"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "SMART 代表 Specific, Measurable, Attainable, Relevant, Time-bound。"
+  },
+  {
+    "id": 10,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "能力热点图（Capability Heat Mapping）通常使用颜色来表示什么？",
+    "options": [
+      "不同部门的办公区域",
+      "能力的成熟度或战略重要性",
+      "服务器的机架温度",
+      "员工的满意度"
+    ],
+    "answer": [1],
+    "explanation": "热点图是一种可视化工具，用于标注哪些能力需要优先投资或存在性能差距。"
+  },
+  {
+    "id": 11,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在价值流定义中，“触发点”（Trigger）通常是指什么？",
+    "options": [
+      "一个 IT 系统的崩溃",
+      "利益相关者启动价值流的请求或事件",
+      "年度预算审批的截止日期",
+      "架构师离职"
+    ],
+    "answer": [1],
+    "explanation": "触发点是启动价值流的初始事件，例如“客户申请贷款”。"
+  },
+  {
+    "id": 12,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务能力分层（Stratification）的最高层级通常被称为：",
+    "options": [
+      "操作层 (Operational)",
+      "战略层 (Strategic)",
+      "支持层 (Supporting)",
+      "技术层 (Technical)"
+    ],
+    "answer": [1],
+    "explanation": "典型的能力分层包括战略层、核心/运营层和支持层。"
+  },
+  {
+    "id": 13,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "信息图（Information Map）的益处包括：",
+    "options": [
+      "建立通用的业务词汇表",
+      "支持数据治理工作",
+      "为数据架构（Phase C）提供输入",
+      "直接生成 Java 类代码"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "信息图建立了业务共识并辅助治理，但它不是直接的代码生成工具。"
+  },
+  {
+    "id": 14,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射与传统组织架构图（Org Chart）的主要区别是：",
+    "options": [
+      "组织映射只看 CEO 下属",
+      "组织映射关注业务实体、合作伙伴及其在价值创造中的角色，而非纯粹的汇报线",
+      "组织映射必须包含员工的个人联系电话",
+      "组织映射只在 Phase G 使用"
+    ],
+    "answer": [1],
+    "explanation": "组织映射展示的是参与业务交付的内外部实体关系，比传统的管理汇报图更广。"
+  },
+  {
+    "id": 15,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在业务模式画布中，“收入来源”模块主要关注：",
+    "options": [
+      "IT 维护成本",
+      "企业如何从每个客户细分群体中产生现金流",
+      "员工的工资结构",
+      "办公租金"
+    ],
+    "answer": [1],
+    "explanation": "收入来源（Revenue Streams）描述企业如何实现财务价值。"
+  },
+  {
+    "id": 16,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "创建一个业务场景的第一个步骤通常是：",
+    "options": [
+      "编写代码原型",
+      "识别和记录业务问题及其背后的驱动力",
+      "购买云服务器",
+      "发布新闻稿"
+    ],
+    "answer": [1],
+    "explanation": "收集阶段的首要任务是识别真实的业务问题和利益相关者。"
+  },
+  {
+    "id": 17,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "下列哪些属于业务能力建模中的“分级”（Leveling）？",
+    "options": [
+      "Level 1: 基础能力",
+      "Level 2: 子能力",
+      "Level 3: 活动/流程级能力",
+      "Level 10: 极致细节"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "通常能力模型通过 L1, L2, L3 进行逐级细化。"
+  },
+  {
+    "id": 18,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "价值流阶段（Value Stream Stage）必须产出什么？",
+    "options": [
+      "一份 50 页的报告",
+      "对利益相关者有意义的增量价值项（Value Item）",
+      "一个数据库更新记录",
+      "一封确认电子邮件"
+    ],
+    "answer": [1],
+    "explanation": "每个价值流阶段都必须对最终结果有实质性的价值贡献。"
+  },
+  {
+    "id": 19,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在业务架构中，信息概念（Information Concept）与数据实体（Data Entity）的关系是：",
+    "options": [
+      "它们是完全相同的东西",
+      "信息概念是高层级的业务术语，数据实体是其在逻辑或物理模型中的体现",
+      "数据实体比信息概念更抽象",
+      "它们之间没有关系"
+    ],
+    "answer": [1],
+    "explanation": "信息概念处于业务架构层，数据实体属于数据架构层（ADM Phase C）。"
+  },
+  {
+    "id": 20,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射在 ADM 中的哪个阶段最为核心？",
+    "options": [
+      "阶段 A (Architecture Vision)",
+      "阶段 B (Business Architecture)",
+      "阶段 D (Technology Architecture)",
+      "阶段 H (Architecture Change Management)"
+    ],
+    "answer": [1],
+    "explanation": "组织映射是业务架构（Phase B）的四个支柱之一。"
+  },
+  {
+    "id": 21,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务模式画布中的“核心资源”（Key Resources）可以包括：",
+    "options": [
+      "实体资源（物理设备）",
+      "知识资源（专利、数据）",
+      "人力资源",
+      "金融资源"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "这些都是支撑业务模式运行所必需的关键资产。"
+  },
+  {
+    "id": 22,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务场景中的“评估”（Analysis）阶段旨在：",
+    "options": [
+      "安装新软件",
+      "确认业务需求的优先级并定义成功标准",
+      "计算员工差旅费",
+      "设计公司 Logo"
+    ],
+    "answer": [1],
+    "explanation": "分析阶段通过与利益相关者沟通，锁定核心需求和评估指标。"
+  },
+  {
+    "id": 23,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务能力（Capability）在架构演进中通常表现为：",
+    "options": [
+      "每三月一变",
+      "高度稳定，即使组织结构发生重大变化",
+      "随着员工离职而消失",
+      "仅在 IT 升级时存在"
+    ],
+    "answer": [1],
+    "explanation": "能力关注“做什么”，这在企业战略中通常是相对稳定的。"
+  },
+  {
+    "id": 24,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "价值流图（Value Stream Map）的常见引导原则包括：",
+    "options": [
+      "以客户为中心",
+      "端到端视图",
+      "忽略所有外部合作伙伴",
+      "保持在足够的抽象层级"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "价值流应包含合作伙伴（如果他们参与了价值创造），且不应陷入过于底层的流程细节。"
+  },
+  {
+    "id": 25,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息映射中的“名词挑战法”（Noun Challenge）用于：",
+    "options": [
+      "对员工进行口语测试",
+      "从业务术语中筛选出真正核心的信息概念",
+      "重命名所有的数据库表",
+      "编写产品说明书"
+    ],
+    "answer": [1],
+    "explanation": "这是一种技术，通过质疑名词的业务意义来精炼信息模型。"
+  },
+  {
+    "id": 26,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射如何反映“地理位置”？",
+    "options": [
+      "它不包含位置信息",
+      "通过将组织单元关联到它们运作或负责的地理区域",
+      "通过卫星地图截图",
+      "通过列出办公室的详细经纬度"
+    ],
+    "answer": [1],
+    "explanation": "地理视图有助于理解业务能力在不同地区的分布。"
+  },
+  {
+    "id": 27,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式中的“渠道”（Channels）模块定义了：",
+    "options": [
+      "排水管网",
+      "公司如何与客户沟通并交付价值主张",
+      "内部会议频率",
+      "宽带供应商"
+    ],
+    "answer": [1],
+    "explanation": "渠道是企业与客户之间的接触点。"
+  },
+  {
+    "id": 28,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "一个好的业务场景文档应包括：",
+    "options": [
+      "业务环境描述",
+      "明确的目标和成功指标",
+      "涉及的参与者（Actors）",
+      "Java 源代码"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "业务场景文档侧重于描述业务需求和环境。"
+  },
+  {
+    "id": 29,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务能力映射（Capability Mapping）与业务流程建模的关系是：",
+    "options": [
+      "能力映射取代流程建模",
+      "能力映射是静态的“做什么”，流程建模是动态的“如何做”",
+      "流程建模比能力映射更高层",
+      "流程建模不属于业务架构"
+    ],
+    "answer": [1],
+    "explanation": "两者互补，能力提供结构，流程提供执行逻辑。"
+  },
+  {
+    "id": 30,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "价值流阶段的“入口准则”（Entrance Criteria）是指：",
+    "options": [
+      "员工进入办公室的时间",
+      "进入该阶段必须满足的前置条件和所需输入",
+      "刷卡系统的设置",
+      "项目经理的个人批准"
+    ],
+    "answer": [1],
+    "explanation": "入口和出口准则确保了价值流阶段之间的严谨流转。"
+  },
+  {
+    "id": 31,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "信息概念之间的典型关系包括：",
+    "options": [
+      "包含 (Is part of)",
+      "关联 (Is associated with)",
+      "属于 (Belongs to)",
+      "Ping 延迟"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "信息映射描述业务名词间的逻辑关系。"
+  },
+  {
+    "id": 32,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射中，如果两个部门共享同一个业务能力，这暗示了：",
+    "options": [
+      "其中一个部门必须被撤销",
+      "潜在的冗余或需要标准化的机会",
+      "该能力不重要",
+      "IT 系统太慢"
+    ],
+    "answer": [1],
+    "explanation": "交叉映射可以发现组织间的重叠和优化空间。"
+  },
+  {
+    "id": 33,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式画布中的“客户关系”模块旨在描述：",
+    "options": [
+      "客户的家庭住址",
+      "企业与客户细分群体建立的关系类型",
+      "客户的银行账号",
+      "客户的学历背景"
+    ],
+    "answer": [1],
+    "explanation": "关系类型包括自助服务、个人助理、共同创造等。"
+  },
+  {
+    "id": 34,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务场景研讨会（Workshop）的参与者应包括：",
+    "options": [
+      "业务领域专家 (SME)",
+      "企业架构师",
+      "关键决策者",
+      "清洁工"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "研讨会需要对业务问题有深刻见解和有权决定的人参加。"
+  },
+  {
+    "id": 35,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务能力（Capability）的名称通常遵循什么格式？",
+    "options": [
+      "动词 + 名词（如：执行销售）",
+      "名词 + 名词（如：销售管理）",
+      "形容词 + 名词（如：快速销售）",
+      "无特定格式"
+    ],
+    "answer": [1],
+    "explanation": "TOGAF 建议使用名词性的短语来命名能力，以强调其作为一个“资产”或“本领”的存在。"
+  },
+  {
+    "id": 36,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在价值流中，从“触发点”到“价值实现”的总时间被称为：",
+    "options": [
+      "CPU 时间",
+      "交付周期 (Lead Time)",
+      "午休时间",
+      "编译时间"
+    ],
+    "answer": [1],
+    "explanation": "交付周期是衡量价值流效率的关键指标。"
+  },
+  {
+    "id": 37,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息图（Information Map）在什么时候被认为是完整的？",
+    "options": [
+      "当所有的 IT 数据库都映射完成时",
+      "当它覆盖了所选架构范围内的所有关键业务概念时",
+      "当它超过 100 页时",
+      "当 CEO 签字时"
+    ],
+    "answer": [1],
+    "explanation": "完整性是相对于架构工作的范围（Scope）而言的。"
+  },
+  {
+    "id": 38,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "组织映射如何辅助风险管理？",
+    "options": [
+      "识别关键业务能力是否过度集中在单一外部供应商",
+      "识别因组织变动可能导致的流程中断",
+      "预测明天的天气",
+      "识别法律合规实体的范围"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "组织映射通过可视化生态系统，帮助架构师分析变更风险和合规边界。"
+  },
+  {
+    "id": 39,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式中的“成本结构”模块不包括：",
+    "options": [
+      "固定成本",
+      "变动成本",
+      "销售额",
+      "规模经济"
+    ],
+    "answer": [2],
+    "explanation": "销售额属于“收入来源”模块，成本结构只关注支出项。"
+  },
+  {
+    "id": 40,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务场景“记录”阶段的主要产出是：",
+    "options": [
+      "一个 Excel 电子表格",
+      "业务场景文档（含模型和需求清单）",
+      "一段演示视频",
+      "一份年度财务计划"
+    ],
+    "answer": [1],
+    "explanation": "记录阶段将所有分析成果汇总成规范化的架构输入文档。"
+  },
+  {
+    "id": 41,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务能力的“资源”组件可以细分为：",
+    "options": [
+      "物理资源",
+      "财务资源",
+      "IT 资源",
+      "无形资源"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "所有支撑能力执行的有形或无形手段都属于资源。"
+  },
+  {
+    "id": 42,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "价值流分解（Decomposition）通常是为了：",
+    "options": [
+      "增加工作的复杂性",
+      "将高级别价值流细化为可管理的阶段",
+      "辞退员工",
+      "减少文档数量"
+    ],
+    "answer": [1],
+    "explanation": "分解有助于深入分析价值交付的具体环节。"
+  },
+  {
+    "id": 43,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息映射中的“信息所有权”意味着：",
+    "options": [
+      "某人拥有这些数据的专利",
+      "某个业务单元对该信息概念的定义和准确性负责",
+      "某人可以随意删除这些数据",
+      "某人拥有存储数据的硬盘"
+    ],
+    "answer": [1],
+    "explanation": "所有权在业务架构中指的是治理职责。"
+  },
+  {
+    "id": 44,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "组织单元（Organization Unit）的类型包括：",
+    "options": [
+      "职能部门",
+      "区域分公司",
+      "外部服务提供商",
+      "联合委员会"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "这些都是组织映射中可以定义的实体类型。"
+  },
+  {
+    "id": 45,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式画布由几个基本模块组成？",
+    "options": [
+      "4",
+      "7",
+      "9",
+      "12"
+    ],
+    "answer": [2],
+    "explanation": "九个模块：客户细分、价值主张、渠道、客户关系、收入来源、核心资源、核心活动、核心伙伴、成本结构。"
+  },
+  {
+    "id": 46,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务场景中的“衡量指标”必须是：",
+    "options": [
+      "仅定性的",
+      "可量化且有时限的",
+      "越模糊越好",
+      "五年后才需要定义的"
+    ],
+    "answer": [1],
+    "explanation": "符合 SMART 原则中的 Measurable。"
+  },
+  {
+    "id": 47,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在业务架构蓝图中，处于“中心”位置且连接其他所有支柱的是：",
+    "options": [
+      "网络架构",
+      "业务能力",
+      "工资单",
+      "服务器型号"
+    ],
+    "answer": [1],
+    "explanation": "业务能力是业务架构的核心连接器。"
+  },
+  {
+    "id": 48,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "价值流分析有助于消除精益思想中的哪些浪费？",
+    "options": [
+      "过度生产",
+      "等待时间",
+      "不必要的搬运",
+      "员工午餐时间"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "价值流图析起源于精益，旨在识别和消除不增值的活动。"
+  },
+  {
+    "id": 49,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息映射不应当包含：",
+    "options": [
+      "信息概念定义",
+      "技术层面的主键/外键关系",
+      "名词之间的关联",
+      "信息所有者"
+    ],
+    "answer": [1],
+    "explanation": "技术细节属于数据架构层，不属于业务层的信息映射。"
+  },
+  {
+    "id": 50,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射中，一个单元“拥有”某个能力意味着：",
+    "options": [
+      "它负责该能力的管理、投资和提升",
+      "它必须亲自执行所有相关流程",
+      "它购买了该软件的许可证",
+      "它发明了该能力"
+    ],
+    "answer": [0],
+    "explanation": "所有权代表了在企业层面的问责制和治理权。"
+  },
+  {
+    "id": 51,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务模式创新的常见动力有：",
+    "options": [
+      "新兴技术的出现",
+      "市场竞争加剧",
+      "法规政策改变",
+      "员工电脑更换"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "外部环境变迁通常驱动业务模式的演变。"
+  },
+  {
+    "id": 52,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务场景“审查”（Review）阶段由谁负责？",
+    "options": [
+      "仅由架构师自己",
+      "利益相关者和架构评审委员会",
+      "外部审计师",
+      "软件供应商"
+    ],
+    "answer": [1],
+    "explanation": "需要利益相关者确认场景是否真实反映了他们的需求。"
+  },
+  {
+    "id": 53,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务能力与 IT 服务（IT Service）的关系是：",
+    "options": [
+      "它们是一回事",
+      "业务能力由 IT 服务（和其他组件）共同实现",
+      "IT 服务比业务能力更重要",
+      "业务能力不依赖 IT 服务"
+    ],
+    "answer": [1],
+    "explanation": "IT 只是实现业务能力所需资源的一部分。"
+  },
+  {
+    "id": 54,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "价值流阶段的描述应包括：",
+    "options": [
+      "阶段名称",
+      "阶段描述",
+      "涉及的利益相关者",
+      "支撑该阶段的能力"
+    ],
+    "answer": [0, 1, 2, 3],
+    "explanation": "这些共同构成了一个完整的价值流阶段说明。"
+  },
+  {
+    "id": 55,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "信息映射中，“数据治理”的主要作用是：",
+    "options": [
+      "安装防火墙",
+      "确保业务术语在全企业范围内的一致性和合规性",
+      "清理机房灰尘",
+      "分配员工邮箱"
+    ],
+    "answer": [1],
+    "explanation": "数据治理在业务架构层表现为对信息概念的管理。"
+  },
+  {
+    "id": 56,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "组织映射中，“协作关系”描述的是：",
+    "options": [
+      "谁向谁汇报",
+      "组织单元之间如何互动以交付价值",
+      "谁和谁是好朋友",
+      "办公室的座位图"
+    ],
+    "answer": [1],
+    "explanation": "协作关注的是跨边界的价值交换和通信。"
+  },
+  {
+    "id": 57,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "业务模式画布中，哪个模块描述了“如何接触客户”？",
+    "options": [
+      "客户细分",
+      "渠道",
+      "核心资源",
+      "成本结构"
+    ],
+    "answer": [1],
+    "explanation": "渠道（Channels）是通路。"
+  },
+  {
+    "id": 58,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "multiple",
+    "question": "业务场景可以帮助识别：",
+    "options": [
+      "现有的流程缺陷",
+      "缺失的业务能力",
+      "架构变更的潜在风险",
+      "竞争对手的机密代码"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "业务场景通过推导需求，暴露出“现状”与“目标”之间的差距。"
+  },
+  {
+    "id": 59,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "在 TOGAF 中，业务架构的主要目标是：",
+    "options": [
+      "减少服务器数量",
+      "展示如何通过业务能力、价值流和组织来实现业务目标",
+      "编写详细的 SQL 查询语句",
+      "取代所有的业务经理"
+    ],
+    "answer": [1],
+    "explanation": "业务架构确保企业的运作与愿景和战略一致。"
+  },
+  {
+    "id": 60,
+    "module": "Guide 3 - Business Architecture Deep-Dive",
+    "type": "single",
+    "question": "谁负责批准业务场景的最终文档？",
+    "options": [
+      "初级架构师",
+      "受影响的业务利益相关者/赞助人",
+      "外部咨询顾问",
+      "人力资源主管"
+    ],
+    "answer": [1],
+    "explanation": "业务侧的认可（Sign-off）是后续技术架构工作的关键前提。"
+  }
+]
