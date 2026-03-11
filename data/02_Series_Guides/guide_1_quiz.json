@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "根据《TOGAF 负责人指南》，建立 EA 能力时应首先完成以下哪项工作？",
+    "options": [
+      "购买企业架构建模工具",
+      "理解企业的背景和业务目标",
+      "直接开始开发技术架构",
+      "招聘 10 名高级架构师"
+    ],
+    "answer": [1],
+    "explanation": "指南强调必须先通过理解企业背景（Chapter 4）和业务目标（Chapter 5）来为 EA 能力奠定基础 [cite: 135, 137]。"
+  },
+  {
+    "id": 2,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "以下哪些属于 TOGAF 定义的 EA 四种主要支持目的？",
+    "options": [
+      "支持战略 (Strategy)",
+      "支持产品销售 (Sales)",
+      "支持组合 (Portfolio)",
+      "支持解决方案交付 (Solution Delivery)"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "EA 支持的四种目的分别是：支持战略、组合、项目和解决方案交付 [cite: 194, 196]。"
+  },
+  {
+    "id": 3,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "在架构技能框架中，如果一名架构师能胜任复杂的架构任务并在特定领域提供专家建议，他处于哪个熟练级别？",
+    "options": [
+      "级别 1：背景了解 (Background)",
+      "级别 2：认知 (Awareness)",
+      "级别 3：应用 (Knowledge)",
+      "级别 4：专家 (Expert)"
+    ],
+    "answer": [3],
+    "explanation": "级别 4 代表专家级，具备深厚的专业知识和指导他人的能力 [cite: 2244]。"
+  },
+  {
+    "id": 4,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "在架构成熟度模型 (ACMM) 中，流程已被定义、记录并作为标准执行属于哪一级？",
+    "options": [
+      "级别 1 (Initial)",
+      "级别 2 (Under Development)",
+      "级别 3 (Defined)",
+      "级别 4 (Managed)"
+    ],
+    "answer": [2],
+    "explanation": "级别 3（定义级）的特征是标准架构流程已被定义并形成文档 [cite: 2657]。"
+  },
+  {
+    "id": 5,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "EA 能力负责人（Leader）的核心职责包括：",
+    "options": [
+      "作为企业变革的倡导者",
+      "编写所有的应用系统代码",
+      "建立并管理架构治理框架",
+      "向利益相关者传达架构价值"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "EA 负责人关注的是能力建设、治理和价值沟通，而非具体的系统编码 [cite: 373, 527]。"
+  },
+  {
+    "id": 6,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "以下哪项是架构技能框架（Architecture Skills Framework）的主要益处？",
+    "options": [
+      "降低软件许可费用",
+      "提供标准化的角色定义以支持人才招聘",
+      "替代 TOGAF ADM 流程",
+      "自动生成架构设计文档"
+    ],
+    "answer": [1],
+    "explanation": "该框架通过定义标准化的角色和技能，帮助组织更有效地管理人力资源 [cite: 2244]。"
+  },
+  {
+    "id": 7,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "什么是 EA 能力路线图（Roadmap）？",
+    "options": [
+      "一个详细的网络拓扑图",
+      "从当前能力状态到目标状态的演进路径描述",
+      "一份年度财务报表",
+      "员工考勤记录表"
+    ],
+    "answer": [1],
+    "explanation": "路线图是描述如何实现 EA 愿景的战术路径和沟通工具 [cite: 323]。"
+  },
+  {
+    "id": 8,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "在评估企业背景时，需要考虑哪些因素？",
+    "options": [
+      "企业的战略地位和环境",
+      "运营模式 (Operating Model)",
+      "现有的风险管理模型",
+      "所有员工的个人简历"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "背景评估关注组织战略、运营模式、环境和风险模型等宏观因素 [cite: 137, 433]。"
+  },
+  {
+    "id": 9,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "“架构原则”在 EA 治理中起什么作用？",
+    "options": [
+      "作为固定的编程规范",
+      "为决策提供高层指导和判断标准",
+      "取代项目经理的权力",
+      "仅作为内部宣传口号"
+    ],
+    "answer": [1],
+    "explanation": "架构原则是持久的规则，用于确保架构决策与企业价值观和目标一致 [cite: 153]。"
+  },
+  {
+    "id": 10,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "在 CMMI 模型中，“阶段式”视图主要衡量的是：",
+    "options": [
+      "单个过程领域的改进",
+      "组织整体的成熟度级别",
+      "硬件系统的性能瓶颈",
+      "软件测试的覆盖率"
+    ],
+    "answer": [1],
+    "explanation": "阶段式模型将过程领域分组，为组织提供整体成熟度的评估 [cite: 2657]。"
+  },
+  {
+    "id": 11,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "哪些属于架构师的非技术性（Soft Skills）技能？",
+    "options": [
+      "利益相关者管理",
+      "Java 语言并发编程",
+      "卓越的沟通与演示技巧",
+      "协商与冲突解决"
+    ],
+    "answer": [0, 2, 3],
+    "explanation": "通用技能类别中包含了沟通、管理和冲突解决等关键软技能 [cite: 2244]。"
+  },
+  {
+    "id": 12,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "建立 EA 能力时，“自举（Boot-strapping）”阶段意味着：",
+    "options": [
+      "在没有资金的情况下强行启动",
+      "先建立最低限度的能力以产生初步价值",
+      "完全依赖外部咨询公司",
+      "停止所有的现有业务流程"
+    ],
+    "answer": [1],
+    "explanation": "自举是指在全面架构工作之前建立必要的支撑基础 [cite: 271]。"
+  },
+  {
+    "id": 13,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "企业架构师（Enterprise Architect）最重要的特质是什么？",
+    "options": [
+      "精通至少 10 种编程语言",
+      "具备技术广度并能理解业务需求",
+      "拥有最高级的网络管理证书",
+      "只关注底层硬件细节"
+    ],
+    "answer": [1],
+    "explanation": "架构师需要深厚的技术广度以及跨学科整合业务与技术的能力 [cite: 2244]。"
+  },
+  {
+    "id": 14,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "以下哪些是衡量 EA 价值的财务指标？",
+    "options": [
+      "运营成本的降低 (Cost Reduction)",
+      "IT 资产的重复使用率",
+      "架构资产库中的构件数量",
+      "项目交付周期的缩短"
+    ],
+    "answer": [0, 1, 3],
+    "explanation": "成本降低、重用率和效率提升都是可量化的价值体现，而构件数量仅是产出指标 [cite: 310, 343]。"
+  },
+  {
+    "id": 15,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "什么是 The Open Group 的“无边界信息流”愿景？",
+    "options": [
+      "完全撤销企业防火墙",
+      "让所有人都能访问任何秘密数据",
+      "通过开放标准实现信息的跨平台流动",
+      "仅在单机上进行数据传输"
+    ],
+    "answer": [2],
+    "explanation": "愿景是基于开放标准实现跨越异构系统的透明信息流动 [cite: 501, 528]。"
+  },
+  {
+    "id": 16,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "在 ACMM 模型中，哪个级别表示组织已开始进行定量的绩效管理？",
+    "options": [
+      "级别 2 (Repeatable)",
+      "级别 3 (Defined)",
+      "级别 4 (Managed)",
+      "级别 5 (Optimizing)"
+    ],
+    "answer": [2],
+    "explanation": "级别 4（受管理级）强调通过定量指标对过程质量进行控制 [cite: 2657]。"
+  },
+  {
+    "id": 17,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "建立 EA 团队时需要考虑的人员配置因素包括：",
+    "options": [
+      "团队的容量 (Capacity)",
+      "架构域的覆盖面 (Domains)",
+      "成员的技能成熟度 (Proficiency)",
+      "员工的个人兴趣偏好"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "招聘和配置应基于容量、所需的架构域专家以及技能水平评估 [cite: 67, 2244]。"
+  },
+  {
+    "id": 18,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "架构治理中，“合规性审查（Compliance Review）”的目的是：",
+    "options": [
+      "惩罚犯错的项目经理",
+      "确保项目实施符合既定的架构标准和设计",
+      "单纯为了增加行政流程",
+      "取代项目财务审计"
+    ],
+    "answer": [1],
+    "explanation": "合规审查是治理的关键环节，旨在确保实施工作不偏离架构愿景 [cite: 434, 195]。"
+  },
+  {
+    "id": 19,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "single",
+    "question": "根据《负责人指南》，EA 团队应如何对待企业的“遗留系统”？",
+    "options": [
+      "立即全部报废并重新开发",
+      "通过架构评估确定其在未来路线图中的角色",
+      "将其从架构视图中剔除",
+      "拒绝与维护遗留系统的团队合作"
+    ],
+    "answer": [1],
+    "explanation": "EA 需要评估现有资产，并根据业务目标决定其保留、演进或淘汰的策略 [cite: 270, 324]。"
+  },
+  {
+    "id": 20,
+    "module": "Guide 1 - Capability & Leadership",
+    "type": "multiple",
+    "question": "以下哪些是 EA 与项目管理（PM）之间的典型触点？",
+    "options": [
+      "项目启动时的架构约束定义",
+      "项目实施过程中的架构合规检查",
+      "项目结束后对架构资产的入库",
+      "每日站会的具体任务分配"
+    ],
+    "answer": [0, 1, 2],
+    "explanation": "EA 与 PM 在启动、执行和关闭阶段都有深入的流程集成 [cite: 433, 435]。"
+  }
+]
