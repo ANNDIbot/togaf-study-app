@@ -1,153 +1,160 @@
 import streamlit as st
 import json
-import os
 import random
 from pathlib import Path
 
 # --- 页面配置 ---
-st.set_page_config(
-    page_title="TOGAF 学习助手",
-    page_icon="📘",
-    layout="wide"
-)
+st.set_page_config(page_title="TOGAF 学习助手", layout="wide")
 
 DATA_DIR = Path("data")
 
 # =========================
-# 工具函数
+# 核心数据加载函数
 # =========================
 def load_json(path: Path):
-    """通用的 JSON 加载函数，带有格式错误提示"""
-    if not path.exists():
+    if not path or not path.exists():
         return []
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-    except json.JSONDecodeError as e:
-        st.error(f"❌ JSON 格式错误: {path.name} (第 {e.lineno} 行附近有误，通常是漏掉逗号)")
-        return []
     except Exception as e:
-        st.error(f"❌ 加载失败: {str(e)}")
+        st.error(f"解析文件 {path.name} 失败，请检查 JSON 格式（逗号或括号）。")
         return []
 
-def get_data_hierarchy():
-    """扫描 data 目录构建分类层级"""
+def get_hierarchy():
     hierarchy = {}
-    if not DATA_DIR.exists():
-        os.makedirs(DATA_DIR)
-        return hierarchy
-
-    # 扫描子文件夹并排序
+    if not DATA_DIR.exists(): return hierarchy
     categories = sorted([d for d in DATA_DIR.iterdir() if d.is_dir()])
-    
     for cat_path in categories:
-        # 格式化 UI 显示名: 去掉 01_ 这种前缀
         cat_display = cat_path.name.split('_', 1)[-1] if '_' in cat_path.name else cat_path.name
         hierarchy[cat_display] = {}
-        
-        # 寻找内容文件
         content_files = sorted([f for f in cat_path.glob("*.json") if "_quiz" not in f.name])
-        
         for cf in content_files:
-            # 模块显示名
             mod_display = cf.stem.replace('_', ' ').title()
-            quiz_path = cat_path / f"{cf.stem}_quiz.json"
-            
             hierarchy[cat_display][mod_display] = {
                 "content": cf,
-                "quiz": quiz_path if quiz_path.exists() else None
+                "quiz": cat_path / f"{cf.stem}_quiz.json"
             }
     return hierarchy
 
 # =========================
-# 侧边栏导航
+# 初始化 Session State
 # =========================
-hierarchy = get_data_hierarchy()
+if "card_idx" not in st.session_state: st.session_state.card_idx = 0
+if "quiz_idx" not in st.session_state: st.session_state.quiz_idx = 0
+if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 
+# =========================
+# 侧边栏
+# =========================
+hierarchy = get_hierarchy()
 with st.sidebar:
-    st.title("📚 TOGAF 备考系统")
-    
+    st.title("📘 TOGAF 备考助手")
     if not hierarchy:
-        st.info("请在 data/ 目录下创建分类文件夹（如 01_Standard）。")
         st.stop()
+    
+    sel_cat = st.selectbox("选择类别", list(hierarchy.keys()))
+    sel_mod = st.radio("选择章节", list(hierarchy[sel_cat].keys()))
+    
+    # 如果切换了章节，重置索引
+    if sel_mod != st.session_state.last_mod:
+        st.session_state.card_idx = 0
+        st.session_state.quiz_idx = 0
+        st.session_state.last_mod = sel_mod
 
-    # 第一级：类别选择
-    selected_cat = st.selectbox("1️⃣ 选择知识类别", list(hierarchy.keys()))
-    
-    # 第二级：章节选择
-    modules = hierarchy[selected_cat]
-    selected_mod_name = st.radio("2️⃣ 选择学习章节", list(modules.keys()))
-    
-    current_paths = modules[selected_mod_name]
-    
     st.divider()
-    
-    # 模式选择 (方案 A：使用 radio 替代 segment_control)
-    mode = st.radio("🛠️ 模式切换", ["知识卡片", "模拟测试"], horizontal=True)
+    mode = st.radio("切换模式", ["知识卡片", "模拟测试"], horizontal=True)
+
+paths = hierarchy[sel_cat][sel_mod]
 
 # =========================
-# 主界面逻辑
+# 模式 1：知识卡片（单张模式）
 # =========================
-
 if mode == "知识卡片":
-    st.header(f"📘 {selected_mod_name} - 核心知识点")
-    cards = load_json(current_paths["content"])
-    
-    if not cards:
-        st.warning("该模块暂无卡片数据。")
-    else:
-        st.info(f"共加载 {len(cards)} 个知识点")
-        for card in cards:
-            # 适配 Schema: topic, question_cn, answer_cn
-            topic = card.get("topic", "未命名知识点")
-            q_cn = card.get("question_cn", "")
-            a_cn = card.get("answer_cn", "暂无内容")
-            
-            with st.expander(f"📌 {topic}：{q_cn}"):
-                st.markdown(f"**知识解析：**\n\n{a_cn}")
-                if "module" in card:
-                    st.caption(f"来源：{card['module']}")
-
-elif mode == "模拟测试":
-    st.header(f"📝 {selected_mod_name} - 章节自测")
-    
-    if not current_paths["quiz"]:
-        st.error("⚠️ 未找到该模块的测试题文件 (_quiz.json)")
-    else:
-        quiz_data = load_json(current_paths["quiz"])
+    data = load_json(paths["content"])
+    if data:
+        total = len(data)
+        # 防止越界
+        st.session_state.card_idx = max(0, min(st.session_state.card_idx, total - 1))
         
-        if not quiz_data:
-            st.warning("测试题内容为空。")
-        else:
-            # 答题逻辑：逐题显示并立即反馈
-            for idx, q in enumerate(quiz_data):
-                st.subheader(f"Q{idx+1}: {q['question']}")
-                
-                # 判定单选/多选
-                is_multi = q.get("type") == "multi"
-                q_key = f"q_{selected_mod_name}_{idx}" # 唯一标识符防止串题
-                
-                if is_multi:
-                    user_ans = st.multiselect("请选择所有正确答案 (多选)", q['options'], key=f"sel_{q_key}")
-                    # 将用户选择的内容转为索引列表进行对比
-                    user_indices = sorted([q['options'].index(a) for a in user_ans])
-                    is_correct = user_indices == sorted(q['answer'])
+        item = data[st.session_state.card_idx]
+        
+        st.header(f"🗂️ 知识点学习 ({st.session_state.card_idx + 1} / {total})")
+        
+        # 卡片展示区
+        with st.container(border=True):
+            st.subheader(item.get("topic", "核心概念"))
+            st.markdown(f"#### **问：{item.get('question_cn', '')}**")
+            st.divider()
+            st.markdown(f"**答：**\n{item.get('answer_cn', '')}")
+            st.caption(f"ID: {item.get('id')} | Module: {item.get('module')}")
+
+        # 控制按钮
+        col1, col2, col3 = st.columns([1, 1, 2])
+        with col1:
+            if st.button("⬅️ 上一张"):
+                st.session_state.card_idx = (st.session_state.card_idx - 1) % total
+                st.rerun()
+        with col2:
+            if st.button("下一张 ➡️"):
+                st.session_state.card_idx = (st.session_state.card_idx + 1) % total
+                st.rerun()
+        with col3:
+            if st.button("🎲 随机抽一张"):
+                st.session_state.card_idx = random.randint(0, total - 1)
+                st.rerun()
+    else:
+        st.info("暂无卡片数据。")
+
+# =========================
+# 模式 2：模拟测试（单题模式）
+# =========================
+elif mode == "模拟测试":
+    quiz_data = load_json(paths["quiz"])
+    if quiz_data:
+        total_q = len(quiz_data)
+        st.session_state.quiz_idx = max(0, min(st.session_state.quiz_idx, total_q - 1))
+        
+        q = quiz_data[st.session_state.quiz_idx]
+        
+        st.header(f"📝 章节自测 ({st.session_state.quiz_idx + 1} / {total_q})")
+        
+        with st.container(border=True):
+            st.markdown(f"### {q['question']}")
+            
+            is_multi = q.get("type") == "multi"
+            if is_multi:
+                ans = st.multiselect("多项选择", q['options'], key=f"q_{sel_mod}_{st.session_state.quiz_idx}")
+                user_res = sorted([q['options'].index(a) for a in ans])
+                correct = user_res == sorted(q['answer'])
+            else:
+                ans = st.radio("单项选择", q['options'], index=None, key=f"q_{sel_mod}_{st.session_state.quiz_idx}")
+                user_res = [q['options'].index(ans)] if ans else []
+                correct = user_res == q['answer']
+
+            if ans:
+                if correct:
+                    st.success("🎯 回答正确！")
                 else:
-                    user_ans = st.radio("请选择正确答案 (单选)", q['options'], index=None, key=f"rad_{q_key}")
-                    user_index = q['options'].index(user_ans) if user_ans else -1
-                    is_correct = [user_index] == q['answer']
+                    st.error(f"❌ 回答错误。正确答案索引：{q['answer']}")
+                
+                with st.expander("查看解析", expanded=True):
+                    st.write(q.get("explanation", "暂无解析。"))
 
-                # 如果用户已经做了选择，则显示反馈
-                if user_ans:
-                    if is_correct:
-                        st.success("✅ 正确")
-                    else:
-                        # 转换答案索引为文字显示
-                        correct_text = [q['options'][i] for i in q['answer']]
-                        st.error(f"❌ 错误。正确答案是: {', '.join(correct_text)}")
-                        if q.get("explanation"):
-                            st.info(f"**解析:** {q['explanation']}")
-                st.divider()
-
-            # 底部进度提示
-            st.caption(f"到底啦！本次测试共 {len(quiz_data)} 道题。")
+        # 控制按钮
+        st.write("")
+        c1, c2, c3 = st.columns([1, 1, 2])
+        with c1:
+            if st.button("上一步"):
+                st.session_state.quiz_idx = (st.session_state.quiz_idx - 1) % total_q
+                st.rerun()
+        with c2:
+            if st.button("下一题"):
+                st.session_state.quiz_idx = (st.session_state.quiz_idx + 1) % total_q
+                st.rerun()
+        with c3:
+            if st.button("🔀 随机测试"):
+                st.session_state.quiz_idx = random.randint(0, total_q - 1)
+                st.rerun()
+    else:
+        st.warning("未找到测试题文件。")
