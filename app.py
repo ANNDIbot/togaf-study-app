@@ -64,6 +64,7 @@ def get_hierarchy():
 if "card_idx" not in st.session_state: st.session_state.card_idx = 0
 if "quiz_idx" not in st.session_state: st.session_state.quiz_idx = 0
 if "show_answer" not in st.session_state: st.session_state.show_answer = False
+if "user_ans" not in st.session_state: st.session_state.user_ans = None
 if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 
 # =========================
@@ -83,6 +84,7 @@ with st.sidebar:
         st.session_state.card_idx = 0
         st.session_state.quiz_idx = 0
         st.session_state.show_answer = False
+        st.session_state.user_ans = None
         st.session_state.last_mod = f"{sel_cat}_{sel_mod}"
 
     st.divider()
@@ -138,7 +140,7 @@ if mode == "知识卡片":
         st.info("暂无卡片数据")
 
 # =========================
-# 模式 2：模拟测试（修复多选识别逻辑）
+# 模式 2：模拟测试
 # =========================
 elif mode == "模拟测试":
     quiz_data = load_json(paths["quiz"])
@@ -152,26 +154,38 @@ elif mode == "模拟测试":
         with st.container(border=True):
             st.markdown(f"### {q['question']}")
             
-            # 兼容不同数据格式的类型判断
             is_multi = q.get("type") == "multi" or len(q.get("answer", [])) > 1
             q_key = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
             
+            # 记录用户选择
             if is_multi:
-                ans = st.multiselect("多项选择", q['options'], key=q_key)
+                current_ans = st.multiselect("多项选择", q['options'], key=q_key)
+                # 多选题需要点击提交按钮
                 if not st.session_state.show_answer:
                     if st.button("确认提交", use_container_width=True):
+                        st.session_state.user_ans = sorted([q['options'].index(i) for i in current_ans])
                         st.session_state.show_answer = True
                         st.rerun()
             else:
-                ans = st.radio("单项选择", q['options'], index=None, key=q_key)
-                if ans and not st.session_state.show_answer:
+                current_ans = st.radio("单项选择", q['options'], index=None, key=q_key)
+                # 单选题点击即触发判断
+                if current_ans and not st.session_state.show_answer:
+                    st.session_state.user_ans = [q['options'].index(current_ans)]
                     st.session_state.show_answer = True
                     st.rerun()
 
+            # 显示结果反馈
             if st.session_state.show_answer:
-                # 转换索引为具体选项文字以便阅读
+                is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
+                
+                if is_correct:
+                    st.success("回答正确")
+                else:
+                    st.error("回答错误")
+                
                 correct_text = [q['options'][i] for i in q['answer']]
                 st.warning(f"**正确答案：** {', '.join(correct_text)}")
+                
                 with st.expander("查看解析", expanded=True):
                     st.write(q.get("explanation", "暂无解析"))
 
@@ -181,16 +195,19 @@ elif mode == "模拟测试":
             if st.button("上一题", key="q_prev"):
                 st.session_state.quiz_idx -= 1
                 st.session_state.show_answer = False
+                st.session_state.user_ans = None
                 st.rerun()
         with q2:
             if st.button("随机", key="q_rand"):
                 st.session_state.quiz_idx = random.randint(0, total_q - 1)
                 st.session_state.show_answer = False
+                st.session_state.user_ans = None
                 st.rerun()
         with q3:
             if st.button("下一题", key="q_next"):
                 st.session_state.quiz_idx += 1
                 st.session_state.show_answer = False
+                st.session_state.user_ans = None
                 st.rerun()
     else:
         st.warning("暂无测试题数据")
