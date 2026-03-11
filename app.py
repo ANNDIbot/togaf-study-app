@@ -9,7 +9,6 @@ st.set_page_config(page_title="TOGAF 学习助手", layout="wide")
 # 针对移动端的样式优化
 st.markdown("""
     <style>
-    /* 适配手机端按钮布局 */
     div[data-testid="stHorizontalBlock"] > div {
         min-width: 0px !important;
     }
@@ -18,12 +17,9 @@ st.markdown("""
         height: 3.5rem !important;
         font-size: 16px !important;
     }
-    /* 卡片容器 */
-    .card-box {
-        padding: 1.5rem;
-        border-radius: 12px;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        margin-bottom: 1rem;
+    /* 让复选框看起来更像列表条目 */
+    .stCheckbox {
+        padding: 5px 0;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -73,13 +69,11 @@ if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 hierarchy = get_hierarchy()
 with st.sidebar:
     st.title("TOGAF Study")
-    if not hierarchy:
-        st.stop()
+    if not hierarchy: st.stop()
     
     sel_cat = st.selectbox("分类", list(hierarchy.keys()))
     sel_mod = st.radio("模块", list(hierarchy[sel_cat].keys()))
     
-    # 切换模块重置所有状态
     current_key = f"{sel_cat}_{sel_mod}"
     if current_key != st.session_state.last_mod:
         st.session_state.card_idx = 0
@@ -102,14 +96,12 @@ if mode == "知识卡片":
         total = len(data)
         st.session_state.card_idx %= total
         item = data[st.session_state.card_idx]
-        
         st.caption(f"进度: {st.session_state.card_idx + 1} / {total}")
         
         with st.container(border=True):
             st.write(f"**{item.get('topic', '核心概念')}**")
             st.markdown(f"### {item.get('question_cn', '')}")
             st.divider()
-            
             if st.session_state.show_answer:
                 st.info(f"**答案：**\n\n{item.get('answer_cn', '')}")
                 if st.button("隐藏答案", use_container_width=True):
@@ -149,50 +141,48 @@ elif mode == "模拟测试":
         total_q = len(quiz_data)
         st.session_state.quiz_idx %= total_q
         q = quiz_data[st.session_state.quiz_idx]
-        
         st.caption(f"题目: {st.session_state.quiz_idx + 1} / {total_q}")
         
         with st.container(border=True):
             st.markdown(f"### {q['question']}")
             
-            # 强化多选判定
             is_multi = q.get("type") == "multi" or len(q.get("answer", [])) > 1
-            q_key = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
+            q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
             
             if is_multi:
-                # --- 多选题逻辑 ---
-                current_selection = st.multiselect("多项选择", q['options'], key=q_key)
+                # --- 重构：多选题采用复选框列表形式 ---
+                st.write("(多选)")
+                selected_indices = []
+                for i, option in enumerate(q['options']):
+                    # 为每个复选框创建唯一 key
+                    checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
+                    if checked:
+                        selected_indices.append(i)
+                
                 if not st.session_state.show_answer:
-                    if st.button("确认提交", use_container_width=True):
-                        st.session_state.user_ans = sorted([q['options'].index(i) for i in current_selection])
+                    if st.button("确认提交", type="primary", use_container_width=True):
+                        st.session_state.user_ans = sorted(selected_indices)
                         st.session_state.show_answer = True
                         st.rerun()
             else:
-                # --- 单选题逻辑 ---
-                # 修复点：点击选项后立即触发结果显示
-                current_selection = st.radio("单项选择", q['options'], index=None, key=q_key)
-                if current_selection is not None and not st.session_state.show_answer:
-                    st.session_state.user_ans = [q['options'].index(current_selection)]
+                # --- 单选题保持 radio 形式 ---
+                st.write("(单选)")
+                choice = st.radio("选择答案", q['options'], index=None, key=f"{q_key_prefix}_radio", label_visibility="collapsed", disabled=st.session_state.show_answer)
+                if choice is not None and not st.session_state.show_answer:
+                    st.session_state.user_ans = [q['options'].index(choice)]
                     st.session_state.show_answer = True
                     st.rerun()
 
-            # --- 显示回答反馈和解析 ---
+            # --- 结果显示 ---
             if st.session_state.show_answer:
-                # 判断对错
-                user_ans_list = sorted(st.session_state.user_ans or [])
-                correct_ans_list = sorted(q['answer'])
-                is_correct = user_ans_list == correct_ans_list
-                
+                is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
                 if is_correct:
                     st.success("回答正确")
                 else:
                     st.error("回答错误")
                 
-                # 展示正确选项内容
                 correct_text = [q['options'][i] for i in q['answer']]
                 st.warning(f"**正确答案：** {', '.join(correct_text)}")
-                
-                # 展示详细解析
                 with st.expander("查看解析", expanded=True):
                     st.write(q.get("explanation", "暂无解析"))
 
@@ -214,7 +204,7 @@ elif mode == "模拟测试":
             if st.button("下一题", key="q_next"):
                 st.session_state.quiz_idx += 1
                 st.session_state.show_answer = False
-                st.user_ans = None
+                st.session_state.user_ans = None
                 st.rerun()
     else:
         st.warning("暂无测试题数据")
