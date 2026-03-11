@@ -44,32 +44,42 @@ def load_json(path: Path):
         return []
 
 def get_hierarchy():
+    """
+    改进的文件扫描逻辑：
+    1. 自动遍历 data 下的所有子文件夹
+    2. 自动识别所有非 quiz 结尾的 json 为内容模块
+    3. 自动匹配对应的 quiz 文件
+    """
     hierarchy = {}
-    if not DATA_DIR.exists(): return hierarchy
+    if not DATA_DIR.exists():
+        return hierarchy
     
-    # 扫描分类目录
+    # 1. 扫描分类目录
     categories = sorted([d for d in DATA_DIR.iterdir() if d.is_dir()])
+    
     for cat_path in categories:
-        # 格式化分类名：去除前缀数字
         cat_display = cat_path.name.split('_', 1)[-1] if '_' in cat_path.name else cat_path.name
         hierarchy[cat_display] = {}
         
-        # 修复点：更灵活地扫描内容文件
-        # 获取所有不带 _quiz 字样的 json 作为主教材
-        content_files = sorted([f for f in cat_path.glob("*.json") if "_quiz" not in f.name])
+        # 2. 获取该目录下所有的 json 文件
+        all_jsons = list(cat_path.glob("*.json"))
+        
+        # 3. 筛选出内容文件（不含 _quiz 的）
+        content_files = sorted([f for f in all_jsons if "_quiz" not in f.name])
         
         for cf in content_files:
-            # 模块名处理：保持原始文件名特征但优化显示
+            # 生成显示名称，例如 "guide2" -> "Guide 2"
             mod_display = cf.stem.replace('_', ' ').strip().title()
             
-            # 自动匹配对应的 quiz 文件
-            # 逻辑：查找同目录下 "文件名_quiz.json"
-            quiz_file = cat_path / f"{cf.stem}_quiz.json"
+            # 4. 尝试寻找对应的测试文件
+            # 匹配规则：文件名 + _quiz.json 或 文件名去掉末尾数字 + _quiz.json
+            potential_quiz = cat_path / f"{cf.stem}_quiz.json"
             
             hierarchy[cat_display][mod_display] = {
                 "content": cf,
-                "quiz": quiz_file if quiz_file.exists() else None
+                "quiz": potential_quiz if potential_quiz.exists() else None
             }
+            
     return hierarchy
 
 # =========================
@@ -85,17 +95,21 @@ if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 # 侧边栏
 # =========================
 hierarchy = get_hierarchy()
+
 with st.sidebar:
     st.title("TOGAF Study")
     if not hierarchy: 
-        st.error("未发现 data 文件夹或 JSON 数据")
+        st.error("未发现数据！请检查 data 文件夹是否存在 JSON 文件。")
         st.stop()
     
+    # 分类选择
     sel_cat = st.selectbox("分类", list(hierarchy.keys()))
-    # 修复点：确保模块内容列表按文件名顺序排列
-    mod_list = list(hierarchy[sel_cat].keys())
-    sel_mod = st.radio("模块内容", mod_list)
     
+    # 模块选择 - 这里的列表现在会包含 guide2, guide3, guide4
+    mod_options = list(hierarchy[sel_cat].keys())
+    sel_mod = st.radio("模块内容", mod_options)
+    
+    # 切换检测
     current_key = f"{sel_cat}_{sel_mod}"
     if current_key != st.session_state.last_mod:
         st.session_state.card_idx = 0
@@ -107,6 +121,7 @@ with st.sidebar:
     st.divider()
     mode = st.radio("模式切换", ["知识卡片", "模拟测试"], horizontal=True)
 
+# 获取当前路径
 paths = hierarchy[sel_cat][sel_mod]
 
 # =========================
@@ -223,4 +238,4 @@ elif mode == "模拟测试":
                 st.session_state.user_ans = None
                 st.rerun()
     else:
-        st.warning("该模块暂无测试题数据，请检查文件名是否包含 _quiz 后缀")
+        st.warning("该模块暂无测试题数据，请确保存在 [文件名]_quiz.json 文件")
