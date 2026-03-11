@@ -1,1 +1,317 @@
-
+[
+  {
+    "id": 1,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Capability Definition",
+    "question_cn": "什么是企业架构（EA）能力？",
+    "answer_cn": "EA能力是指企业开发、使用和维持其架构，并利用该架构来治理变革的能力 [cite: 515, 93]。"
+  },
+  {
+    "id": 2,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Leader Role",
+    "question_cn": "EA能力负责人的主要职责是什么？",
+    "answer_cn": "EA负责人负责建立、维持和演进EA能力，以交付企业所需的价值，并作为变革的倡导者和可信顾问 [cite: 527, 373]。"
+  },
+  {
+    "id": 3,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Context",
+    "question_cn": "在建立EA能力时，为什么要首先理解企业背景？",
+    "answer_cn": "理解企业背景（如业务模式、运营模式和战略地位）是裁剪、确定优先级和构建符合企业特定需求的EA能力的基础 [cite: 135, 136]。"
+  },
+  {
+    "id": 4,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Maturity Models",
+    "question_cn": "使用架构成熟度模型（CMM）的主要目的是什么？",
+    "answer_cn": "用于评估企业当前的架构实践水平，确定改进领域，并制定从当前状态到目标状态的路线图 [cite: 2657, 324]。"
+  },
+  {
+    "id": 5,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Skills Framework",
+    "question_cn": "TOGAF 架构技能框架的作用是什么？",
+    "answer_cn": "它为定义架构师角色、技能类别和能力水平提供了一套标准，帮助组织进行人才选拔、培训和职业发展规划 [cite: 2238, 2244]。"
+  },
+  {
+    "id": 6,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Purposes",
+    "question_cn": "TOGAF 定义的 EA 四种主要支持目的是什么？",
+    "answer_cn": "1. 支持战略（Strategy）；2. 支持组合（Portfolio）；3. 支持项目（Project）；4. 支持解决方案交付（Solution Delivery） [cite: 194, 196]。"
+  },
+  {
+    "id": 7,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Governance",
+    "question_cn": "什么是架构治理的核心？",
+    "answer_cn": "架构治理是确保架构符合企业战略、标准和政策的一套管理制度和流程 [cite: 434, 373]。"
+  },
+  {
+    "id": 8,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Roadmap",
+    "question_cn": "EA能力路线图在 EA 实践中扮演什么角色？",
+    "answer_cn": "路线图是一个沟通工具，描述了实现 EA 能力目标状态的首选路径，并考虑了组织成熟度和资源约束 [cite: 323, 325]。"
+  },
+  {
+    "id": 9,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Maturity Levels (ACMM)",
+    "question_cn": "US DOC ACMM 模型中，成熟度级别 0 代表什么？",
+    "answer_cn": "级别 0 代表“不存在”（None），即组织没有功能性的架构工作 [cite: 2657]。"
+  },
+  {
+    "id": 10,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Skill Categories",
+    "question_cn": "架构技能框架中，通用技能（Generic Skills）通常包括哪些内容？",
+    "answer_cn": "包括领导力、团队合作、人际沟通、谈判以及冲突管理等能力 [cite: 2244]。"
+  },
+  {
+    "id": 11,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Boundaryless Information Flow",
+    "question_cn": "The Open Group 的使命“无边界信息流”的含义是什么？",
+    "answer_cn": "指在开放标准的基础上，实现企业内部和企业之间跨平台的、透明的信息流动与互操作性 [cite: 501, 528]。"
+  },
+  {
+    "id": 12,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Operating Model",
+    "question_cn": "在 EA 背景中，运营模式（Operating Model）如何影响 EA 能力？",
+    "answer_cn": "它决定了组织中流程标准化和集成的程度，从而影响架构治理的深度和广度 [cite: 17, 137]。"
+  },
+  {
+    "id": 13,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Stakeholder Management",
+    "question_cn": "为什么 EA 负责人必须关注利益相关者？",
+    "answer_cn": "因为 EA 的价值取决于能否满足利益相关者的关注点，并获得他们对架构决策和变革的支持 [cite: 533, 347]。"
+  },
+  {
+    "id": 14,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Content Metamodel",
+    "question_cn": "什么是 EA 内容元模型？",
+    "answer_cn": "它定义了用于描述架构的各类构件（Artifacts）及其相互关系的标准定义 [cite: 54, 387]。"
+  },
+  {
+    "id": 15,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Organization Models",
+    "question_cn": "EA 团队在组织中常见的放置位置有哪些？",
+    "answer_cn": "通常放在首席信息官（CIO）办公室、首席技术官（CTO）部门或作为独立的战略规划单元 [cite: 224, 275]。"
+  },
+  {
+    "id": 16,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "ADM Customization",
+    "question_cn": "如何利用 TOGAF ADM 来建立 EA 能力？",
+    "answer_cn": "将 ADM 本身作为架构开发的工具，将“EA能力”作为架构工作的目标，对其进行定制化配置 [cite: 15, 32]。"
+  },
+  {
+    "id": 17,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Skill Proficiency Levels",
+    "question_cn": "架构技能框架定义的四个熟练程度级别是什么？",
+    "answer_cn": "级别 1：背景了解（Background）；级别 2：认知（Awareness）；级别 3：应用（Knowledge）；级别 4：专家（Expert） [cite: 2244]。"
+  },
+  {
+    "id": 18,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Value Metrics",
+    "question_cn": "如何衡量 EA 能力的成功？",
+    "answer_cn": "通过财务指标、风险降低、收益实现、创新增长以及变更管理的效率等维度来定义价值指标 [cite: 310, 343]。"
+  },
+  {
+    "id": 19,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Enterprise Continuum",
+    "question_cn": "企业连续体（Enterprise Continuum）在技能框架中如何应用？",
+    "answer_cn": "它帮助架构师理解从基础架构到组织特定架构的演进，并相应地应用不同层次的技能 [cite: 2244]。"
+  },
+  {
+    "id": 20,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Charter",
+    "question_cn": "建立 EA 能力时，制定章程（Charter）的目的是什么？",
+    "answer_cn": "明确 EA 团队的授权、范围、职责以及与组织中其他职能部门的协作模式 [cite: 120, 242]。"
+  },
+  {
+    "id": 21,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Risk Management",
+    "question_cn": "EA 与企业风险管理（ERM）的关系是什么？",
+    "answer_cn": "EA 通过提供结构化的视角，帮助识别 IT 和业务变革中的风险，并将其纳入企业的整体风险管理流程 [cite: 434, 411]。"
+  },
+  {
+    "id": 22,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Recruitment",
+    "question_cn": "EA 负责人在招聘 EA 团队成员时应考虑什么？",
+    "answer_cn": "应根据技能框架评估候选人的技术广度、深度、领导力、行业经验及个人素养 [cite: 68, 2244]。"
+  },
+  {
+    "id": 23,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Iterative Nature",
+    "question_cn": "为什么建立 EA 能力是一个迭代的过程？",
+    "answer_cn": "因为企业的背景和目标会随时间变化，EA 能力需要不断调整以适应新的需求和成熟度水平 [cite: 35, 37]。"
+  },
+  {
+    "id": 24,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Architecture Domains",
+    "question_cn": "常见的 EA 架构域包括哪些？",
+    "answer_cn": "业务架构、数据架构、应用架构和技术架构（BDAT） [cite: 274]。"
+  },
+  {
+    "id": 25,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "CMMI Views",
+    "question_cn": "CMMI 模型的两种主要表现形式是什么？",
+    "answer_cn": "阶段式（Staged）模型提供组织整体成熟度的度量，连续式（Continuous）模型针对特定过程能力进行度量 [cite: 2657]。"
+  },
+  {
+    "id": 26,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Role: Solution Architect",
+    "question_cn": "解决方案架构师与企业架构师的主要区别是什么？",
+    "answer_cn": "解决方案架构师专注于特定项目的具体交付，而企业架构师关注跨多个业务领域的全局一致性和长期战略 [cite: 2244, 275]。"
+  },
+  {
+    "id": 27,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Architecture Repository",
+    "question_cn": "企业存储库（Repository）的作用是什么？",
+    "answer_cn": "用于存储架构成果、模型、标准和治理记录，以实现资产的重用和知识共享 [cite: 57, 198]。"
+  },
+  {
+    "id": 28,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Principles",
+    "question_cn": "架构原则的作用是什么？",
+    "answer_cn": "提供持久的准则，指导架构开发、评估和决策，确保架构行为的一致性 [cite: 152, 153]。"
+  },
+  {
+    "id": 29,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Performance Evaluation",
+    "question_cn": "如何对 EA 能力进行绩效考核？",
+    "answer_cn": "基于 EA 路线图的交付进度、赚得价值（Earned Value）以及对业务成果的贡献度 [cite: 338, 339]。"
+  },
+  {
+    "id": 30,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Decision-Making",
+    "question_cn": "EA 能力如何集成到企业的决策流程中？",
+    "answer_cn": "通过在战略规划、组合管理和项目启动阶段提供架构分析和建议，确立架构的否决权或建议权 [cite: 75, 433]。"
+  },
+  {
+    "id": 31,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Change Management",
+    "question_cn": "为什么 EA 负责人需要具备变革管理技能？",
+    "answer_cn": "建立和演进 EA 能力本质上是组织变革，需要通过有效的沟通和培训来改变人员的行为和文化 [cite: 94, 373]。"
+  },
+  {
+    "id": 32,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Role: Business Architect",
+    "question_cn": "业务架构师的核心工作是什么？",
+    "answer_cn": "通过业务能力建模、价值流分析和组织结构映射，确保技术投资与业务目标对齐 [cite: 70, 2244]。"
+  },
+  {
+    "id": 33,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Maturity Level (ACMM 5)",
+    "question_cn": "ACMM 模型中，最高级别“优化级”（Optimized）的特征是什么？",
+    "answer_cn": "流程已完全定义，并根据绩效数据和新技术的引入进行持续的自我完善和优化 [cite: 2657]。"
+  },
+  {
+    "id": 34,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Service Model",
+    "question_cn": "什么是基于服务的 EA 能力模型？",
+    "answer_cn": "将 EA 视为向组织内部利益相关者提供的各种专业服务（如决策支持、合规审查、技术洞察等） [cite: 266, 411]。"
+  },
+  {
+    "id": 35,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Gap Analysis",
+    "question_cn": "在 EA 能力规划中，差距分析的目的？",
+    "answer_cn": "识别当前能力与所需目标能力之间的缺失部分，作为制定路线图的依据 [cite: 324, 433]。"
+  },
+  {
+    "id": 36,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Collaboration",
+    "question_cn": "EA 能力与其他框架（如 ITIL 或 COBIT）如何对齐？",
+    "answer_cn": "通过建立框架间的触点（Touch-points），确保 EA 在服务管理和治理流程中发挥作用 [cite: 50, 435]。"
+  },
+  {
+    "id": 37,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Communication Plan",
+    "question_cn": "为什么 EA 负责人需要沟通计划？",
+    "answer_cn": "用于向不同层次的利益相关者宣传 EA 的价值，通报进度，并维持高层管理者的支持 [cite: 341, 344]。"
+  },
+  {
+    "id": 38,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Role: Information Architect",
+    "question_cn": "信息架构师关注的主要资产是什么？",
+    "answer_cn": "企业的数据资产、信息流模型以及如何通过数据治理确保信息的准确性和可访问性 [cite: 2244]。"
+  },
+  {
+    "id": 39,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Maturity: Managed Level",
+    "question_cn": "在成熟度模型中，“受管理级”与“定义级”的主要区别？",
+    "answer_cn": "“定义级”强调流程的标准化，而“受管理级”引入了对流程执行质量和效率的定量度量 [cite: 2657]。"
+  },
+  {
+    "id": 40,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Boot-strapping",
+    "question_cn": "什么是 EA 能力的“自举”（Boot-strapping）？",
+    "answer_cn": "指在成熟的架构工作全面开始之前，先建立最基本的组织、流程和工具支持 [cite: 271, 35]。"
+  },
+  {
+    "id": 41,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Trusted Advisor",
+    "question_cn": "成为“可信顾问”对 EA 负责人的意义？",
+    "answer_cn": "意味着业务领导者在面临重大战略决策时，会主动寻求 EA 的分析和建议 [cite: 93, 373]。"
+  },
+  {
+    "id": 42,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Industry Standards",
+    "question_cn": "在定义 EA 背景时，为什么需要考虑行业标准？",
+    "answer_cn": "行业标准（如金融或医疗行业的监管要求）定义了架构必须遵守的合规性约束 [cite: 19, 137]。"
+  },
+  {
+    "id": 43,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "EA Capacity",
+    "question_cn": "EA 能力中的“容量”（Capacity）指什么？",
+    "answer_cn": "指 EA 团队能够处理的工作量，由人员数量、技能水平和可用工具共同决定 [cite: 67, 374]。"
+  },
+  {
+    "id": 44,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Strategic Planning Horizon",
+    "question_cn": "战略规划周期如何影响 EA 能力？",
+    "answer_cn": "它决定了架构愿景的跨度以及路线图更新的频率，需与企业的财务和规划周期一致 [cite: 27, 342]。"
+  },
+  {
+    "id": 45,
+    "module": "Guide 1 - Capability & Leadership",
+    "topic": "Mentoring",
+    "question_cn": "为什么 EA 能力建设中需要辅导（Mentoring）？",
+    "answer_cn": "通过经验传承，培养组织内部的架构思维，促进架构社区的共同成长 [cite: 96, 412]。"
+  }
+]
