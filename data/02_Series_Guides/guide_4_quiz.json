@@ -1,1 +1,565 @@
-
+[
+  {
+    "id": 1,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "根据 G217e，以下哪项不是数字化企业（Digital Enterprise）的核心特征？",
+    "options": [
+      "利用数字技术创造新价值",
+      "将所有物理产品完全替换为数字产品",
+      "通过数字手段交付产品或服务",
+      "改变传统商业模式以适应数字化转型"
+    ],
+    "answer": [2],
+    "explanation": "数字化企业并不意味着必须消除所有物理产品，而是强调通过数字化手段增强或改变交付和价值创造方式。"
+  },
+  {
+    "id": 2,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "在敏捷 Sprint 中应用 TOGAF ADM 时，DORP 循环包括哪些环节？",
+    "options": [
+      "Demo（演示）",
+      "Outcome（结果）",
+      "Retrospective（回顾）",
+      "Planning（计划）",
+      "Documentation（文档编制）"
+    ],
+    "answer": [1, 2, 3, 4],
+    "explanation": "根据 G210e，DORP 代表 Demo, Outcome, Retrospective, 和 Planning。"
+  },
+  {
+    "id": 3,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "微服务架构（MSA）与传统 SOA 的主要区别在于什么？",
+    "options": [
+      "MSA 不支持服务重用",
+      "MSA 强制要求使用 Java 技术栈",
+      "MSA 强调服务的独立性、去中心化治理和较小的服务粒度",
+      "MSA 不依赖于 HTTP 或网络通信"
+    ],
+    "answer": [3],
+    "explanation": "MSA 是 SOA 的演进，特别强调组件的独立部署、去中心化管理和细粒度划分。"
+  },
+  {
+    "id": 4,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "SOA 的核心原则包括以下哪些项？",
+    "options": [
+      "封装业务能力",
+      "位置透明性",
+      "基于开放标准",
+      "中心化数据存储",
+      "服务合同定义"
+    ],
+    "answer": [1, 2, 3, 5],
+    "explanation": "SOA 强调松耦合和互操作性，通常避免“中心化数据存储”以保持灵活性。"
+  },
+  {
+    "id": 5,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "数字化业务参考模型（DBRM）中的哪个域（Domain）负责定义愿景和商业模式？",
+    "options": [
+      "运营域（Operational Domain）",
+      "结构域（Structural Domain）",
+      "战略域（Strategy Domain）",
+      "技术域（Technology Domain）"
+    ],
+    "answer": [3],
+    "explanation": "战略域关注高层方向，包括愿景、目标和商业模式。"
+  },
+  {
+    "id": 6,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "政府参考模型（GRM）的主要目标之一是：",
+    "options": [
+      "完全取消政府部门之间的竞争",
+      "促进跨机构的协作和服务交付的统一性",
+      "强制所有政府数据对所有人完全公开",
+      "取代所有国家的本地法律架构"
+    ],
+    "answer": [2],
+    "explanation": "GRM 旨在通过标准化模型提升政府部门间的协作效率和公民服务水平。"
+  },
+  {
+    "id": 7,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在敏捷架构中，什么是“最小可行架构”（MVA）？",
+    "options": [
+      "功能最少的 IT 系统架构",
+      "足以支撑 MVP（最小可行产品）运行并具备演进能力的最小架构子集",
+      "不需要任何治理的架构",
+      "完全由程序员在 Sprint 中自发决定的临时方案"
+    ],
+    "answer": [2],
+    "explanation": "MVA 是在敏捷环境中平衡速度与架构完整性的重要概念。"
+  },
+  {
+    "id": 8,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "微服务架构中，实现“独立性”原则的常见做法有哪些？",
+    "options": [
+      "每服务一个数据库（Database per Service）",
+      "独立的代码库和构建流水线",
+      "所有服务共享一个公共数据模式",
+      "通过 API 网关进行通信解耦"
+    ],
+    "answer": [1, 2, 4],
+    "explanation": "共享公共数据模式（选项3）会导致服务间产生强耦合，违背独立性原则。"
+  },
+  {
+    "id": 9,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "SOA 治理活力方法（SGVM）的作用是：",
+    "options": [
+      "生成服务代码",
+      "取代架构委员会的功能",
+      "确保 SOA 治理框架能够持续改进并适应变化",
+      "监控服务调用的网络延迟"
+    ],
+    "answer": [3],
+    "explanation": "SGVM 关注的是治理过程本身的持续优化。"
+  },
+  {
+    "id": 10,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "根据 G21D，政府参考模型（GRM）中互操作性的层级包括：",
+    "options": [
+      "法律互操作性",
+      "政治互操作性",
+      "组织互操作性",
+      "语义互操作性",
+      "技术互操作性"
+    ],
+    "answer": [1, 3, 4, 5],
+    "explanation": "GRM 定义了法律、组织、语义和技术四个层级的互操作性。"
+  },
+  {
+    "id": 11,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "什么是“架构跑道”（Architecture Runway）？",
+    "options": [
+      "存放架构文档的地方",
+      "为支持即将到来的业务功能而提前构建的基础设施和架构支持",
+      "项目失败后的清理工作",
+      "用于演示架构愿景的 PPT 模板"
+    ],
+    "answer": [2],
+    "explanation": "架构跑道确保团队在开发业务功能时有足够的技术支持，不至于陷入大规模重构。"
+  },
+  {
+    "id": 12,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在数字化产品生命周期中，哪个阶段标志着企业需要从“团队”过渡到“团队之团队”？",
+    "options": [
+      "初创期（Individual/Founder）",
+      "规模化扩张期（Team of Teams）",
+      "稳定运营期（Enduring Enterprise）",
+      "产品消亡期"
+    ],
+    "answer": [2],
+    "explanation": "当单一团队无法承载产品复杂性时，需要进入协同工作的多团队模式。"
+  },
+  {
+    "id": 13,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "主动式技术债管理（Proactive Technical Debt Management）包括哪些活动？",
+    "options": [
+      "在设计时预留可扩展接口",
+      "定期进行代码和架构审计",
+      "仅在系统崩溃时修复问题",
+      "在 Sprint 中分配专门的时间进行重构"
+    ],
+    "answer": [1, 2, 4],
+    "explanation": "仅在系统崩溃时修复是响应式（Reactive）行为。"
+  },
+  {
+    "id": 14,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "MSA 中的“断路器”（Circuit Breaker）模式主要是为了解决什么问题？",
+    "options": [
+      "提高数据库查询速度",
+      "防止分布式系统中的级联故障",
+      "加密服务间的通信数据",
+      "自动合并重复的微服务实例"
+    ],
+    "answer": [2],
+    "explanation": "当一个微服务不可用时，断路器防止调用方持续等待，从而保护整个系统的可用性。"
+  },
+  {
+    "id": 15,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "DBRM 模型中的“结构域”（Structural Domain）主要关注：",
+    "options": [
+      "企业的长期财务计划",
+      "组织的业务流程、数据模型和生态系统结构",
+      "个别软件组件的内部算法",
+      "服务器机房的物理布局"
+    ],
+    "answer": [2],
+    "explanation": "结构域关注业务运作的基础架构和生态网络。"
+  },
+  {
+    "id": 16,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "敏捷环境中，架构师的职责发生了哪些转变？",
+    "options": [
+      "从“指挥官”变为“赋能者”",
+      "从一次性大设计变为持续演进引导",
+      "不再需要关注任何长期的业务目标",
+      "通过设置“护栏”来平衡团队自主权与一致性"
+    ],
+    "answer": [1, 2, 4],
+    "explanation": "敏捷架构师依然需要关注长期业务目标，只是实现方式更灵活。"
+  },
+  {
+    "id": 17,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "根据 G174e，SOA 服务的“试金石测试”（Litmus Test）主要目的是：",
+    "options": [
+      "测试网络带宽是否足够",
+      "验证候选服务是否具备良好的服务导向特征（如松耦合、业务对等）",
+      "计算开发服务的成本",
+      "检查代码是否符合命名规范"
+    ],
+    "answer": [2],
+    "explanation": "该测试用于筛选真正具备 SOA 价值的服务。"
+  },
+  {
+    "id": 18,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在数字化企业中，以下哪项最能体现“架构服务”的理念？",
+    "options": [
+      "强制要求所有项目必须签署纸质审核单",
+      "为项目组提供自动化的架构合规检查工具作为“服务”",
+      "取消所有的架构文档要求",
+      "架构师只负责写代码而不参与规划"
+    ],
+    "answer": [2],
+    "explanation": "架构作为服务（Architecture as a Service）强调赋能和便捷的治理集成。"
+  },
+  {
+    "id": 19,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "微服务架构中，常见的“服务发现”方式包括：",
+    "options": [
+      "客户端发现（Client-side Discovery）",
+      "硬编码 IP 地址",
+      "服务端发现（Server-side Discovery）",
+      "使用配置中心（如 Consul/Eureka）"
+    ],
+    "answer": [1, 3, 4],
+    "explanation": "硬编码 IP 地址无法适应微服务的动态特性。"
+  },
+  {
+    "id": 20,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "GRM 中提到的“以生命事件（Life Events）”组织政府服务的目的是：",
+    "options": [
+      "追踪公民的所有个人隐私",
+      "让公民无需了解政府职能分工即可获得一站式服务",
+      "减少政府工作人员的数量",
+      "增加行政审批的环节"
+    ],
+    "answer": [2],
+    "explanation": "通过生命事件（如出生、结婚、开店）来整合跨部门服务，提升公民体验。"
+  },
+  {
+    "id": 21,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "敏捷 ADM 阶段 E（机会与解决方案）在 Sprint 中主要关注什么？",
+    "options": [
+      "编写详细的 SQL 脚本",
+      "评估不同架构增量的可行性并确定其实施优先级",
+      "进行全公司的薪酬调整",
+      "定义长期的组织愿景"
+    ],
+    "answer": [2],
+    "explanation": "Phase E 在敏捷中关注如何将架构愿景拆解为可实施的、高价值的增量。"
+  },
+  {
+    "id": 22,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "以下哪些是 DBRM 的组成部分？",
+    "options": [
+      "Strategy Domain",
+      "Structural Domain",
+      "Operational Domain",
+      "Environmental Domain"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "DBRM 主要包含战略、结构和运营三个核心域。"
+  },
+  {
+    "id": 23,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在 MSA 中，为什么通常不推荐使用 ESB（企业服务总线）？",
+    "options": [
+      "因为 ESB 价格太贵",
+      "因为 ESB 倾向于中心化逻辑，会造成服务间的隐性耦合",
+      "因为 ESB 不支持云原生环境",
+      "因为微服务不需要通信"
+    ],
+    "answer": [2],
+    "explanation": "MSA 倾向于“智能端点和哑管道（Smart endpoints and dumb pipes）”，避免在通信管道中内置复杂业务逻辑。"
+  },
+  {
+    "id": 24,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "关于数字化转型（Digitalization），以下说法正确的是：",
+    "options": [
+      "它仅仅是把纸质文档扫描成 PDF",
+      "它侧重于利用数字技术改变业务流程和创造新的价值流",
+      "它是所有企业必须在一年内完成的任务",
+      "它主要关注的是硬件设备的更新换代"
+    ],
+    "answer": [2],
+    "explanation": "数字化转型更关注商业模式和价值创造层面的变革。"
+  },
+  {
+    "id": 25,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "SOA 环境下进行治理（Governance）的重点是什么？",
+    "options": [
+      "服务合同的生命周期管理",
+      "服务重用率的评估",
+      "强制所有服务使用同一种编程语言",
+      "确保服务符合互操作性标准"
+    ],
+    "answer": [1, 2, 4],
+    "explanation": "SOA 治理关注合同、重用和标准，但不强制限制实现技术的多样性。"
+  },
+  {
+    "id": 26,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "GRM 中的“开放政府”理念鼓励：",
+    "options": [
+      "向其他政府公开所有军事机密",
+      "提高政策制定的参与度和政府运行的透明度",
+      "取消所有的政府行政审批",
+      "完全由人工智能管理政府"
+    ],
+    "answer": [2],
+    "explanation": "开放政府强调透明度和公民参与。"
+  },
+  {
+    "id": 27,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "什么是架构的“演进式”特征？",
+    "options": [
+      "架构一旦设计好就不再变动",
+      "架构能够随业务需求变化进行增量式、持续的变化而不会整体崩塌",
+      "架构只能通过购买新软件来升级",
+      "架构完全由用户在运行时通过拖拽生成"
+    ],
+    "answer": [2],
+    "explanation": "演进式架构支持持续的变革。"
+  },
+  {
+    "id": 28,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "在 MSA 中应用 DDD（领域驱动设计）有何好处？",
+    "options": [
+      "帮助识别“受限上下文”以合理划分服务边界",
+      "确保技术专家和业务专家拥有统一的语言（Ubiquitous Language）",
+      "自动生成所有的微服务代码",
+      "减少服务间的业务逻辑重叠"
+    ],
+    "answer": [1, 2, 4],
+    "explanation": "DDD 是 MSA 划分服务边界的利器。"
+  },
+  {
+    "id": 29,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "TOGAF ADM Phase G（实施治理）在敏捷开发中如何体现？",
+    "options": [
+      "每个月召开一次长达一整天的合规性审计会议",
+      "通过自动化流水线（CI/CD）中的合规性测试套件进行实时治理",
+      "取消所有的治理环节以提高开发速度",
+      "由项目经理在项目结束后统一补写治理文档"
+    ],
+    "answer": [2],
+    "explanation": "敏捷环境下的治理通常是自动化的、嵌入式的。"
+  },
+  {
+    "id": 30,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "DBRM 中定义的“价值流”主要关注：",
+    "options": [
+      "企业内部的现金流动方向",
+      "从触发需求到向客户交付价值的一系列端到端活动",
+      "员工在不同办公室间的移动路径",
+      "网络数据包的传输效率"
+    ],
+    "answer": [2],
+    "explanation": "业务架构中的价值流关注价值的产生和传递。"
+  },
+  {
+    "id": 31,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "数字化连续性（Digital Continuity）要求数字资产具备哪些特性？",
+    "options": [
+      "可发现性（Discoverable）",
+      "可访问性（Accessible）",
+      "可理解性（Understandable）",
+      "物理永久性（Physically Indestructible）"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "数字化连续性侧重于逻辑上的可用和理解，而非硬件物理层面的永恒。"
+  },
+  {
+    "id": 32,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "GRM 推荐的“云优先”策略是指：",
+    "options": [
+      "所有系统必须搬到公有云",
+      "在评估新架构或更新现有架构时，首先考虑云交付模式的可能性",
+      "禁止使用任何本地部署的基础设施",
+      "由云服务商决定所有的政府政策"
+    ],
+    "answer": [2],
+    "explanation": "云优先是一种评估导向，旨在利用云的优势，而非盲目迁移。"
+  },
+  {
+    "id": 33,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在 SOA 中，什么是“位置透明性”？",
+    "options": [
+      "服务消费者的物理地址必须公开",
+      "服务消费者无需知道服务提供者的物理地址即可调用其功能",
+      "所有服务器必须放在同一个数据中心",
+      "服务必须使用 GPS 定位"
+    ],
+    "answer": [2],
+    "explanation": "这是 SOA 解耦的关键特征，通常通过服务目录实现。"
+  },
+  {
+    "id": 34,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "敏捷架构路线图（Roadmap）通常包括：",
+    "options": [
+      "关键的架构里程碑",
+      "预期的架构史诗（Epics）",
+      "支持业务目标的技术演进路径",
+      "未来两年的每一个代码提交计划"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "路线图是高层规划，不包含具体的底层执行细节（如代码提交）。"
+  },
+  {
+    "id": 35,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "根据 G21I，MSA 中的“去中心化治理”意味着：",
+    "options": [
+      "每个项目可以随意违反公司所有的安全规定",
+      "每个服务团队有权选择最适合其业务场景的技术栈和工具，同时遵循全局的必要合规性",
+      "没有架构师负责任何事情",
+      "每个员工都必须决定公司的技术战略"
+    ],
+    "answer": [2],
+    "explanation": "去中心化治理是在保持全局一致性的前提下，下放具体实现的决策权。"
+  },
+  {
+    "id": 36,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "数字化治理中“合规即代码”（Compliance as Code）的好处是：",
+    "options": [
+      "可以减少代码量",
+      "将合规性检查自动化，从而提高效率并减少人为疏忽",
+      "完全取代所有的法律顾问",
+      "让合规性要求变得不可更改"
+    ],
+    "answer": [2],
+    "explanation": "通过自动化的脚本或规则检查，确保在开发过程中即符合监管要求。"
+  },
+  {
+    "id": 37,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "SOA 架构中，如何处理遗留系统的集成？",
+    "options": [
+      "直接舍弃所有遗留系统",
+      "使用服务包装器（Wrappers）将功能暴露为 Web 服务",
+      "通过消息中间件实现遗留数据的异步集成",
+      "对核心业务逻辑进行重构以符合 SOA 标准"
+    ],
+    "answer": [2, 3, 4],
+    "explanation": "舍弃所有系统（选项1）通常不符合商业实际。"
+  },
+  {
+    "id": 38,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "DBRM 中“数字化驱动力”的一个典型例子是：",
+    "options": [
+      "增加纸质文件的存储空间",
+      "消费者对个性化、实时服务的期望增加",
+      "减少互联网带宽的供给",
+      "固定不变的市场准入门槛"
+    ],
+    "answer": [2],
+    "explanation": "数字化驱动力通常源于外部环境变化、客户需求提升或技术创新。"
+  },
+  {
+    "id": 39,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "single",
+    "question": "在 GRM 的应用中，如何促进不同政府部门间的数据共享？",
+    "options": [
+      "强制所有部门使用同一个 Excel 表格",
+      "建立通用的数据标准和安全的互操作性平台",
+      "直接向公众开放所有部门的所有数据库内容",
+      "由中央政府通过纸质文件手动转发数据"
+    ],
+    "answer": [2],
+    "explanation": "标准化和平台化是跨部门数据共享的技术基础。"
+  },
+  {
+    "id": 40,
+    "module": "Guide 4 - Modern Style & Digital",
+    "type": "multiple",
+    "question": "以下哪些是架构 Sprint 的输出（Outcome）？",
+    "options": [
+      "更新的架构路线图",
+      "经过验证的最小可行架构（MVA）组件",
+      "对下一个 Sprint 的架构规划",
+      "公司所有的年度财务预算报告"
+    ],
+    "answer": [1, 2, 3],
+    "explanation": "架构 Sprint 的输出应与架构设计和演进相关。"
+  }
+]
