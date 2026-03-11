@@ -3,24 +3,36 @@ import json
 import random
 from pathlib import Path
 
-# --- 页面配置：手机端建议 wide 模式但控制内容宽度 ---
+# --- 页面配置 ---
 st.set_page_config(page_title="TOGAF Pocket", layout="wide")
 
-# 强制手机端样式微调
+# 自定义 CSS：优化移动端按钮布局和卡片样式
 st.markdown("""
     <style>
-    .stButton button { width: 100%; height: 3rem; font-size: 1.1rem; }
-    .stExpander { border: 1px solid #e0e0e0; border-radius: 10px; }
-    .card-box { 
-        background-color: #f8f9fa; 
-        padding: 20px; 
-        border-radius: 15px; 
-        border: 2px solid #007bff;
+    /* 强制按钮在同一行平分宽度，并增加高度方便手指点击 */
+    div[data-testid="stHorizontalBlock"] > div {
+        min-width: 0px !important;
+    }
+    button {
+        width: 100% !important;
+        height: 3.5rem !important;
+        padding: 0px !important;
+        font-size: 16px !important;
+    }
+    /* 卡片显示区域样式 */
+    .card-container {
+        background-color: #ffffff;
+        border: 2px solid #f0f2f6;
+        border-radius: 10px;
+        padding: 20px;
         margin-bottom: 20px;
-        min-height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        min-height: 180px;
+    }
+    /* 移动端顶部留白微调 */
+    .block-container {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -28,7 +40,7 @@ st.markdown("""
 DATA_DIR = Path("data")
 
 # =========================
-# 数据处理
+# 数据逻辑
 # =========================
 def load_json(path: Path):
     if not path.exists(): return []
@@ -52,121 +64,127 @@ def get_hierarchy():
     return hierarchy
 
 # =========================
-# 状态初始化
+# 状态管理
 # =========================
 if "idx" not in st.session_state: st.session_state.idx = 0
-if "show_answer" not in st.session_state: st.session_state.show_answer = False
-if "last_key" not in st.session_state: st.session_state.last_key = ""
+if "show_ans" not in st.session_state: st.session_state.show_ans = False
+if "current_mod" not in st.session_state: st.session_state.current_mod = ""
 
 # =========================
-# 导航栏
+# 侧边栏导航
 # =========================
 h = get_hierarchy()
 with st.sidebar:
-    st.title("📱 TOGAF Pocket")
+    st.title("TOGAF Study")
     if not h: st.stop()
     sel_cat = st.selectbox("分类", list(h.keys()))
-    sel_mod = st.radio("模块", list(h[sel_cat].keys()))
+    sel_mod = st.radio("模块内容", list(h[sel_cat].keys()))
     
-    # 切换模块重置
-    current_key = f"{sel_cat}_{sel_mod}"
-    if st.session_state.last_key != current_key:
+    # 模块切换重置
+    if st.session_state.current_mod != f"{sel_cat}_{sel_mod}":
         st.session_state.idx = 0
-        st.session_state.show_answer = False
-        st.session_state.last_key = current_key
+        st.session_state.show_ans = False
+        st.session_state.current_mod = f"{sel_cat}_{sel_mod}"
 
-    mode = st.radio("模式", ["知识卡片", "模拟测试"], horizontal=True)
+    mode = st.radio("学习模式", ["知识卡片", "模拟测试"], horizontal=True)
 
 paths = h[sel_cat][sel_mod]
 
 # =========================
-# 模式 1：知识卡片（点击翻面）
+# 模式渲染
 # =========================
 if mode == "知识卡片":
     data = load_json(paths["content"])
     if data:
-        item = data[st.session_state.idx % len(data)]
-        st.caption(f"进度: {st.session_state.idx + 1} / {len(data)} | {sel_mod}")
-
-        # 卡片正面：问题
+        total = len(data)
+        st.session_state.idx %= total
+        item = data[st.session_state.idx]
+        
+        st.caption(f"进度: {st.session_state.idx + 1} / {total}")
+        
+        # 卡片正面：题目
         st.markdown(f"""
-            <div class="card-box">
-                <h4 style='color: #555;'>{item.get('topic', 'Topic')}</h4>
-                <h2 style='text-align: center; margin-top: 20px;'>{item.get('question_cn', '无问题内容')}</h2>
+            <div class="card-container">
+                <small style="color:gray;">{item.get('topic', 'Topic')}</small>
+                <h3 style="margin-top:10px;">{item.get('question_cn', '无内容')}</h3>
             </div>
         """, unsafe_allow_html=True)
 
-        # 答案区
-        if st.session_state.show_answer:
-            st.success(f"**答案：**\n\n{item.get('answer_cn', '暂无答案')}")
-            if st.button("🙈 隐藏答案"):
-                st.session_state.show_answer = False
+        # 答案遮盖逻辑
+        if st.session_state.show_ans:
+            st.info(f"**答案：**\n\n{item.get('answer_cn', '')}")
+            if st.button("隐藏答案", use_container_width=True):
+                st.session_state.show_ans = False
                 st.rerun()
         else:
-            if st.button("💡 点击查看答案", type="primary"):
-                st.session_state.show_answer = True
+            if st.button("查看答案", type="primary", use_container_width=True):
+                st.session_state.show_ans = True
                 st.rerun()
 
-        st.write("---")
-        # 手机端底控制栏
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            if st.button("⬅️"):
+        st.write("") # 间距
+        
+        # 三个按钮并列一行 (控制栏)
+        btn_col1, btn_col2, btn_col3 = st.columns(3)
+        with btn_col1:
+            if st.button("上一题"):
                 st.session_state.idx -= 1
-                st.session_state.show_answer = False
+                st.session_state.show_ans = False
                 st.rerun()
-        with col2:
-            if st.button("🎲"):
-                st.session_state.idx = random.randint(0, len(data)-1)
-                st.session_state.show_answer = False
+        with btn_col2:
+            if st.button("随机"):
+                st.session_state.idx = random.randint(0, total - 1)
+                st.session_state.show_ans = False
                 st.rerun()
-        with col3:
-            if st.button("➡️"):
+        with btn_col3:
+            if st.button("下一题"):
                 st.session_state.idx += 1
-                st.session_state.show_answer = False
+                st.session_state.show_ans = False
                 st.rerun()
+    else:
+        st.info("该模块暂无卡片数据")
 
-# =========================
-# 模式 2：模拟测试
-# =========================
 elif mode == "模拟测试":
     quiz_data = load_json(paths["quiz"])
     if quiz_data:
-        q = quiz_data[st.session_state.idx % len(quiz_data)]
-        st.caption(f"题目: {st.session_state.idx + 1} / {len(quiz_data)}")
+        total_q = len(quiz_data)
+        st.session_state.idx %= total_q
+        q = quiz_data[st.session_state.idx]
         
-        st.markdown(f"### {q['question']}")
+        st.caption(f"题目: {st.session_state.idx + 1} / {total_q}")
+        st.markdown(f"#### {q['question']}")
         
-        # 手机端为了防误触，单选也建议使用较宽的间距
         is_multi = q.get("type") == "multi"
-        q_key = f"quiz_{st.session_state.idx}"
+        q_key = f"q_{st.session_state.idx}"
         
         if is_multi:
             ans = st.multiselect("多选", q['options'], key=q_key)
-            if st.button("提交回答"):
-                st.session_state.show_answer = True
+            if st.button("提交回答", use_container_width=True):
+                st.session_state.show_ans = True
         else:
             ans = st.radio("单选", q['options'], index=None, key=q_key)
-            if ans: st.session_state.show_answer = True
+            if ans: st.session_state.show_ans = True
 
-        if st.session_state.show_answer:
-            correct = q['answer']
-            st.info(f"**正确答案索引：** {correct}\n\n**解析：** {q.get('explanation','')}")
-            
-        st.write("---")
-        c1, c2, c3 = st.columns(3)
-        with c1:
-            if st.button("上题"):
+        if st.session_state.show_ans:
+            st.warning(f"**正确索引：** {q['answer']}\n\n**解析：** {q.get('explanation','')}")
+
+        st.write("")
+        
+        # 三个按钮并列一行 (控制栏)
+        q_btn1, q_btn2, q_btn3 = st.columns(3)
+        with q_btn1:
+            if st.button("上一题", key="prev_q"):
                 st.session_state.idx -= 1
-                st.session_state.show_answer = False
+                st.session_state.show_ans = False
                 st.rerun()
-        with col2:
-             if st.button("随机"):
-                st.session_state.idx = random.randint(0, len(quiz_data)-1)
-                st.session_state.show_answer = False
+        with q_btn2:
+            if st.button("随机", key="rand_q"):
+                st.session_state.idx = random.randint(0, total_q - 1)
+                st.session_state.show_ans = False
                 st.rerun()
-        with c3:
-            if st.button("下题"):
+        with q_btn3:
+            if st.button("下一题", key="next_q"):
                 st.session_state.idx += 1
-                st.session_state.show_answer = False
+                st.session_state.show_ans = False
                 st.rerun()
+    else:
+        st.error("未找到测试题文件")
