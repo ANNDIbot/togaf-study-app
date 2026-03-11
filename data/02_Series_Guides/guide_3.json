@@ -1,0 +1,842 @@
+[
+{
+"id": 1,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Capability Definition",
+"question_cn": "什么是业务能力（Business Capability）？",
+"answer_cn": "业务能力是企业为实现其特定目的或结果而可能拥有的特定能力或产能。它聚焦于“做什么”（What），而非“如何做”（How）。"
+},
+{
+"id": 2,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Capability Components",
+"question_cn": "业务能力的四个核心组成部分是什么？",
+"answer_cn": "角色（Roles）、流程（Processes）、信息（Information）和资源（Resources）。"
+},
+{
+"id": 3,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Definition",
+"question_cn": "什么是价值流（Value Stream）？",
+"answer_cn": "价值流描述了企业为利益相关者创造价值端到端的活动序列。它通常从触发条件开始，以实现价值目标结束。"
+},
+{
+"id": 4,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Stages",
+"question_cn": "价值流阶段（Value Stream Stage）的典型特征是什么？",
+"answer_cn": "每个阶段都有明确的入口标准、出口标准以及在该阶段创造的增量价值。"
+},
+{
+"id": 5,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping",
+"question_cn": "信息映射（Information Mapping）的主要目的是什么？",
+"answer_cn": "提供一种方法来表达、描述和可视化对业务至关重要的信息概念，而非物理数据结构。"
+},
+{
+"id": 6,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Concept",
+"question_cn": "什么是信息概念（Information Concept）？",
+"answer_cn": "它是企业在特定业务上下文中识别、定义并使用的基本商业对象，如“客户”、“订单”或“产品”。"
+},
+{
+"id": 7,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Mapping",
+"question_cn": "组织映射（Organization Mapping）与组织架构图（Org Chart）的区别是什么？",
+"answer_cn": "组织架构图侧重汇报关系，而组织映射侧重于业务单元、合作伙伴及其在生态系统中的相互协作关系。"
+},
+{
+"id": 8,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Map Purpose",
+"question_cn": "组织映射在业务架构中的作用是什么？",
+"answer_cn": "它识别了拥有或使用业务能力、参与价值流并与信息概念建立关系的组织单元。"
+},
+{
+"id": 9,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Definition",
+"question_cn": "什么是业务模式（Business Model）？",
+"answer_cn": "业务模式描述了一个组织如何创造价值、交付价值以及获取价值的基本逻辑。"
+},
+{
+"id": 10,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Canvas (BMC)",
+"question_cn": "业务模式画布（BMC）中通常包含哪些模块？",
+"answer_cn": "包含价值主张、客户细分、渠道、客户关系、关键活动、核心资源、合作伙伴、成本结构和收入流。"
+},
+{
+"id": 11,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenarios",
+"question_cn": "什么是业务场景（Business Scenario）？",
+"answer_cn": "它是一种用于识别业务需求的方法，描述了业务环境、目标、参与者、问题以及解决该问题所需的架构要求。"
+},
+{
+"id": 12,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "SMART Objectives",
+"question_cn": "在业务场景中，SMART目标的含义是什么？",
+"answer_cn": "具体的 (Specific)、可衡量的 (Measurable)、可达到的 (Actionable)、相关的 (Realistic) 和有时间限制的 (Time-bound)。"
+},
+{
+"id": 13,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Leveling",
+"question_cn": "业务能力分层（Leveling）的原则是什么？",
+"answer_cn": "通常从高级别的通用能力（Level 1）向下分解到更具体的操作级能力，确保不重叠、不遗漏。"
+},
+{
+"id": 14,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Heat Mapping",
+"question_cn": "热点图（Heat Mapping）在业务架构中的主要用途是什么？",
+"answer_cn": "用于可视化分析，通过不同颜色标注哪些业务能力需要投资、存在性能缺陷或对当前战略至关重要。"
+},
+{
+"id": 15,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Cross-Mapping",
+"question_cn": "交叉映射（Cross-Mapping）的核心价值是什么？",
+"answer_cn": "它展示了架构中不同支柱之间的关系，例如：哪个业务单元（组织）执行哪个阶段的价值流，并利用哪些能力。"
+},
+{
+"id": 16,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream vs Process",
+"question_cn": "价值流与业务流程（Process）的主要区别是什么？",
+"answer_cn": "价值流关注对外部利益相关者的价值产出，是宏观的；流程关注具体的操作步骤和活动，是微观的。"
+},
+{
+"id": 17,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Map vs Data Model",
+"question_cn": "信息映射与数据模型的区别是什么？",
+"answer_cn": "信息映射是业务视角的逻辑抽象；数据模型通常是技术视角的物理或逻辑设计，涉及数据库架构。"
+},
+{
+"id": 18,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Unit",
+"question_cn": "什么是组织单元（Organization Unit）？",
+"answer_cn": "它是企业内部或外部具有明确职责和资源的实体，如部门、子公司或外部供应商。"
+},
+{
+"id": 19,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Proposition",
+"question_cn": "价值主张（Value Proposition）在业务模式中的作用是什么？",
+"answer_cn": "它定义了企业为满足特定客户细分需求而提供的产品或服务集合。"
+},
+{
+"id": 20,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Phases",
+"question_cn": "创建业务场景的主要阶段有哪些？",
+"answer_cn": "前提表述、规划、收集、分析、记录和审查。"
+},
+{
+"id": 21,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Map",
+"question_cn": "业务能力图（Business Capability Map）的结构通常是怎样的？",
+"answer_cn": "通常是一个分层视图，顶层反映业务核心领域，底层则是具体的能力项。"
+},
+{
+"id": 22,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Trigger",
+"question_cn": "什么是价值流的触发条件（Trigger）？",
+"answer_cn": "启动价值流并最终产生价值的事件或请求，例如客户提交订单。"
+},
+{
+"id": 23,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Object in ArchiMate",
+"question_cn": "在 ArchiMate 中，业务对象如何与信息概念对应？",
+"answer_cn": "ArchiMate 的业务对象（Business Object）通常用于表示业务架构中的核心信息概念。"
+},
+{
+"id": 24,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Strategic Alignment",
+"question_cn": "业务架构如何支持战略对齐？",
+"answer_cn": "通过将高层战略目标映射到具体的业务能力、价值流和组织单元，确保执行与愿景一致。"
+},
+{
+"id": 25,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Capability Name",
+"question_cn": "命名业务能力时的常用词类是什么？",
+"answer_cn": "通常采用“名词-动词”格式，如“客户管理”、“招聘管理”。"
+},
+{
+"id": 26,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Stakeholder in Value Stream",
+"question_cn": "谁是价值流的主要利益相关者（Stakeholder）？",
+"answer_cn": "通常是客户，但也可以是合作伙伴、内部员工或监管机构。"
+},
+{
+"id": 27,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Entity Relationship Diagram (ERD)",
+"question_cn": "ERD 如何在信息映射中使用？",
+"answer_cn": "ERD 可作为一种可视化技术，用于展示不同信息概念之间的业务关系和关联。"
+},
+{
+"id": 28,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Ecosystem",
+"question_cn": "组织生态系统（Organization Ecosystem）包含哪些部分？",
+"answer_cn": "包含内部组织单元以及外部的合作伙伴、供应商和客户群体。"
+},
+{
+"id": 29,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Revenue Streams",
+"question_cn": "业务模式中的收入流（Revenue Streams）代表什么？",
+"answer_cn": "代表企业从每个客户细分群体中获得的现金流（需扣除成本）。"
+},
+{
+"id": 30,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Gathering",
+"question_cn": "业务场景收集中常用的技术有哪些？",
+"answer_cn": "访谈、工作坊、问卷调查和对现有文档的审查。"
+},
+{
+"id": 31,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Stratification",
+"question_cn": "能力分层（Stratification）中通常有哪些类别？",
+"answer_cn": "通常分为战略、核心（运营）和支持（基础）三个层次。"
+},
+{
+"id": 32,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Item",
+"question_cn": "什么是价值项（Value Item）？",
+"answer_cn": "在价值流阶段产出的具体成果，这些成果共同构成了最终交付的价值。"
+},
+{
+"id": 33,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping Impact",
+"question_cn": "信息映射对 IT 架构有何直接影响？",
+"answer_cn": "它为数据架构和应用架构提供了业务需求的基准，指导数据库和 API 的设计。"
+},
+{
+"id": 34,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Mapping Benefits",
+"question_cn": "组织映射带来的关键收益是什么？",
+"answer_cn": "帮助识别业务责任归属、潜在的职能重叠以及跨职能协作的切入点。"
+},
+{
+"id": 35,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Innovation",
+"question_cn": "什么时候需要进行业务模式创新？",
+"answer_cn": "当面临竞争威胁、市场环境剧变或需要利用新技术实现增长时。"
+},
+{
+"id": 36,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Workshop",
+"question_cn": "业务场景工作坊中主要角色的任务是什么？",
+"answer_cn": "引导者负责流程，业务利益相关者提供领域知识，架构师负责捕获和建模需求。"
+},
+{
+"id": 37,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability/Value Stream Mapping",
+"question_cn": "如何将业务能力映射到价值流阶段？",
+"answer_cn": "通过确定该价值流阶段“启用”（Enable）或“支持”所需的具体能力来实现。"
+},
+{
+"id": 38,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Guiding Principles for Value Streams",
+"question_cn": "创建价值流地图的指导原则之一是什么？",
+"answer_cn": "必须始终从客户的角度定义价值，并确保端到端的完整性。"
+},
+{
+"id": 39,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Conceptual Data Model vs Info Map",
+"question_cn": "概念数据模型与信息映射可以共存吗？",
+"answer_cn": "可以，信息映射是业务视角的，而概念数据模型是数据管理视角的，两者相辅相成。"
+},
+{
+"id": 40,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Structure in Capability Model",
+"question_cn": "为什么不应基于组织结构构建能力模型？",
+"answer_cn": "组织结构经常变动，而业务能力相对稳定，基于能力的架构更具适应性。"
+},
+{
+"id": 41,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Customer Segments",
+"question_cn": "业务模式中的客户细分（Customer Segments）是什么？",
+"answer_cn": "企业旨在服务和接触的不同目标群体或组织。"
+},
+{
+"id": 42,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Checklist",
+"question_cn": "前提表述（Premise Formulation）阶段的检查清单重点是什么？",
+"answer_cn": "确认问题陈述是否清晰、范围是否界定以及业务赞助商是否已确定。"
+},
+{
+"id": 43,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Top-down Approach in Capabilities",
+"question_cn": "业务能力建模的“自顶向下”方法是什么？",
+"answer_cn": "从战略和业务模型出发，将其分解为核心业务领域，再进一步细化为具体能力。"
+},
+{
+"id": 44,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Decomposition",
+"question_cn": "价值流分解（Decomposition）的目的是什么？",
+"answer_cn": "将复杂的端到端价值创造过程划分为可管理的阶段，以便进行能力分析。"
+},
+{
+"id": 45,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping & ADM Phase B",
+"question_cn": "信息映射在 TOGAF ADM 的 B 阶段起到什么作用？",
+"answer_cn": "它是定义基准和目标业务架构的关键活动，帮助明确业务所需的信息资产。"
+},
+{
+"id": 46,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "External Partners in Org Map",
+"question_cn": "在组织映射中包含外部合作伙伴的意义何在？",
+"answer_cn": "它展示了企业边界外的资源如何通过协作共同交付业务能力。"
+},
+{
+"id": 47,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model vs Strategy",
+"question_cn": "业务模式与战略的关系是什么？",
+"answer_cn": "战略决定方向（做什么），业务模式描述实现战略的机制（如何盈利和运作）。"
+},
+{
+"id": 48,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Analyze Step in Business Scenario",
+"question_cn": "业务场景的分析步骤（Analyze Step）的核心产出是什么？",
+"answer_cn": "跨业务流程、利益相关者、目标和问题的关系矩阵或模型。"
+},
+{
+"id": 49,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Ownership",
+"question_cn": "在组织映射中，如何界定能力的所有权？",
+"answer_cn": "通过将组织单元映射到具体能力，明确谁负责该能力的性能、演进和维护。"
+},
+{
+"id": 50,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Exit Criteria",
+"question_cn": "价值流阶段出口标准（Exit Criteria）通常包括什么？",
+"answer_cn": "阶段目标的达成、特定信息对象的产出以及增量价值的交付。"
+},
+{
+"id": 51,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "UML for Information Mapping",
+"question_cn": "UML 在信息映射中常用于创建哪种图？",
+"answer_cn": "类图（Class Diagram），用于定义信息概念及其之间的关联。"
+},
+{
+"id": 52,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Service vs Capability",
+"question_cn": "业务服务与业务能力的区别是什么？",
+"answer_cn": "能力是内在的潜能（做什么）；服务是能力的外部暴露或交付形式。"
+},
+{
+"id": 53,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Cost Structure",
+"question_cn": "业务模式中的成本结构（Cost Structure）包含哪些内容？",
+"answer_cn": "在特定业务模式运作中产生的所有费用，如基础设施、人力和技术成本。"
+},
+{
+"id": 54,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Active Listening",
+"question_cn": "在业务场景收集中，积极倾听（Active Listening）的重要性体现在哪？",
+"answer_cn": "确保架构师准确理解业务痛点，而非带入主观偏见。"
+},
+{
+"id": 55,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Taxonomy",
+"question_cn": "业务能力分类法（Taxonomy）对企业架构的贡献是什么？",
+"answer_cn": "它提供了一套通用的语言，消除了跨部门沟通中的术语误解。"
+},
+{
+"id": 56,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Customer Value vs Business Value",
+"question_cn": "客户价值与业务价值在价值流中的侧重有何不同？",
+"answer_cn": "客户价值是端到端的目的；业务价值则是企业在满足客户过程中获得的收益（如效率或利润）。"
+},
+{
+"id": 57,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping to Business Capability",
+"question_cn": "如何描述信息映射与业务能力的关系？",
+"answer_cn": "业务能力不仅“使用”信息，还“产生”或“管理”特定的信息概念。"
+},
+{
+"id": 58,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Unit Roles",
+"question_cn": "组织映射中的业务单元角色如何定义？",
+"answer_cn": "基于其在流程或能力执行中承担的具体职责（如：执行者、决策者、知情者）。"
+},
+{
+"id": 59,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Chain vs Value Stream",
+"question_cn": "波特价值链（Value Chain）与 TOGAF 价值流的区别？",
+"answer_cn": "价值链是组织级的资源分类框架；价值流是针对特定价值交付目标的动态过程模型。"
+},
+{
+"id": 60,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Documentation Step in Business Scenario",
+"question_cn": "业务场景记录步骤（Documentation Step）的关键产出？",
+"answer_cn": "业务场景文档，通常作为架构愿景或业务架构说明书的输入。"
+},
+{
+"id": 61,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Maturity",
+"question_cn": "什么是业务能力成熟度？",
+"answer_cn": "对特定能力当前状态与目标状态差异的评估，常用于缺口分析。"
+},
+{
+"id": 62,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Stage Name",
+"question_cn": "价值流阶段命名的最佳实践？",
+"answer_cn": "通常采用“动词-名词”结构，如“处理订单”、“分发产品”。"
+},
+{
+"id": 63,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Data vs Information in BA",
+"question_cn": "在业务架构中，数据与信息的区别？",
+"answer_cn": "信息是业务视角的有意义的上下文；数据是技术视角的符号和记录。"
+},
+{
+"id": 64,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Cross-Boundary Organization",
+"question_cn": "组织映射如何处理跨边界组织？",
+"answer_cn": "通过建模“虚拟组织单元”或跨部门团队来表示超越物理边界的协作关系。"
+},
+{
+"id": 65,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Four-Box Business Model",
+"question_cn": "除了画布，还有哪些常见的业务模式框架？",
+"answer_cn": "例如“四盒模型”（Four-Box Business Model Framework），包含价值、资源、流程和盈利。"
+},
+{
+"id": 66,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Review",
+"question_cn": "审查步骤（Review Step）的主要目的？",
+"answer_cn": "确保业务利益相关者认可记录的需求和模型真实反映了他们的意图。"
+},
+{
+"id": 67,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Enabler",
+"question_cn": "什么是能力使能器（Enabler）？",
+"answer_cn": "支撑能力运作的具体要素，如特定的 IT 系统、技能培训或数据资产。"
+},
+{
+"id": 68,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Lean Value Stream",
+"question_cn": "精益价值流（Lean Value Stream）关注的重点是什么？",
+"answer_cn": "识别并消除交付过程中的浪费，优化从请求到交付的时间。"
+},
+{
+"id": 69,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Conceptual Information Model",
+"question_cn": "概念信息模型的主要利益相关者是谁？",
+"answer_cn": "主要是业务专家和业务架构师，用于统一业务术语。"
+},
+{
+"id": 70,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Map vs Legal Structure",
+"question_cn": "组织映射必须反映法律实体结构吗？",
+"answer_cn": "不一定，它应反映业务运作的逻辑结构，可能跨越多个法律实体。"
+},
+{
+"id": 71,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Cube",
+"question_cn": "业务模式立方体（Business Model Cube）涉及哪些维度？",
+"answer_cn": "价值、流程、资源、客户、能力等多个交互维度。"
+},
+{
+"id": 72,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Alternative Analysis in Scenarios",
+"question_cn": "业务场景中的备选方案分析的作用？",
+"answer_cn": "评估解决业务问题的不同技术或流程路径，选出最优解。"
+},
+{
+"id": 73,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Grouping",
+"question_cn": "能力分组（Grouping）的常见依据？",
+"answer_cn": "通常根据业务领域（如财务、人力资源、供应链）进行分组。"
+},
+{
+"id": 74,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Mapping Scenarios",
+"question_cn": "常见的价值流映射场景有哪些？",
+"answer_cn": "基线映射（当前态）、目标映射（未来态）和差异分析。"
+},
+{
+"id": 75,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Object Lifecycle",
+"question_cn": "信息对象生命周期在业务架构中的意义？",
+"answer_cn": "描述信息从创建、使用、维护到销毁的过程，帮助明确每个阶段的能力需求。"
+},
+{
+"id": 76,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Partner vs Supplier in BMC",
+"question_cn": "业务模式中合作伙伴与供应商的区别？",
+"answer_cn": "合作伙伴通常涉及更深层的协作和价值共创；供应商更多是资源或服务的提供方。"
+},
+{
+"id": 77,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Role Play in Scenarios",
+"question_cn": "角色扮演在业务场景中有什么技巧？",
+"answer_cn": "让利益相关者扮演不同角色（如客户或服务人员），以直观发现流程痛点。"
+},
+{
+"id": 78,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Function vs Capability",
+"question_cn": "业务功能与业务能力的关系？",
+"answer_cn": "功能通常是组织内部分工的结果；能力则是为交付结果所需的跨功能集合。"
+},
+{
+"id": 79,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Proposition Mapping",
+"question_cn": "如何将价值主张映射到价值流？",
+"answer_cn": "每个价值流应能交付一个或多个价值主张中的特定利益。"
+},
+{
+"id": 80,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Architecture Pillars",
+"question_cn": "TOGAF 业务架构的“四大支柱”是什么？",
+"answer_cn": "业务能力、价值流、组织和信息。"
+},
+{
+"id": 81,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Assessment",
+"question_cn": "如何评估业务模式的有效性？",
+"answer_cn": "通过检查其各模块的互补性、盈利能力、抗风险能力和市场适应性。"
+},
+{
+"id": 82,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Iterative Scenario Development",
+"question_cn": "业务场景开发为什么要迭代？",
+"answer_cn": "随着需求收集的深入，对目标和问题的理解会不断演进，需反复校准。"
+},
+{
+"id": 83,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Cross-Mapping: Info/Capability",
+"question_cn": "信息映射到能力的映射表显示了什么？",
+"answer_cn": "显示了哪些能力是特定信息概念的主要创建者、读取者、更新者或删除者（CRUD）。"
+},
+{
+"id": 84,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Stakeholder Map",
+"question_cn": "什么是利益相关者图（Stakeholder Map）？",
+"answer_cn": "一种识别对业务有利益关系或影响力的各方（个人或团体）及其利益点的工具。"
+},
+{
+"id": 85,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Analysis",
+"question_cn": "价值分析（Value Analysis）的目的是什么？",
+"answer_cn": "量化评估价值流各阶段的成本、时间和产出的质量，寻找优化机会。"
+},
+{
+"id": 86,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Structured Information Strategy",
+"question_cn": "结构化信息策略在信息映射中的作用？",
+"answer_cn": "定义如何管理、治理和分类企业核心信息资产的长期方针。"
+},
+{
+"id": 87,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Change Management",
+"question_cn": "业务架构如何支持组织变革管理？",
+"answer_cn": "通过组织映射和能力映射，明确变革对人员职责、技能需求和资源分配的影响。"
+},
+{
+"id": 88,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Context in BA",
+"question_cn": "什么是业务上下文（Business Context）？",
+"answer_cn": "外部宏观环境、行业趋势以及内部愿景共同构成的业务架构运行背景。"
+},
+{
+"id": 89,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Strategic Value Stream",
+"question_cn": "什么是战略价值流？",
+"answer_cn": "直接影响组织战略目标实现的、具有高优先级的关键业务过程。"
+},
+{
+"id": 90,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Concept Mapping",
+"question_cn": "如何将业务概念映射到 ArchiMate 架构？",
+"answer_cn": "使用 ArchiMate 的核心层和动机层元素来表达业务架构中的抽象概念。"
+},
+{
+"id": 91,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Resource in Capability",
+"question_cn": "业务能力组件中的资源（Resources）指什么？",
+"answer_cn": "包括实物资产、技术资产、无形资产（如品牌）和财务资本。"
+},
+{
+"id": 92,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Unit Interaction",
+"question_cn": "组织单元之间的交互模式有哪些？",
+"answer_cn": "汇报、协作、服务提供、监督和决策参与。"
+},
+{
+"id": 93,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Model Canvas - Channels",
+"question_cn": "渠道（Channels）描述了什么？",
+"answer_cn": "公司如何与客户细分群体沟通并交付其价值主张。"
+},
+{
+"id": 94,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Requirements in Scenarios",
+"question_cn": "业务场景如何推导出技术需求？",
+"answer_cn": "通过分析解决业务问题所需的“架构要求”，将其转化为应用、数据和技术架构的规范。"
+},
+{
+"id": 95,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Gap Analysis",
+"question_cn": "如何进行能力缺口分析？",
+"answer_cn": "对比基线能力（当前）与目标能力（未来），识别并记录缺失、冗余或需要提升的能力项。"
+},
+{
+"id": 96,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Item vs Value Stream Stage",
+"question_cn": "价值项与价值流阶段的对应关系？",
+"answer_cn": "一个价值流阶段通常产出一个或多个价值项，累积成最终价值。"
+},
+{
+"id": 97,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Information vs Data Assets",
+"question_cn": "业务信息与数据资产的层级关系？",
+"answer_cn": "业务信息处于更高层级的业务抽象，数据资产是其物理表现或底层存储。"
+},
+{
+"id": 98,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Collaborative Team in Org Map",
+"question_cn": "协作团队（Collaborative Team）在组织映射中的表现？",
+"answer_cn": "通常表现为跨职能节点，旨在解决单一业务单元无法独立完成的任务。"
+},
+{
+"id": 99,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Customer Relationship in BMC",
+"question_cn": "客户关系（Customer Relationship）指什么？",
+"answer_cn": "公司与特定客户细分群体建立的关系类型（如自动化服务、个人助理等）。"
+},
+{
+"id": 100,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Premise",
+"question_cn": "前提表述阶段（Premise Formulation）的主要任务？",
+"answer_cn": "确定业务问题的边界，建立架构工作的初步愿景和共识。"
+},
+{
+"id": 101,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping Steps",
+"question_cn": "进行信息映射的基本步骤？",
+"answer_cn": "识别核心业务对象、定义其含义、确定其属性、分析对象间的关系。"
+},
+{
+"id": 102,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Entrance Criteria",
+"question_cn": "价值流阶段入口标准（Entrance Criteria）的作用？",
+"answer_cn": "确保该阶段启动前，必要的信息和前置条件已准备就绪。"
+},
+{
+"id": 103,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability/Organization Matrix",
+"question_cn": "能力/组织矩阵揭示了什么？",
+"answer_cn": "显示了哪些组织单元（业务部门、合作伙伴）支撑或拥有哪些业务能力。"
+},
+{
+"id": 104,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Process Bind Point",
+"question_cn": "在业务场景中，为什么业务流程是“绑定焦点”（Binding focal point）？",
+"answer_cn": "因为业务流程将参与者、目标、问题和产出有机地连接在一起。"
+},
+{
+"id": 105,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Ecosystem Visualization",
+"question_cn": "业务生态系统可视化的目的是什么？",
+"answer_cn": "通过图示化手段展现企业内外部利益相关者、价值流、能力的互动全景。"
+},
+{
+"id": 106,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Role in Business Capability",
+"question_cn": "能力组件中的“角色”具体指什么？",
+"answer_cn": "不是指个人姓名，而是指执行特定活动所需的技能组合或职位职能。"
+},
+{
+"id": 107,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Scoping",
+"question_cn": "定义价值流范围（Scoping）的原则？",
+"answer_cn": "应涵盖从最初的利益相关者需求产生到最终满足该需求的全过程。"
+},
+{
+"id": 108,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Mapping Checklist",
+"question_cn": "验证信息映射质量的常见标准？",
+"answer_cn": "定义是否无歧义、是否覆盖所有核心业务对象、是否被业务部门认可。"
+},
+{
+"id": 109,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Unit Hierarchy",
+"question_cn": "在组织映射中，如何处理多层级组织单元？",
+"answer_cn": "通过父子关系链接，展示总部、分支机构及底层操作单元的逻辑从属。"
+},
+{
+"id": 110,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Revenue Stream Types",
+"question_cn": "业务模式中常见的收入流类型？",
+"answer_cn": "资产销售、使用费、订阅费、租赁费、授权费等。"
+},
+{
+"id": 111,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Analytical Skills for Scenarios",
+"question_cn": "架构师在业务场景分析中需要哪些技能？",
+"answer_cn": "归纳、演绎、系统思维、以及将非结构化访谈转化为结构化模型的能力。"
+},
+{
+"id": 112,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Capability Map Layout",
+"question_cn": "典型的能力图布局如何安排？",
+"answer_cn": "从左到右或从上到下展示业务生命周期，或者按战略、运营、支持分块展示。"
+},
+{
+"id": 113,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Efficiency Analysis",
+"question_cn": "如何分析价值流效率？",
+"answer_cn": "通过识别非增值阶段（Non-value-added stages）和寻找处理延迟的根本原因。"
+},
+{
+"id": 114,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Logical Information Structure",
+"question_cn": "逻辑信息结构在映射中的意义？",
+"answer_cn": "它通过分类和分组，将庞杂的信息概念转化为易于理解的业务字典。"
+},
+{
+"id": 115,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Organization Map vs Org Culture",
+"question_cn": "组织映射能反映组织文化吗？",
+"answer_cn": "它不能直接建模文化，但通过展示协作方式和权力分配，间接反映管理理念。"
+},
+{
+"id": 116,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Key Activities in BMC",
+"question_cn": "关键活动（Key Activities）指什么？",
+"answer_cn": "公司为使其业务模式运作正常而必须采取的最重要行动。"
+},
+{
+"id": 117,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Business Scenario Gathering Tools",
+"question_cn": "收集中使用的“亲和分析”（Affinity Analysis）是什么？",
+"answer_cn": "一种通过将大量需求或点子根据逻辑关系进行归类整理的技术。"
+},
+{
+"id": 118,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Capability Reuse",
+"question_cn": "为什么业务架构强调能力重用？",
+"answer_cn": "减少在不同业务部门重复建设相同能力的成本，并提高组织响应速度。"
+},
+{
+"id": 119,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Value Stream Logic",
+"question_cn": "价值流映射的底层逻辑是什么？",
+"answer_cn": "是通过连续的、对客户有意义的活动阶段来实现价值最大化。"
+},
+{
+"id": 120,
+"module": "Guide 3 - Business Architecture Deep-Dive",
+"topic": "Information Governance",
+"question_cn": "信息映射如何辅助信息治理？",
+"answer_cn": "它明确了信息概念及其所有权，为数据管理和安全政策提供了业务基准。"
+}
+]
