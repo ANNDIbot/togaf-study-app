@@ -6,9 +6,10 @@ from pathlib import Path
 # --- 页面配置 ---
 st.set_page_config(page_title="TOGAF 学习助手", layout="wide")
 
-# 针对移动端的样式优化
+# 针对移动端和 UI 样式的深度优化
 st.markdown("""
     <style>
+    /* 1. 确保按钮在同一行不换行 */
     div[data-testid="stHorizontalBlock"] > div {
         min-width: 0px !important;
     }
@@ -17,9 +18,18 @@ st.markdown("""
         height: 3.5rem !important;
         font-size: 16px !important;
     }
-    /* 让复选框看起来更像列表条目 */
-    .stCheckbox {
-        padding: 5px 0;
+    
+    /* 2. 修复多选题行距过宽问题，使其与单选题一致 */
+    [data-testid="stCheckbox"] {
+        margin-bottom: -15px !important; /* 抵消默认外边距 */
+        padding: 5px 0 !important;
+    }
+    
+    /* 3. 卡片容器样式 */
+    .card-box {
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px solid rgba(128, 128, 128, 0.2);
     }
     </style>
 """, unsafe_allow_html=True)
@@ -72,7 +82,7 @@ with st.sidebar:
     if not hierarchy: st.stop()
     
     sel_cat = st.selectbox("分类", list(hierarchy.keys()))
-    sel_mod = st.radio("模块", list(hierarchy[sel_cat].keys()))
+    sel_mod = st.radio("模块内容", list(hierarchy[sel_cat].keys()))
     
     current_key = f"{sel_cat}_{sel_mod}"
     if current_key != st.session_state.last_mod:
@@ -83,7 +93,7 @@ with st.sidebar:
         st.session_state.last_mod = current_key
 
     st.divider()
-    mode = st.radio("模式", ["知识卡片", "模拟测试"], horizontal=True)
+    mode = st.radio("模式切换", ["知识卡片", "模拟测试"], horizontal=True)
 
 paths = hierarchy[sel_cat][sel_mod]
 
@@ -108,7 +118,7 @@ if mode == "知识卡片":
                     st.session_state.show_answer = False
                     st.rerun()
             else:
-                if st.button("点击查看答案", type="primary", use_container_width=True):
+                if st.button("查看答案", type="primary", use_container_width=True):
                     st.session_state.show_answer = True
                     st.rerun()
 
@@ -130,7 +140,7 @@ if mode == "知识卡片":
                 st.session_state.show_answer = False
                 st.rerun()
     else:
-        st.info("暂无卡片数据")
+        st.info("该模块暂无卡片数据")
 
 # =========================
 # 模式 2：模拟测试
@@ -141,7 +151,7 @@ elif mode == "模拟测试":
         total_q = len(quiz_data)
         st.session_state.quiz_idx %= total_q
         q = quiz_data[st.session_state.quiz_idx]
-        st.caption(f"题目: {st.session_state.quiz_idx + 1} / {total_q}")
+        st.caption(f"进度: {st.session_state.quiz_idx + 1} / {total_q}")
         
         with st.container(border=True):
             st.markdown(f"### {q['question']}")
@@ -150,30 +160,31 @@ elif mode == "模拟测试":
             q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
             
             if is_multi:
-                # --- 重构：多选题采用复选框列表形式 ---
+                # --- 多选题 (紧凑布局) ---
                 st.write("(多选)")
                 selected_indices = []
+                # 使用 container 包裹以进一步控制间距
                 for i, option in enumerate(q['options']):
-                    # 为每个复选框创建唯一 key
                     checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
                     if checked:
                         selected_indices.append(i)
                 
                 if not st.session_state.show_answer:
+                    st.write("")
                     if st.button("确认提交", type="primary", use_container_width=True):
                         st.session_state.user_ans = sorted(selected_indices)
                         st.session_state.show_answer = True
                         st.rerun()
             else:
-                # --- 单选题保持 radio 形式 ---
+                # --- 单选题 ---
                 st.write("(单选)")
-                choice = st.radio("选择答案", q['options'], index=None, key=f"{q_key_prefix}_radio", label_visibility="collapsed", disabled=st.session_state.show_answer)
+                choice = st.radio("选项", q['options'], index=None, key=f"{q_key_prefix}_rad", label_visibility="collapsed", disabled=st.session_state.show_answer)
                 if choice is not None and not st.session_state.show_answer:
                     st.session_state.user_ans = [q['options'].index(choice)]
                     st.session_state.show_answer = True
                     st.rerun()
 
-            # --- 结果显示 ---
+            # --- 结果反馈 ---
             if st.session_state.show_answer:
                 is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
                 if is_correct:
@@ -207,4 +218,4 @@ elif mode == "模拟测试":
                 st.session_state.user_ans = None
                 st.rerun()
     else:
-        st.warning("暂无测试题数据")
+        st.warning("该模块暂无测试题数据")
