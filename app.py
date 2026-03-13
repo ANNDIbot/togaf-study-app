@@ -30,20 +30,23 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # =========================
-# 密码保护功能
+# 密码保护逻辑（整合 Secrets）
 # =========================
 def check_password():
-    """如果密码正确则返回 True，否则显示输入框并返回 False"""
+    """如果密码正确则返回 True，否则显示输入框"""
     def password_entered():
-        """检查输入的密码是否正确"""
-        if st.session_state["password"] == "0602aw":
+        """从密钥库读取密码并验证"""
+        # 优先读取名为 APP_PASSWORD 的 Secret，读不到则默认使用 0602aw
+        correct_password = st.secrets.get("APP_PASSWORD", "0602aw")
+        
+        if st.session_state["password"] == correct_password:
             st.session_state["password_correct"] = True
-            del st.session_state["password"]  # 验证后删除 session 里的明文密码
+            del st.session_state["password"]  # 安全起见，删除明文密码
         else:
             st.session_state["password_correct"] = False
 
     if "password_correct" not in st.session_state:
-        # 还没输入过密码
+        # 初始进入，显示输入界面
         st.title("🔒 TOGAF 学习系统")
         st.text_input(
             "请输入访问密码以继续", 
@@ -51,11 +54,10 @@ def check_password():
             on_change=password_entered, 
             key="password"
         )
-        if "password_correct" in st.session_state and not st.session_state["password_correct"]:
-            st.error("😕 密码错误，请重试")
         return False
     elif not st.session_state["password_correct"]:
-        # 密码输入错误
+        # 密码错误，重新显示输入并提示
+        st.title("🔒 TOGAF 学习系统")
         st.text_input(
             "请输入访问密码以继续", 
             type="password", 
@@ -65,11 +67,11 @@ def check_password():
         st.error("😕 密码错误，请重试")
         return False
     else:
-        # 密码正确
+        # 验证通过
         return True
 
 # =========================
-# 核心数据加载函数
+# 核心数据处理逻辑
 # =========================
 DATA_DIR = Path("data")
 
@@ -103,29 +105,30 @@ def get_hierarchy():
     return hierarchy
 
 # =========================
-# 主程序逻辑封装
+# 学习页面 UI
 # =========================
 def main_app():
-    # 初始化 Session State
+    # 初始化状态
     if "card_idx" not in st.session_state: st.session_state.card_idx = 0
     if "quiz_idx" not in st.session_state: st.session_state.quiz_idx = 0
     if "show_answer" not in st.session_state: st.session_state.show_answer = False
     if "user_ans" not in st.session_state: st.session_state.user_ans = None
     if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 
-    # 侧边栏
+    # 加载目录
     hierarchy = get_hierarchy()
 
     with st.sidebar:
         st.title("TOGAF Study")
-        if not hierarchy: 
-            st.error("未发现数据！请检查 data 文件夹。")
+        if not hierarchy:
+            st.error("未发现数据！")
             st.stop()
         
         sel_cat = st.selectbox("分类", list(hierarchy.keys()))
         mod_options = list(hierarchy[sel_cat].keys())
         sel_mod = st.radio("模块内容", mod_options)
         
+        # 模块切换重置状态
         current_key = f"{sel_cat}_{sel_mod}"
         if current_key != st.session_state.last_mod:
             st.session_state.card_idx = 0
@@ -135,16 +138,15 @@ def main_app():
             st.session_state.last_mod = current_key
 
         st.divider()
-        mode = st.radio("模式切换", ["知识卡片", "模拟测试"], horizontal=True)
+        mode = st.radio("模式", ["知识卡片", "模拟测试"], horizontal=True)
         
-        # 退出登录按钮
         if st.button("退出登录"):
-            st.session_state["password_correct"] = False
+            st.session_state.clear()
             st.rerun()
 
     paths = hierarchy[sel_cat][sel_mod]
 
-    # --- 模式 1：知识卡片 ---
+    # --- 知识卡片模式 ---
     if mode == "知识卡片":
         data = load_json(paths["content"])
         if data:
@@ -176,7 +178,7 @@ def main_app():
                     st.rerun()
             with c2:
                 if st.button("随机"):
-                    st.session_state.card_idx = random.randint(0, total - 1)
+                    st.session_state.card_idx = random.randint(0, total-1)
                     st.session_state.show_answer = False
                     st.rerun()
             with c3:
@@ -185,9 +187,9 @@ def main_app():
                     st.session_state.show_answer = False
                     st.rerun()
         else:
-            st.info("该模块暂无卡片数据")
+            st.info("暂无卡片数据")
 
-    # --- 模式 2：模拟测试 ---
+    # --- 模拟测试模式 ---
     elif mode == "模拟测试":
         quiz_data = load_json(paths["quiz"])
         if quiz_data:
@@ -199,24 +201,20 @@ def main_app():
             with st.container(border=True):
                 st.markdown(f"### {q['question']}")
                 is_multi = q.get("type") == "multi" or len(q.get("answer", [])) > 1
-                q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
+                q_key = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
                 
                 if is_multi:
-                    st.write("(多选)")
-                    selected_indices = []
-                    for i, option in enumerate(q['options']):
-                        checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
-                        if checked: selected_indices.append(i)
-                    
+                    selected = []
+                    for i, opt in enumerate(q['options']):
+                        if st.checkbox(opt, key=f"{q_key}_cb_{i}", disabled=st.session_state.show_answer):
+                            selected.append(i)
                     if not st.session_state.show_answer:
-                        st.write("")
                         if st.button("确认提交", type="primary", use_container_width=True):
-                            st.session_state.user_ans = sorted(selected_indices)
+                            st.session_state.user_ans = sorted(selected)
                             st.session_state.show_answer = True
                             st.rerun()
                 else:
-                    st.write("(单选)")
-                    choice = st.radio("选项", q['options'], index=None, key=f"{q_key_prefix}_rad", label_visibility="collapsed", disabled=st.session_state.show_answer)
+                    choice = st.radio("选项", q['options'], index=None, key=f"{q_key}_rad", disabled=st.session_state.show_answer)
                     if choice is not None and not st.session_state.show_answer:
                         st.session_state.user_ans = [q['options'].index(choice)]
                         st.session_state.show_answer = True
@@ -227,10 +225,8 @@ def main_app():
                     if is_correct: st.success("回答正确")
                     else: st.error("回答错误")
                     
-                    correct_text = [q['options'][i] for i in q['answer']]
-                    st.warning(f"**正确答案：** {', '.join(correct_text)}")
-                    with st.expander("查看解析", expanded=True):
-                        st.write(q.get("explanation", "暂无解析"))
+                    st.warning(f"**正确答案：** {', '.join([q['options'][i] for i in q['answer']])}")
+                    st.write(f"**解析：** {q.get('explanation', '无')}")
 
             st.write("")
             q1, q2, q3 = st.columns(3)
@@ -238,25 +234,22 @@ def main_app():
                 if st.button("上一题", key="q_prev"):
                     st.session_state.quiz_idx -= 1
                     st.session_state.show_answer = False
-                    st.session_state.user_ans = None
                     st.rerun()
             with q2:
                 if st.button("随机", key="q_rand"):
-                    st.session_state.quiz_idx = random.randint(0, total_q - 1)
+                    st.session_state.quiz_idx = random.randint(0, total_q-1)
                     st.session_state.show_answer = False
-                    st.session_state.user_ans = None
                     st.rerun()
             with q3:
                 if st.button("下一题", key="q_next"):
                     st.session_state.quiz_idx += 1
                     st.session_state.show_answer = False
-                    st.session_state.user_ans = None
                     st.rerun()
         else:
-            st.warning("该模块暂无测试题数据")
+            st.warning("暂无测试题")
 
 # =========================
-# 运行入口
+# 启动程序
 # =========================
 if check_password():
     main_app()
