@@ -37,7 +37,7 @@ def check_password():
     def password_entered():
         """从密钥库读取密码并验证"""
         # 优先读取名为 APP_PASSWORD 的 Secret，读不到则默认使用 0602aw
-        correct_password = st.secrets.get("APP_PASSWORD", "0602aw")
+        correct_password = st.secrets.get("APP_PASSWORD")
         
         if st.session_state["password"] == correct_password:
             st.session_state["password_correct"] = True
