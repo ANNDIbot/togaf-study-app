@@ -29,11 +29,50 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-DATA_DIR = Path("data")
+# =========================
+# 密码保护功能
+# =========================
+def check_password():
+    """如果密码正确则返回 True，否则显示输入框并返回 False"""
+    def password_entered():
+        """检查输入的密码是否正确"""
+        if st.session_state["password"] == "0602aw":
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # 验证后删除 session 里的明文密码
+        else:
+            st.session_state["password_correct"] = False
+
+    if "password_correct" not in st.session_state:
+        # 还没输入过密码
+        st.title("🔒 TOGAF 学习系统")
+        st.text_input(
+            "请输入访问密码以继续", 
+            type="password", 
+            on_change=password_entered, 
+            key="password"
+        )
+        if "password_correct" in st.session_state and not st.session_state["password_correct"]:
+            st.error("😕 密码错误，请重试")
+        return False
+    elif not st.session_state["password_correct"]:
+        # 密码输入错误
+        st.text_input(
+            "请输入访问密码以继续", 
+            type="password", 
+            on_change=password_entered, 
+            key="password"
+        )
+        st.error("😕 密码错误，请重试")
+        return False
+    else:
+        # 密码正确
+        return True
 
 # =========================
 # 核心数据加载函数
 # =========================
+DATA_DIR = Path("data")
+
 def load_json(path: Path):
     if not path or not path.exists():
         return []
@@ -44,198 +83,180 @@ def load_json(path: Path):
         return []
 
 def get_hierarchy():
-    """
-    改进的文件扫描逻辑：
-    1. 自动遍历 data 下的所有子文件夹
-    2. 自动识别所有非 quiz 结尾的 json 为内容模块
-    3. 自动匹配对应的 quiz 文件
-    """
     hierarchy = {}
     if not DATA_DIR.exists():
         return hierarchy
     
-    # 1. 扫描分类目录
     categories = sorted([d for d in DATA_DIR.iterdir() if d.is_dir()])
-    
     for cat_path in categories:
         cat_display = cat_path.name.split('_', 1)[-1] if '_' in cat_path.name else cat_path.name
         hierarchy[cat_display] = {}
-        
-        # 2. 获取该目录下所有的 json 文件
         all_jsons = list(cat_path.glob("*.json"))
-        
-        # 3. 筛选出内容文件（不含 _quiz 的）
         content_files = sorted([f for f in all_jsons if "_quiz" not in f.name])
-        
         for cf in content_files:
-            # 生成显示名称，例如 "guide2" -> "Guide 2"
             mod_display = cf.stem.replace('_', ' ').strip().title()
-            
-            # 4. 尝试寻找对应的测试文件
-            # 匹配规则：文件名 + _quiz.json 或 文件名去掉末尾数字 + _quiz.json
             potential_quiz = cat_path / f"{cf.stem}_quiz.json"
-            
             hierarchy[cat_display][mod_display] = {
                 "content": cf,
                 "quiz": potential_quiz if potential_quiz.exists() else None
             }
-            
     return hierarchy
 
 # =========================
-# 初始化 Session State
+# 主程序逻辑封装
 # =========================
-if "card_idx" not in st.session_state: st.session_state.card_idx = 0
-if "quiz_idx" not in st.session_state: st.session_state.quiz_idx = 0
-if "show_answer" not in st.session_state: st.session_state.show_answer = False
-if "user_ans" not in st.session_state: st.session_state.user_ans = None
-if "last_mod" not in st.session_state: st.session_state.last_mod = ""
+def main_app():
+    # 初始化 Session State
+    if "card_idx" not in st.session_state: st.session_state.card_idx = 0
+    if "quiz_idx" not in st.session_state: st.session_state.quiz_idx = 0
+    if "show_answer" not in st.session_state: st.session_state.show_answer = False
+    if "user_ans" not in st.session_state: st.session_state.user_ans = None
+    if "last_mod" not in st.session_state: st.session_state.last_mod = ""
 
-# =========================
-# 侧边栏
-# =========================
-hierarchy = get_hierarchy()
+    # 侧边栏
+    hierarchy = get_hierarchy()
 
-with st.sidebar:
-    st.title("TOGAF Study")
-    if not hierarchy: 
-        st.error("未发现数据！请检查 data 文件夹是否存在 JSON 文件。")
-        st.stop()
-    
-    # 分类选择
-    sel_cat = st.selectbox("分类", list(hierarchy.keys()))
-    
-    # 模块选择 - 这里的列表现在会包含 guide2, guide3, guide4
-    mod_options = list(hierarchy[sel_cat].keys())
-    sel_mod = st.radio("模块内容", mod_options)
-    
-    # 切换检测
-    current_key = f"{sel_cat}_{sel_mod}"
-    if current_key != st.session_state.last_mod:
-        st.session_state.card_idx = 0
-        st.session_state.quiz_idx = 0
-        st.session_state.show_answer = False
-        st.session_state.user_ans = None
-        st.session_state.last_mod = current_key
-
-    st.divider()
-    mode = st.radio("模式切换", ["知识卡片", "模拟测试"], horizontal=True)
-
-# 获取当前路径
-paths = hierarchy[sel_cat][sel_mod]
-
-# =========================
-# 模式 1：知识卡片
-# =========================
-if mode == "知识卡片":
-    data = load_json(paths["content"])
-    if data:
-        total = len(data)
-        st.session_state.card_idx %= total
-        item = data[st.session_state.card_idx]
-        st.caption(f"进度: {st.session_state.card_idx + 1} / {total}")
+    with st.sidebar:
+        st.title("TOGAF Study")
+        if not hierarchy: 
+            st.error("未发现数据！请检查 data 文件夹。")
+            st.stop()
         
-        with st.container(border=True):
-            st.write(f"**{item.get('topic', '核心概念')}**")
-            st.markdown(f"### {item.get('question_cn', '')}")
-            st.divider()
-            if st.session_state.show_answer:
-                st.info(f"**答案：**\n\n{item.get('answer_cn', '')}")
-                if st.button("隐藏答案", use_container_width=True):
-                    st.session_state.show_answer = False
-                    st.rerun()
-            else:
-                if st.button("查看答案", type="primary", use_container_width=True):
-                    st.session_state.show_answer = True
-                    st.rerun()
-
-        st.write("")
-        c1, c2, c3 = st.columns(3)
-        with c1:
-            if st.button("上一题"):
-                st.session_state.card_idx -= 1
-                st.session_state.show_answer = False
-                st.rerun()
-        with c2:
-            if st.button("随机"):
-                st.session_state.card_idx = random.randint(0, total - 1)
-                st.session_state.show_answer = False
-                st.rerun()
-        with c3:
-            if st.button("下一题"):
-                st.session_state.card_idx += 1
-                st.session_state.show_answer = False
-                st.rerun()
-    else:
-        st.info("该模块暂无卡片数据")
-
-# =========================
-# 模式 2：模拟测试
-# =========================
-elif mode == "模拟测试":
-    quiz_data = load_json(paths["quiz"])
-    if quiz_data:
-        total_q = len(quiz_data)
-        st.session_state.quiz_idx %= total_q
-        q = quiz_data[st.session_state.quiz_idx]
-        st.caption(f"进度: {st.session_state.quiz_idx + 1} / {total_q}")
+        sel_cat = st.selectbox("分类", list(hierarchy.keys()))
+        mod_options = list(hierarchy[sel_cat].keys())
+        sel_mod = st.radio("模块内容", mod_options)
         
-        with st.container(border=True):
-            st.markdown(f"### {q['question']}")
+        current_key = f"{sel_cat}_{sel_mod}"
+        if current_key != st.session_state.last_mod:
+            st.session_state.card_idx = 0
+            st.session_state.quiz_idx = 0
+            st.session_state.show_answer = False
+            st.session_state.user_ans = None
+            st.session_state.last_mod = current_key
+
+        st.divider()
+        mode = st.radio("模式切换", ["知识卡片", "模拟测试"], horizontal=True)
+        
+        # 退出登录按钮
+        if st.button("退出登录"):
+            st.session_state["password_correct"] = False
+            st.rerun()
+
+    paths = hierarchy[sel_cat][sel_mod]
+
+    # --- 模式 1：知识卡片 ---
+    if mode == "知识卡片":
+        data = load_json(paths["content"])
+        if data:
+            total = len(data)
+            st.session_state.card_idx %= total
+            item = data[st.session_state.card_idx]
+            st.caption(f"进度: {st.session_state.card_idx + 1} / {total}")
             
-            is_multi = q.get("type") == "multi" or len(q.get("answer", [])) > 1
-            q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
-            
-            if is_multi:
-                st.write("(多选)")
-                selected_indices = []
-                for i, option in enumerate(q['options']):
-                    checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
-                    if checked: selected_indices.append(i)
-                
-                if not st.session_state.show_answer:
-                    st.write("")
-                    if st.button("确认提交", type="primary", use_container_width=True):
-                        st.session_state.user_ans = sorted(selected_indices)
+            with st.container(border=True):
+                st.write(f"**{item.get('topic', '核心概念')}**")
+                st.markdown(f"### {item.get('question_cn', '')}")
+                st.divider()
+                if st.session_state.show_answer:
+                    st.info(f"**答案：**\n\n{item.get('answer_cn', '')}")
+                    if st.button("隐藏答案", use_container_width=True):
+                        st.session_state.show_answer = False
+                        st.rerun()
+                else:
+                    if st.button("查看答案", type="primary", use_container_width=True):
                         st.session_state.show_answer = True
                         st.rerun()
-            else:
-                st.write("(单选)")
-                choice = st.radio("选项", q['options'], index=None, key=f"{q_key_prefix}_rad", label_visibility="collapsed", disabled=st.session_state.show_answer)
-                if choice is not None and not st.session_state.show_answer:
-                    st.session_state.user_ans = [q['options'].index(choice)]
-                    st.session_state.show_answer = True
+
+            st.write("")
+            c1, c2, c3 = st.columns(3)
+            with c1:
+                if st.button("上一题"):
+                    st.session_state.card_idx -= 1
+                    st.session_state.show_answer = False
                     st.rerun()
+            with c2:
+                if st.button("随机"):
+                    st.session_state.card_idx = random.randint(0, total - 1)
+                    st.session_state.show_answer = False
+                    st.rerun()
+            with c3:
+                if st.button("下一题"):
+                    st.session_state.card_idx += 1
+                    st.session_state.show_answer = False
+                    st.rerun()
+        else:
+            st.info("该模块暂无卡片数据")
 
-            if st.session_state.show_answer:
-                is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
-                if is_correct: st.success("回答正确")
-                else: st.error("回答错误")
+    # --- 模式 2：模拟测试 ---
+    elif mode == "模拟测试":
+        quiz_data = load_json(paths["quiz"])
+        if quiz_data:
+            total_q = len(quiz_data)
+            st.session_state.quiz_idx %= total_q
+            q = quiz_data[st.session_state.quiz_idx]
+            st.caption(f"进度: {st.session_state.quiz_idx + 1} / {total_q}")
+            
+            with st.container(border=True):
+                st.markdown(f"### {q['question']}")
+                is_multi = q.get("type") == "multi" or len(q.get("answer", [])) > 1
+                q_key_prefix = f"q_{st.session_state.last_mod}_{st.session_state.quiz_idx}"
                 
-                correct_text = [q['options'][i] for i in q['answer']]
-                st.warning(f"**正确答案：** {', '.join(correct_text)}")
-                with st.expander("查看解析", expanded=True):
-                    st.write(q.get("explanation", "暂无解析"))
+                if is_multi:
+                    st.write("(多选)")
+                    selected_indices = []
+                    for i, option in enumerate(q['options']):
+                        checked = st.checkbox(option, key=f"{q_key_prefix}_cb_{i}", disabled=st.session_state.show_answer)
+                        if checked: selected_indices.append(i)
+                    
+                    if not st.session_state.show_answer:
+                        st.write("")
+                        if st.button("确认提交", type="primary", use_container_width=True):
+                            st.session_state.user_ans = sorted(selected_indices)
+                            st.session_state.show_answer = True
+                            st.rerun()
+                else:
+                    st.write("(单选)")
+                    choice = st.radio("选项", q['options'], index=None, key=f"{q_key_prefix}_rad", label_visibility="collapsed", disabled=st.session_state.show_answer)
+                    if choice is not None and not st.session_state.show_answer:
+                        st.session_state.user_ans = [q['options'].index(choice)]
+                        st.session_state.show_answer = True
+                        st.rerun()
 
-        st.write("")
-        q1, q2, q3 = st.columns(3)
-        with q1:
-            if st.button("上一题", key="q_prev"):
-                st.session_state.quiz_idx -= 1
-                st.session_state.show_answer = False
-                st.session_state.user_ans = None
-                st.rerun()
-        with q2:
-            if st.button("随机", key="q_rand"):
-                st.session_state.quiz_idx = random.randint(0, total_q - 1)
-                st.session_state.show_answer = False
-                st.session_state.user_ans = None
-                st.rerun()
-        with q3:
-            if st.button("下一题", key="q_next"):
-                st.session_state.quiz_idx += 1
-                st.session_state.show_answer = False
-                st.session_state.user_ans = None
-                st.rerun()
-    else:
-        st.warning("该模块暂无测试题数据，请确保存在 [文件名]_quiz.json 文件")
+                if st.session_state.show_answer:
+                    is_correct = sorted(st.session_state.user_ans or []) == sorted(q['answer'])
+                    if is_correct: st.success("回答正确")
+                    else: st.error("回答错误")
+                    
+                    correct_text = [q['options'][i] for i in q['answer']]
+                    st.warning(f"**正确答案：** {', '.join(correct_text)}")
+                    with st.expander("查看解析", expanded=True):
+                        st.write(q.get("explanation", "暂无解析"))
+
+            st.write("")
+            q1, q2, q3 = st.columns(3)
+            with q1:
+                if st.button("上一题", key="q_prev"):
+                    st.session_state.quiz_idx -= 1
+                    st.session_state.show_answer = False
+                    st.session_state.user_ans = None
+                    st.rerun()
+            with q2:
+                if st.button("随机", key="q_rand"):
+                    st.session_state.quiz_idx = random.randint(0, total_q - 1)
+                    st.session_state.show_answer = False
+                    st.session_state.user_ans = None
+                    st.rerun()
+            with q3:
+                if st.button("下一题", key="q_next"):
+                    st.session_state.quiz_idx += 1
+                    st.session_state.show_answer = False
+                    st.session_state.user_ans = None
+                    st.rerun()
+        else:
+            st.warning("该模块暂无测试题数据")
+
+# =========================
+# 运行入口
+# =========================
+if check_password():
+    main_app()
